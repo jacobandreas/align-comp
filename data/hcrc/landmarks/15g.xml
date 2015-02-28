@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<topography file="/mas/disks/cogmac/u/levit/Work/Data/HCRC/descriptions/15g.xml">
+  <path stops="116">
+    <stop x="117" y="61" />
+    <stop x="126" y="74" />
+    <stop x="135" y="87" />
+    <stop x="144" y="100" />
+    <stop x="154" y="114" />
+    <stop x="154" y="130" />
+    <stop x="155" y="147" />
+    <stop x="132" y="164" />
+    <stop x="124" y="179" />
+    <stop x="115" y="194" />
+    <stop x="113" y="222" />
+    <stop x="122" y="247" />
+    <stop x="149" y="257" />
+    <stop x="165" y="255" />
+    <stop x="181" y="253" />
+    <stop x="197" y="250" />
+    <stop x="213" y="247" />
+    <stop x="229" y="244" />
+    <stop x="251" y="225" />
+    <stop x="257" y="211" />
+    <stop x="264" y="197" />
+    <stop x="271" y="183" />
+    <stop x="278" y="169" />
+    <stop x="281" y="152" />
+    <stop x="285" y="135" />
+    <stop x="301" y="135" />
+    <stop x="317" y="134" />
+    <stop x="333" y="133" />
+    <stop x="349" y="132" />
+    <stop x="365" y="131" />
+    <stop x="382" y="130" />
+    <stop x="397" y="133" />
+    <stop x="413" y="136" />
+    <stop x="421" y="148" />
+    <stop x="429" y="161" />
+    <stop x="437" y="174" />
+    <stop x="446" y="187" />
+    <stop x="454" y="199" />
+    <stop x="462" y="212" />
+    <stop x="470" y="225" />
+    <stop x="479" y="238" />
+    <stop x="499" y="259" />
+    <stop x="515" y="268" />
+    <stop x="532" y="277" />
+    <stop x="550" y="293" />
+    <stop x="559" y="313" />
+    <stop x="558" y="337" />
+    <stop x="551" y="350" />
+    <stop x="543" y="363" />
+    <stop x="535" y="376" />
+    <stop x="527" y="389" />
+    <stop x="543" y="392" />
+    <stop x="559" y="395" />
+    <stop x="575" y="398" />
+    <stop x="592" y="401" />
+    <stop x="606" y="405" />
+    <stop x="620" y="410" />
+    <stop x="635" y="415" />
+    <stop x="647" y="428" />
+    <stop x="659" y="442" />
+    <stop x="661" y="460" />
+    <stop x="663" y="478" />
+    <stop x="649" y="488" />
+    <stop x="634" y="498" />
+    <stop x="619" y="498" />
+    <stop x="604" y="498" />
+    <stop x="589" y="498" />
+    <stop x="574" y="498" />
+    <stop x="559" y="499" />
+    <stop x="543" y="495" />
+    <stop x="526" y="491" />
+    <stop x="509" y="486" />
+    <stop x="488" y="486" />
+    <stop x="467" y="485" />
+    <stop x="460" y="509" />
+    <stop x="463" y="530" />
+    <stop x="466" y="551" />
+    <stop x="466" y="572" />
+    <stop x="467" y="594" />
+    <stop x="455" y="620" />
+    <stop x="438" y="621" />
+    <stop x="421" y="623" />
+    <stop x="406" y="623" />
+    <stop x="390" y="623" />
+    <stop x="374" y="623" />
+    <stop x="358" y="623" />
+    <stop x="342" y="623" />
+    <stop x="328" y="639" />
+    <stop x="326" y="657" />
+    <stop x="324" y="675" />
+    <stop x="314" y="697" />
+    <stop x="294" y="704" />
+    <stop x="273" y="712" />
+    <stop x="252" y="715" />
+    <stop x="230" y="719" />
+    <stop x="215" y="720" />
+    <stop x="199" y="721" />
+    <stop x="181" y="731" />
+    <stop x="163" y="741" />
+    <stop x="150" y="752" />
+    <stop x="137" y="764" />
+    <stop x="124" y="775" />
+    <stop x="111" y="787" />
+    <stop x="98" y="799" />
+    <stop x="82" y="811" />
+    <stop x="65" y="824" />
+    <stop x="56" y="849" />
+    <stop x="54" y="869" />
+    <stop x="52" y="890" />
+    <stop x="56" y="908" />
+    <stop x="61" y="926" />
+    <stop x="72" y="942" />
+    <stop x="89" y="944" />
+    <stop x="107" y="947" />
+    <stop x="126" y="949" />
+    <stop x="145" y="952" />
+  </path>
+  <landmark name="m15_start">
+    <spot x="116" y="60" canCross="false" r="20" />
+    <polygon />
+  </landmark>
+  <landmark name="m15_sandy_shore">
+    <spot x="152" y="65" canCross="false" r="20" />
+    <polygon>
+      <vertix x="100" y="13" />
+      <vertix x="174" y="119" />
+      <vertix x="182" y="110" />
+      <vertix x="118" y="22" />
+    </polygon>
+  </landmark>
+  <landmark name="m15_crane_bay">
+    <spot x="278" y="67" canCross="false" r="20" />
+    <polygon>
+      <vertix x="104" y="9" />
+      <vertix x="183" y="121" />
+      <vertix x="186" y="177" />
+      <vertix x="265" y="158" />
+      <vertix x="281" y="125" />
+      <vertix x="350" y="125" />
+      <vertix x="393" y="27" />
+      <vertix x="384" y="3" />
+    </polygon>
+  </landmark>
+  <landmark name="m15_well">
+    <spot x="145" y="198" canCross="false" r="20" />
+    <polygon>
+      <vertix x="122" y="217" />
+      <vertix x="138" y="167" />
+      <vertix x="170" y="166" />
+      <vertix x="187" y="193" />
+      <vertix x="182" y="221" />
+      <vertix x="142" y="235" />
+    </polygon>
+  </landmark>
+  <landmark name="m15_local_residents">
+    <spot x="313" y="195" canCross="false" r="20" />
+    <polygon>
+      <vertix x="267" y="215" />
+      <vertix x="288" y="174" />
+      <vertix x="342" y="164" />
+      <vertix x="371" y="233" />
+      <vertix x="300" y="235" />
+    </polygon>
+  </landmark>
+  <landmark name="m15_wood">
+    <spot x="547" y="108" canCross="false" r="20" />
+    <polygon>
+      <vertix x="476" y="106" />
+      <vertix x="548" y="72" />
+      <vertix x="604" y="100" />
+      <vertix x="594" y="148" />
+      <vertix x="510" y="154" />
+      <vertix x="479" y="130" />
+    </polygon>
+  </landmark>
+  <landmark name="m15_forked_stream">
+    <spot x="544" y="308" canCross="true" r="20" />
+    <polygon>
+      <vertix x="325" y="148" />
+      <vertix x="419" y="205" />
+      <vertix x="476" y="264" />
+      <vertix x="533" y="296" />
+      <vertix x="544" y="318" />
+      <vertix x="519" y="364" />
+      <vertix x="427" y="445" />
+      <vertix x="372" y="476" />
+      <vertix x="311" y="548" />
+      <vertix x="316" y="558" />
+      <vertix x="365" y="495" />
+      <vertix x="423" y="458" />
+      <vertix x="440" y="450" />
+      <vertix x="496" y="400" />
+      <vertix x="485" y="434" />
+      <vertix x="483" y="476" />
+      <vertix x="500" y="502" />
+      <vertix x="542" y="534" />
+      <vertix x="562" y="614" />
+      <vertix x="607" y="656" />
+      <vertix x="655" y="663" />
+      <vertix x="698" y="651" />
+      <vertix x="695" y="640" />
+      <vertix x="646" y="649" />
+      <vertix x="609" y="644" />
+      <vertix x="563" y="585" />
+      <vertix x="553" y="531" />
+      <vertix x="498" y="482" />
+      <vertix x="503" y="406" />
+      <vertix x="555" y="327" />
+      <vertix x="548" y="294" />
+      <vertix x="495" y="264" />
+      <vertix x="422" y="188" />
+      <vertix x="361" y="137" />
+    </polygon>
+  </landmark>
+  <landmark name="m15_farmed_land">
+    <spot x="582" y="462" canCross="false" r="20" />
+    <polygon>
+      <vertix x="539" y="449" />
+      <vertix x="578" y="433" />
+      <vertix x="646" y="463" />
+      <vertix x="589" y="492" />
+      <vertix x="545" y="469" />
+    </polygon>
+  </landmark>
+  <landmark name="m15_farmed_land_2">
+    <spot x="388" y="941" canCross="false" r="20" />
+    <polygon>
+      <vertix x="337" y="940" />
+      <vertix x="393" y="925" />
+      <vertix x="461" y="955" />
+      <vertix x="386" y="985" />
+    </polygon>
+  </landmark>
+  <landmark name="m15_dead_tree">
+    <spot x="463" y="436" canCross="false" r="20" />
+    <polygon>
+      <vertix x="441" y="408" />
+      <vertix x="480" y="391" />
+      <vertix x="520" y="427" />
+      <vertix x="484" y="442" />
+      <vertix x="480" y="463" />
+      <vertix x="438" y="461" />
+      <vertix x="453" y="437" />
+    </polygon>
+  </landmark>
+  <landmark name="m15_lagoon">
+    <spot x="285" y="647" canCross="false" r="20" />
+    <polygon>
+      <vertix x="282" y="573" />
+      <vertix x="248" y="661" />
+      <vertix x="271" y="700" />
+      <vertix x="313" y="679" />
+      <vertix x="327" y="610" />
+      <vertix x="310" y="559" />
+    </polygon>
+  </landmark>
+  <landmark name="m15_rock_fall">
+    <spot x="185" y="771" canCross="false" r="20" />
+    <polygon>
+      <vertix x="126" y="789" />
+      <vertix x="186" y="740" />
+      <vertix x="218" y="796" />
+      <vertix x="145" y="801" />
+    </polygon>
+  </landmark>
+  <landmark name="m15_green_bay">
+    <spot x="181" y="866" canCross="true" r="20" />
+    <polygon>
+      <vertix x="63" y="843" />
+      <vertix x="129" y="805" />
+      <vertix x="208" y="811" />
+      <vertix x="276" y="942" />
+      <vertix x="201" y="982" />
+      <vertix x="137" y="978" />
+      <vertix x="72" y="927" />
+    </polygon>
+  </landmark>
+  <landmark name="m15_pirate_ship">
+    <spot x="186" y="935" canCross="false" r="20" />
+    <polygon>
+      <vertix x="143" y="924" />
+      <vertix x="189" y="896" />
+      <vertix x="230" y="934" />
+      <vertix x="222" y="957" />
+      <vertix x="161" y="958" />
+    </polygon>
+  </landmark>
+  <landmark name="m15_hills">
+    <spot x="223" y="368" canCross="false" r="20" />
+    <polygon>
+      <vertix x="126" y="370" />
+      <vertix x="196" y="332" />
+      <vertix x="280" y="340" />
+      <vertix x="336" y="383" />
+      <vertix x="221" y="392" />
+    </polygon>
+  </landmark>
+  <landmark name="m15_pine_grove">
+    <spot x="547" y="766" canCross="false" r="20" />
+    <polygon>
+      <vertix x="502" y="782" />
+      <vertix x="528" y="724" />
+      <vertix x="578" y="724" />
+      <vertix x="607" y="802" />
+      <vertix x="571" y="838" />
+      <vertix x="514" y="832" />
+    </polygon>
+  </landmark>
+  <landmark name="m15_finish">
+    <spot x="144" y="952" canCross="false" r="20" />
+    <polygon />
+  </landmark>
+</topography>
+

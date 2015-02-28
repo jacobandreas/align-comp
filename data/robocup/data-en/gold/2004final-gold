@@ -1,0 +1,1619 @@
+<?xml version="1.0"?>
+
+<examples>
+
+<example id="1">
+<nl lang="en"> purple6 passes the ball to purple2 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple2 ) </mrl>
+</example>
+
+<example id="2">
+<nl lang="en"> purple2 passes to purple3 </nl>
+<mrl lang="soccer"> pass ( purple2 , purple3 ) </mrl>
+</example>
+
+<example id="3">
+<nl lang="en"> purple3 passes to purple6 </nl>
+<mrl lang="soccer"> pass ( purple3 , purple6 ) </mrl>
+</example>
+
+<example id="5">
+<nl lang="en"> purple6 passes to purple10 in traffic </nl>
+<mrl lang="soccer"> pass ( purple6 , purple10 ) </mrl>
+</example>
+
+<example id="6">
+<nl lang="en"> purple10 loses the ball to pink2 </nl>
+<mrl lang="soccer"> turnover ( purple10, pink2 ) </mrl>
+</example>
+
+<example id="9">
+<nl lang="en"> Offside has been called </nl>
+<mrl lang="soccer"> playmode ( offside_r ) </mrl>
+</example>
+
+<example id="10">
+<nl lang="en"> Freekick from the purple team </nl>
+<mrl lang="soccer"> playmode ( free_kick_l ) </mrl>
+</example>
+
+<example id="11">
+<nl lang="en"> purple3 kicks off to purple7 </nl>
+<mrl lang="soccer"> pass ( purple3 , purple7 ) </mrl>
+</example>
+
+<example id="12">
+<nl lang="en"> purple7 passes to purple10 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple10 ) </mrl>
+</example>
+
+<example id="13">
+<nl lang="en"> purple10 passes to purple6 </nl>
+<mrl lang="soccer"> pass ( purple10 , purple6 ) </mrl>
+</example>
+
+<example id="14">
+<nl lang="en"> purple6 passes to purple9 near the sideline </nl>
+<mrl lang="soccer"> pass ( purple6 , purple9 ) </mrl>
+</example>
+
+<example id="15">
+<nl lang="en"> purple9 passes back to purple6 </nl>
+<mrl lang="soccer"> pass ( purple9 , purple6 ) </mrl>
+</example>
+
+<example id="16">
+<nl lang="en"> purple6 again passes to purple9 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple9 ) </mrl>
+</example>
+
+<example id="17">
+<nl lang="en"> Purple team will kick in from the side </nl>
+<mrl lang="soccer"> playmode ( kick_in_l ) </mrl>
+</example>
+
+<example id="18">
+<nl lang="en"> purple9 passes to purple6 </nl>
+<mrl lang="soccer"> pass ( purple9 , purple6 ) </mrl>
+</example>
+
+<example id="19">
+<nl lang="en"> purple6 passes to purple7 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple7 ) </mrl>
+</example>
+
+<example id="20">
+<nl lang="en"> purple7 passes to purple6 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple6 ) </mrl>
+</example>
+
+<example id="21">
+<nl lang="en"> purple6 makes a dangerous pass to purple7 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple7 ) </mrl>
+</example>
+
+<example id="22">
+<nl lang="en"> purple7 loses the ball to pink3 </nl>
+<mrl lang="soccer"> turnover ( purple7 , pink3 ) </mrl>
+</example>
+
+<example id="23">
+<nl lang="en"> pink3 made a bad pass that was picked off by purple11 </nl>
+<mrl lang="soccer"> badPass ( pink3 , purple11 ) </mrl>
+</example>
+
+<example id="24">
+<nl lang="en"> purple11 made a bad pass that was picked up by pink7 </nl>
+<mrl lang="soccer"> badPass ( purple11 , pink7 ) </mrl>
+</example>
+
+<example id="25">
+<nl lang="en"> pink7 passes to pink10 near the sideline </nl>
+<mrl lang="soccer"> pass ( pink7 , pink10 ) </mrl>
+</example>
+
+<example id="26">
+<nl lang="en"> pink10 passes to pink9 </nl>
+<mrl lang="soccer"> pass ( pink10 , pink9 ) </mrl>
+</example>
+
+<example id="27">
+<nl lang="en"> purple1 blocks the ball </nl>
+<mrl lang="soccer"> block ( purple1 ) </mrl>
+</example>
+
+<example id="28">
+<nl lang="en"> free kick by the purple team </nl>
+<mrl lang="soccer"> playmode ( free_kick_l ) </mrl>
+</example>
+
+<example id="29">
+<nl lang="en"> purple1 kicks off to purple2 </nl>
+<mrl lang="soccer"> pass ( purple1 , purple2 ) </mrl>
+</example>
+
+<example id="30">
+<nl lang="en"> purple2 passes to purple3 </nl>
+<mrl lang="soccer"> pass ( purple2 , purple3 ) </mrl>
+</example>
+
+<example id="31">
+<nl lang="en"> purple3 made a bad pass that was picked up by pink7 </nl>
+<mrl lang="soccer"> badPass ( purple3 , pink7 ) </mrl>
+</example>
+
+<example id="33">
+<nl lang="en"> pink7 shoots for the goal </nl>
+<mrl lang="soccer"> kick ( pink7 ) </mrl>
+</example>
+
+<example id="34">
+<nl lang="en"> pink7 passes to pink9 </nl>
+<mrl lang="soccer"> pass ( pink7 , pink9 ) </mrl>
+</example>
+
+<example id="35">
+<nl lang="en"> pink9 shoots for the goal </nl>
+<mrl lang="soccer"> kick ( pink9 ) </mrl>
+</example>
+
+<example id="36">
+<nl lang="en"> pink team scores </nl>
+<mrl lang="soccer"> playmode ( goal_r ) </mrl>
+</example>
+
+<example id="37">
+<nl lang="en"> purple10 passes to purple6 </nl>
+<mrl lang="soccer"> pass ( purple10 , purple6 ) </mrl>
+</example>
+
+<example id="39">
+<nl lang="en"> purple6 passes to purple2 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple2 ) </mrl>
+</example>
+
+<example id="40">
+<nl lang="en"> purple2 passes back to purple6 </nl>
+<mrl lang="soccer"> pass ( purple2 , purple6 ) </mrl>
+</example>
+
+<example id="41">
+<nl lang="en"> purple6 passes to purple7 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple7 ) </mrl>
+</example>
+
+<example id="42">
+<nl lang="en"> purple7 made a bad pass and was picked off by pink10 </nl>
+<mrl lang="soccer"> badPass ( purple7 , pink10 ) </mrl>
+</example>
+
+<example id="43">
+<nl lang="en"> pink10 passes to pink9 </nl>
+<mrl lang="soccer"> pass ( pink10 , pink9 ) </mrl>
+</example>
+
+<example id="44">
+<nl lang="en"> pink6 lost the ball to purple3 </nl>
+<mrl lang="soccer"> turnover ( pink6 , purple3 ) </mrl>
+</example>
+
+<example id="46">
+<nl lang="en"> free kick from the purple team </nl>
+<mrl lang="soccer"> playmode ( free_kick_l ) </mrl>
+</example>
+
+<example id="47">
+<nl lang="en"> purple1 kicks off to purple5 </nl>
+<mrl lang="soccer"> pass ( purple1 , purple5 ) </mrl>
+</example>
+
+<example id="48">
+<nl lang="en"> pink team will kick in </nl>
+<mrl lang="soccer"> playmode ( kick_in_r ) </mrl>
+</example>
+
+<example id="50">
+<nl lang="en"> pink10 loses the ball to purple5 </nl>
+<mrl lang="soccer"> turnover ( pink10 , purple5 ) </mrl>
+</example>
+
+<example id="51">
+<nl lang="en"> purple5 loses the ball to pink10 </nl>
+<mrl lang="soccer"> turnover ( purple5 , pink10 ) </mrl>
+</example>
+
+<example id="52">
+<nl lang="en"> pink9 shoots </nl>
+<mrl lang="soccer"> kick ( pink9 ) </mrl>
+</example>
+
+<example id="53">
+<nl lang="en"> pink team scores again </nl>
+<mrl lang="soccer"> playmode ( goal_r ) </mrl>
+</example>
+
+<example id="54">
+<nl lang="en"> purple10 passes to purple8 </nl>
+<mrl lang="soccer"> pass ( purple10 , purple8 ) </mrl>
+</example>
+
+<example id="55">
+<nl lang="en"> purple8 passes to purple11 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple11 ) </mrl>
+</example>
+
+<example id="56">
+<nl lang="en"> purple11 passes to purple5 </nl>
+<mrl lang="soccer"> pass ( purple11 , purple5 ) </mrl>
+</example>
+
+<example id="57">
+<nl lang="en"> purple5 passes to purple8 </nl>
+<mrl lang="soccer"> pass ( purple5 , purple8 ) </mrl>
+</example>
+
+<example id="58">
+<nl lang="en"> purple8 passes to purple4 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple4 ) </mrl>
+</example>
+
+<example id="59">
+<nl lang="en"> purple4 passes to purple7 </nl>
+<mrl lang="soccer"> pass ( purple4 , purple7 ) </mrl>
+</example>
+
+<example id="60">
+<nl lang="en"> purple7 passes to purple10 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple10 ) </mrl>
+</example>
+
+<example id="61">
+<nl lang="en"> purple10 passes backward to purple3 </nl>
+<mrl lang="soccer"> pass ( purple10 , purple3 ) </mrl>
+</example>
+
+<example id="62">
+<nl lang="en"> purple6 loses the ball to pink3 </nl>
+<mrl lang="soccer"> turnover ( purple6 , pink3 ) </mrl>
+</example>
+
+<example id="63">
+<nl lang="en"> purple6 steals tha ball right back from pink3 </nl>
+<mrl lang="soccer"> turnover ( pink3 , purple6 ) </mrl>
+</example>
+
+<example id="64">
+<nl lang="en"> purple6 passes to purple9 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple9 ) </mrl>
+</example>
+
+<example id="65">
+<nl lang="en"> purple9 loses the ball to pink5 </nl>
+<mrl lang="soccer"> turnover ( purple9 , pink5 ) </mrl>
+</example>
+
+<example id="66">
+<nl lang="en"> pink5 passes to pink8 </nl>
+<mrl lang="soccer"> pass ( pink5 , pink8 ) </mrl>
+</example>
+
+<example id="67">
+<nl lang="en"> pink8 passes to pink11 </nl>
+<mrl lang="soccer"> pass ( pink8 , pink11 ) </mrl>
+</example>
+
+<example id="68">
+<nl lang="en"> pink11 loses the ball to purple2 </nl>
+<mrl lang="soccer"> turnover ( pink11 , purple2 ) </mrl>
+</example>
+
+<example id="69">
+<nl lang="en"> purple2 passes to purple6 </nl>
+<mrl lang="soccer"> pass ( purple2 , purple6 ) </mrl>
+</example>
+
+<example id="70">
+<nl lang="en"> purple6 passes laterally to purple9 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple9 ) </mrl>
+</example>
+
+<example id="71">
+<nl lang="en"> purple team will kick in </nl>
+<mrl lang="soccer"> playmode ( kick_in_l ) </mrl>
+</example>
+
+<example id="72">
+<nl lang="en"> purple6 kicks off to purple7 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple7 ) </mrl>
+</example>
+
+<example id="73">
+<nl lang="en"> purple7 passes to purple9 near the sideline </nl>
+<mrl lang="soccer"> pass ( purple7 , purple9 ) </mrl>
+</example>
+
+<example id="74">
+<nl lang="en"> purple9 passes back to purple7 </nl>
+<mrl lang="soccer"> pass ( purple9 , purple7 ) </mrl>
+</example>
+
+<example id="76">
+<nl lang="en"> purple7 passes to purple9 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple9 ) </mrl>
+</example>
+
+<example id="77">
+<nl lang="en"> purple9 passes to purple6 under pressure </nl>
+<mrl lang="soccer"> pass ( purple9 , purple6 ) </mrl>
+</example>
+
+<example id="78">
+<nl lang="en"> purple6 loses the ball to pink5 </nl>
+<mrl lang="soccer"> turnover ( purple6 , pink5 ) </mrl>
+</example>
+
+<example id="79">
+<nl lang="en"> pink5 passes to pink3 </nl>
+<mrl lang="soccer"> pass ( pink5 , pink3 ) </mrl>
+</example>
+
+<example id="80">
+<nl lang="en"> purple9 steals the ball from pink3 </nl>
+<mrl lang="soccer"> turnover ( pink3 , purple9 ) </mrl>
+</example>
+
+<example id="81">
+<nl lang="en"> purple9 loses the ball right back to pink3 </nl>
+<mrl lang="soccer"> turnover ( purple9 , pink3 ) </mrl>
+</example>
+
+<example id="82">
+<nl lang="en"> pink3 loses the ball to purple7 </nl>
+<mrl lang="soccer"> turnover ( pink3 , purple7 ) </mrl>
+</example>
+
+<example id="83">
+<nl lang="en"> purple7 made a bad pass that was picked off by pink9 </nl>
+<mrl lang="soccer"> badPass ( purple7 , pink9 ) </mrl>
+</example>
+
+<example id="85">
+<nl lang="en"> pink9 loses the ball to purple3 </nl>
+<mrl lang="soccer"> turnover ( pink9 , purple3 ) </mrl>
+</example>
+
+<example id="86">
+<nl lang="en"> purple3 passes out to purple7 </nl>
+<mrl lang="soccer"> pass ( purple3 , purple7 ) </mrl>
+</example>
+
+<example id="87">
+<nl lang="en"> purple7 made a quick pass to purple6 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple6 ) </mrl>
+</example>
+
+<example id="88">
+<nl lang="en"> purple10 loses the ball to pink7 </nl>
+<mrl lang="soccer"> turnover ( purple10 , pink7 ) </mrl>
+</example>
+
+<example id="90">
+<nl lang="en"> purple7 loses the ball to pink5 </nl>
+<mrl lang="soccer"> turnover ( purple7 , pink5 ) </mrl>
+</example>
+
+<example id="92">
+<nl lang="en"> pink11 loses the ball to purple2 </nl>
+<mrl lang="soccer"> turnover ( pink11 , purple2 ) </mrl>
+</example>
+
+<example id="93">
+<nl lang="en"> purple2 loses the ball to pink9 </nl>
+<mrl lang="soccer"> turnover ( purple2 , pink9 ) </mrl>
+</example>
+
+<example id="94">
+<nl lang="en"> purple7 passes the ball out to purple6 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple6 ) </mrl>
+</example>
+
+<example id="95">
+<nl lang="en"> purple6 passes to purple2 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple2 ) </mrl>
+</example>
+
+<example id="96">
+<nl lang="en"> purple2 makes a short pass to purple3 </nl>
+<mrl lang="soccer"> pass ( purple2 , purple3 ) </mrl>
+</example>
+
+<example id="97">
+<nl lang="en"> purple3 loses the ball to pink9 </nl>
+<mrl lang="soccer"> turnover ( purple3 , pink9 ) </mrl>
+</example>
+
+<example id="98">
+<nl lang="en"> pink9 loses the ball to purple5 </nl>
+<mrl lang="soccer"> turnover ( pink9 , purple5 ) </mrl>
+</example>
+
+<example id="99">
+<nl lang="en"> purple5 loses the ball back to pink7 </nl>
+<mrl lang="soccer"> turnover ( purple5 , pink7 ) </mrl>
+</example>
+
+<example id="100">
+<nl lang="en"> pink7 passes to pink9 </nl>
+<mrl lang="soccer"> pass ( pink7 , pink9 ) </mrl>
+</example>
+
+<example id="101">
+<nl lang="en"> pink9 loses the ball to purple3 </nl>
+<mrl lang="soccer"> turnover ( pink9 , purple3 ) </mrl>
+</example>
+
+<example id="103">
+<nl lang="en"> pink8 makes a bad pass that was picked off by purple6 </nl>
+<mrl lang="soccer"> badPass ( pink8 , purple6 ) </mrl>
+</example>
+
+<example id="104">
+<nl lang="en"> purple6 made a bad pass that was picked off by pink8 </nl>
+<mrl lang="soccer"> badPass ( purple6 , pink8 ) </mrl>
+</example>
+
+<example id="106">
+<nl lang="en"> pink8 passes to pink6 </nl>
+<mrl lang="soccer"> pass ( pink8 , pink6 ) </mrl>
+</example>
+
+<example id="107">
+<nl lang="en"> purple3 made a defensive stop </nl>
+<mrl lang="soccer"> defense ( purple3 , purple3 ) </mrl>
+</example>
+
+<example id="108">
+<nl lang="en"> purple3 passes to purple7 </nl>
+<mrl lang="soccer"> pass ( purple3 , purple7 ) </mrl>
+</example>
+
+<example id="109">
+<nl lang="en"> purple7 made a bad pass and was picked off by pink5 </nl>
+<mrl lang="soccer"> badPass ( purple7 , pink5 ) </mrl>
+</example>
+
+<example id="110">
+<nl lang="en"> pink5 passes to pink11 </nl>
+<mrl lang="soccer"> pass ( pink5 , pink11 ) </mrl>
+</example>
+
+<example id="111">
+<nl lang="en"> pink11 passes to pink8 </nl>
+<mrl lang="soccer"> pass ( pink11 , pink8 ) </mrl>
+</example>
+
+<example id="112">
+<nl lang="en"> purple3 made a defensive stop </nl>
+<mrl lang="soccer"> defense ( purple3 , purple3 ) </mrl>
+</example>
+
+<example id="113">
+<nl lang="en"> purple3 passes out of the penalty area to purple7 </nl>
+<mrl lang="soccer"> pass ( purple3 , purple7 ) </mrl>
+</example>
+
+<example id="114">
+<nl lang="en"> purple7 passes to purple8 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple8 ) </mrl>
+</example>
+
+<example id="116">
+<nl lang="en"> purple8 passes to purple9 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple9 ) </mrl>
+</example>
+
+<example id="117">
+<nl lang="en"> pink5 steals the ball from purple9 </nl>
+<mrl lang="soccer"> turnover ( purple9 , pink5 ) </mrl>
+</example>
+
+<example id="119">
+<nl lang="en"> purple6 passes to purple7 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple7 ) </mrl>
+</example>
+
+<example id="120">
+<nl lang="en"> purple7 passes back to purple6 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple6 ) </mrl>
+</example>
+
+<example id="121">
+<nl lang="en"> purple6 made a bad pass and was picked off by pink9 </nl>
+<mrl lang="soccer"> badPass( purple6 , pink9 ) </mrl>
+</example>
+
+<example id="123">
+<nl lang="en"> purple8 kicks off to purple11 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple11 ) </mrl>
+</example>
+
+<example id="124">
+<nl lang="en"> purple11 passes to purple10 </nl>
+<mrl lang="soccer"> pass ( purple11 , purple10 ) </mrl>
+</example>
+
+<example id="125">
+<nl lang="en"> purple10 passes back to purple11 </nl>
+<mrl lang="soccer"> pass ( purple10 , purple11 ) </mrl>
+</example>
+
+<example id="126">
+<nl lang="en"> purple11 passes to purple7 </nl>
+<mrl lang="soccer"> pass ( purple11 , purple7 ) </mrl>
+</example>
+
+<example id="127">
+<nl lang="en"> purple7 passes to purple6 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple6 ) </mrl>
+</example>
+
+<example id="128">
+<nl lang="en"> purple6 passes to purple10 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple10 ) </mrl>
+</example>
+
+<example id="129">
+<nl lang="en"> purple10 passes back to purple6 </nl>
+<mrl lang="soccer"> pass ( purple10 , purple6 ) </mrl>
+</example>
+
+<example id="130">
+<nl lang="en"> purple6 passes backward to purple3 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple3 ) </mrl>
+</example>
+
+<example id="131">
+<nl lang="en"> purple3 made a bad pass that was picked off by pink9 </nl>
+<mrl lang="soccer"> badPass ( purple3 , pink9 ) </mrl>
+</example>
+
+<example id="133">
+<nl lang="en"> pink9 passes to pink11 </nl>
+<mrl lang="soccer"> pass ( pink9 , pink11 ) </mrl>
+</example>
+
+<example id="134">
+<nl lang="en"> pink team scores </nl>
+<mrl lang="soccer"> playmode ( goal_r ) </mrl>
+</example>
+
+<example id="136">
+<nl lang="en"> purple10 passes to purple6 </nl>
+<mrl lang="soccer"> pass ( purple10 , purple6 ) </mrl>
+</example>
+
+<example id="137">
+<nl lang="en"> purple6 passes to purple9 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple9 ) </mrl>
+</example>
+
+<example id="138">
+<nl lang="en"> purple9 passes to purple6 </nl>
+<mrl lang="soccer"> pass ( purple9 , purple6 ) </mrl>
+</example>
+
+<example id="139">
+<nl lang="en"> purple6 passes to purple7 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple7 ) </mrl>
+</example>
+
+<example id="140">
+<nl lang="en"> purple7 passes to purple4 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple4 ) </mrl>
+</example>
+
+<example id="141">
+<nl lang="en"> purple4 passes to purple3 </nl>
+<mrl lang="soccer"> pass ( purple4 , purple3 ) </mrl>
+</example>
+
+<example id="142">
+<nl lang="en"> purple3 passes the ball back to purple4 </nl>
+<mrl lang="soccer"> pass ( purple3 , purple4 ) </mrl>
+</example>
+
+<example id="143">
+<nl lang="en"> offside on purple </nl>
+<mrl lang="soccer"> playmode ( offside_l ) </mrl>
+</example>
+
+<example id="144">
+<nl lang="en"> pink6 passes to pink7 </nl>
+<mrl lang="soccer"> pass ( pink6 , pink7 ) </mrl>
+</example>
+
+<example id="146">
+<nl lang="en"> pink7 makes a beautiful pass to pink9 </nl>
+<mrl lang="soccer"> pass ( pink7 , pink9 ) </mrl>
+</example>
+
+<example id="147">
+<nl lang="en"> pink9 shoots </nl>
+<mrl lang="soccer"> kick ( pink9 ) </mrl>
+</example>
+
+<example id="148">
+<nl lang="en"> pink team scores again </nl>
+<mrl lang="soccer"> playmode ( goal_r ) </mrl>
+</example>
+
+<example id="149">
+<nl lang="en"> purple10 kicks off to purple8 </nl>
+<mrl lang="soccer"> pass ( purple10 , purple8 ) </mrl>
+</example>
+
+<example id="150">
+<nl lang="en"> purple8 passes to purple11 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple11 ) </mrl>
+</example>
+
+<example id="151">
+<nl lang="en"> purple11 passes to purple2 </nl>
+<mrl lang="soccer"> pass ( purple11 , purple2 ) </mrl>
+</example>
+
+<example id="152">
+<nl lang="en"> purple2 passes to purple3 </nl>
+<mrl lang="soccer"> pass ( purple2 , purple3 ) </mrl>
+</example>
+
+<example id="153">
+<nl lang="en"> purple3 passes to purple4 </nl>
+<mrl lang="soccer"> pass ( purple3 , purple4 ) </mrl>
+</example>
+
+<example id="154">
+<nl lang="en"> purple4 passes to purple5 </nl>
+<mrl lang="soccer"> pass ( purple4 , purple5 ) </mrl>
+</example>
+
+<example id="155">
+<nl lang="en"> purple5 makes a short pass to purple8 </nl>
+<mrl lang="soccer"> pass ( purple5 , purple8 ) </mrl>
+</example>
+
+<example id="156">
+<nl lang="en"> purple8 passes the ball to purple11 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple11 ) </mrl>
+</example>
+
+<example id="157">
+<nl lang="en"> purple8 passes to purple10 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple10 ) </mrl>
+</example>
+
+<example id="158">
+<nl lang="en"> purple10 makes a bad pass and was picked off by pink9 </nl>
+<mrl lang="soccer"> badPass ( purple10 , pink9 ) </mrl>
+</example>
+
+<example id="159">
+<nl lang="en"> pink9 passes to pink11 </nl>
+<mrl lang="soccer"> pass ( pink9 , pink11 ) </mrl>
+</example>
+
+<example id="161">
+<nl lang="en"> pink11 makes a bad pass and was picked off by purple3 </nl>
+<mrl lang="soccer"> badPass ( pink11 , purple3 ) </mrl>
+</example>
+
+<example id="162">
+<nl lang="en"> purple3 passes out to purple6 </nl>
+<mrl lang="soccer"> pass ( purple3 , purple6 ) </mrl>
+</example>
+
+<example id="163">
+<nl lang="en"> purple6 passes to purple7 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple7 ) </mrl>
+</example>
+
+<example id="164">
+<nl lang="en"> purple7 makes a dangerous pass to purple10 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple10 ) </mrl>
+</example>
+
+<example id="167">
+<nl lang="en"> purple3 passes out to purple7 </nl>
+<mrl lang="soccer"> pass ( purple3 , purple7 ) </mrl>
+</example>
+
+<example id="168">
+<nl lang="en"> purple7 passes back to purple3 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple3 ) </mrl>
+</example>
+
+<example id="169">
+<nl lang="en"> purple3 made a bad pass and was picked off by pink5 </nl>
+<mrl lang="soccer"> badPass ( purple3 , pink5 ) </mrl>
+</example>
+
+<example id="170">
+<nl lang="en"> pink5 turned the ball over to purple7 </nl>
+<mrl lang="soccer"> turnover ( pink5 , purple7 ) </mrl>
+</example>
+
+<example id="171">
+<nl lang="en"> purple7 passes to purple10 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple10 ) </mrl>
+</example>
+
+<example id="172">
+<nl lang="en"> purple10 passes to purple11 </nl>
+<mrl lang="soccer"> pass ( purple10 , purple11 ) </mrl>
+</example>
+
+<example id="173">
+<nl lang="en"> purple11 makes a bad pass and was picked off by pink7 </nl>
+<mrl lang="soccer"> badPass ( purple11 , pink7 ) </mrl>
+</example>
+
+<example id="174">
+<nl lang="en"> pink7 passes to pink10 </nl>
+<mrl lang="soccer"> pass ( pink7 , pink10 ) </mrl>
+</example>
+
+<example id="175">
+<nl lang="en"> pink10 makes a bad pass that was picked off by purple7 </nl>
+<mrl lang="soccer"> badPass ( pink10 , purple7 ) </mrl>
+</example>
+
+<example id="176">
+<nl lang="en"> purple7 passes to purple8 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple8 ) </mrl>
+</example>
+
+<example id="177">
+<nl lang="en"> purple8 passes back to purple7 </nl>
+<mrl lang="soccer"> pass ( purple8, purple7 ) </mrl>
+</example>
+
+<example id="178">
+<nl lang="en"> purple7 made a bad pass that was intercepted by pink9 </nl>
+<mrl lang="soccer"> badPass ( purple7 , pink9 ) </mrl>
+</example>
+
+<example id="179">
+<nl lang="en"> pink9 passes to pink10 </nl>
+<mrl lang="soccer"> pass ( pink9 , pink10 ) </mrl>
+</example>
+
+<example id="180">
+<nl lang="en"> pink10 loses the ball to purple5 </nl>
+<mrl lang="soccer"> turnover ( pink10 , purple5 ) </mrl>
+</example>
+
+<example id="181">
+<nl lang="en"> purple5 passes to purple4 </nl>
+<mrl lang="soccer"> pass ( purple5 , purple4 ) </mrl>
+</example>
+
+<example id="182">
+<nl lang="en"> purple4 passes to purple7 </nl>
+<mrl lang="soccer"> pass ( purple4 , purple7 ) </mrl>
+</example>
+
+<example id="183">
+<nl lang="en"> purple7 passes to purple10 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple10 ) </mrl>
+</example>
+
+<example id="185">
+<nl lang="en"> purple10 shoots </nl>
+<mrl lang="soccer"> kick ( purple10 ) </mrl>
+</example>
+
+<example id="186">
+<nl lang="en"> purple team scores </nl>
+<mrl lang="soccer"> playmode ( goal_l ) </mrl>
+</example>
+
+<example id="187">
+<nl lang="en"> pink9 kicks off to pink11 </nl>
+<mrl lang="soccer"> pass ( pink9 , pink11 ) </mrl>
+</example>
+
+<example id="188">
+<nl lang="en"> pink11 loses the ball to purple3 </nl>
+<mrl lang="soccer"> turnover ( pink11 , purple3 ) </mrl>
+</example>
+
+<example id="189">
+<nl lang="en"> purple3 passes to purple2 </nl>
+<mrl lang="soccer"> pass ( purple3 , purple2 ) </mrl>
+</example>
+
+<example id="190">
+<nl lang="en"> purple2 passes the ball to purple7 </nl>
+<mrl lang="soccer"> pass ( purple2 , purple7 ) </mrl>
+</example>
+
+<example id="191">
+<nl lang="en"> purple7 passes to purple4 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple4 ) </mrl>
+</example>
+
+<example id="192">
+<nl lang="en"> purple4 passes to purple3 </nl>
+<mrl lang="soccer"> pass ( purple4 , purple3 ) </mrl>
+</example>
+
+<example id="193">
+<nl lang="en"> purple3 makes a bad pass that was picked off by pink7 </nl>
+<mrl lang="soccer"> badPass ( purple3 , pink7 ) </mrl>
+</example>
+
+<example id="194">
+<nl lang="en"> pink7 makes a short pass to pink10 </nl>
+<mrl lang="soccer"> pass ( pink7 , pink10 ) </mrl>
+</example>
+
+<example id="196">
+<nl lang="en"> purple4 steals the ball from pink9 </nl>
+<mrl lang="soccer"> turnover ( pink9 , purple4 ) </mrl>
+</example>
+
+<example id="198">
+<nl lang="en"> pink9 passes to pink8 </nl>
+<mrl lang="soccer"> pass ( pink9 , pink8 ) </mrl>
+</example>
+
+<example id="199">
+<nl lang="en"> pink8 loses the ball to purple3 </nl>
+<mrl lang="soccer"> turnover ( pink8 , purple3 ) </mrl>
+</example>
+
+<example id="200">
+<nl lang="en"> purple3 passes to purple7 </nl>
+<mrl lang="soccer"> pass ( purple3 , purple7 ) </mrl>
+</example>
+
+<example id="201">
+<nl lang="en"> purple7 passes to purple10 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple10 ) </mrl>
+</example>
+
+<example id="202">
+<nl lang="en"> purple8 passes to purple11 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple11 ) </mrl>
+</example>
+
+<example id="203">
+<nl lang="en"> purple11 passes back to purple8 </nl>
+<mrl lang="soccer"> pass ( purple11 , purple8 ) </mrl>
+</example>
+
+<example id="204">
+<nl lang="en"> purple8 passes to purple11 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple11 ) </mrl>
+</example>
+
+<example id="205">
+<nl lang="en"> purple11 passes back to purple8 again </nl>
+<mrl lang="soccer"> pass ( purple11 , purple8 ) </mrl>
+</example>
+
+<example id="206">
+<nl lang="en"> purple8 misses a pass to purple10 </nl>
+<mrl lang="soccer"> badPass ( purple8 , pink5 ) </mrl>
+</example>
+
+<example id="207">
+<nl lang="en"> purple8's bad pass was picked up by pink5 </nl>
+<mrl lang="soccer"> badPass ( purple8 , pink5 ) </mrl>
+</example>
+
+<example id="208">
+<nl lang="en"> pink5 passes to pink3 </nl>
+<mrl lang="soccer"> pass ( pink5 , pink3 ) </mrl>
+</example>
+
+<example id="209">
+<nl lang="en"> pinke3 turns the ball over to purple7 </nl>
+<mrl lang="soccer"> turnover ( pink3 , purple7 ) </mrl>
+</example>
+
+<example id="210">
+<nl lang="en"> purple7 loses the ball to pink9 </nl>
+<mrl lang="soccer"> turnover ( purple7 , pink9 ) </mrl>
+</example>
+
+<example id="211">
+<nl lang="en"> pink9 lost the ball to purple4 </nl>
+<mrl lang="soccer"> turnover ( pink9 , purple4 ) </mrl>
+</example>
+
+<example id="212">
+<nl lang="en"> purple4 passes to purple3 </nl>
+<mrl lang="soccer"> pass ( purple4 , purple3 ) </mrl>
+</example>
+
+<example id="213">
+<nl lang="en"> purple3 passes to purple2 </nl>
+<mrl lang="soccer"> pass ( purple3 , purple2 ) </mrl>
+</example>
+
+<example id="216">
+<nl lang="en"> pink8 passes to pink6 </nl>
+<mrl lang="soccer"> pass ( pink8 , pink6 ) </mrl>
+</example>
+
+<example id="217">
+<nl lang="en"> pink6 makes a bad pass and was intercepted by purple9 </nl>
+<mrl lang="soccer"> badPass ( pink6 , purple9 ) </mrl>
+</example>
+
+<example id="218">
+<nl lang="en"> purple9 passes to purple10 </nl>
+<mrl lang="soccer"> pass ( purple9 , purple10 ) </mrl>
+</example>
+
+<example id="219">
+<nl lang="en"> purple10 passes to purple9 </nl>
+<mrl lang="soccer"> pass ( purple10 , purple9 ) </mrl>
+</example>
+
+<example id="220">
+<nl lang="en"> purple9 passes out of traffic to purple6 </nl>
+<mrl lang="soccer"> pass ( purple9 , purple6 ) </mrl>
+</example>
+
+<example id="221">
+<nl lang="en"> purple6 passes to purple7 near the middle of the field </nl>
+<mrl lang="soccer"> pass ( purple6 , purple7 ) </mrl>
+</example>
+
+<example id="222">
+<nl lang="en"> purple7 passes to purple4 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple4 ) </mrl>
+</example>
+
+<example id="223">
+<nl lang="en"> purple4 passes to purple8 that was almost intercepted </nl>
+<mrl lang="soccer"> pass ( purple4 , purple8 ) </mrl>
+</example>
+
+<example id="224">
+<nl lang="en"> purple8 passes to pruple11 near the sideline </nl>
+<mrl lang="soccer"> pass ( purple8 , purple11 ) </mrl>
+</example>
+
+<example id="225">
+<nl lang="en"> purple11 had the ball stolen by pink4 </nl>
+<mrl lang="soccer"> turnover ( purple11 , pink4 ) </mrl>
+</example>
+
+<example id="228">
+<nl lang="en"> purple8 passes to purple11 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple11 ) </mrl>
+</example>
+
+<example id="229">
+<nl lang="en"> purple11 passes back to purple8 </nl>
+<mrl lang="soccer"> pass ( purple11 , purple8 ) </mrl>
+</example>
+
+<example id="230">
+<nl lang="en"> purple8 passes backward but was intercepted by pink9 </nl>
+<mrl lang="soccer"> badPass ( purple8 , pink9 ) </mrl>
+</example>
+
+<example id="233">
+<nl lang="en"> pink9 passes to pink11 but was intercepted by purple3 </nl>
+<mrl lang="soccer"> badPass ( pink9 , purple3 ) </mrl>
+</example>
+
+<example id="234">
+<nl lang="en"> purple3 loses the ball to pink11 </nl>
+<mrl lang="soccer"> turnover ( purple3 , pink11 ) </mrl>
+</example>
+
+<example id="235">
+<nl lang="en"> pink11 shoots </nl>
+<mrl lang="soccer"> kick ( pink11 ) </mrl>
+</example>
+
+<example id="236">
+<nl lang="en"> pink11 scored </nl>
+<mrl lang="soccer"> playmode ( goal_r ) </mrl>
+</example>
+
+<example id="237">
+<nl lang="en"> purple10 kicks off </nl>
+<mrl lang="soccer"> kick ( purple10 ) </mrl>
+</example>
+
+<example id="238">
+<nl lang="en"> purple10 passes to purple7 </nl>
+<mrl lang="soccer"> pass ( purple10 , purple7 ) </mrl>
+</example>
+
+<example id="240">
+<nl lang="en"> purple7 passes backward to purple4 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple4 ) </mrl>
+</example>
+
+<example id="241">
+<nl lang="en"> purple4 passes to purple3 </nl>
+<mrl lang="soccer"> pass ( purple4 , purple3 ) </mrl>
+</example>
+
+<example id="242">
+<nl lang="en"> purple3 passes to purple2 </nl>
+<mrl lang="soccer"> pass ( purple3 , purple2 ) </mrl>
+</example>
+
+<example id="243">
+<nl lang="en"> purple2 made a bad pass and was picked up by pink8 </nl>
+<mrl lang="soccer"> badPass ( purple2 , pink8 ) </mrl>
+</example>
+
+<example id="246">
+<nl lang="en"> pink8 passes to pink11 </nl>
+<mrl lang="soccer"> pass ( pink8 , pink11 ) </mrl>
+</example>
+
+<example id="248">
+<nl lang="en"> pink11 made a bad pass to purple6 </nl>
+<mrl lang="soccer"> badPass ( pink11 , purple6 ) </mrl>
+</example>
+
+<example id="249">
+<nl lang="en"> purple6 passes out to purple10 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple10 ) </mrl>
+</example>
+
+<example id="251">
+<nl lang="en"> purple10 turns the ball over to pink4 </nl>
+<mrl lang="soccer"> turnover ( purple10 , pink4 ) </mrl>
+</example>
+
+<example id="252">
+<nl lang="en"> pink4 loses the ball to purple9 </nl>
+<mrl lang="soccer"> turnover ( pink4 , purple9 ) </mrl>
+</example>
+
+<example id="253">
+<nl lang="en"> purple9 loses the ball to pink6 </nl>
+<mrl lang="soccer"> turnover ( purple9 , pink6 ) </mrl>
+</example>
+
+<example id="254">
+<nl lang="en"> pink6 passes to pink9 </nl>
+<mrl lang="soccer"> pass ( pink6 , pink9 ) </mrl>
+</example>
+
+<example id="255">
+<nl lang="en"> pink9 passes to pink11 </nl>
+<mrl lang="soccer"> pass ( pink9 , pink11 ) </mrl>
+</example>
+
+<example id="256">
+<nl lang="en"> pink11 passes to pink8 </nl>
+<mrl lang="soccer"> pass ( pink11 , pink8 ) </mrl>
+</example>
+
+<example id="257">
+<nl lang="en"> pink8 makes a pass to pink10 </nl>
+<mrl lang="soccer"> pass ( pink8 , pink10 ) </mrl>
+</example>
+
+<example id="258">
+<nl lang="en"> pink10 had the ball stolen </nl>
+<mrl lang="soccer"> steal ( pink10 ) </mrl>
+</example>
+
+<example id="259">
+<nl lang="en"> purple4 passes to purple7 </nl>
+<mrl lang="soccer"> pass ( purple4 , purple7 ) </mrl>
+</example>
+
+<example id="260">
+<nl lang="en"> purple7 passes to purple8 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple8 ) </mrl>
+</example>
+
+<example id="261">
+<nl lang="en"> purple8 made a bad pass and was intercepted by pink6 </nl>
+<mrl lang="soccer"> badPass ( purple8 , pink6 ) </mrl>
+</example>
+
+<example id="262">
+<nl lang="en"> pink team is offside </nl>
+<mrl lang="soccer"> playmode ( offside_r ) </mrl>
+</example>
+
+<example id="263">
+<nl lang="en"> purple team gets a free kick </nl>
+<mrl lang="soccer"> playmode ( free_kick_l ) </mrl>
+</example>
+
+<example id="264">
+<nl lang="en"> purple3 passes to purple2 </nl>
+<mrl lang="soccer"> pass ( purple3 , purple2 ) </mrl>
+</example>
+
+<example id="265">
+<nl lang="en"> purple2 passes back to purple3 </nl>
+<mrl lang="soccer"> pass ( purple2 , purple3 ) </mrl>
+</example>
+
+<example id="266">
+<nl lang="en"> purple3 passes to purple7 </nl>
+<mrl lang="soccer"> pass ( purple3 , purple7 ) </mrl>
+</example>
+
+<example id="267">
+<nl lang="en"> purple7 passes to purple10 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple10 ) </mrl>
+</example>
+
+<example id="268">
+<nl lang="en"> purple5 passes to purple11 </nl>
+<mrl lang="soccer"> pass ( purple5 , purple11 ) </mrl>
+</example>
+
+<example id="269">
+<nl lang="en"> purple11 made a bad pass that was picked up by pink9 </nl>
+<mrl lang="soccer"> badPass ( purple11 , pink9 ) </mrl>
+</example>
+
+<example id="270">
+<nl lang="en"> pink9 shoots </nl>
+<mrl lang="soccer"> kick ( pink9 ) </mrl>
+</example>
+
+<example id="271">
+<nl lang="en"> purple1 blocks the ball </nl>
+<mrl lang="soccer"> block ( purple1 ) </mrl>
+</example>
+
+<example id="272">
+<nl lang="en"> purple1 passes to purple2 </nl>
+<mrl lang="soccer"> pass ( purple1 , purple2 ) </mrl>
+</example>
+
+<example id="273">
+<nl lang="en"> purple2 makes a bad pass that was intercepted by pink11 </nl>
+<mrl lang="soccer"> badPass ( purple2 , pink11 ) </mrl>
+</example>
+
+<example id="274">
+<nl lang="en"> pink11 turns the ball over to purple4 </nl>
+<mrl lang="soccer"> turnover ( pink11 , purple4 ) </mrl>
+</example>
+
+<example id="275">
+<nl lang="en"> purple4 passes to purple7 who is standing still </nl>
+<mrl lang="soccer"> pass ( purple4 , purple7 ) </mrl>
+</example>
+
+<example id="276">
+<nl lang="en"> purple7 passes to purple10 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple10 ) </mrl>
+</example>
+
+<example id="277">
+<nl lang="en"> purple10 passes to purple8 </nl>
+<mrl lang="soccer"> pass ( purple10 , purple8 ) </mrl>
+</example>
+
+<example id="278">
+<nl lang="en"> purple8 made a bad pass that was picked up by pink8 </nl>
+<mrl lang="soccer"> badPass ( purple8 , pink8 ) </mrl>
+</example>
+
+<example id="279">
+<nl lang="en"> pink8 makes a short pass to pink6 </nl>
+<mrl lang="soccer"> pass ( pink8 , pink6 ) </mrl>
+</example>
+
+<example id="280">
+<nl lang="en"> pink6 makes a short pass to pink9 </nl>
+<mrl lang="soccer"> pass ( pink6 , pink9 ) </mrl>
+</example>
+
+<example id="281">
+<nl lang="en"> puprle1 blocks the ball </nl>
+<mrl lang="soccer"> block ( purple1 ) </mrl>
+</example>
+
+<example id="282">
+<nl lang="en"> purple1 kicks off to purple5 </nl>
+<mrl lang="soccer"> pass ( purple1 , purple5 ) </mrl>
+</example>
+
+<example id="283">
+<nl lang="en"> purple5 had the ball stolen </nl>
+<mrl lang="soccer"> steal ( purple5 ) </mrl>
+</example>
+
+<example id="284">
+<nl lang="en"> pink7 turns the ball over to purple11 </nl>
+<mrl lang="soccer"> turnover ( pink7 , purple11 ) </mrl>
+</example>
+
+<example id="285">
+<nl lang="en"> purple11 passes to purple8 </nl>
+<mrl lang="soccer"> pass ( purple11 , purple8 ) </mrl>
+</example>
+
+<example id="286">
+<nl lang="en"> purple8 passes to purple7 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple7 ) </mrl>
+</example>
+
+<example id="287">
+<nl lang="en"> purple7 makes a short pass to purple10 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple10 ) </mrl>
+</example>
+
+<example id="288">
+<nl lang="en"> purple10 immediately passes to purple11 </nl>
+<mrl lang="soccer"> pass ( purple10 , purple11 ) </mrl>
+</example>
+
+<example id="290">
+<nl lang="en"> pink4 passes to pink10 </nl>
+<mrl lang="soccer"> pass ( pink4 , pink10 ) </mrl>
+</example>
+
+<example id="291">
+<nl lang="en"> pink10 loses the ball to purple5 </nl>
+<mrl lang="soccer"> turnover ( pink10 , purple5 ) </mrl>
+</example>
+
+<example id="292">
+<nl lang="en"> purple5 makes a bad pass that was picked off by pink11 </nl>
+<mrl lang="soccer"> badPass ( purple5 , pink11 ) </mrl>
+</example>
+
+<example id="293">
+<nl lang="en"> pink11 tries to pass but was intercepted by purple5 </nl>
+<mrl lang="soccer"> badPass ( pink11 , purple5 ) </mrl>
+</example>
+
+<example id="294">
+<nl lang="en"> purple5 passes to purple7 </nl>
+<mrl lang="soccer"> pass ( purple5 , purple7 ) </mrl>
+</example>
+
+<example id="295">
+<nl lang="en"> purple7 passes to purple4 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple4 ) </mrl>
+</example>
+
+<example id="296">
+<nl lang="en"> purple4 passes to purple8 </nl>
+<mrl lang="soccer"> pass ( purple4 , purple8 ) </mrl>
+</example>
+
+<example id="297">
+<nl lang="en"> purple8 loses the ball to pink4 </nl>
+<mrl lang="soccer"> turnover ( purple8 , pink4 ) </mrl>
+</example>
+
+<example id="298">
+<nl lang="en"> pink4 makes a long pass to pink9 </nl>
+<mrl lang="soccer"> pass ( pink4 , pink9 ) </mrl>
+</example>
+
+<example id="299">
+<nl lang="en"> pink9 turns the ball over to purple7 </nl>
+<mrl lang="soccer"> turnover ( pink9 , purple7 ) </mrl>
+</example>
+
+<example id="300">
+<nl lang="en"> purple4 passes to purple3 </nl>
+<mrl lang="soccer"> pass ( purple4 , purple3 ) </mrl>
+</example>
+
+<example id="301">
+<nl lang="en"> purple3 passes to purple10 </nl>
+<mrl lang="soccer"> pass ( purple3 , purple10 ) </mrl>
+</example>
+
+<example id="302">
+<nl lang="en"> purple10 passes to purple8 </nl>
+<mrl lang="soccer"> pass ( purple10 , purple8 ) </mrl>
+</example>
+
+<example id="303">
+<nl lang="en"> purple8 passes to purple7 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple7 ) </mrl>
+</example>
+
+<example id="304">
+<nl lang="en"> purple7 passes to purple8 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple8 ) </mrl>
+</example>
+
+<example id="305">
+<nl lang="en"> purple8 passes to purple4 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple4 ) </mrl>
+</example>
+
+<example id="306">
+<nl lang="en"> purple4 loses the ball to pink9 </nl>
+<mrl lang="soccer"> turnover ( purple4 , pink9 ) </mrl>
+</example>
+
+<example id="307">
+<nl lang="en"> pink9 passes to pink7 </nl>
+<mrl lang="soccer"> pass ( pink9 , pink7 ) </mrl>
+</example>
+
+<example id="309">
+<nl lang="en"> pink7 passes to pink9 </nl>
+<mrl lang="soccer"> pass ( pink7 , pink9 ) </mrl>
+</example>
+
+<example id="310">
+<nl lang="en"> pink9 shoots </nl>
+<mrl lang="soccer"> kick ( pink9 ) </mrl>
+</example>
+
+<example id="311">
+<nl lang="en"> pink9 socred another goal for pink team </nl>
+<mrl lang="soccer"> playmode ( goal_r ) </mrl>
+</example>
+
+<example id="312">
+<nl lang="en"> purple8 passes to purple3 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple3 ) </mrl>
+</example>
+
+<example id="313">
+<nl lang="en"> purple3 passes to purple2 </nl>
+<mrl lang="soccer"> pass ( purple3 , purple2 ) </mrl>
+</example>
+
+<example id="314">
+<nl lang="en"> purple2 makes a short pass to purple6 </nl>
+<mrl lang="soccer"> pass ( purple2 , purple6 ) </mrl>
+</example>
+
+<example id="315">
+<nl lang="en"> purple6 makes a bad pass that was picked off by pink9 </nl>
+<mrl lang="soccer"> badPass ( purple6 , pink9 ) </mrl>
+</example>
+
+<example id="317">
+<nl lang="en"> pink9 passes to pink10 </nl>
+<mrl lang="soccer"> pass ( pink9 , pink10 ) </mrl>
+</example>
+
+<example id="318">
+<nl lang="en"> pink10 scores a goal for the pink team </nl>
+<mrl lang="soccer"> playmode ( goal_r ) </mrl>
+</example>
+
+<example id="319">
+<nl lang="en"> purple6 turns the ball over to pink11 </nl>
+<mrl lang="soccer"> turnover ( purple6 , pink11 ) </mrl>
+</example>
+
+<example id="320">
+<nl lang="en"> pink11 made a bad pass that was picked up by purple8 </nl>
+<mrl lang="soccer"> badPass ( pink11 , purple8 ) </mrl>
+</example>
+
+<example id="321">
+<nl lang="en"> purple8 passes to purple11 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple11 ) </mrl>
+</example>
+
+<example id="323">
+<nl lang="en"> purple11 passes out to purple10 </nl>
+<mrl lang="soccer"> pass ( purple11 , purple10 ) </mrl>
+</example>
+
+<example id="324">
+<nl lang="en"> purple10 passes to purple8 </nl>
+<mrl lang="soccer"> pass ( purple10 , purple8 ) </mrl>
+</example>
+
+<example id="325">
+<nl lang="en"> purple8 passes to purple11 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple11 ) </mrl>
+</example>
+
+<example id="326">
+<nl lang="en"> purple11 passes back to purple8 </nl>
+<mrl lang="soccer"> pass ( purple11 , purple8 ) </mrl>
+</example>
+
+<example id="327">
+<nl lang="en"> purple8 passes yet again to purple11 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple11 ) </mrl>
+</example>
+
+<example id="328">
+<nl lang="en"> purple11 passes to purple7 </nl>
+<mrl lang="soccer"> pass ( purple11 , purple7 ) </mrl>
+</example>
+
+<example id="329">
+<nl lang="en"> purple7 makes a short pass to purple8 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple8 ) </mrl>
+</example>
+
+<example id="330">
+<nl lang="en"> pink7 passes to pink10 </nl>
+<mrl lang="soccer"> pass ( pink7 , pink10 ) </mrl>
+</example>
+
+<example id="331">
+<nl lang="en"> pink10 turns the ball over to purple5 </nl>
+<mrl lang="soccer"> turnover ( pink10 , purple5 ) </mrl>
+</example>
+
+<example id="332">
+<nl lang="en"> purple5 made a bad pass that was picked off by pink9 </nl>
+<mrl lang="soccer"> badPass ( purple5 , pink9 ) </mrl>
+</example>
+
+<example id="333">
+<nl lang="en"> purple3 made a defensive stop </nl>
+<mrl lang="soccer"> defense ( purple3 , purple3 ) </mrl>
+</example>
+
+<example id="334">
+<nl lang="en"> purple team gets a goal kick </nl>
+<mrl lang="soccer"> playmode ( goal_kick_l ) </mrl>
+</example>
+
+<example id="335">
+<nl lang="en"> purple1 kicks off to purple2 </nl>
+<mrl lang="soccer"> pass ( purple1 , purple2 ) </mrl>
+</example>
+
+<example id="336">
+<nl lang="en"> purple2 passes to purple6 </nl>
+<mrl lang="soccer"> pass ( purple2 , purple6 ) </mrl>
+</example>
+
+<example id="337">
+<nl lang="en"> purple6 passes to purple2 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple2 ) </mrl>
+</example>
+
+<example id="338">
+<nl lang="en"> purple2 passes to purple9 </nl>
+<mrl lang="soccer"> pass ( purple2 , purple9 ) </mrl>
+</example>
+
+<example id="339">
+<nl lang="en"> purple9 loses the ball to pink5 </nl>
+<mrl lang="soccer"> turnover ( purple9 , pink5 ) </mrl>
+</example>
+
+<example id="340">
+<nl lang="en"> pink5 passes to pink8 </nl>
+<mrl lang="soccer"> pass ( pink5 , pink8 ) </mrl>
+</example>
+
+<example id="341">
+<nl lang="en"> pink8 loses the ball to purple2 </nl>
+<mrl lang="soccer"> turnover ( pink8 , purple2 ) </mrl>
+</example>
+
+<example id="342">
+<nl lang="en"> purple2 passes to purple7 </nl>
+<mrl lang="soccer"> pass ( purple2 , purple7 ) </mrl>
+</example>
+
+<example id="343">
+<nl lang="en"> purple7 passes to purple8 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple8 ) </mrl>
+</example>
+
+<example id="344">
+<nl lang="en"> purple8 passes to purple10 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple10 ) </mrl>
+</example>
+
+<example id="345">
+<nl lang="en"> purple10 passes to purple11 </nl>
+<mrl lang="soccer"> pass ( purple10 , purple11 ) </mrl>
+</example>
+
+<example id="346">
+<nl lang="en"> purple11 loses the ball to pink4 </nl>
+<mrl lang="soccer"> turnover ( purple11 , pink4 ) </mrl>
+</example>
+
+<example id="347">
+<nl lang="en"> pink4 passes to pink7 </nl>
+<mrl lang="soccer"> pass ( pink4 , pink7 ) </mrl>
+</example>
+
+<example id="348">
+<nl lang="en"> pink7 made a bad pass that was intercepted by purple7 </nl>
+<mrl lang="soccer"> badPass ( pink7 , purple7 ) </mrl>
+</example>
+
+<example id="349">
+<nl lang="en"> purple7 passes to purple6 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple6 ) </mrl>
+</example>
+
+<example id="350">
+<nl lang="en"> purple6 passes to purple9 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple9 ) </mrl>
+</example>
+
+<example id="351">
+<nl lang="en"> purple9 passes the ball but was intercepted by pink11 </nl>
+<mrl lang="soccer"> badPass ( purple9 , pink11 ) </mrl>
+</example>
+
+<example id="353">
+<nl lang="en"> pink11 passes to pink10 </nl>
+<mrl lang="soccer"> pass ( pink11 , pink10 ) </mrl>
+</example>
+
+<example id="354">
+<nl lang="en"> pink10 shoots </nl>
+<mrl lang="soccer"> kick ( pink10 ) </mrl>
+</example>
+
+<example id="355">
+<nl lang="en"> pink team scored </nl>
+<mrl lang="soccer"> playmode ( goal_r ) </mrl>
+</example>
+
+<example id="356">
+<nl lang="en"> purple6 passes to purple9 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple9 ) </mrl>
+</example>
+
+<example id="357">
+<nl lang="en"> purple9 passes to purple2 </nl>
+<mrl lang="soccer"> pass ( purple9 , purple2 ) </mrl>
+</example>
+
+<example id="358">
+<nl lang="en"> purple2 passes to purple3 </nl>
+<mrl lang="soccer"> pass ( purple2 , purple3 ) </mrl>
+</example>
+
+<example id="359">
+<nl lang="en"> purple3 passes to purple7 </nl>
+<mrl lang="soccer"> pass ( purple3 , purple7 ) </mrl>
+</example>
+
+<example id="360">
+<nl lang="en"> purple7 passes to purple10 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple10 ) </mrl>
+</example>
+
+<example id="361">
+<nl lang="en"> purple10 passes to purple11 </nl>
+<mrl lang="soccer"> pass ( purple10 , purple11 ) </mrl>
+</example>
+
+<example id="362">
+<nl lang="en"> purple11 passes to purple8 </nl>
+<mrl lang="soccer"> pass ( purple11 , purple8 ) </mrl>
+</example>
+
+<example id="363">
+<nl lang="en"> purple8 passes to purple7 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple7 ) </mrl>
+</example>
+
+<example id="364">
+<nl lang="en"> purple7 passes to purple6 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple6 ) </mrl>
+</example>
+</examples>

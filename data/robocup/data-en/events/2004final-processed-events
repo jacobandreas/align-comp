@@ -1,0 +1,2223 @@
+1 | 1 | playmode ( kick_off_l )
+1 | 1 | ballstopped
+2 | 2 | playmode ( play_on )
+2 | 2 | kick ( purple10 )
+2 | 8 | pass ( purple10 , purple6 )
+12 | 12 | kick ( purple6 )
+12 | 15 | pass ( purple6 , purple2 )
+19 | 19 | kick ( purple2 )
+19 | 21 | pass ( purple2 , purple3 )
+23 | 23 | kick ( purple3 )
+23 | 26 | pass ( purple3 , purple6 )
+28 | 28 | ballstopped
+32 | 32 | ballstopped
+37 | 37 | ballstopped
+38 | 38 | ballstopped
+43 | 43 | kick ( purple6 )
+45 | 45 | kick ( purple6 )
+45 | 47 | pass ( purple6 , purple10 )
+51 | 51 | kick ( purple10 )
+59 | 59 | kick ( purple10 )
+59 | 61 | badPass ( purple10 , pink2 )
+59 | 61 | turnover ( purple10 , pink2 )
+62 | 62 | ballstopped
+63 | 63 | ballstopped
+65 | 65 | kick ( pink2 )
+65 | 82 | pass ( pink2 , pink11 )
+96 | 96 | kick ( pink11 )
+114 | 114 | kick ( pink11 )
+127 | 127 | kick ( pink9 )
+131 | 131 | playmode ( offside_r )
+131 | 131 | ballstopped
+132 | 132 | playmode ( free_kick_l )
+132 | 132 | ballstopped
+133 | 133 | ballstopped
+134 | 134 | ballstopped
+135 | 135 | ballstopped
+136 | 136 | ballstopped
+127 | 136 | defense ( purple3 , purple3 )
+127 | 136 | turnover ( pink9 , purple3 )
+137 | 137 | ballstopped
+138 | 138 | ballstopped
+139 | 139 | ballstopped
+140 | 140 | ballstopped
+141 | 141 | ballstopped
+142 | 142 | ballstopped
+143 | 143 | ballstopped
+144 | 144 | ballstopped
+145 | 145 | ballstopped
+146 | 146 | ballstopped
+147 | 147 | ballstopped
+148 | 148 | ballstopped
+149 | 149 | ballstopped
+150 | 150 | ballstopped
+151 | 151 | ballstopped
+152 | 152 | ballstopped
+153 | 153 | ballstopped
+154 | 154 | ballstopped
+155 | 155 | ballstopped
+156 | 156 | ballstopped
+157 | 157 | ballstopped
+158 | 158 | ballstopped
+159 | 159 | ballstopped
+160 | 160 | ballstopped
+161 | 161 | ballstopped
+162 | 162 | ballstopped
+163 | 163 | ballstopped
+164 | 164 | ballstopped
+165 | 165 | ballstopped
+166 | 166 | ballstopped
+167 | 167 | ballstopped
+168 | 168 | ballstopped
+169 | 169 | ballstopped
+170 | 170 | ballstopped
+171 | 171 | playmode ( play_on )
+171 | 171 | kick ( purple3 )
+171 | 174 | pass ( purple3 , purple7 )
+177 | 177 | kick ( purple7 )
+177 | 186 | pass ( purple7 , purple10 )
+188 | 188 | kick ( purple10 )
+196 | 196 | kick ( purple10 )
+204 | 204 | kick ( purple10 )
+204 | 212 | pass ( purple10 , purple6 )
+214 | 214 | kick ( purple6 )
+219 | 219 | kick ( purple6 )
+223 | 223 | ballstopped
+225 | 225 | kick ( purple6 )
+225 | 232 | pass ( purple6 , purple9 )
+233 | 233 | kick ( purple9 )
+234 | 234 | ballstopped
+235 | 235 | ballstopped
+236 | 236 | ballstopped
+237 | 237 | ballstopped
+238 | 238 | kick ( purple9 )
+242 | 242 | ballstopped
+244 | 244 | kick ( purple9 )
+244 | 247 | pass ( purple9 , purple6 )
+253 | 253 | kick ( purple6 )
+258 | 258 | kick ( purple6 )
+262 | 262 | kick ( purple6 )
+262 | 264 | pass ( purple6 , purple9 )
+266 | 266 | kick ( purple9 )
+272 | 272 | kick ( purple9 )
+276 | 276 | playmode ( kick_in_l )
+276 | 276 | ballstopped
+277 | 277 | ballstopped
+278 | 278 | ballstopped
+279 | 279 | ballstopped
+280 | 280 | ballstopped
+281 | 281 | ballstopped
+282 | 282 | ballstopped
+283 | 283 | ballstopped
+284 | 284 | ballstopped
+285 | 285 | ballstopped
+286 | 286 | ballstopped
+287 | 287 | ballstopped
+288 | 288 | ballstopped
+289 | 289 | ballstopped
+290 | 290 | ballstopped
+291 | 291 | ballstopped
+292 | 292 | ballstopped
+293 | 293 | ballstopped
+294 | 294 | ballstopped
+295 | 295 | ballstopped
+296 | 296 | ballstopped
+297 | 297 | ballstopped
+298 | 298 | ballstopped
+299 | 299 | ballstopped
+300 | 300 | ballstopped
+301 | 301 | ballstopped
+302 | 302 | ballstopped
+303 | 303 | ballstopped
+304 | 304 | ballstopped
+305 | 305 | ballstopped
+306 | 306 | ballstopped
+307 | 307 | ballstopped
+308 | 308 | ballstopped
+309 | 309 | ballstopped
+310 | 310 | ballstopped
+311 | 311 | playmode ( play_on )
+312 | 312 | kick ( purple9 )
+312 | 314 | pass ( purple9 , purple6 )
+321 | 321 | kick ( purple6 )
+321 | 324 | pass ( purple6 , purple7 )
+326 | 326 | ballstopped
+327 | 327 | ballstopped
+328 | 328 | ballstopped
+329 | 329 | ballstopped
+330 | 330 | kick ( purple7 )
+338 | 338 | kick ( purple7 )
+338 | 344 | pass ( purple7 , purple6 )
+351 | 351 | kick ( purple6 )
+351 | 358 | pass ( purple6 , purple7 )
+362 | 362 | kick ( purple7 )
+362 | 375 | defense ( pink3 , pink3 )
+362 | 375 | turnover ( purple7 , pink3 )
+377 | 377 | ballstopped
+378 | 378 | ballstopped
+379 | 379 | ballstopped
+380 | 380 | ballstopped
+381 | 381 | kick ( pink3 )
+381 | 391 | badPass ( pink3 , purple11 )
+381 | 391 | turnover ( pink3 , purple11 )
+394 | 394 | kick ( purple11 )
+394 | 399 | badPass ( purple11 , pink7 )
+394 | 399 | turnover ( purple11 , pink7 )
+401 | 401 | ballstopped
+404 | 404 | kick ( pink7 )
+404 | 421 | pass ( pink7 , pink10 )
+424 | 424 | kick ( pink10 )
+434 | 434 | kick ( pink10 )
+434 | 460 | pass ( pink10 , pink9 )
+462 | 462 | kick ( pink9 )
+462 | 466 | block ( purple1 )
+462 | 466 | turnover ( pink9 , purple1 )
+467 | 467 | playmode ( free_kick_l )
+467 | 467 | ballstopped
+468 | 468 | ballstopped
+469 | 469 | ballstopped
+470 | 470 | ballstopped
+471 | 471 | ballstopped
+472 | 472 | ballstopped
+473 | 473 | ballstopped
+474 | 474 | ballstopped
+475 | 475 | ballstopped
+476 | 476 | ballstopped
+477 | 477 | ballstopped
+478 | 478 | ballstopped
+479 | 479 | ballstopped
+480 | 480 | ballstopped
+481 | 481 | ballstopped
+482 | 482 | ballstopped
+483 | 483 | ballstopped
+484 | 484 | ballstopped
+485 | 485 | ballstopped
+486 | 486 | ballstopped
+487 | 487 | ballstopped
+488 | 488 | ballstopped
+489 | 489 | ballstopped
+490 | 490 | ballstopped
+491 | 491 | ballstopped
+492 | 492 | ballstopped
+493 | 493 | ballstopped
+494 | 494 | ballstopped
+495 | 495 | ballstopped
+496 | 496 | ballstopped
+497 | 497 | ballstopped
+498 | 498 | ballstopped
+499 | 499 | ballstopped
+500 | 500 | ballstopped
+501 | 501 | ballstopped
+502 | 502 | ballstopped
+503 | 503 | ballstopped
+504 | 504 | ballstopped
+505 | 505 | ballstopped
+506 | 506 | ballstopped
+507 | 507 | ballstopped
+508 | 508 | ballstopped
+509 | 509 | ballstopped
+510 | 510 | ballstopped
+511 | 511 | ballstopped
+512 | 512 | ballstopped
+513 | 513 | ballstopped
+514 | 514 | ballstopped
+515 | 515 | ballstopped
+516 | 516 | ballstopped
+517 | 517 | ballstopped
+518 | 518 | ballstopped
+519 | 519 | ballstopped
+520 | 520 | ballstopped
+521 | 521 | ballstopped
+522 | 522 | ballstopped
+523 | 523 | ballstopped
+524 | 524 | ballstopped
+525 | 525 | ballstopped
+526 | 526 | ballstopped
+527 | 527 | ballstopped
+528 | 528 | ballstopped
+529 | 529 | ballstopped
+530 | 530 | ballstopped
+531 | 531 | ballstopped
+532 | 532 | ballstopped
+533 | 533 | ballstopped
+534 | 534 | ballstopped
+535 | 535 | ballstopped
+536 | 536 | ballstopped
+537 | 537 | ballstopped
+538 | 538 | ballstopped
+539 | 539 | ballstopped
+540 | 540 | ballstopped
+541 | 541 | ballstopped
+542 | 542 | ballstopped
+543 | 543 | ballstopped
+544 | 544 | ballstopped
+545 | 545 | ballstopped
+546 | 546 | ballstopped
+547 | 547 | ballstopped
+548 | 548 | ballstopped
+549 | 549 | ballstopped
+550 | 550 | ballstopped
+551 | 551 | ballstopped
+552 | 552 | ballstopped
+553 | 553 | ballstopped
+554 | 554 | ballstopped
+555 | 555 | ballstopped
+556 | 556 | ballstopped
+557 | 557 | ballstopped
+558 | 558 | ballstopped
+559 | 559 | ballstopped
+560 | 560 | ballstopped
+561 | 561 | ballstopped
+562 | 562 | ballstopped
+563 | 563 | ballstopped
+564 | 564 | ballstopped
+565 | 565 | ballstopped
+566 | 566 | ballstopped
+567 | 567 | ballstopped
+568 | 568 | ballstopped
+569 | 569 | ballstopped
+570 | 570 | ballstopped
+571 | 571 | playmode ( play_on )
+571 | 571 | kick ( purple1 )
+571 | 575 | pass ( purple1 , purple2 )
+577 | 577 | kick ( purple2 )
+592 | 592 | kick ( purple2 )
+592 | 601 | pass ( purple2 , purple3 )
+602 | 602 | kick ( purple3 )
+602 | 611 | badPass ( purple3 , pink7 )
+602 | 611 | turnover ( purple3 , pink7 )
+614 | 614 | kick ( pink7 )
+634 | 634 | kick ( pink7 )
+634 | 637 | pass ( pink7 , pink9 )
+638 | 638 | kick ( pink9 )
+642 | 642 | playmode ( goal_r )
+642 | 642 | ballstopped
+643 | 643 | playmode ( kick_off_l )
+643 | 643 | ballstopped
+644 | 644 | ballstopped
+645 | 645 | ballstopped
+638 | 645 | badPass ( pink9 , purple10 )
+638 | 645 | turnover ( pink9 , purple10 )
+646 | 646 | playmode ( play_on )
+649 | 649 | kick ( purple10 )
+652 | 652 | kick ( purple10 )
+652 | 657 | pass ( purple10 , purple6 )
+661 | 661 | kick ( purple6 )
+661 | 664 | pass ( purple6 , purple2 )
+667 | 667 | kick ( purple2 )
+667 | 669 | pass ( purple2 , purple6 )
+674 | 674 | kick ( purple6 )
+674 | 678 | pass ( purple6 , purple7 )
+679 | 679 | kick ( purple7 )
+679 | 687 | badPass ( purple7 , pink10 )
+679 | 687 | turnover ( purple7 , pink10 )
+689 | 689 | kick ( pink10 )
+689 | 716 | pass ( pink10 , pink9 )
+718 | 718 | steal ( pink9 )
+718 | 718 | turnover ( pink9 , purple3 )
+719 | 719 | kick ( purple3 )
+726 | 726 | ballstopped
+719 | 726 | badPass ( purple3 , pink6 )
+719 | 726 | turnover ( purple3 , pink6 )
+727 | 727 | ballstopped
+729 | 729 | kick ( pink6 )
+736 | 736 | steal ( pink6 )
+736 | 736 | turnover ( pink6 , purple3 )
+737 | 737 | kick ( purple3 )
+737 | 743 | pass ( purple3 , purple1 )
+744 | 744 | playmode ( free_kick_l )
+744 | 744 | ballstopped
+745 | 745 | ballstopped
+746 | 746 | ballstopped
+747 | 747 | ballstopped
+748 | 748 | ballstopped
+749 | 749 | ballstopped
+750 | 750 | ballstopped
+751 | 751 | ballstopped
+752 | 752 | ballstopped
+753 | 753 | ballstopped
+754 | 754 | ballstopped
+755 | 755 | ballstopped
+756 | 756 | ballstopped
+757 | 757 | ballstopped
+758 | 758 | ballstopped
+759 | 759 | ballstopped
+760 | 760 | ballstopped
+761 | 761 | ballstopped
+762 | 762 | ballstopped
+763 | 763 | ballstopped
+764 | 764 | ballstopped
+765 | 765 | ballstopped
+766 | 766 | ballstopped
+767 | 767 | ballstopped
+768 | 768 | ballstopped
+769 | 769 | ballstopped
+770 | 770 | ballstopped
+771 | 771 | ballstopped
+772 | 772 | ballstopped
+773 | 773 | ballstopped
+774 | 774 | ballstopped
+775 | 775 | ballstopped
+776 | 776 | ballstopped
+777 | 777 | ballstopped
+778 | 778 | ballstopped
+779 | 779 | ballstopped
+780 | 780 | ballstopped
+781 | 781 | ballstopped
+782 | 782 | ballstopped
+783 | 783 | ballstopped
+784 | 784 | ballstopped
+785 | 785 | ballstopped
+786 | 786 | ballstopped
+787 | 787 | ballstopped
+788 | 788 | ballstopped
+789 | 789 | ballstopped
+790 | 790 | ballstopped
+791 | 791 | ballstopped
+792 | 792 | ballstopped
+793 | 793 | ballstopped
+794 | 794 | ballstopped
+795 | 795 | ballstopped
+796 | 796 | ballstopped
+797 | 797 | ballstopped
+798 | 798 | ballstopped
+799 | 799 | ballstopped
+800 | 800 | ballstopped
+801 | 801 | ballstopped
+802 | 802 | ballstopped
+803 | 803 | ballstopped
+804 | 804 | ballstopped
+805 | 805 | ballstopped
+806 | 806 | ballstopped
+807 | 807 | ballstopped
+808 | 808 | ballstopped
+809 | 809 | ballstopped
+810 | 810 | ballstopped
+811 | 811 | ballstopped
+812 | 812 | ballstopped
+813 | 813 | ballstopped
+814 | 814 | ballstopped
+815 | 815 | ballstopped
+816 | 816 | ballstopped
+817 | 817 | ballstopped
+818 | 818 | ballstopped
+819 | 819 | ballstopped
+820 | 820 | ballstopped
+821 | 821 | ballstopped
+822 | 822 | ballstopped
+823 | 823 | ballstopped
+824 | 824 | ballstopped
+825 | 825 | ballstopped
+826 | 826 | ballstopped
+827 | 827 | ballstopped
+828 | 828 | ballstopped
+829 | 829 | ballstopped
+830 | 830 | ballstopped
+831 | 831 | ballstopped
+832 | 832 | ballstopped
+833 | 833 | ballstopped
+834 | 834 | ballstopped
+835 | 835 | ballstopped
+836 | 836 | ballstopped
+837 | 837 | ballstopped
+838 | 838 | ballstopped
+839 | 839 | ballstopped
+840 | 840 | ballstopped
+841 | 841 | ballstopped
+842 | 842 | ballstopped
+843 | 843 | ballstopped
+844 | 844 | ballstopped
+845 | 845 | ballstopped
+846 | 846 | ballstopped
+847 | 847 | playmode ( play_on )
+847 | 847 | kick ( purple1 )
+847 | 851 | pass ( purple1 , purple5 )
+853 | 853 | kick ( purple5 )
+861 | 861 | kick ( purple5 )
+869 | 869 | kick ( purple5 )
+891 | 891 | playmode ( kick_in_r )
+891 | 891 | ballstopped
+892 | 892 | ballstopped
+893 | 893 | ballstopped
+894 | 894 | ballstopped
+895 | 895 | ballstopped
+896 | 896 | ballstopped
+897 | 897 | ballstopped
+898 | 898 | ballstopped
+899 | 899 | ballstopped
+900 | 900 | ballstopped
+901 | 901 | ballstopped
+902 | 902 | ballstopped
+903 | 903 | ballstopped
+904 | 904 | ballstopped
+905 | 905 | ballstopped
+906 | 906 | ballstopped
+907 | 907 | ballstopped
+908 | 908 | ballstopped
+909 | 909 | ballstopped
+910 | 910 | ballstopped
+911 | 911 | ballstopped
+912 | 912 | ballstopped
+913 | 913 | ballstopped
+914 | 914 | ballstopped
+915 | 915 | ballstopped
+916 | 916 | ballstopped
+917 | 917 | ballstopped
+918 | 918 | ballstopped
+919 | 919 | ballstopped
+920 | 920 | ballstopped
+921 | 921 | ballstopped
+922 | 922 | ballstopped
+923 | 923 | ballstopped
+924 | 924 | ballstopped
+925 | 925 | ballstopped
+926 | 926 | ballstopped
+927 | 927 | ballstopped
+928 | 928 | ballstopped
+929 | 929 | ballstopped
+930 | 930 | ballstopped
+931 | 931 | ballstopped
+932 | 932 | ballstopped
+933 | 933 | ballstopped
+934 | 934 | ballstopped
+935 | 935 | ballstopped
+936 | 936 | ballstopped
+937 | 937 | ballstopped
+938 | 938 | ballstopped
+939 | 939 | ballstopped
+940 | 940 | ballstopped
+941 | 941 | ballstopped
+942 | 942 | ballstopped
+943 | 943 | ballstopped
+944 | 944 | ballstopped
+945 | 945 | ballstopped
+946 | 946 | ballstopped
+947 | 947 | ballstopped
+948 | 948 | ballstopped
+949 | 949 | ballstopped
+950 | 950 | playmode ( play_on )
+951 | 951 | kick ( pink7 )
+951 | 953 | pass ( pink7 , pink10 )
+955 | 955 | ballstopped
+956 | 956 | ballstopped
+958 | 958 | kick ( pink10 )
+967 | 967 | ballstopped
+968 | 968 | ballstopped
+979 | 979 | steal ( pink10 )
+979 | 979 | turnover ( pink10 , purple5 )
+980 | 980 | kick ( purple5 )
+980 | 982 | badPass ( purple5 , pink10 )
+980 | 982 | turnover ( purple5 , pink10 )
+985 | 985 | kick ( pink10 )
+985 | 986 | pass ( pink10 , pink9 )
+987 | 987 | kick ( pink9 )
+991 | 991 | playmode ( goal_r )
+991 | 991 | ballstopped
+992 | 992 | playmode ( kick_off_l )
+992 | 992 | ballstopped
+987 | 992 | badPass ( pink9 , purple10 )
+987 | 992 | turnover ( pink9 , purple10 )
+993 | 993 | playmode ( play_on )
+993 | 993 | kick ( purple10 )
+993 | 999 | pass ( purple10 , purple8 )
+1001 | 1001 | kick ( purple8 )
+1001 | 1006 | pass ( purple8 , purple11 )
+1009 | 1009 | kick ( purple11 )
+1011 | 1011 | kick ( purple11 )
+1013 | 1013 | ballstopped
+1015 | 1015 | kick ( purple11 )
+1015 | 1021 | pass ( purple11 , purple5 )
+1023 | 1023 | kick ( purple5 )
+1023 | 1025 | pass ( purple5 , purple8 )
+1034 | 1034 | kick ( purple8 )
+1034 | 1036 | pass ( purple8 , purple4 )
+1038 | 1038 | kick ( purple4 )
+1038 | 1044 | pass ( purple4 , purple7 )
+1046 | 1046 | kick ( purple7 )
+1046 | 1049 | pass ( purple7 , purple10 )
+1057 | 1057 | kick ( purple10 )
+1057 | 1064 | pass ( purple10 , purple3 )
+1066 | 1066 | kick ( purple3 )
+1066 | 1070 | pass ( purple3 , purple6 )
+1071 | 1071 | ballstopped
+1072 | 1072 | kick ( purple6 )
+1072 | 1083 | badPass ( purple6 , pink3 )
+1072 | 1083 | turnover ( purple6 , pink3 )
+1089 | 1089 | steal ( pink3 )
+1089 | 1089 | turnover ( pink3 , purple6 )
+1090 | 1090 | kick ( purple6 )
+1090 | 1102 | pass ( purple6 , purple9 )
+1108 | 1108 | kick ( purple9 )
+1108 | 1111 | badPass ( purple9 , pink5 )
+1108 | 1111 | turnover ( purple9 , pink5 )
+1112 | 1112 | kick ( pink5 )
+1112 | 1114 | pass ( pink5 , pink8 )
+1115 | 1115 | ballstopped
+1116 | 1116 | ballstopped
+1117 | 1117 | ballstopped
+1119 | 1119 | kick ( pink8 )
+1119 | 1127 | pass ( pink8 , pink11 )
+1128 | 1128 | ballstopped
+1129 | 1129 | ballstopped
+1130 | 1130 | ballstopped
+1131 | 1131 | ballstopped
+1147 | 1147 | kick ( pink11 )
+1147 | 1148 | badPass ( pink11 , purple2 )
+1147 | 1148 | turnover ( pink11 , purple2 )
+1159 | 1159 | kick ( purple6 )
+1163 | 1163 | kick ( purple6 )
+1163 | 1167 | pass ( purple6 , purple9 )
+1169 | 1169 | kick ( purple9 )
+1176 | 1176 | kick ( purple9 )
+1186 | 1186 | playmode ( kick_in_l )
+1186 | 1186 | ballstopped
+1187 | 1187 | ballstopped
+1188 | 1188 | ballstopped
+1189 | 1189 | ballstopped
+1190 | 1190 | ballstopped
+1191 | 1191 | ballstopped
+1192 | 1192 | ballstopped
+1193 | 1193 | ballstopped
+1194 | 1194 | ballstopped
+1195 | 1195 | ballstopped
+1196 | 1196 | ballstopped
+1197 | 1197 | ballstopped
+1198 | 1198 | ballstopped
+1199 | 1199 | ballstopped
+1200 | 1200 | ballstopped
+1201 | 1201 | ballstopped
+1202 | 1202 | ballstopped
+1203 | 1203 | ballstopped
+1204 | 1204 | ballstopped
+1205 | 1205 | ballstopped
+1206 | 1206 | ballstopped
+1207 | 1207 | ballstopped
+1176 | 1207 | pass ( purple9 , purple6 )
+1208 | 1208 | ballstopped
+1209 | 1209 | ballstopped
+1210 | 1210 | ballstopped
+1211 | 1211 | ballstopped
+1212 | 1212 | ballstopped
+1213 | 1213 | ballstopped
+1214 | 1214 | ballstopped
+1215 | 1215 | ballstopped
+1216 | 1216 | ballstopped
+1217 | 1217 | ballstopped
+1218 | 1218 | ballstopped
+1219 | 1219 | ballstopped
+1220 | 1220 | ballstopped
+1221 | 1221 | playmode ( play_on )
+1222 | 1222 | kick ( purple6 )
+1222 | 1227 | pass ( purple6 , purple7 )
+1234 | 1234 | kick ( purple7 )
+1234 | 1237 | pass ( purple7 , purple9 )
+1238 | 1238 | kick ( purple9 )
+1246 | 1246 | ballstopped
+1250 | 1250 | kick ( purple9 )
+1250 | 1257 | pass ( purple9 , purple7 )
+1261 | 1261 | kick ( purple7 )
+1265 | 1265 | kick ( purple7 )
+1271 | 1271 | kick ( purple7 )
+1277 | 1277 | kick ( purple7 )
+1277 | 1280 | pass ( purple7 , purple9 )
+1282 | 1282 | ballstopped
+1283 | 1283 | ballstopped
+1284 | 1284 | ballstopped
+1285 | 1285 | ballstopped
+1289 | 1289 | ballstopped
+1293 | 1293 | ballstopped
+1294 | 1294 | kick ( purple9 )
+1294 | 1295 | pass ( purple9 , purple6 )
+1297 | 1297 | kick ( purple6 )
+1303 | 1303 | ballstopped
+1309 | 1309 | kick ( purple6 )
+1309 | 1311 | badPass ( purple6 , pink5 )
+1309 | 1311 | turnover ( purple6 , pink5 )
+1313 | 1313 | kick ( pink5 )
+1313 | 1318 | pass ( pink5 , pink3 )
+1323 | 1323 | ballstopped
+1325 | 1325 | steal ( pink3 )
+1325 | 1325 | turnover ( pink3 , purple9 )
+1326 | 1326 | kick ( purple9 )
+1326 | 1327 | badPass ( purple9 , pink3 )
+1326 | 1327 | turnover ( purple9 , pink3 )
+1335 | 1335 | kick ( pink3 )
+1335 | 1348 | badPass ( pink3 , purple7 )
+1335 | 1348 | turnover ( pink3 , purple7 )
+1349 | 1349 | ballstopped
+1350 | 1350 | ballstopped
+1351 | 1351 | ballstopped
+1352 | 1352 | ballstopped
+1354 | 1354 | kick ( purple7 )
+1354 | 1362 | badPass ( purple7 , pink9 )
+1354 | 1362 | turnover ( purple7 , pink9 )
+1374 | 1374 | kick ( pink9 )
+1390 | 1390 | kick ( pink9 )
+1415 | 1415 | steal ( pink9 )
+1415 | 1415 | turnover ( pink9 , purple3 )
+1417 | 1417 | kick ( purple3 )
+1417 | 1421 | pass ( purple3 , purple7 )
+1423 | 1423 | kick ( purple7 )
+1423 | 1427 | pass ( purple7 , purple6 )
+1437 | 1437 | kick ( purple6 )
+1437 | 1450 | badPass ( purple6 , pink6 )
+1437 | 1450 | turnover ( purple6 , pink6 )
+1455 | 1455 | steal ( pink6 )
+1455 | 1455 | turnover ( pink6 , purple7 )
+1456 | 1456 | kick ( purple7 )
+1456 | 1459 | pass ( purple7 , purple8 )
+1463 | 1463 | kick ( purple8 )
+1463 | 1470 | pass ( purple8 , purple10 )
+1473 | 1473 | kick ( purple10 )
+1477 | 1477 | kick ( purple10 )
+1482 | 1482 | kick ( purple10 )
+1482 | 1499 | badPass ( purple10 , pink7 )
+1482 | 1499 | turnover ( purple10 , pink7 )
+1504 | 1504 | kick ( pink7 )
+1504 | 1511 | badPass ( pink7 , purple7 )
+1504 | 1511 | turnover ( pink7 , purple7 )
+1512 | 1512 | kick ( purple7 )
+1526 | 1526 | ballstopped
+1512 | 1526 | badPass ( purple7 , pink5 )
+1512 | 1526 | turnover ( purple7 , pink5 )
+1527 | 1527 | ballstopped
+1528 | 1528 | ballstopped
+1546 | 1546 | kick ( pink5 )
+1559 | 1559 | ballstopped
+1561 | 1561 | kick ( pink11 )
+1565 | 1565 | ballstopped
+1566 | 1566 | ballstopped
+1567 | 1567 | ballstopped
+1568 | 1568 | ballstopped
+1575 | 1575 | kick ( pink11 )
+1599 | 1599 | ballstopped
+1600 | 1600 | ballstopped
+1602 | 1602 | ballstopped
+1603 | 1603 | ballstopped
+1604 | 1604 | ballstopped
+1611 | 1611 | ballstopped
+1612 | 1612 | ballstopped
+1619 | 1619 | steal ( pink11 )
+1619 | 1619 | turnover ( pink11 , purple2 )
+1620 | 1620 | kick ( purple2 )
+1620 | 1623 | badPass ( purple2 , pink9 )
+1620 | 1623 | turnover ( purple2 , pink9 )
+1624 | 1624 | kick ( pink9 )
+1624 | 1632 | badPass ( pink9 , purple7 )
+1624 | 1632 | turnover ( pink9 , purple7 )
+1634 | 1634 | kick ( purple7 )
+1634 | 1641 | pass ( purple7 , purple6 )
+1643 | 1643 | ballstopped
+1644 | 1644 | kick ( purple6 )
+1644 | 1646 | pass ( purple6 , purple2 )
+1648 | 1648 | ballstopped
+1650 | 1650 | kick ( purple2 )
+1650 | 1651 | pass ( purple2 , purple3 )
+1654 | 1654 | kick ( purple3 )
+1654 | 1655 | badPass ( purple3 , pink9 )
+1654 | 1655 | turnover ( purple3 , pink9 )
+1659 | 1659 | ballstopped
+1660 | 1660 | ballstopped
+1661 | 1661 | ballstopped
+1667 | 1667 | kick ( pink9 )
+1667 | 1672 | defense ( purple5 , purple5 )
+1667 | 1672 | turnover ( pink9 , purple5 )
+1673 | 1673 | kick ( purple5 )
+1673 | 1679 | badPass ( purple5 , pink7 )
+1673 | 1679 | turnover ( purple5 , pink7 )
+1680 | 1680 | ballstopped
+1681 | 1681 | ballstopped
+1683 | 1683 | kick ( pink7 )
+1697 | 1697 | kick ( pink7 )
+1697 | 1702 | pass ( pink7 , pink9 )
+1703 | 1703 | steal ( pink9 )
+1703 | 1703 | turnover ( pink9 , purple3 )
+1704 | 1704 | kick ( purple3 )
+1715 | 1715 | playmode ( corner_kick_r )
+1715 | 1715 | ballstopped
+1716 | 1716 | ballstopped
+1717 | 1717 | ballstopped
+1718 | 1718 | ballstopped
+1719 | 1719 | ballstopped
+1720 | 1720 | ballstopped
+1721 | 1721 | ballstopped
+1722 | 1722 | ballstopped
+1723 | 1723 | ballstopped
+1724 | 1724 | ballstopped
+1725 | 1725 | ballstopped
+1726 | 1726 | ballstopped
+1727 | 1727 | ballstopped
+1728 | 1728 | ballstopped
+1729 | 1729 | ballstopped
+1730 | 1730 | ballstopped
+1731 | 1731 | ballstopped
+1732 | 1732 | ballstopped
+1733 | 1733 | ballstopped
+1734 | 1734 | ballstopped
+1735 | 1735 | ballstopped
+1736 | 1736 | ballstopped
+1737 | 1737 | ballstopped
+1738 | 1738 | ballstopped
+1739 | 1739 | ballstopped
+1740 | 1740 | ballstopped
+1741 | 1741 | ballstopped
+1742 | 1742 | ballstopped
+1743 | 1743 | ballstopped
+1744 | 1744 | ballstopped
+1745 | 1745 | ballstopped
+1746 | 1746 | ballstopped
+1747 | 1747 | ballstopped
+1748 | 1748 | ballstopped
+1749 | 1749 | ballstopped
+1750 | 1750 | ballstopped
+1751 | 1751 | ballstopped
+1752 | 1752 | ballstopped
+1753 | 1753 | ballstopped
+1754 | 1754 | ballstopped
+1755 | 1755 | ballstopped
+1756 | 1756 | ballstopped
+1757 | 1757 | ballstopped
+1758 | 1758 | ballstopped
+1759 | 1759 | ballstopped
+1760 | 1760 | ballstopped
+1761 | 1761 | ballstopped
+1762 | 1762 | ballstopped
+1763 | 1763 | ballstopped
+1764 | 1764 | ballstopped
+1765 | 1765 | ballstopped
+1766 | 1766 | ballstopped
+1767 | 1767 | ballstopped
+1768 | 1768 | ballstopped
+1769 | 1769 | ballstopped
+1770 | 1770 | ballstopped
+1771 | 1771 | ballstopped
+1772 | 1772 | ballstopped
+1773 | 1773 | ballstopped
+1774 | 1774 | ballstopped
+1775 | 1775 | ballstopped
+1776 | 1776 | ballstopped
+1777 | 1777 | ballstopped
+1778 | 1778 | ballstopped
+1779 | 1779 | ballstopped
+1780 | 1780 | ballstopped
+1781 | 1781 | ballstopped
+1782 | 1782 | ballstopped
+1783 | 1783 | ballstopped
+1784 | 1784 | ballstopped
+1785 | 1785 | ballstopped
+1786 | 1786 | ballstopped
+1787 | 1787 | ballstopped
+1788 | 1788 | ballstopped
+1789 | 1789 | ballstopped
+1790 | 1790 | ballstopped
+1791 | 1791 | ballstopped
+1792 | 1792 | ballstopped
+1793 | 1793 | ballstopped
+1794 | 1794 | ballstopped
+1795 | 1795 | ballstopped
+1796 | 1796 | ballstopped
+1797 | 1797 | ballstopped
+1798 | 1798 | ballstopped
+1799 | 1799 | ballstopped
+1800 | 1800 | ballstopped
+1801 | 1801 | ballstopped
+1802 | 1802 | ballstopped
+1803 | 1803 | ballstopped
+1804 | 1804 | ballstopped
+1805 | 1805 | ballstopped
+1806 | 1806 | ballstopped
+1807 | 1807 | ballstopped
+1808 | 1808 | ballstopped
+1809 | 1809 | ballstopped
+1810 | 1810 | ballstopped
+1811 | 1811 | playmode ( play_on )
+1813 | 1813 | kick ( pink8 )
+1813 | 1817 | badPass ( pink8 , purple6 )
+1813 | 1817 | turnover ( pink8 , purple6 )
+1820 | 1820 | kick ( purple6 )
+1830 | 1830 | kick ( purple6 )
+1830 | 1833 | badPass ( purple6 , pink8 )
+1830 | 1833 | turnover ( purple6 , pink8 )
+1851 | 1851 | kick ( pink8 )
+1851 | 1856 | pass ( pink8 , pink6 )
+1860 | 1860 | kick ( pink6 )
+1861 | 1861 | playmode ( offside_r )
+1861 | 1861 | ballstopped
+1862 | 1862 | playmode ( free_kick_l )
+1862 | 1862 | ballstopped
+1863 | 1863 | ballstopped
+1864 | 1864 | ballstopped
+1860 | 1864 | defense ( purple3 , purple3 )
+1860 | 1864 | turnover ( pink6 , purple3 )
+1865 | 1865 | ballstopped
+1866 | 1866 | ballstopped
+1867 | 1867 | ballstopped
+1868 | 1868 | ballstopped
+1869 | 1869 | ballstopped
+1870 | 1870 | ballstopped
+1871 | 1871 | playmode ( play_on )
+1872 | 1872 | kick ( purple3 )
+1872 | 1875 | pass ( purple3 , purple7 )
+1877 | 1877 | kick ( purple7 )
+1877 | 1890 | badPass ( purple7 , pink5 )
+1877 | 1890 | turnover ( purple7 , pink5 )
+1894 | 1894 | kick ( pink5 )
+1894 | 1899 | pass ( pink5 , pink11 )
+1900 | 1900 | kick ( pink11 )
+1900 | 1900 | ballstopped
+1901 | 1901 | ballstopped
+1902 | 1902 | ballstopped
+1903 | 1903 | ballstopped
+1904 | 1904 | ballstopped
+1907 | 1907 | kick ( pink11 )
+1907 | 1909 | pass ( pink11 , pink8 )
+1914 | 1914 | kick ( pink8 )
+1926 | 1926 | kick ( pink8 )
+1926 | 1931 | defense ( purple3 , purple3 )
+1926 | 1931 | turnover ( pink8 , purple3 )
+1933 | 1933 | kick ( purple3 )
+1938 | 1938 | kick ( purple3 )
+1938 | 1941 | pass ( purple3 , purple7 )
+1943 | 1943 | kick ( purple7 )
+1943 | 1947 | pass ( purple7 , purple8 )
+1950 | 1950 | kick ( purple8 )
+1964 | 1964 | ballstopped
+1966 | 1966 | kick ( purple8 )
+1970 | 1970 | kick ( purple8 )
+1970 | 1981 | pass ( purple8 , purple9 )
+1984 | 1984 | kick ( purple9 )
+1988 | 1988 | kick ( purple9 )
+1999 | 1999 | kick ( purple9 )
+1999 | 2004 | pass ( purple9 , purple6 )
+2008 | 2008 | kick ( purple6 )
+2012 | 2012 | kick ( purple6 )
+2012 | 2015 | pass ( purple6 , purple7 )
+2019 | 2019 | kick ( purple7 )
+2019 | 2024 | pass ( purple7 , purple6 )
+2025 | 2025 | kick ( purple6 )
+2025 | 2038 | badPass ( purple6 , pink9 )
+2025 | 2038 | turnover ( purple6 , pink9 )
+2046 | 2046 | ballstopped
+2047 | 2047 | ballstopped
+2048 | 2048 | ballstopped
+2051 | 2051 | kick ( pink9 )
+2070 | 2070 | playmode ( kick_in_l )
+2070 | 2070 | ballstopped
+2071 | 2071 | ballstopped
+2072 | 2072 | ballstopped
+2073 | 2073 | ballstopped
+2074 | 2074 | ballstopped
+2075 | 2075 | ballstopped
+2076 | 2076 | ballstopped
+2077 | 2077 | ballstopped
+2078 | 2078 | ballstopped
+2079 | 2079 | ballstopped
+2080 | 2080 | ballstopped
+2081 | 2081 | ballstopped
+2082 | 2082 | ballstopped
+2083 | 2083 | ballstopped
+2084 | 2084 | ballstopped
+2085 | 2085 | ballstopped
+2086 | 2086 | ballstopped
+2087 | 2087 | ballstopped
+2088 | 2088 | ballstopped
+2089 | 2089 | ballstopped
+2090 | 2090 | ballstopped
+2091 | 2091 | ballstopped
+2092 | 2092 | ballstopped
+2093 | 2093 | ballstopped
+2094 | 2094 | ballstopped
+2051 | 2094 | badPass ( pink9 , purple8 )
+2051 | 2094 | turnover ( pink9 , purple8 )
+2095 | 2095 | ballstopped
+2096 | 2096 | ballstopped
+2097 | 2097 | ballstopped
+2098 | 2098 | ballstopped
+2099 | 2099 | ballstopped
+2100 | 2100 | ballstopped
+2101 | 2101 | playmode ( play_on )
+2102 | 2102 | kick ( purple8 )
+2102 | 2105 | pass ( purple8 , purple11 )
+2107 | 2107 | kick ( purple11 )
+2107 | 2119 | pass ( purple11 , purple10 )
+2121 | 2121 | kick ( purple10 )
+2121 | 2126 | pass ( purple10 , purple11 )
+2128 | 2128 | kick ( purple11 )
+2128 | 2131 | pass ( purple11 , purple7 )
+2132 | 2132 | ballstopped
+2133 | 2133 | kick ( purple7 )
+2133 | 2139 | pass ( purple7 , purple6 )
+2146 | 2146 | kick ( purple6 )
+2146 | 2149 | pass ( purple6 , purple10 )
+2150 | 2150 | ballstopped
+2151 | 2151 | ballstopped
+2152 | 2152 | ballstopped
+2154 | 2154 | kick ( purple10 )
+2157 | 2157 | kick ( purple10 )
+2157 | 2161 | pass ( purple10 , purple6 )
+2167 | 2167 | kick ( purple6 )
+2170 | 2170 | kick ( purple6 )
+2170 | 2173 | pass ( purple6 , purple3 )
+2175 | 2175 | kick ( purple3 )
+2175 | 2178 | badPass ( purple3 , pink9 )
+2175 | 2178 | turnover ( purple3 , pink9 )
+2179 | 2179 | kick ( pink9 )
+2208 | 2208 | kick ( pink9 )
+2208 | 2214 | pass ( pink9 , pink11 )
+2215 | 2215 | kick ( pink11 )
+2223 | 2223 | playmode ( goal_r )
+2223 | 2223 | ballstopped
+2224 | 2224 | playmode ( kick_off_l )
+2224 | 2224 | ballstopped
+2225 | 2225 | ballstopped
+2226 | 2226 | ballstopped
+2215 | 2226 | badPass ( pink11 , purple10 )
+2215 | 2226 | turnover ( pink11 , purple10 )
+2227 | 2227 | playmode ( play_on )
+2227 | 2227 | kick ( purple10 )
+2227 | 2241 | pass ( purple10 , purple6 )
+2243 | 2243 | kick ( purple6 )
+2243 | 2250 | pass ( purple6 , purple9 )
+2255 | 2255 | kick ( purple9 )
+2255 | 2256 | pass ( purple9 , purple6 )
+2262 | 2262 | kick ( purple6 )
+2265 | 2265 | kick ( purple6 )
+2265 | 2270 | pass ( purple6 , purple7 )
+2272 | 2272 | kick ( purple7 )
+2274 | 2274 | ballstopped
+2276 | 2276 | kick ( purple7 )
+2276 | 2279 | pass ( purple7 , purple4 )
+2281 | 2281 | kick ( purple4 )
+2281 | 2283 | pass ( purple4 , purple3 )
+2286 | 2286 | kick ( purple3 )
+2286 | 2289 | pass ( purple3 , purple4 )
+2292 | 2292 | kick ( purple4 )
+2299 | 2299 | playmode ( offside_l )
+2299 | 2299 | ballstopped
+2300 | 2300 | playmode ( free_kick_r )
+2300 | 2300 | ballstopped
+2292 | 2300 | badPass ( purple4 , pink6 )
+2292 | 2300 | turnover ( purple4 , pink6 )
+2301 | 2301 | ballstopped
+2302 | 2302 | ballstopped
+2303 | 2303 | ballstopped
+2304 | 2304 | ballstopped
+2305 | 2305 | ballstopped
+2306 | 2306 | ballstopped
+2307 | 2307 | ballstopped
+2308 | 2308 | ballstopped
+2309 | 2309 | ballstopped
+2310 | 2310 | ballstopped
+2311 | 2311 | ballstopped
+2312 | 2312 | ballstopped
+2313 | 2313 | ballstopped
+2314 | 2314 | ballstopped
+2315 | 2315 | ballstopped
+2316 | 2316 | ballstopped
+2317 | 2317 | ballstopped
+2318 | 2318 | ballstopped
+2319 | 2319 | ballstopped
+2320 | 2320 | ballstopped
+2321 | 2321 | ballstopped
+2322 | 2322 | ballstopped
+2323 | 2323 | ballstopped
+2324 | 2324 | ballstopped
+2325 | 2325 | ballstopped
+2326 | 2326 | ballstopped
+2327 | 2327 | ballstopped
+2328 | 2328 | ballstopped
+2329 | 2329 | ballstopped
+2330 | 2330 | ballstopped
+2331 | 2331 | ballstopped
+2332 | 2332 | ballstopped
+2333 | 2333 | ballstopped
+2334 | 2334 | ballstopped
+2335 | 2335 | ballstopped
+2336 | 2336 | ballstopped
+2337 | 2337 | ballstopped
+2338 | 2338 | playmode ( play_on )
+2338 | 2338 | kick ( pink6 )
+2338 | 2343 | pass ( pink6 , pink7 )
+2364 | 2364 | kick ( pink7 )
+2398 | 2398 | kick ( pink7 )
+2398 | 2404 | pass ( pink7 , pink9 )
+2405 | 2405 | kick ( pink9 )
+2408 | 2408 | playmode ( goal_r )
+2408 | 2408 | ballstopped
+2409 | 2409 | playmode ( kick_off_l )
+2409 | 2409 | ballstopped
+2405 | 2409 | badPass ( pink9 , purple10 )
+2405 | 2409 | turnover ( pink9 , purple10 )
+2410 | 2410 | playmode ( play_on )
+2410 | 2410 | kick ( purple10 )
+2410 | 2417 | pass ( purple10 , purple8 )
+2421 | 2421 | kick ( purple8 )
+2421 | 2429 | pass ( purple8 , purple11 )
+2431 | 2431 | kick ( purple11 )
+2441 | 2441 | kick ( purple11 )
+2441 | 2445 | pass ( purple11 , purple2 )
+2447 | 2447 | kick ( purple2 )
+2456 | 2456 | kick ( purple2 )
+2456 | 2458 | pass ( purple2 , purple3 )
+2461 | 2461 | kick ( purple3 )
+2461 | 2466 | pass ( purple3 , purple4 )
+2468 | 2468 | kick ( purple4 )
+2468 | 2473 | pass ( purple4 , purple5 )
+2483 | 2483 | kick ( purple5 )
+2483 | 2485 | pass ( purple5 , purple8 )
+2487 | 2487 | kick ( purple8 )
+2487 | 2492 | pass ( purple8 , purple11 )
+2493 | 2493 | ballstopped
+2494 | 2494 | kick ( purple11 )
+2500 | 2500 | kick ( purple8 )
+2500 | 2504 | pass ( purple8 , purple10 )
+2505 | 2505 | kick ( purple10 )
+2505 | 2510 | badPass ( purple10 , pink9 )
+2505 | 2510 | turnover ( purple10 , pink9 )
+2512 | 2512 | kick ( pink9 )
+2512 | 2521 | pass ( pink9 , pink11 )
+2524 | 2524 | ballstopped
+2525 | 2525 | ballstopped
+2531 | 2531 | kick ( pink11 )
+2556 | 2556 | ballstopped
+2557 | 2557 | ballstopped
+2558 | 2558 | kick ( pink11 )
+2558 | 2560 | badPass ( pink11 , purple3 )
+2558 | 2560 | turnover ( pink11 , purple3 )
+2562 | 2562 | kick ( purple3 )
+2562 | 2569 | pass ( purple3 , purple6 )
+2572 | 2572 | kick ( purple6 )
+2577 | 2577 | kick ( purple6 )
+2577 | 2580 | pass ( purple6 , purple7 )
+2585 | 2585 | kick ( purple7 )
+2608 | 2608 | ballstopped
+2609 | 2609 | ballstopped
+2611 | 2611 | ballstopped
+2629 | 2629 | kick ( pink3 )
+2646 | 2646 | ballstopped
+2647 | 2647 | ballstopped
+2652 | 2652 | steal ( pink3 )
+2652 | 2652 | turnover ( pink3 , purple3 )
+2655 | 2655 | kick ( purple3 )
+2655 | 2660 | pass ( purple3 , purple7 )
+2665 | 2665 | kick ( purple7 )
+2665 | 2669 | pass ( purple7 , purple3 )
+2681 | 2681 | kick ( purple3 )
+2681 | 2693 | badPass ( purple3 , pink5 )
+2681 | 2693 | turnover ( purple3 , pink5 )
+2694 | 2694 | ballstopped
+2695 | 2695 | ballstopped
+2700 | 2700 | kick ( pink5 )
+2700 | 2706 | badPass ( pink5 , purple7 )
+2700 | 2706 | turnover ( pink5 , purple7 )
+2708 | 2708 | kick ( purple7 )
+2708 | 2719 | pass ( purple7 , purple10 )
+2721 | 2721 | kick ( purple10 )
+2721 | 2725 | pass ( purple10 , purple11 )
+2726 | 2726 | kick ( purple11 )
+2726 | 2730 | badPass ( purple11 , pink7 )
+2726 | 2730 | turnover ( purple11 , pink7 )
+2732 | 2732 | kick ( pink7 )
+2732 | 2739 | pass ( pink7 , pink10 )
+2742 | 2742 | ballstopped
+2747 | 2747 | kick ( pink10 )
+2747 | 2753 | badPass ( pink10 , purple7 )
+2747 | 2753 | turnover ( pink10 , purple7 )
+2755 | 2755 | ballstopped
+2757 | 2757 | kick ( purple7 )
+2757 | 2760 | pass ( purple7 , purple8 )
+2762 | 2762 | kick ( purple8 )
+2764 | 2764 | kick ( purple8 )
+2768 | 2768 | ballstopped
+2769 | 2769 | ballstopped
+2770 | 2770 | ballstopped
+2772 | 2772 | kick ( purple8 )
+2772 | 2775 | pass ( purple8 , purple7 )
+2780 | 2780 | ballstopped
+2781 | 2781 | kick ( purple7 )
+2781 | 2786 | badPass ( purple7 , pink9 )
+2781 | 2786 | turnover ( purple7 , pink9 )
+2787 | 2787 | ballstopped
+2788 | 2788 | ballstopped
+2789 | 2789 | ballstopped
+2790 | 2790 | ballstopped
+2793 | 2793 | kick ( pink9 )
+2793 | 2799 | pass ( pink9 , pink10 )
+2808 | 2808 | kick ( pink10 )
+2808 | 2809 | badPass ( pink10 , purple5 )
+2808 | 2809 | turnover ( pink10 , purple5 )
+2810 | 2810 | kick ( purple5 )
+2810 | 2811 | pass ( purple5 , purple4 )
+2814 | 2814 | kick ( purple4 )
+2814 | 2817 | pass ( purple4 , purple7 )
+2818 | 2818 | ballstopped
+2819 | 2819 | ballstopped
+2820 | 2820 | ballstopped
+2823 | 2823 | ballstopped
+2824 | 2824 | ballstopped
+2826 | 2826 | kick ( purple7 )
+2833 | 2833 | kick ( purple7 )
+2833 | 2837 | pass ( purple7 , purple10 )
+2839 | 2839 | kick ( purple10 )
+2843 | 2843 | kick ( purple10 )
+2876 | 2876 | kick ( purple10 )
+2882 | 2882 | playmode ( goal_l )
+2882 | 2882 | ballstopped
+2883 | 2883 | playmode ( kick_off_r )
+2883 | 2883 | ballstopped
+2876 | 2883 | badPass ( purple10 , pink9 )
+2876 | 2883 | turnover ( purple10 , pink9 )
+2884 | 2884 | ballstopped
+2885 | 2885 | playmode ( play_on )
+2885 | 2885 | kick ( pink9 )
+2885 | 2892 | pass ( pink9 , pink11 )
+2903 | 2903 | kick ( pink11 )
+2917 | 2917 | kick ( purple2 )
+2917 | 2923 | pass ( purple2 , purple7 )
+2927 | 2927 | kick ( purple7 )
+2927 | 2930 | pass ( purple7 , purple4 )
+2932 | 2932 | ballstopped
+2935 | 2935 | kick ( purple4 )
+2935 | 2937 | pass ( purple4 , purple3 )
+2938 | 2938 | kick ( purple3 )
+2938 | 2943 | badPass ( purple3 , pink7 )
+2938 | 2943 | turnover ( purple3 , pink7 )
+2949 | 2949 | kick ( pink7 )
+2949 | 2950 | pass ( pink7 , pink10 )
+2958 | 2958 | kick ( pink10 )
+2958 | 2974 | pass ( pink10 , pink9 )
+2979 | 2979 | kick ( pink9 )
+2988 | 2988 | steal ( pink9 )
+2988 | 2988 | turnover ( pink9 , purple4 )
+2990 | 2990 | kick ( purple3 )
+2990 | 2994 | pass ( purple3 , purple7 )
+2995 | 2995 | kick ( purple7 )
+3000 | 3000 | playmode ( kick_off_r )
+3000 | 3000 | ballstopped
+3001 | 3001 | ballstopped
+3002 | 3002 | ballstopped
+3003 | 3003 | ballstopped
+3004 | 3004 | ballstopped
+2995 | 3004 | badPass ( purple7 , pink9 )
+2995 | 3004 | turnover ( purple7 , pink9 )
+3005 | 3005 | playmode ( play_on )
+3005 | 3005 | kick ( pink9 )
+3005 | 3011 | pass ( pink9 , pink8 )
+3021 | 3021 | ballstopped
+3022 | 3022 | ballstopped
+3024 | 3024 | kick ( pink8 )
+3031 | 3031 | kick ( pink8 )
+3031 | 3032 | badPass ( pink8 , purple3 )
+3031 | 3032 | turnover ( pink8 , purple3 )
+3034 | 3034 | kick ( purple3 )
+3034 | 3037 | pass ( purple3 , purple7 )
+3040 | 3040 | kick ( purple7 )
+3040 | 3044 | pass ( purple7 , purple10 )
+3045 | 3045 | kick ( purple10 )
+3045 | 3047 | pass ( purple10 , purple8 )
+3049 | 3049 | kick ( purple8 )
+3052 | 3052 | kick ( purple8 )
+3059 | 3059 | kick ( purple8 )
+3059 | 3063 | pass ( purple8 , purple11 )
+3064 | 3064 | kick ( purple11 )
+3068 | 3068 | kick ( purple11 )
+3068 | 3070 | pass ( purple11 , purple8 )
+3080 | 3080 | ballstopped
+3081 | 3081 | kick ( purple8 )
+3081 | 3084 | pass ( purple8 , purple11 )
+3085 | 3085 | ballstopped
+3086 | 3086 | ballstopped
+3087 | 3087 | ballstopped
+3093 | 3093 | kick ( purple11 )
+3093 | 3095 | pass ( purple11 , purple8 )
+3097 | 3097 | kick ( purple8 )
+3097 | 3109 | badPass ( purple8 , pink5 )
+3097 | 3109 | turnover ( purple8 , pink5 )
+3110 | 3110 | kick ( pink5 )
+3110 | 3116 | pass ( pink5 , pink3 )
+3117 | 3117 | kick ( pink3 )
+3117 | 3124 | badPass ( pink3 , purple7 )
+3117 | 3124 | turnover ( pink3 , purple7 )
+3125 | 3125 | kick ( purple7 )
+3125 | 3133 | badPass ( purple7 , pink9 )
+3125 | 3133 | turnover ( purple7 , pink9 )
+3143 | 3143 | kick ( pink9 )
+3143 | 3145 | badPass ( pink9 , purple4 )
+3143 | 3145 | turnover ( pink9 , purple4 )
+3147 | 3147 | kick ( purple4 )
+3147 | 3152 | pass ( purple4 , purple3 )
+3161 | 3161 | kick ( purple3 )
+3161 | 3165 | pass ( purple3 , purple2 )
+3166 | 3166 | kick ( purple2 )
+3185 | 3185 | playmode ( kick_in_r )
+3185 | 3185 | ballstopped
+3186 | 3186 | ballstopped
+3187 | 3187 | ballstopped
+3188 | 3188 | ballstopped
+3189 | 3189 | ballstopped
+3190 | 3190 | ballstopped
+3191 | 3191 | ballstopped
+3192 | 3192 | ballstopped
+3193 | 3193 | ballstopped
+3194 | 3194 | ballstopped
+3195 | 3195 | ballstopped
+3196 | 3196 | ballstopped
+3197 | 3197 | ballstopped
+3198 | 3198 | ballstopped
+3199 | 3199 | ballstopped
+3200 | 3200 | ballstopped
+3201 | 3201 | ballstopped
+3202 | 3202 | ballstopped
+3203 | 3203 | ballstopped
+3204 | 3204 | ballstopped
+3205 | 3205 | ballstopped
+3166 | 3205 | badPass ( purple2 , pink8 )
+3166 | 3205 | turnover ( purple2 , pink8 )
+3206 | 3206 | ballstopped
+3207 | 3207 | ballstopped
+3208 | 3208 | ballstopped
+3209 | 3209 | ballstopped
+3210 | 3210 | ballstopped
+3211 | 3211 | ballstopped
+3212 | 3212 | ballstopped
+3213 | 3213 | ballstopped
+3214 | 3214 | ballstopped
+3215 | 3215 | ballstopped
+3216 | 3216 | ballstopped
+3217 | 3217 | ballstopped
+3218 | 3218 | ballstopped
+3219 | 3219 | ballstopped
+3220 | 3220 | ballstopped
+3221 | 3221 | ballstopped
+3222 | 3222 | ballstopped
+3223 | 3223 | ballstopped
+3224 | 3224 | ballstopped
+3225 | 3225 | ballstopped
+3226 | 3226 | ballstopped
+3227 | 3227 | ballstopped
+3228 | 3228 | ballstopped
+3229 | 3229 | ballstopped
+3230 | 3230 | ballstopped
+3231 | 3231 | ballstopped
+3232 | 3232 | ballstopped
+3233 | 3233 | ballstopped
+3234 | 3234 | ballstopped
+3235 | 3235 | ballstopped
+3236 | 3236 | ballstopped
+3237 | 3237 | ballstopped
+3238 | 3238 | ballstopped
+3239 | 3239 | ballstopped
+3240 | 3240 | ballstopped
+3241 | 3241 | ballstopped
+3242 | 3242 | ballstopped
+3243 | 3243 | ballstopped
+3244 | 3244 | ballstopped
+3245 | 3245 | ballstopped
+3246 | 3246 | playmode ( play_on )
+3247 | 3247 | kick ( pink8 )
+3247 | 3257 | pass ( pink8 , pink6 )
+3265 | 3265 | ballstopped
+3266 | 3266 | kick ( pink6 )
+3266 | 3276 | badPass ( pink6 , purple9 )
+3266 | 3276 | turnover ( pink6 , purple9 )
+3278 | 3278 | ballstopped
+3279 | 3279 | kick ( purple9 )
+3279 | 3286 | pass ( purple9 , purple10 )
+3287 | 3287 | kick ( purple10 )
+3293 | 3293 | kick ( purple10 )
+3298 | 3298 | kick ( purple10 )
+3298 | 3302 | pass ( purple10 , purple9 )
+3309 | 3309 | ballstopped
+3310 | 3310 | ballstopped
+3311 | 3311 | kick ( purple9 )
+3311 | 3314 | pass ( purple9 , purple6 )
+3316 | 3316 | ballstopped
+3317 | 3317 | kick ( purple6 )
+3317 | 3317 | ballstopped
+3318 | 3318 | ballstopped
+3319 | 3319 | kick ( purple6 )
+3319 | 3324 | pass ( purple6 , purple7 )
+3325 | 3325 | kick ( purple7 )
+3325 | 3331 | pass ( purple7 , purple4 )
+3333 | 3333 | kick ( purple4 )
+3333 | 3339 | pass ( purple4 , purple8 )
+3341 | 3341 | kick ( purple8 )
+3346 | 3346 | kick ( purple8 )
+3346 | 3352 | pass ( purple8 , purple11 )
+3355 | 3355 | kick ( purple11 )
+3357 | 3357 | ballstopped
+3359 | 3359 | steal ( purple11 )
+3359 | 3359 | ballstopped
+3359 | 3359 | turnover ( purple11 , pink4 )
+3360 | 3360 | kick ( pink4 )
+3360 | 3374 | badPass ( pink4 , purple8 )
+3360 | 3374 | turnover ( pink4 , purple8 )
+3376 | 3376 | kick ( purple8 )
+3376 | 3382 | pass ( purple8 , purple11 )
+3384 | 3384 | kick ( purple11 )
+3384 | 3386 | pass ( purple11 , purple8 )
+3388 | 3388 | kick ( purple8 )
+3394 | 3394 | kick ( purple8 )
+3394 | 3404 | badPass ( purple8 , pink9 )
+3394 | 3404 | turnover ( purple8 , pink9 )
+3415 | 3415 | kick ( pink9 )
+3418 | 3418 | kick ( pink9 )
+3442 | 3442 | kick ( pink9 )
+3442 | 3449 | defense ( purple3 , purple3 )
+3442 | 3449 | turnover ( pink9 , purple3 )
+3451 | 3451 | kick ( purple3 )
+3451 | 3461 | badPass ( purple3 , pink11 )
+3451 | 3461 | turnover ( purple3 , pink11 )
+3462 | 3462 | kick ( pink11 )
+3464 | 3464 | playmode ( goal_r )
+3464 | 3464 | ballstopped
+3465 | 3465 | playmode ( kick_off_l )
+3465 | 3465 | ballstopped
+3466 | 3466 | ballstopped
+3467 | 3467 | ballstopped
+3468 | 3468 | ballstopped
+3469 | 3469 | ballstopped
+3470 | 3470 | ballstopped
+3471 | 3471 | ballstopped
+3472 | 3472 | ballstopped
+3473 | 3473 | ballstopped
+3474 | 3474 | ballstopped
+3475 | 3475 | ballstopped
+3476 | 3476 | ballstopped
+3477 | 3477 | ballstopped
+3478 | 3478 | ballstopped
+3479 | 3479 | ballstopped
+3480 | 3480 | ballstopped
+3481 | 3481 | ballstopped
+3482 | 3482 | ballstopped
+3483 | 3483 | ballstopped
+3484 | 3484 | ballstopped
+3485 | 3485 | ballstopped
+3486 | 3486 | ballstopped
+3487 | 3487 | ballstopped
+3488 | 3488 | ballstopped
+3489 | 3489 | ballstopped
+3490 | 3490 | ballstopped
+3491 | 3491 | ballstopped
+3492 | 3492 | ballstopped
+3493 | 3493 | ballstopped
+3494 | 3494 | ballstopped
+3495 | 3495 | ballstopped
+3496 | 3496 | ballstopped
+3497 | 3497 | ballstopped
+3498 | 3498 | ballstopped
+3499 | 3499 | ballstopped
+3500 | 3500 | ballstopped
+3501 | 3501 | ballstopped
+3502 | 3502 | ballstopped
+3503 | 3503 | playmode ( play_on )
+3503 | 3503 | kick ( purple10 )
+3503 | 3506 | pass ( purple10 , purple7 )
+3509 | 3509 | kick ( purple7 )
+3511 | 3511 | ballstopped
+3512 | 3512 | ballstopped
+3518 | 3518 | kick ( purple7 )
+3518 | 3523 | pass ( purple7 , purple4 )
+3525 | 3525 | kick ( purple4 )
+3525 | 3526 | pass ( purple4 , purple3 )
+3538 | 3538 | kick ( purple3 )
+3538 | 3541 | pass ( purple3 , purple2 )
+3543 | 3543 | ballstopped
+3551 | 3551 | kick ( purple2 )
+3551 | 3552 | badPass ( purple2 , pink8 )
+3551 | 3552 | turnover ( purple2 , pink8 )
+3557 | 3557 | kick ( pink8 )
+3579 | 3579 | kick ( pink8 )
+3589 | 3589 | ballstopped
+3590 | 3590 | ballstopped
+3591 | 3591 | kick ( pink8 )
+3591 | 3600 | pass ( pink8 , pink11 )
+3612 | 3612 | kick ( pink11 )
+3612 | 3617 | defense ( purple6 , purple6 )
+3612 | 3617 | turnover ( pink11 , purple6 )
+3620 | 3620 | kick ( purple6 )
+3639 | 3639 | ballstopped
+3620 | 3639 | pass ( purple6 , purple10 )
+3641 | 3641 | kick ( purple10 )
+3651 | 3651 | kick ( purple10 )
+3658 | 3658 | kick ( purple10 )
+3660 | 3660 | kick ( purple10 )
+3660 | 3679 | badPass ( purple10 , pink4 )
+3660 | 3679 | turnover ( purple10 , pink4 )
+3682 | 3682 | kick ( pink4 )
+3682 | 3694 | badPass ( pink4 , purple9 )
+3682 | 3694 | turnover ( pink4 , purple9 )
+3695 | 3695 | kick ( purple9 )
+3695 | 3701 | badPass ( purple9 , pink6 )
+3695 | 3701 | turnover ( purple9 , pink6 )
+3702 | 3702 | ballstopped
+3703 | 3703 | kick ( pink6 )
+3703 | 3712 | pass ( pink6 , pink9 )
+3713 | 3713 | kick ( pink9 )
+3713 | 3727 | pass ( pink9 , pink11 )
+3734 | 3734 | kick ( pink11 )
+3734 | 3741 | pass ( pink11 , pink8 )
+3766 | 3766 | kick ( pink8 )
+3766 | 3778 | pass ( pink8 , pink10 )
+3787 | 3787 | ballstopped
+3788 | 3788 | ballstopped
+3789 | 3789 | ballstopped
+3794 | 3794 | steal ( pink10 )
+3794 | 3794 | turnover ( pink10 , purple4 )
+3795 | 3795 | kick ( purple4 )
+3800 | 3800 | ballstopped
+3795 | 3800 | pass ( purple4 , purple7 )
+3805 | 3805 | kick ( purple7 )
+3810 | 3810 | ballstopped
+3814 | 3814 | ballstopped
+3815 | 3815 | ballstopped
+3816 | 3816 | ballstopped
+3817 | 3817 | ballstopped
+3818 | 3818 | ballstopped
+3819 | 3819 | ballstopped
+3821 | 3821 | kick ( purple7 )
+3828 | 3828 | kick ( purple8 )
+3832 | 3832 | kick ( purple8 )
+3840 | 3840 | kick ( purple8 )
+3840 | 3843 | badPass ( purple8 , pink6 )
+3840 | 3843 | turnover ( purple8 , pink6 )
+3845 | 3845 | kick ( pink6 )
+3861 | 3861 | playmode ( offside_r )
+3861 | 3861 | ballstopped
+3862 | 3862 | playmode ( free_kick_l )
+3862 | 3862 | ballstopped
+3863 | 3863 | ballstopped
+3864 | 3864 | ballstopped
+3865 | 3865 | ballstopped
+3866 | 3866 | ballstopped
+3867 | 3867 | ballstopped
+3868 | 3868 | ballstopped
+3869 | 3869 | ballstopped
+3870 | 3870 | ballstopped
+3845 | 3870 | badPass ( pink6 , purple3 )
+3845 | 3870 | turnover ( pink6 , purple3 )
+3871 | 3871 | ballstopped
+3872 | 3872 | ballstopped
+3873 | 3873 | ballstopped
+3874 | 3874 | ballstopped
+3875 | 3875 | ballstopped
+3876 | 3876 | ballstopped
+3877 | 3877 | ballstopped
+3878 | 3878 | ballstopped
+3879 | 3879 | ballstopped
+3880 | 3880 | playmode ( play_on )
+3881 | 3881 | kick ( purple3 )
+3881 | 3883 | pass ( purple3 , purple2 )
+3884 | 3884 | ballstopped
+3887 | 3887 | kick ( purple2 )
+3887 | 3890 | pass ( purple2 , purple3 )
+3892 | 3892 | kick ( purple3 )
+3892 | 3896 | pass ( purple3 , purple7 )
+3898 | 3898 | kick ( purple7 )
+3898 | 3903 | pass ( purple7 , purple10 )
+3910 | 3910 | kick ( purple10 )
+3910 | 3917 | pass ( purple10 , purple5 )
+3918 | 3918 | kick ( purple5 )
+3918 | 3927 | pass ( purple5 , purple11 )
+3931 | 3931 | kick ( purple11 )
+3931 | 3952 | badPass ( purple11 , pink9 )
+3931 | 3952 | turnover ( purple11 , pink9 )
+3954 | 3954 | ballstopped
+3958 | 3958 | kick ( pink9 )
+3969 | 3969 | kick ( pink9 )
+3970 | 3970 | playmode ( free_kick_l )
+3970 | 3970 | ballstopped
+3969 | 3970 | block ( purple1 )
+3969 | 3970 | turnover ( pink9 , purple1 )
+3971 | 3971 | ballstopped
+3972 | 3972 | ballstopped
+3973 | 3973 | ballstopped
+3974 | 3974 | ballstopped
+3975 | 3975 | ballstopped
+3976 | 3976 | ballstopped
+3977 | 3977 | ballstopped
+3978 | 3978 | ballstopped
+3979 | 3979 | ballstopped
+3980 | 3980 | ballstopped
+3981 | 3981 | ballstopped
+3982 | 3982 | ballstopped
+3983 | 3983 | ballstopped
+3984 | 3984 | ballstopped
+3985 | 3985 | ballstopped
+3986 | 3986 | ballstopped
+3987 | 3987 | ballstopped
+3988 | 3988 | ballstopped
+3989 | 3989 | ballstopped
+3990 | 3990 | ballstopped
+3991 | 3991 | ballstopped
+3992 | 3992 | ballstopped
+3993 | 3993 | ballstopped
+3994 | 3994 | ballstopped
+3995 | 3995 | ballstopped
+3996 | 3996 | ballstopped
+3997 | 3997 | ballstopped
+3998 | 3998 | ballstopped
+3999 | 3999 | ballstopped
+4000 | 4000 | ballstopped
+4001 | 4001 | ballstopped
+4002 | 4002 | ballstopped
+4003 | 4003 | ballstopped
+4004 | 4004 | ballstopped
+4005 | 4005 | ballstopped
+4006 | 4006 | ballstopped
+4007 | 4007 | ballstopped
+4008 | 4008 | ballstopped
+4009 | 4009 | ballstopped
+4010 | 4010 | ballstopped
+4011 | 4011 | ballstopped
+4012 | 4012 | ballstopped
+4013 | 4013 | ballstopped
+4014 | 4014 | ballstopped
+4015 | 4015 | ballstopped
+4016 | 4016 | ballstopped
+4017 | 4017 | ballstopped
+4018 | 4018 | ballstopped
+4019 | 4019 | ballstopped
+4020 | 4020 | ballstopped
+4021 | 4021 | ballstopped
+4022 | 4022 | ballstopped
+4023 | 4023 | ballstopped
+4024 | 4024 | ballstopped
+4025 | 4025 | ballstopped
+4026 | 4026 | ballstopped
+4027 | 4027 | ballstopped
+4028 | 4028 | ballstopped
+4029 | 4029 | ballstopped
+4030 | 4030 | ballstopped
+4031 | 4031 | ballstopped
+4032 | 4032 | ballstopped
+4033 | 4033 | ballstopped
+4034 | 4034 | ballstopped
+4035 | 4035 | ballstopped
+4036 | 4036 | ballstopped
+4037 | 4037 | ballstopped
+4038 | 4038 | ballstopped
+4039 | 4039 | ballstopped
+4040 | 4040 | ballstopped
+4041 | 4041 | ballstopped
+4042 | 4042 | ballstopped
+4043 | 4043 | ballstopped
+4044 | 4044 | ballstopped
+4045 | 4045 | ballstopped
+4046 | 4046 | ballstopped
+4047 | 4047 | ballstopped
+4048 | 4048 | ballstopped
+4049 | 4049 | ballstopped
+4050 | 4050 | ballstopped
+4051 | 4051 | ballstopped
+4052 | 4052 | ballstopped
+4053 | 4053 | ballstopped
+4054 | 4054 | ballstopped
+4055 | 4055 | ballstopped
+4056 | 4056 | ballstopped
+4057 | 4057 | ballstopped
+4058 | 4058 | ballstopped
+4059 | 4059 | ballstopped
+4060 | 4060 | ballstopped
+4061 | 4061 | ballstopped
+4062 | 4062 | ballstopped
+4063 | 4063 | ballstopped
+4064 | 4064 | ballstopped
+4065 | 4065 | ballstopped
+4066 | 4066 | ballstopped
+4067 | 4067 | ballstopped
+4068 | 4068 | ballstopped
+4069 | 4069 | ballstopped
+4070 | 4070 | ballstopped
+4071 | 4071 | ballstopped
+4072 | 4072 | ballstopped
+4073 | 4073 | ballstopped
+4074 | 4074 | ballstopped
+4075 | 4075 | playmode ( play_on )
+4075 | 4075 | kick ( purple1 )
+4075 | 4079 | pass ( purple1 , purple2 )
+4081 | 4081 | kick ( purple2 )
+4088 | 4088 | kick ( purple2 )
+4100 | 4100 | ballstopped
+4101 | 4101 | kick ( purple2 )
+4101 | 4106 | badPass ( purple2 , pink11 )
+4101 | 4106 | turnover ( purple2 , pink11 )
+4107 | 4107 | ballstopped
+4108 | 4108 | ballstopped
+4110 | 4110 | kick ( pink11 )
+4120 | 4120 | kick ( pink11 )
+4120 | 4125 | badPass ( pink11 , purple4 )
+4120 | 4125 | turnover ( pink11 , purple4 )
+4137 | 4137 | kick ( purple4 )
+4137 | 4143 | pass ( purple4 , purple7 )
+4146 | 4146 | kick ( purple7 )
+4146 | 4153 | pass ( purple7 , purple10 )
+4156 | 4156 | kick ( purple10 )
+4160 | 4160 | kick ( purple10 )
+4160 | 4162 | pass ( purple10 , purple8 )
+4163 | 4163 | kick ( purple8 )
+4163 | 4166 | badPass ( purple8 , pink8 )
+4163 | 4166 | turnover ( purple8 , pink8 )
+4167 | 4167 | kick ( pink8 )
+4167 | 4168 | pass ( pink8 , pink6 )
+4172 | 4172 | ballstopped
+4173 | 4173 | ballstopped
+4174 | 4174 | ballstopped
+4184 | 4184 | kick ( pink6 )
+4184 | 4186 | pass ( pink6 , pink9 )
+4187 | 4187 | kick ( pink9 )
+4200 | 4200 | ballstopped
+4187 | 4200 | block ( purple1 )
+4187 | 4200 | turnover ( pink9 , purple1 )
+4201 | 4201 | playmode ( free_kick_l )
+4201 | 4201 | ballstopped
+4202 | 4202 | ballstopped
+4203 | 4203 | ballstopped
+4204 | 4204 | ballstopped
+4205 | 4205 | ballstopped
+4206 | 4206 | ballstopped
+4207 | 4207 | ballstopped
+4208 | 4208 | ballstopped
+4209 | 4209 | ballstopped
+4210 | 4210 | ballstopped
+4211 | 4211 | ballstopped
+4212 | 4212 | ballstopped
+4213 | 4213 | ballstopped
+4214 | 4214 | ballstopped
+4215 | 4215 | ballstopped
+4216 | 4216 | ballstopped
+4217 | 4217 | ballstopped
+4218 | 4218 | ballstopped
+4219 | 4219 | ballstopped
+4220 | 4220 | ballstopped
+4221 | 4221 | ballstopped
+4222 | 4222 | ballstopped
+4223 | 4223 | ballstopped
+4224 | 4224 | ballstopped
+4225 | 4225 | ballstopped
+4226 | 4226 | ballstopped
+4227 | 4227 | ballstopped
+4228 | 4228 | ballstopped
+4229 | 4229 | ballstopped
+4230 | 4230 | ballstopped
+4231 | 4231 | ballstopped
+4232 | 4232 | ballstopped
+4233 | 4233 | ballstopped
+4234 | 4234 | ballstopped
+4235 | 4235 | ballstopped
+4236 | 4236 | ballstopped
+4237 | 4237 | ballstopped
+4238 | 4238 | ballstopped
+4239 | 4239 | ballstopped
+4240 | 4240 | ballstopped
+4241 | 4241 | ballstopped
+4242 | 4242 | ballstopped
+4243 | 4243 | ballstopped
+4244 | 4244 | ballstopped
+4245 | 4245 | ballstopped
+4246 | 4246 | ballstopped
+4247 | 4247 | ballstopped
+4248 | 4248 | ballstopped
+4249 | 4249 | ballstopped
+4250 | 4250 | ballstopped
+4251 | 4251 | ballstopped
+4252 | 4252 | ballstopped
+4253 | 4253 | ballstopped
+4254 | 4254 | ballstopped
+4255 | 4255 | ballstopped
+4256 | 4256 | ballstopped
+4257 | 4257 | ballstopped
+4258 | 4258 | ballstopped
+4259 | 4259 | ballstopped
+4260 | 4260 | ballstopped
+4261 | 4261 | ballstopped
+4262 | 4262 | ballstopped
+4263 | 4263 | ballstopped
+4264 | 4264 | ballstopped
+4265 | 4265 | ballstopped
+4266 | 4266 | ballstopped
+4267 | 4267 | ballstopped
+4268 | 4268 | ballstopped
+4269 | 4269 | ballstopped
+4270 | 4270 | ballstopped
+4271 | 4271 | ballstopped
+4272 | 4272 | ballstopped
+4273 | 4273 | ballstopped
+4274 | 4274 | ballstopped
+4275 | 4275 | ballstopped
+4276 | 4276 | ballstopped
+4277 | 4277 | ballstopped
+4278 | 4278 | ballstopped
+4279 | 4279 | ballstopped
+4280 | 4280 | ballstopped
+4281 | 4281 | ballstopped
+4282 | 4282 | ballstopped
+4283 | 4283 | ballstopped
+4284 | 4284 | ballstopped
+4285 | 4285 | ballstopped
+4286 | 4286 | ballstopped
+4287 | 4287 | ballstopped
+4288 | 4288 | ballstopped
+4289 | 4289 | ballstopped
+4290 | 4290 | ballstopped
+4291 | 4291 | ballstopped
+4292 | 4292 | ballstopped
+4293 | 4293 | ballstopped
+4294 | 4294 | ballstopped
+4295 | 4295 | ballstopped
+4296 | 4296 | ballstopped
+4297 | 4297 | ballstopped
+4298 | 4298 | ballstopped
+4299 | 4299 | ballstopped
+4300 | 4300 | ballstopped
+4301 | 4301 | ballstopped
+4302 | 4302 | ballstopped
+4303 | 4303 | ballstopped
+4304 | 4304 | ballstopped
+4305 | 4305 | playmode ( play_on )
+4305 | 4305 | kick ( purple1 )
+4305 | 4309 | pass ( purple1 , purple5 )
+4312 | 4312 | kick ( purple5 )
+4316 | 4316 | kick ( purple5 )
+4328 | 4328 | steal ( purple5 )
+4328 | 4328 | turnover ( purple5 , pink7 )
+4329 | 4329 | kick ( pink7 )
+4329 | 4338 | badPass ( pink7 , purple11 )
+4329 | 4338 | turnover ( pink7 , purple11 )
+4340 | 4340 | kick ( purple11 )
+4350 | 4350 | kick ( purple11 )
+4355 | 4355 | kick ( purple11 )
+4360 | 4360 | kick ( purple11 )
+4360 | 4365 | pass ( purple11 , purple8 )
+4374 | 4374 | kick ( purple8 )
+4374 | 4377 | pass ( purple8 , purple7 )
+4379 | 4379 | kick ( purple7 )
+4384 | 4384 | ballstopped
+4385 | 4385 | kick ( purple7 )
+4385 | 4387 | pass ( purple7 , purple10 )
+4388 | 4388 | kick ( purple10 )
+4388 | 4396 | pass ( purple10 , purple11 )
+4398 | 4398 | steal ( purple11 )
+4398 | 4398 | turnover ( purple11 , pink7 )
+4402 | 4402 | ballstopped
+4403 | 4403 | kick ( pink4 )
+4403 | 4421 | pass ( pink4 , pink10 )
+4422 | 4422 | ballstopped
+4423 | 4423 | ballstopped
+4424 | 4424 | ballstopped
+4425 | 4425 | kick ( pink10 )
+4436 | 4436 | steal ( pink10 )
+4436 | 4436 | turnover ( pink10 , purple5 )
+4437 | 4437 | kick ( purple5 )
+4437 | 4455 | badPass ( purple5 , pink11 )
+4437 | 4455 | turnover ( purple5 , pink11 )
+4456 | 4456 | kick ( pink11 )
+4460 | 4460 | kick ( pink11 )
+4460 | 4471 | badPass ( pink11 , purple5 )
+4484 | 4484 | kick ( purple7 )
+4485 | 4485 | ballstopped
+4484 | 4485 | pass ( purple7 , purple4 )
+4490 | 4490 | kick ( purple4 )
+4490 | 4502 | pass ( purple4 , purple8 )
+4504 | 4504 | ballstopped
+4508 | 4508 | kick ( purple8 )
+4508 | 4522 | badPass ( purple8 , pink4 )
+4508 | 4522 | turnover ( purple8 , pink4 )
+4533 | 4533 | kick ( pink4 )
+4548 | 4548 | ballstopped
+4533 | 4548 | pass ( pink4 , pink9 )
+4549 | 4549 | ballstopped
+4550 | 4550 | ballstopped
+4552 | 4552 | ballstopped
+4553 | 4553 | ballstopped
+4556 | 4556 | ballstopped
+4557 | 4557 | kick ( pink9 )
+4557 | 4561 | badPass ( pink9 , purple7 )
+4557 | 4561 | turnover ( pink9 , purple7 )
+4563 | 4563 | kick ( purple7 )
+4563 | 4566 | pass ( purple7 , purple4 )
+4573 | 4573 | kick ( purple4 )
+4573 | 4577 | pass ( purple4 , purple3 )
+4582 | 4582 | kick ( purple3 )
+4588 | 4588 | kick ( purple3 )
+4588 | 4592 | pass ( purple3 , purple10 )
+4595 | 4595 | kick ( purple10 )
+4595 | 4602 | pass ( purple10 , purple8 )
+4603 | 4603 | kick ( purple8 )
+4607 | 4607 | kick ( purple8 )
+4607 | 4609 | pass ( purple8 , purple7 )
+4614 | 4614 | ballstopped
+4615 | 4615 | kick ( purple7 )
+4615 | 4616 | badPass ( purple7 , pink7 )
+4615 | 4616 | turnover ( purple7 , pink7 )
+4617 | 4617 | kick ( pink7 )
+4617 | 4620 | badPass ( pink7 , purple8 )
+4617 | 4620 | turnover ( pink7 , purple8 )
+4623 | 4623 | ballstopped
+4624 | 4624 | ballstopped
+4625 | 4625 | kick ( purple8 )
+4625 | 4629 | pass ( purple8 , purple4 )
+4636 | 4636 | ballstopped
+4637 | 4637 | ballstopped
+4639 | 4639 | kick ( purple4 )
+4639 | 4643 | badPass ( purple4 , pink9 )
+4639 | 4643 | turnover ( purple4 , pink9 )
+4648 | 4648 | kick ( pink9 )
+4648 | 4649 | pass ( pink9 , pink7 )
+4650 | 4650 | kick ( pink7 )
+4658 | 4658 | kick ( pink7 )
+4676 | 4676 | kick ( pink7 )
+4689 | 4689 | kick ( pink7 )
+4689 | 4690 | pass ( pink7 , pink9 )
+4692 | 4692 | kick ( pink9 )
+4701 | 4701 | kick ( pink9 )
+4704 | 4704 | playmode ( goal_r )
+4704 | 4704 | ballstopped
+4705 | 4705 | playmode ( kick_off_l )
+4705 | 4705 | ballstopped
+4701 | 4705 | badPass ( pink9 , purple10 )
+4701 | 4705 | turnover ( pink9 , purple10 )
+4706 | 4706 | playmode ( play_on )
+4706 | 4706 | kick ( purple10 )
+4706 | 4713 | pass ( purple10 , purple8 )
+4714 | 4714 | ballstopped
+4717 | 4717 | kick ( purple8 )
+4717 | 4724 | pass ( purple8 , purple3 )
+4730 | 4730 | kick ( purple3 )
+4730 | 4734 | pass ( purple3 , purple2 )
+4738 | 4738 | kick ( purple2 )
+4738 | 4740 | pass ( purple2 , purple6 )
+4741 | 4741 | ballstopped
+4742 | 4742 | kick ( purple6 )
+4742 | 4749 | badPass ( purple6 , pink9 )
+4742 | 4749 | turnover ( purple6 , pink9 )
+4750 | 4750 | kick ( pink9 )
+4772 | 4772 | kick ( pink9 )
+4772 | 4776 | pass ( pink9 , pink10 )
+4777 | 4777 | kick ( pink10 )
+4786 | 4786 | playmode ( goal_r )
+4786 | 4786 | ballstopped
+4787 | 4787 | playmode ( kick_off_l )
+4787 | 4787 | ballstopped
+4777 | 4787 | badPass ( pink10 , purple10 )
+4777 | 4787 | turnover ( pink10 , purple10 )
+4788 | 4788 | playmode ( play_on )
+4797 | 4797 | kick ( purple6 )
+4797 | 4808 | badPass ( purple6 , pink11 )
+4797 | 4808 | turnover ( purple6 , pink11 )
+4810 | 4810 | ballstopped
+4811 | 4811 | ballstopped
+4812 | 4812 | ballstopped
+4821 | 4821 | kick ( pink11 )
+4821 | 4836 | badPass ( pink11 , purple8 )
+4821 | 4836 | turnover ( pink11 , purple8 )
+4837 | 4837 | kick ( purple8 )
+4847 | 4847 | ballstopped
+4837 | 4847 | pass ( purple8 , purple11 )
+4848 | 4848 | ballstopped
+4853 | 4853 | kick ( purple11 )
+4858 | 4858 | ballstopped
+4859 | 4859 | kick ( purple11 )
+4862 | 4862 | kick ( purple11 )
+4862 | 4870 | pass ( purple11 , purple10 )
+4876 | 4876 | kick ( purple10 )
+4876 | 4879 | pass ( purple10 , purple8 )
+4881 | 4881 | kick ( purple8 )
+4886 | 4886 | kick ( purple8 )
+4886 | 4888 | pass ( purple8 , purple11 )
+4889 | 4889 | ballstopped
+4890 | 4890 | ballstopped
+4895 | 4895 | kick ( purple11 )
+4895 | 4897 | pass ( purple11 , purple8 )
+4902 | 4902 | kick ( purple8 )
+4902 | 4905 | pass ( purple8 , purple11 )
+4907 | 4907 | kick ( purple11 )
+4909 | 4909 | kick ( purple11 )
+4911 | 4911 | kick ( purple11 )
+4911 | 4918 | pass ( purple11 , purple7 )
+4920 | 4920 | kick ( purple7 )
+4920 | 4921 | pass ( purple7 , purple8 )
+4930 | 4930 | kick ( purple8 )
+4935 | 4935 | kick ( purple8 )
+4940 | 4940 | kick ( purple8 )
+4951 | 4951 | kick ( purple8 )
+4971 | 4971 | playmode ( kick_in_r )
+4971 | 4971 | ballstopped
+4972 | 4972 | ballstopped
+4973 | 4973 | ballstopped
+4974 | 4974 | ballstopped
+4975 | 4975 | ballstopped
+4976 | 4976 | ballstopped
+4977 | 4977 | ballstopped
+4978 | 4978 | ballstopped
+4979 | 4979 | ballstopped
+4980 | 4980 | ballstopped
+4981 | 4981 | ballstopped
+4982 | 4982 | ballstopped
+4983 | 4983 | ballstopped
+4984 | 4984 | ballstopped
+4985 | 4985 | ballstopped
+4986 | 4986 | ballstopped
+4987 | 4987 | ballstopped
+4988 | 4988 | ballstopped
+4989 | 4989 | ballstopped
+4990 | 4990 | ballstopped
+4991 | 4991 | ballstopped
+4992 | 4992 | ballstopped
+4993 | 4993 | ballstopped
+4994 | 4994 | ballstopped
+4995 | 4995 | ballstopped
+4996 | 4996 | ballstopped
+4997 | 4997 | ballstopped
+4998 | 4998 | ballstopped
+4999 | 4999 | ballstopped
+5000 | 5000 | ballstopped
+5001 | 5001 | ballstopped
+5002 | 5002 | ballstopped
+5003 | 5003 | ballstopped
+5004 | 5004 | ballstopped
+5005 | 5005 | ballstopped
+5006 | 5006 | ballstopped
+5007 | 5007 | ballstopped
+5008 | 5008 | ballstopped
+5009 | 5009 | ballstopped
+5010 | 5010 | ballstopped
+5011 | 5011 | ballstopped
+5012 | 5012 | ballstopped
+5013 | 5013 | ballstopped
+5014 | 5014 | ballstopped
+5015 | 5015 | ballstopped
+5016 | 5016 | ballstopped
+5017 | 5017 | ballstopped
+5018 | 5018 | ballstopped
+5019 | 5019 | ballstopped
+5020 | 5020 | ballstopped
+5021 | 5021 | ballstopped
+5022 | 5022 | ballstopped
+5023 | 5023 | ballstopped
+5024 | 5024 | ballstopped
+5025 | 5025 | ballstopped
+5026 | 5026 | ballstopped
+5027 | 5027 | ballstopped
+5028 | 5028 | ballstopped
+5029 | 5029 | ballstopped
+5030 | 5030 | ballstopped
+5031 | 5031 | ballstopped
+5032 | 5032 | ballstopped
+5033 | 5033 | ballstopped
+5034 | 5034 | ballstopped
+5035 | 5035 | ballstopped
+5036 | 5036 | ballstopped
+5037 | 5037 | ballstopped
+5038 | 5038 | ballstopped
+5039 | 5039 | ballstopped
+5040 | 5040 | ballstopped
+5041 | 5041 | ballstopped
+5042 | 5042 | ballstopped
+5043 | 5043 | ballstopped
+5044 | 5044 | ballstopped
+5045 | 5045 | ballstopped
+5046 | 5046 | ballstopped
+5047 | 5047 | ballstopped
+5048 | 5048 | ballstopped
+5049 | 5049 | ballstopped
+5050 | 5050 | ballstopped
+5051 | 5051 | ballstopped
+4951 | 5051 | badPass ( purple8 , pink7 )
+4951 | 5051 | turnover ( purple8 , pink7 )
+5052 | 5052 | ballstopped
+5053 | 5053 | ballstopped
+5054 | 5054 | ballstopped
+5055 | 5055 | ballstopped
+5056 | 5056 | ballstopped
+5057 | 5057 | ballstopped
+5058 | 5058 | ballstopped
+5059 | 5059 | ballstopped
+5060 | 5060 | ballstopped
+5061 | 5061 | ballstopped
+5062 | 5062 | ballstopped
+5063 | 5063 | ballstopped
+5064 | 5064 | ballstopped
+5065 | 5065 | ballstopped
+5066 | 5066 | ballstopped
+5067 | 5067 | ballstopped
+5068 | 5068 | ballstopped
+5069 | 5069 | ballstopped
+5070 | 5070 | ballstopped
+5071 | 5071 | ballstopped
+5072 | 5072 | ballstopped
+5073 | 5073 | ballstopped
+5074 | 5074 | ballstopped
+5075 | 5075 | ballstopped
+5076 | 5076 | ballstopped
+5077 | 5077 | ballstopped
+5078 | 5078 | ballstopped
+5079 | 5079 | ballstopped
+5080 | 5080 | ballstopped
+5081 | 5081 | ballstopped
+5082 | 5082 | ballstopped
+5083 | 5083 | ballstopped
+5084 | 5084 | ballstopped
+5085 | 5085 | ballstopped
+5086 | 5086 | ballstopped
+5087 | 5087 | ballstopped
+5088 | 5088 | ballstopped
+5089 | 5089 | ballstopped
+5090 | 5090 | ballstopped
+5091 | 5091 | ballstopped
+5092 | 5092 | ballstopped
+5093 | 5093 | ballstopped
+5094 | 5094 | ballstopped
+5095 | 5095 | ballstopped
+5096 | 5096 | ballstopped
+5097 | 5097 | ballstopped
+5098 | 5098 | ballstopped
+5099 | 5099 | ballstopped
+5100 | 5100 | ballstopped
+5101 | 5101 | ballstopped
+5102 | 5102 | ballstopped
+5103 | 5103 | playmode ( play_on )
+5103 | 5103 | ballstopped
+5106 | 5106 | kick ( pink7 )
+5106 | 5115 | pass ( pink7 , pink10 )
+5117 | 5117 | kick ( pink10 )
+5124 | 5124 | steal ( pink10 )
+5124 | 5124 | turnover ( pink10 , purple5 )
+5125 | 5125 | kick ( purple5 )
+5125 | 5131 | badPass ( purple5 , pink9 )
+5125 | 5131 | turnover ( purple5 , pink9 )
+5132 | 5132 | ballstopped
+5133 | 5133 | ballstopped
+5134 | 5134 | ballstopped
+5136 | 5136 | kick ( pink9 )
+5163 | 5163 | kick ( pink9 )
+5163 | 5169 | defense ( purple3 , purple3 )
+5163 | 5169 | turnover ( pink9 , purple3 )
+5172 | 5172 | kick ( purple3 )
+5181 | 5181 | playmode ( goal_kick_l )
+5181 | 5181 | ballstopped
+5182 | 5182 | ballstopped
+5183 | 5183 | ballstopped
+5184 | 5184 | ballstopped
+5185 | 5185 | ballstopped
+5186 | 5186 | ballstopped
+5187 | 5187 | ballstopped
+5188 | 5188 | ballstopped
+5172 | 5188 | pass ( purple3 , purple1 )
+5189 | 5189 | ballstopped
+5190 | 5190 | ballstopped
+5191 | 5191 | ballstopped
+5192 | 5192 | ballstopped
+5193 | 5193 | ballstopped
+5194 | 5194 | ballstopped
+5195 | 5195 | ballstopped
+5196 | 5196 | ballstopped
+5197 | 5197 | ballstopped
+5198 | 5198 | ballstopped
+5199 | 5199 | ballstopped
+5200 | 5200 | ballstopped
+5201 | 5201 | ballstopped
+5202 | 5202 | ballstopped
+5203 | 5203 | ballstopped
+5204 | 5204 | ballstopped
+5205 | 5205 | ballstopped
+5206 | 5206 | ballstopped
+5207 | 5207 | ballstopped
+5208 | 5208 | ballstopped
+5209 | 5209 | ballstopped
+5210 | 5210 | kick ( purple1 )
+5218 | 5218 | playmode ( play_on )
+5218 | 5218 | ballstopped
+5210 | 5218 | pass ( purple1 , purple2 )
+5220 | 5220 | kick ( purple2 )
+5226 | 5226 | kick ( purple2 )
+5226 | 5230 | pass ( purple2 , purple6 )
+5233 | 5233 | kick ( purple6 )
+5244 | 5244 | kick ( purple6 )
+5244 | 5249 | pass ( purple6 , purple2 )
+5258 | 5258 | kick ( purple2 )
+5258 | 5268 | pass ( purple2 , purple9 )
+5269 | 5269 | steal ( purple9 )
+5269 | 5269 | turnover ( purple9 , pink5 )
+5271 | 5271 | kick ( pink5 )
+5271 | 5272 | pass ( pink5 , pink8 )
+5274 | 5274 | ballstopped
+5275 | 5275 | ballstopped
+5276 | 5276 | ballstopped
+5277 | 5277 | ballstopped
+5288 | 5288 | kick ( pink8 )
+5309 | 5309 | kick ( pink8 )
+5311 | 5311 | kick ( pink8 )
+5334 | 5334 | kick ( purple7 )
+5334 | 5339 | pass ( purple7 , purple8 )
+5341 | 5341 | kick ( purple8 )
+5345 | 5345 | kick ( purple8 )
+5351 | 5351 | kick ( purple8 )
+5351 | 5358 | pass ( purple8 , purple10 )
+5361 | 5361 | kick ( purple10 )
+5361 | 5371 | pass ( purple10 , purple11 )
+5373 | 5373 | ballstopped
+5375 | 5375 | kick ( purple11 )
+5375 | 5384 | badPass ( purple11 , pink4 )
+5375 | 5384 | turnover ( purple11 , pink4 )
+5385 | 5385 | ballstopped
+5386 | 5386 | kick ( pink4 )
+5386 | 5392 | pass ( pink4 , pink7 )
+5394 | 5394 | kick ( pink7 )
+5394 | 5398 | badPass ( pink7 , purple7 )
+5394 | 5398 | turnover ( pink7 , purple7 )
+5400 | 5400 | kick ( purple7 )
+5400 | 5431 | pass ( purple7 , purple6 )
+5436 | 5436 | ballstopped
+5441 | 5441 | ballstopped
+5455 | 5455 | kick ( purple6 )
+5455 | 5459 | pass ( purple6 , purple9 )
+5461 | 5461 | kick ( purple9 )
+5464 | 5464 | ballstopped
+5465 | 5465 | ballstopped
+5466 | 5466 | ballstopped
+5480 | 5480 | ballstopped
+5481 | 5481 | ballstopped
+5483 | 5483 | kick ( purple9 )
+5483 | 5495 | badPass ( purple9 , pink11 )
+5483 | 5495 | turnover ( purple9 , pink11 )
+5497 | 5497 | ballstopped
+5498 | 5498 | ballstopped
+5499 | 5499 | ballstopped
+5500 | 5500 | ballstopped
+5515 | 5515 | kick ( pink11 )
+5555 | 5555 | kick ( pink11 )
+5555 | 5560 | pass ( pink11 , pink10 )
+5563 | 5563 | kick ( pink10 )
+5565 | 5565 | playmode ( goal_r )
+5565 | 5565 | ballstopped
+5566 | 5566 | playmode ( kick_off_l )
+5566 | 5566 | ballstopped
+5567 | 5567 | ballstopped
+5568 | 5568 | ballstopped
+5569 | 5569 | ballstopped
+5563 | 5569 | badPass ( pink10 , purple10 )
+5563 | 5569 | turnover ( pink10 , purple10 )
+5570 | 5570 | playmode ( play_on )
+5570 | 5570 | kick ( purple10 )
+5570 | 5577 | pass ( purple10 , purple6 )
+5579 | 5579 | kick ( purple6 )
+5579 | 5587 | pass ( purple6 , purple9 )
+5595 | 5595 | kick ( purple9 )
+5595 | 5603 | pass ( purple9 , purple2 )
+5606 | 5606 | kick ( purple2 )
+5606 | 5610 | pass ( purple2 , purple3 )
+5613 | 5613 | kick ( purple3 )
+5613 | 5618 | pass ( purple3 , purple7 )
+5623 | 5623 | kick ( purple7 )
+5625 | 5625 | kick ( purple7 )
+5625 | 5627 | pass ( purple7 , purple10 )
+5633 | 5633 | kick ( purple10 )
+5633 | 5661 | pass ( purple10 , purple11 )
+5670 | 5670 | ballstopped
+5671 | 5671 | kick ( purple11 )
+5671 | 5677 | pass ( purple11 , purple8 )
+5681 | 5681 | kick ( purple8 )
+5681 | 5684 | pass ( purple8 , purple7 )
+5685 | 5685 | kick ( purple7 )
+5685 | 5690 | pass ( purple7 , purple6 )

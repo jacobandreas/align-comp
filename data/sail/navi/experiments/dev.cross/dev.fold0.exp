@@ -1,0 +1,16 @@
+include=../params.inc
+include=params.inc
+outputDir=logs0
+globalLog=logs0/global.log
+
+# Resources
+include=../resources.inc
+## Training and testing sets
+type=data.composite.trc id=train sets=devFold1,devFold2,devFold3,devFold4
+type=data.composite.ccgtrc id=test sets=devFold0CCG
+type=data.composite.ccgsettrc id=testSet sets=devFold0SetCCG
+type=data.composite.ccgtrc id=testLF sets=devTestLFCCG
+include=../learn.inc
+
+# Jobs
+include=../jobs.inc

@@ -1,0 +1,1850 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+
+<examples>
+
+<example id="0">
+	<nl lang="kr"> 보라팀과 분홍팀의 경기가 시작되겠습니다. </nl>
+	<mrl lang="soccer"> playmode ( kick_off_l ) </mrl>
+</example>
+
+<example id="1">
+	<nl lang="kr"> 보라팀의 선축으로 시작됩니다. </nl>
+	<mrl lang="soccer"> playmode ( kick_off_l ) </mrl>
+</example>
+
+<example id="2">
+	<nl lang="kr"> 보라9가 보라5에게 뒤로 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple9 , purple5 ) </mrl>
+</example>
+
+<example id="3">
+	<nl lang="kr"> 보라5가 전방의 보라8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple5 , purple8 ) </mrl>
+</example>
+
+<example id="4">
+	<nl lang="kr"> 보라8이 전방의 보라6에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple8 , purple6 ) </mrl>
+</example>
+
+<example id="5">
+	<nl lang="kr"> 보라6이 뒤로 패스한 공이 분홍8에게 가로채기 당합니다. </nl>
+	<mrl lang="soccer"> badPass ( purple6 , pink8 ) </mrl>
+</example>
+
+<example id="6">
+	<nl lang="kr"> 분홍8이 패스한 공이 분홍9의 몸을 맞고 굴절되어 보라4에게 빼앗깁니다. </nl>
+	<mrl lang="soccer"> badPass ( pink8 , purple4 ) </mrl>
+</example>
+
+<example id="7">
+	<nl lang="kr"> 보라4가 보라8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple4 , purple8 ) </mrl>
+</example>
+
+<example id="8">
+	<nl lang="kr"> 보라8이 보라7에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple8 , purple7 ) </mrl>
+</example>
+
+<example id="11">
+	<nl lang="kr"> 보라9가 전방으로 공을 치고 달립니다. </nl>
+	<mrl lang="soccer"> pass ( purple7 , purple9 ) </mrl>
+</example>
+
+<example id="12">
+	<nl lang="kr"> 보라9가 보라10에게 사이드로 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple9 , purple10 ) </mrl>
+</example>
+
+<example id="13">
+	<nl lang="kr"> 보라10이 보라7에게 뒤로 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple10 , purple7 ) </mrl>
+</example>
+
+<example id="14">
+	<nl lang="kr"> 보라9가 페널티 에어리어 중앙의 보라8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple9 , purple8 ) </mrl>
+</example>
+
+<example id="15">
+	<nl lang="kr"> 보라8이 공을 분홍 골키퍼에게 빼앗깁니다. </nl>
+	<mrl lang="soccer"> turnover ( purple8 , pink1 ) </mrl>
+</example>
+
+<example id="17">
+	<nl lang="kr"> 분홍 골키퍼가 패스한 공이 보라11에게 가로채기 당합니다. </nl>
+	<mrl lang="soccer"> badPass ( pink1 , purple11 ) </mrl>
+</example>
+
+<example id="19">
+	<nl lang="kr"> 보라8이 슛이 분홍 골키퍼에게 막힙니다. </nl>
+	<mrl lang="soccer"> block ( pink1 ) </mrl>
+</example>
+
+<example id="20">
+	<nl lang="kr"> 분홍 골키퍼의 공격으로 경기가 재개됩니다. </nl>
+	<mrl lang="soccer"> playmode ( free_kick_r ) </mrl>
+</example>
+
+<example id="21">
+	<nl lang="kr"> 분홍 골키퍼가 분홍7에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink1 , pink7 ) </mrl>
+</example>
+
+<example id="22">
+	<nl lang="kr"> 분홍7이 전방으로 패스하여 분홍10에게 연결합니다. </nl>
+	<mrl lang="soccer"> pass ( pink7 , pink10 ) </mrl>
+</example>
+
+<example id="23">
+	<nl lang="kr"> 분홍10의 컨트롤 실수로 수비하던 보라3에게 빼앗깁니다. </nl>
+	<mrl lang="soccer"> turnover ( pink10 , purple3 ) </mrl>
+</example>
+
+<example id="24">
+	<nl lang="kr"> 보라3이 보라2에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple3 , purple2 ) </mrl>
+</example>
+
+<example id="25">
+	<nl lang="kr"> 보라2가 보라7에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple2 , purple7 ) </mrl>
+</example>
+
+<example id="26">
+	<nl lang="kr"> 보라7이 패스한 공이 분홍6에게 가로채기 당합니다. </nl>
+	<mrl lang="soccer"> badPass ( purple7 , pink6 ) </mrl>
+</example>
+
+<example id="27">
+	<nl lang="kr"> 분홍6이 분홍11에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink6 , pink11 ) </mrl>
+</example>
+
+<example id="28">
+	<nl lang="kr"> 분홍11이 분홍8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink11 , pink8 ) </mrl>
+</example>
+
+<example id="29">
+	<nl lang="kr"> 분홍8이 분홍11에게 다시 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink8 , pink11 ) </mrl>
+</example>
+
+<example id="30">
+	<nl lang="kr"> 분홍11이 분홍9에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink11 , pink9 ) </mrl>
+</example>
+
+<example id="31">
+	<nl lang="kr"> 분홍9가 중앙의 분홍10에게 패스했지만 수비하던 보라2에게 뺏기고 맙니다. </nl>
+	<mrl lang="soccer"> turnover ( pink9 , purple2 ) </mrl>
+</example>
+
+<example id="32">
+	<nl lang="kr"> 보라2가 분홍10에게 다시 공을 빼앗깁니다. </nl>
+	<mrl lang="soccer"> turnover ( purple2 , pink10 ) </mrl>
+</example>
+
+<example id="33">
+	<nl lang="kr"> 분홍10이 분홍9에게 짧게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink10 , pink9 ) </mrl>
+</example>
+
+<example id="34">
+	<nl lang="kr"> 분홍9가 슛이 보라 골키퍼에게 막힙니다. </nl>
+	<mrl lang="soccer"> block ( purple1 ) </mrl>
+</example>
+
+<example id="35">
+	<nl lang="kr"> 보라 골키퍼가 패스한 공이 분홍9에게 가로채기 당합니다. </nl>
+	<mrl lang="soccer"> badPass ( purple1 , pink9 ) </mrl>
+</example>
+
+<example id="36">
+	<nl lang="kr"> 분홍9의 슛입니다! </nl>
+	<mrl lang="soccer"> kick ( pink9 ) </mrl>
+</example>
+
+<example id="37">
+	<nl lang="kr"> 골입니다!!! </nl>
+	<mrl lang="soccer"> playmode ( goal_r ) </mrl>
+</example>
+
+<example id="38">
+	<nl lang="kr"> 보라팀의 선공으로 재개됩니다. </nl>
+	<mrl lang="soccer"> playmode ( kick_off_l ) </mrl>
+</example>
+
+<example id="39">
+	<nl lang="kr"> 보라9가 보라5에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple9 , purple5 ) </mrl>
+</example>
+
+<example id="40">
+	<nl lang="kr"> 보라5가 보라4에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple5 , purple4 ) </mrl>
+</example>
+
+<example id="41">
+	<nl lang="kr"> 보라4가 보라6에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple4 , purple6 ) </mrl>
+</example>
+
+<example id="42">
+	<nl lang="kr"> 보라6이 전방으로 질주합니다. </nl>
+	<mrl lang="soccer"> kick ( purple6 ) </mrl>
+</example>
+
+<example id="45">
+	<nl lang="kr"> 분홍4가 분홍8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink4 , pink8 ) </mrl>
+</example>
+
+<example id="46">
+	<nl lang="kr"> 분홍8이 분홍11에게 패스한 공이 사이드 라인 아웃됩니다. </nl>
+	<mrl lang="soccer"> playmode ( kick_in_l ) </mrl>
+</example>
+
+<example id="48">
+	<nl lang="kr"> 보라6이 보라11에게 뒤로 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple6 , purple11 ) </mrl>
+</example>
+
+<example id="49">
+	<nl lang="kr"> 보라11이 보라8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple11 , purple8 ) </mrl>
+</example>
+
+<example id="50">
+	<nl lang="kr"> 보라8이 보라11에게 다시 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple8 , purple11 ) </mrl>
+</example>
+
+<example id="51">
+	<nl lang="kr"> 보라11이 뒤로 패스한 공이 분홍6에게 가로채기 당합니다. </nl>
+	<mrl lang="soccer"> badPass ( purple11 , pink6 ) </mrl>
+</example>
+
+<example id="52">
+	<nl lang="kr"> 분홍6이 분홍8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink6 , pink8 ) </mrl>
+</example>
+
+<example id="53">
+	<nl lang="kr"> 분홍8의 패스가 분홍9에게 연결됩니다. </nl>
+	<mrl lang="soccer"> pass ( pink8 , pink9 ) </mrl>
+</example>
+
+<example id="54">
+	<nl lang="kr"> 분홍9가 분홍11에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink9 , pink11 ) </mrl>
+</example>
+
+<example id="55">
+	<nl lang="kr"> 분홍11이 페널티 에어리어 근처에서 망설이다가 분홍9에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink11 , pink9 ) </mrl>
+</example>
+
+<example id="56">
+	<nl lang="kr"> 분홍9가 분홍7에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink9 , pink7 ) </mrl>
+</example>
+
+<example id="57">
+	<nl lang="kr"> 분홍7이 분홍10에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink7 , pink10 ) </mrl>
+</example>
+
+<example id="58">
+	<nl lang="kr"> 분홍10이 슛이 보라 골키퍼에게 막힙니다. </nl>
+	<mrl lang="soccer"> block ( purple1 ) </mrl>
+</example>
+
+<example id="61">
+	<nl lang="kr"> 보라8이 보라7에게 전방으로 길게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple8 , purple7 ) </mrl>
+</example>
+
+<example id="63">
+	<nl lang="kr"> 보라7이 오른쪽 사이드의 보라10에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple7 , purple10 ) </mrl>
+</example>
+
+<example id="64">
+	<nl lang="kr"> 보라10의 컨트롤 실수로 수비하던 분홍2에게 빼앗깁니다. </nl>
+	<mrl lang="soccer"> turnover ( purple10 , pink2 ) </mrl>
+</example>
+
+<example id="65">
+	<nl lang="kr"> 분홍2가 전방의 분홍6에게 길게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink2 , pink6 ) </mrl>
+</example>
+
+<example id="66">
+	<nl lang="kr"> 분홍6이 분홍8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink6 , pink8 ) </mrl>
+</example>
+
+<example id="67">
+	<nl lang="kr"> 분홍8이 분홍11에게 빠르게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink8 , pink11 ) </mrl>
+</example>
+
+<example id="68">
+	<nl lang="kr"> 분홍11이 전방의 분홍9에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink11 , pink9 ) </mrl>
+</example>
+
+<example id="69">
+	<nl lang="kr"> 분홍9가 분홍11에게 다시 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink9 , pink11 ) </mrl>
+</example>
+
+<example id="70">
+	<nl lang="kr"> 분홍11이 분홍9에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink11 , pink9 ) </mrl>
+</example>
+
+<example id="71">
+	<nl lang="kr"> 분홍9가 분홍11에게 다시 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink9 , pink11 ) </mrl>
+</example>
+
+<example id="72">
+	<nl lang="kr"> 분홍11이 분홍9에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink11 , pink9 ) </mrl>
+</example>
+
+<example id="73">
+	<nl lang="kr"> 분홍9가 전진하던 분홍10에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink9 , pink10 ) </mrl>
+</example>
+
+<example id="74">
+	<nl lang="kr"> 분홍10이 뒤따라오던 분홍7에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink10 , pink7 ) </mrl>
+</example>
+
+<example id="75">
+	<nl lang="kr"> 분홍7의 슛이 벗어나 골라인 아웃됩니다. </nl>
+	<mrl lang="soccer"> playmode ( goal_kick_l ) </mrl>
+</example>
+
+<example id="76">
+	<nl lang="kr"> 보라 골키퍼가 보라2에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple1 , purple2 ) </mrl>
+</example>
+
+<example id="77">
+	<nl lang="kr"> 보라2가 보라8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple2 , purple8 ) </mrl>
+</example>
+
+<example id="78">
+	<nl lang="kr"> 보라8이 보라6에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple8 , purple6 ) </mrl>
+</example>
+
+<example id="80">
+	<nl lang="kr"> 보라6이 수비하던 분홍5에게 공을 빼앗깁니다. </nl>
+	<mrl lang="soccer"> turnover ( purple6 , pink5 ) </mrl>
+</example>
+
+<example id="81">
+	<nl lang="kr"> 분홍5가 분홍8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink5 , pink8 ) </mrl>
+</example>
+
+<example id="82">
+	<nl lang="kr"> 분홍8이 분홍6에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink8 , pink6 ) </mrl>
+</example>
+
+<example id="83">
+	<nl lang="kr"> 분홍6이 패스한 공이 보라5에게 가로채기 당합니다. </nl>
+	<mrl lang="soccer"> badPass ( pink6 , purple5 ) </mrl>
+</example>
+
+<example id="84">
+	<nl lang="kr"> 보라5의 컨트롤 실수로 분홍8에게 공을 빼앗깁니다. </nl>
+	<mrl lang="soccer"> turnover ( purple5 , pink8 ) </mrl>
+</example>
+
+<example id="85">
+	<nl lang="kr"> 분홍8이 패스하려던 공이 다시 보라5에게 빼앗깁니다. </nl>
+	<mrl lang="soccer"> turnover ( pink8 , purple5 ) </mrl>
+</example>
+
+<example id="86">
+	<nl lang="kr"> 보라5에게 맞은 공이 사이드 라인 아웃됩니다. </nl>
+	<mrl lang="soccer"> playmode ( kick_in_r ) </mrl>
+</example>
+
+<example id="88">
+	<nl lang="kr"> 분홍4가 패스한 공이 보라5에게 가로채기 당합니다. </nl>
+	<mrl lang="soccer"> badPass ( pink4 , purple5 ) </mrl>
+</example>
+
+<example id="89">
+	<nl lang="kr"> 보라5가 보라11에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple5 , purple11 ) </mrl>
+</example>
+
+<example id="91">
+	<nl lang="kr"> 보라11이 보라6에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple11 , purple6 ) </mrl>
+</example>
+
+<example id="92">
+	<nl lang="kr"> 보라6이 보라11에게 다시 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple6 , purple11 ) </mrl>
+</example>
+
+<example id="93">
+	<nl lang="kr"> 보라11이 보라6에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple11 , purple6 ) </mrl>
+</example>
+
+<example id="94">
+	<nl lang="kr"> 보라6이 보라8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple6 , purple8 ) </mrl>
+</example>
+
+<example id="95">
+	<nl lang="kr"> 보라8이 바로 보라11에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple8 , purple11 ) </mrl>
+</example>
+
+<example id="96">
+	<nl lang="kr"> 보라11이 후방으로 길게 패스한 공이 분홍6에게 가로채기 당합니다. </nl>
+	<mrl lang="soccer"> badPass ( purple11 , pink6 ) </mrl>
+</example>
+
+<example id="97">
+	<nl lang="kr"> 분홍6이 분홍7에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink6 , pink7 ) </mrl>
+</example>
+
+<example id="98">
+	<nl lang="kr"> 분홍7이 분홍9에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink7 , pink9 ) </mrl>
+</example>
+
+<example id="99">
+	<nl lang="kr"> 분홍9가 분홍11에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink9 , pink11 ) </mrl>
+</example>
+
+<example id="101">
+	<nl lang="kr"> 분홍11이 분홍9에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink11 , pink9 ) </mrl>
+</example>
+
+<example id="102">
+	<nl lang="kr"> 분홍9가 바로 슛이 보라 골키퍼에게 막힙니다. </nl>
+	<mrl lang="soccer"> block ( purple1 ) </mrl>
+</example>
+
+<example id="103">
+	<nl lang="kr"> 보라 골키퍼가 보라3에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple1 , purple3 ) </mrl>
+</example>
+
+<example id="104">
+	<nl lang="kr"> 보라3이 보라8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple3 , purple8 ) </mrl>
+</example>
+
+<example id="105">
+	<nl lang="kr"> 보라8이 전진하다가 보라6에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple8 , purple6 ) </mrl>
+</example>
+
+<example id="107">
+	<nl lang="kr"> 보라6이 보라11에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple6 , purple11 ) </mrl>
+</example>
+
+<example id="109">
+	<nl lang="kr"> 보라11이 중앙으로 패스한 공이 분홍 골키퍼에게 막힙니다. </nl>
+	<mrl lang="soccer"> block ( pink1 ) </mrl>
+</example>
+
+<example id="110">
+	<nl lang="kr"> 분홍 골키퍼가 분홍2에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink1 , pink2 ) </mrl>
+</example>
+
+<example id="111">
+	<nl lang="kr"> 분홍2가 분홍7에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink2 , pink7 ) </mrl>
+</example>
+
+<example id="112">
+	<nl lang="kr"> 분홍7이 전방으로 패스한 공이 보라2에게 가로채기 당합니다. </nl>
+	<mrl lang="soccer"> badPass ( pink7 , purple2 ) </mrl>
+</example>
+
+<example id="113">
+	<nl lang="kr"> 보라2가 보라10에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple2 , purple10 ) </mrl>
+</example>
+
+<example id="115">
+	<nl lang="kr"> 보라7이 보라10에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple7 , purple10 ) </mrl>
+</example>
+
+<example id="116">
+	<nl lang="kr"> 보라10이 보라9에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple10 , purple9 ) </mrl>
+</example>
+
+<example id="117">
+	<nl lang="kr"> 보라9가 보라8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple9 , purple8 ) </mrl>
+</example>
+
+<example id="118">
+	<nl lang="kr"> 보라8이 패스한 공이 분홍6에게 가로채기 당합니다. </nl>
+	<mrl lang="soccer"> badPass ( purple8 , pink6 ) </mrl>
+</example>
+
+<example id="119">
+	<nl lang="kr"> 분홍6이 분홍8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink6 , pink8 ) </mrl>
+</example>
+
+<example id="120">
+	<nl lang="kr"> 분홍8이 분홍11에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink8 , pink11 ) </mrl>
+</example>
+
+<example id="121">
+	<nl lang="kr"> 분홍11이 분홍9에게 중앙으로 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink11 , pink9 ) </mrl>
+</example>
+
+<example id="122">
+	<nl lang="kr"> 보라4가 보라9에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple4 , purple9 ) </mrl>
+</example>
+
+<example id="123">
+	<nl lang="kr"> 분홍9가 수비하던 보라4에게 공을 빼앗깁니다. </nl>
+	<mrl lang="soccer"> turnover ( pink9 , purple4 ) </mrl>
+</example>
+
+<example id="124">
+	<nl lang="kr"> 보라9의 패스가 수비하던 분홍2에게 가로채기 당합니다. </nl>
+	<mrl lang="soccer"> turnover ( purple9 , pink2 ) </mrl>
+</example>
+
+<example id="125">
+	<nl lang="kr"> 분홍2가 분홍6에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink2 , pink6 ) </mrl>
+</example>
+
+<example id="126">
+	<nl lang="kr"> 분홍6이 패스한 공이 보라7에게 가로채기 당합니다. </nl>
+	<mrl lang="soccer"> badPass ( pink6 , purple7 ) </mrl>
+</example>
+
+<example id="127">
+	<nl lang="kr"> 보라7이 보라6에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple7 , purple6 ) </mrl>
+</example>
+
+<example id="129">
+	<nl lang="kr"> 보라8이 사이드의 보라10에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple8 , purple10 ) </mrl>
+</example>
+
+<example id="130">
+	<nl lang="kr"> 보라10의 슛입니다! </nl>
+	<mrl lang="soccer"> kick ( purple10 ) </mrl>
+</example>
+
+<example id="131">
+	<nl lang="kr"> 보라10의 슛이 분홍 골키퍼에게 막힙니다. </nl>
+	<mrl lang="soccer"> block ( pink1 ) </mrl>
+</example>
+
+<example id="132">
+	<nl lang="kr"> 분홍 골키퍼가 분홍4에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink1 , pink4 ) </mrl>
+</example>
+
+<example id="133">
+	<nl lang="kr"> 분홍4가 패스한 공이 보라6에게 가로채기 당합니다. </nl>
+	<mrl lang="soccer"> badPass ( pink4 , purple6 ) </mrl>
+</example>
+
+<example id="134">
+	<nl lang="kr"> 보라6이 패스한 공이 골라인 아웃됩니다. </nl>
+	<mrl lang="soccer"> playmode ( goal_kick_r ) </mrl>
+</example>
+
+<example id="135">
+	<nl lang="kr"> 분홍 골키퍼가 분홍4에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink1 , pink4 ) </mrl>
+</example>
+
+<example id="136">
+	<nl lang="kr"> 분홍4가 패스한 공이 보라8에게 가로채기 당합니다. </nl>
+	<mrl lang="soccer"> badPass ( pink4 , purple8 ) </mrl>
+</example>
+
+<example id="137">
+	<nl lang="kr"> 보라8이 보라7에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple8 , purple7 ) </mrl>
+</example>
+
+<example id="139">
+	<nl lang="kr"> 보라7이 패스한 공이 분홍6에게 가로채기 당합니다. </nl>
+	<mrl lang="soccer"> badPass ( purple7 , pink6 ) </mrl>
+</example>
+
+<example id="140">
+	<nl lang="kr"> 분홍6이 패스한 공이 분홍8에게 연결됩니다. </nl>
+	<mrl lang="soccer"> pass ( pink6 , pink8 ) </mrl>
+</example>
+
+<example id="141">
+	<nl lang="kr"> 분홍8이 분홍11에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink8 , pink11 ) </mrl>
+</example>
+
+<example id="142">
+	<nl lang="kr"> 분홍11이 분홍9에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink11 , pink9 ) </mrl>
+</example>
+
+<example id="143">
+	<nl lang="kr"> 분홍9가 패스한 공이 보라2에게 빼앗깁니다. </nl>
+	<mrl lang="soccer"> badPass ( pink9 , purple2 ) </mrl>
+</example>
+
+<example id="144">
+	<nl lang="kr"> 보라2가 공을 다시 분홍10에게 빼앗깁니다. </nl>
+	<mrl lang="soccer"> turnover ( purple2 , pink10 ) </mrl>
+</example>
+
+<example id="145">
+	<nl lang="kr"> 분홍10이 다시 빼앗은 공을 분홍7에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink10 , pink7 ) </mrl>
+</example>
+
+<example id="146">
+	<nl lang="kr"> 분홍7이 분홍10에게 다시 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink7 , pink10 ) </mrl>
+</example>
+
+<example id="147">
+	<nl lang="kr"> 분홍10이 분홍9에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink10 , pink9 ) </mrl>
+</example>
+
+<example id="148">
+	<nl lang="kr"> 분홍9가 분홍11에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink9 , pink11 ) </mrl>
+</example>
+
+<example id="149">
+	<nl lang="kr"> 분홍11이 분홍9에게 짧게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink9 , pink11 ) </mrl>
+</example>
+
+<example id="150">
+	<nl lang="kr"> 분홍9가 수비하던 보라4에게 공을 빼앗깁니다. </nl>
+	<mrl lang="soccer"> turnover ( pink9 , purple4 ) </mrl>
+</example>
+
+<example id="151">
+	<nl lang="kr"> 보라4가 다시 분홍9에게 공을 빼앗깁니다. </nl>
+	<mrl lang="soccer"> turnover ( purple4 , pink9 ) </mrl>
+</example>
+
+<example id="153">
+	<nl lang="kr"> 분홍11이 다시 분홍9에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink11 , pink9 ) </mrl>
+</example>
+
+<example id="154">
+	<nl lang="kr"> 분홍9가 수비하던 보라3에게 공을 빼앗깁니다. </nl>
+	<mrl lang="soccer"> turnover ( pink9 , purple3 ) </mrl>
+</example>
+
+<example id="155">
+	<nl lang="kr"> 혼전 중에 전방으로 패스된 공이 오프사이드로 선언됩니다. </nl>
+	<mrl lang="soccer"> playmode ( offside_r ) </mrl>
+</example>
+
+<example id="156">
+	<nl lang="kr"> 보라3이 보라8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple3 , purple8 ) </mrl>
+</example>
+
+<example id="157">
+	<nl lang="kr"> 보라8이 바로 보라7에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple8 , purple7 ) </mrl>
+</example>
+
+<example id="159">
+	<nl lang="kr"> 보라7이 보라10에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple7 , purple10 ) </mrl>
+</example>
+
+<example id="161">
+	<nl lang="kr"> 보라10이 패스한 공이 분홍 골키퍼에게 막힙니다. </nl>
+	<mrl lang="soccer"> block ( pink1 ) </mrl>
+</example>
+
+<example id="162">
+	<nl lang="kr"> 분홍 골키퍼가 분홍8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink1 , pink8 ) </mrl>
+</example>
+
+<example id="163">
+	<nl lang="kr"> 분홍8이 분홍11에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink8 , pink11 ) </mrl>
+</example>
+
+<example id="164">
+	<nl lang="kr"> 분홍11이 분홍9에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink11 , pink9 ) </mrl>
+</example>
+
+<example id="165">
+	<nl lang="kr"> 분홍9의 컨트롤 실수로 수비하던 보라4에게 공을 빼앗깁니다. </nl>
+	<mrl lang="soccer"> turnover ( pink9 , purple4 ) </mrl>
+</example>
+
+<example id="166">
+	<nl lang="kr"> 보라4가 패스한 공이 분홍10에게 가로채기 당합니다. </nl>
+	<mrl lang="soccer"> badPass ( purple4 , pink10 ) </mrl>
+</example>
+
+<example id="167">
+	<nl lang="kr"> 분홍10이 분홍7에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink10 , pink7 ) </mrl>
+</example>
+
+<example id="168">
+	<nl lang="kr"> 분홍7이 분홍8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink7 , pink8 ) </mrl>
+</example>
+
+<example id="169">
+	<nl lang="kr"> 분홍8이 분홍11에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink8 , pink11 ) </mrl>
+</example>
+
+<example id="170">
+	<nl lang="kr"> 분홍11이 분홍7에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink11 , pink7 ) </mrl>
+</example>
+
+<example id="171">
+	<nl lang="kr"> 분홍7이 밖으로 걷어낸 공이 보라10에게 가로채기 당합니다. </nl>
+	<mrl lang="soccer"> turnover ( pink7 , purple10 ) </mrl>
+</example>
+
+<example id="173">
+	<nl lang="kr"> 보라10이 보라9에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple10 , purple9 ) </mrl>
+</example>
+
+<example id="174">
+	<nl lang="kr"> 보라9가 보라7에게 뒤로 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple9 , purple7 ) </mrl>
+</example>
+
+<example id="175">
+	<nl lang="kr"> 보라7이 보라9에게 공을 넘겨줍니다. </nl>
+	<mrl lang="soccer"> ballstopped </mrl>
+</example>
+
+<example id="176">
+	<nl lang="kr"> 보라7이 패스한 공이 분홍 골키퍼에게 막힙니다. </nl>
+	<mrl lang="soccer"> block ( pink1 ) </mrl>
+</example>
+
+<example id="177">
+	<nl lang="kr"> 분홍 골키퍼가 분홍4에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink1 , pink4 ) </mrl>
+</example>
+
+<example id="178">
+	<nl lang="kr"> 분홍4가 패스한 공이 보라8에게 가로채기 당합니다. </nl>
+	<mrl lang="soccer"> badPass ( pink4 , purple8 ) </mrl>
+</example>
+
+<example id="179">
+	<nl lang="kr"> 보라8이 패스한 공이 분홍8에게 다시 가로채기 당합니다. </nl>
+	<mrl lang="soccer"> badPass ( purple8 , pink8 ) </mrl>
+</example>
+
+<example id="180">
+	<nl lang="kr"> 분홍8이 분홍11에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink8 , pink11 ) </mrl>
+</example>
+
+<example id="181">
+	<nl lang="kr"> 분홍11이 뒤로 패스한 공이 사이드 라인 아웃됩니다. </nl>
+	<mrl lang="soccer"> playmode ( kick_in_l ) </mrl>
+</example>
+
+<example id="183">
+	<nl lang="kr"> 보라6이 보라8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple6 , purple8 ) </mrl>
+</example>
+
+<example id="184">
+	<nl lang="kr"> 보라8이 보라11에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple8 , purple11 ) </mrl>
+</example>
+
+<example id="185">
+	<nl lang="kr"> 보라11이 패스한 공이 분홍5에게 가로채기 당합니다. </nl>
+	<mrl lang="soccer"> badPass ( purple11 , pink5 ) </mrl>
+</example>
+
+<example id="186">
+	<nl lang="kr"> 분홍5가 보라8에게 공을 빼앗깁니다. </nl>
+	<mrl lang="soccer"> turnover ( pink5 , purple8 ) </mrl>
+</example>
+
+<example id="187">
+	<nl lang="kr"> 보라8이 패스한 공이 다시 분홍6에게 빼앗깁니다. </nl>
+	<mrl lang="soccer"> badPass ( purple8 , pink6 ) </mrl>
+</example>
+
+<example id="188">
+	<nl lang="kr"> 분홍6이 분홍7에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink6 , pink7 ) </mrl>
+</example>
+
+<example id="189">
+	<nl lang="kr"> 분홍7이 분홍9에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink7 , pink9 ) </mrl>
+</example>
+
+<example id="190">
+	<nl lang="kr"> 분홍9가 분홍11에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink9 , pink11 ) </mrl>
+</example>
+
+<example id="191">
+	<nl lang="kr"> 분홍11이 페널티 에어리어 쪽으로 전진해 나갑니다. </nl>
+	<mrl lang="soccer"> kick ( pink11 ) </mrl>
+</example>
+
+<example id="192">
+	<nl lang="kr"> 분홍11이 보라3에게 공을 빼앗깁니다. </nl>
+	<mrl lang="soccer"> turnover ( pink11 , purple3 ) </mrl>
+</example>
+
+<example id="193">
+	<nl lang="kr"> 보라3이 밖으로 걷어낸 공이 분홍6에게 가로채기 당합니다. </nl>
+	<mrl lang="soccer"> turnover ( purple3 , pink6 ) </mrl>
+</example>
+
+<example id="194">
+	<nl lang="kr"> 분홍6이 분홍9에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink6 , pink9 ) </mrl>
+</example>
+
+<example id="195">
+	<nl lang="kr"> 분홍9가 분홍10에게 패스한 공이 보라2에게 빼앗깁니다. </nl>
+	<mrl lang="soccer"> kick ( pink9 ) </mrl>
+</example>
+
+<example id="196">
+	<nl lang="kr"> 보라2가 보라6에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple2 , purple6 ) </mrl>
+</example>
+
+<example id="197">
+	<nl lang="kr"> 보라6이 보라8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple6 , purple8 ) </mrl>
+</example>
+
+<example id="198">
+	<nl lang="kr"> 보라8이 보라7에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple8 , purple7 ) </mrl>
+</example>
+
+<example id="200">
+	<nl lang="kr"> 후반전은 분홍팀의 공격으로 경기가 시작됩니다. </nl>
+	<mrl lang="soccer"> playmode ( kick_off_r ) </mrl>
+</example>
+
+<example id="201">
+	<nl lang="kr"> 분홍9가 분홍6에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink9 , pink6 ) </mrl>
+</example>
+
+<example id="202">
+	<nl lang="kr"> 분홍6이 분홍2에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink6 , pink2 ) </mrl>
+</example>
+
+<example id="203">
+	<nl lang="kr"> 분홍2가 분홍7에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink2 , pink7 ) </mrl>
+</example>
+
+<example id="204">
+	<nl lang="kr"> 분홍7이 분홍10에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink7 , pink10 ) </mrl>
+</example>
+
+<example id="206">
+	<nl lang="kr"> 분홍10이 뒤로 패스한 공이 보라7에게 빼앗깁니다. </nl>
+	<mrl lang="soccer"> turnover ( pink10 , purple7 ) </mrl>
+</example>
+
+<example id="207">
+	<nl lang="kr"> 보라7이 패스한 공이 분홍6에게 빼앗깁니다. </nl>
+	<mrl lang="soccer"> badPass ( purple7 , pink6 ) </mrl>
+</example>
+
+<example id="208">
+	<nl lang="kr"> 분홍6이 분홍8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink6 , pink8 ) </mrl>
+</example>
+
+<example id="209">
+	<nl lang="kr"> 분홍8이 분홍11에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink8 , pink11 ) </mrl>
+</example>
+
+<example id="210">
+	<nl lang="kr"> 분홍11의 슛입니다. </nl>
+	<mrl lang="soccer"> kick ( pink11 ) </mrl>
+</example>
+
+<example id="211">
+	<nl lang="kr"> 골입니다!! </nl>
+	<mrl lang="soccer"> playmode ( goal_r ) </mrl>
+</example>
+
+<example id="212">
+	<nl lang="kr"> 보라팀의 공격으로 경기가 재개됩니다. </nl>
+	<mrl lang="soccer"> playmode ( kick_off_l ) </mrl>
+</example>
+
+<example id="213">
+	<nl lang="kr"> 보라9가 보라5에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple9 , purple5 ) </mrl>
+</example>
+
+<example id="214">
+	<nl lang="kr"> 보라5가 보라8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple5 , purple8 ) </mrl>
+</example>
+
+<example id="215">
+	<nl lang="kr"> 보라8이 보라6에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple8 , purple6 ) </mrl>
+</example>
+
+<example id="216">
+	<nl lang="kr"> 보라6이 앞으로 질주하다가 중앙의 보라8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple6 , purple8 ) </mrl>
+</example>
+
+<example id="217">
+	<nl lang="kr"> 보라8의 슛입니다. </nl>
+	<mrl lang="soccer"> kick ( purple8 ) </mrl>
+</example>
+
+<example id="218">
+	<nl lang="kr"> 골입니다!!! </nl>
+	<mrl lang="soccer"> playmode ( goal_l ) </mrl>
+</example>
+
+<example id="219">
+	<nl lang="kr"> 분홍팀의 공격으로 재개됩니다. </nl>
+	<mrl lang="soccer"> playmode ( kick_off_r ) </mrl>
+</example>
+
+<example id="221">
+	<nl lang="kr"> 분홍6이 다시 분홍9에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink6 , pink9 ) </mrl>
+</example>
+
+<example id="222">
+	<nl lang="kr"> 분홍9가 분홍11에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink9 , pink11 ) </mrl>
+</example>
+
+<example id="223">
+	<nl lang="kr"> 분홍11이 분홍9에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink11 , pink9 ) </mrl>
+</example>
+
+<example id="224">
+	<nl lang="kr"> 분홍9가 분홍7에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink9 , pink7 ) </mrl>
+</example>
+
+<example id="225">
+	<nl lang="kr"> 분홍7이 분홍9에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink7 , pink9 ) </mrl>
+</example>
+
+<example id="226">
+	<nl lang="kr"> 분홍9가 분홍11에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink9 , pink11 ) </mrl>
+</example>
+
+<example id="227">
+	<nl lang="kr"> 분홍11이 컨트롤 실수로 보라3에게 공을 빼앗깁니다. </nl>
+	<mrl lang="soccer"> turnover ( pink11 , purple3 ) </mrl>
+</example>
+
+<example id="228">
+	<nl lang="kr"> 보라3이 보라2에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple3 , purple2 ) </mrl>
+</example>
+
+<example id="229">
+	<nl lang="kr"> 보라2가 달려드는 분홍10에게 공을 빼앗깁니다. </nl>
+	<mrl lang="soccer"> turnover ( purple2 , pink10 ) </mrl>
+</example>
+
+<example id="230">
+	<nl lang="kr"> 분홍10의 슛입니다! </nl>
+	<mrl lang="soccer"> kick ( pink10 ) </mrl>
+</example>
+
+<example id="231">
+	<nl lang="kr"> 골입니다!!! </nl>
+	<mrl lang="soccer"> playmode ( goal_r ) </mrl>
+</example>
+
+<example id="232">
+	<nl lang="kr"> 보라팀의 공격으로 재개됩니다. </nl>
+	<mrl lang="soccer"> playmode ( kick_off_l ) </mrl>
+</example>
+
+<example id="233">
+	<nl lang="kr"> 보라9가 보라5에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple9 , purple5 ) </mrl>
+</example>
+
+<example id="234">
+	<nl lang="kr"> 보라5가 보라8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple5 , purple8 ) </mrl>
+</example>
+
+<example id="235">
+	<nl lang="kr"> 보라8이 보라9에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple8 , purple9 ) </mrl>
+</example>
+
+<example id="236">
+	<nl lang="kr"> 보라9가 패스한 공이 분홍2에게 빼앗깁니다. </nl>
+	<mrl lang="soccer"> badPass ( purple9 , pink2 ) </mrl>
+</example>
+
+<example id="237">
+	<nl lang="kr"> 분홍2가 분홍7에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink2 , pink7 ) </mrl>
+</example>
+
+<example id="238">
+	<nl lang="kr"> 분홍7이 분홍10에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink7 , pink10 ) </mrl>
+</example>
+
+<example id="239">
+	<nl lang="kr"> 분홍10이 패스한 공이 중앙의 보라4에게 빼앗깁니다. </nl>
+	<mrl lang="soccer"> turnover ( pink10 , purple4 ) </mrl>
+</example>
+
+<example id="240">
+	<nl lang="kr"> 보라4가 전진하다가 보라7에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple4 , purple7 ) </mrl>
+</example>
+
+<example id="241">
+	<nl lang="kr"> 보라7이 보라9에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple7 , purple9 ) </mrl>
+</example>
+
+<example id="242">
+	<nl lang="kr"> 보라9가 보라8에게 다시 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple9 , purple8 ) </mrl>
+</example>
+
+<example id="243">
+	<nl lang="kr"> 보라8이 보라6에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple8 , purple6 ) </mrl>
+</example>
+
+<example id="244">
+	<nl lang="kr"> 보라6이 보라8에게 다시 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple6 , purple8 ) </mrl>
+</example>
+
+<example id="245">
+	<nl lang="kr"> 보라8이 패스한 공이 수비하던 분홍3에게 가로채기 당합니다. </nl>
+	<mrl lang="soccer"> badPass ( purple8 , pink3 ) </mrl>
+</example>
+
+<example id="246">
+	<nl lang="kr"> 분홍3이 패스한 공이 보라6에게 빼앗깁니다. </nl>
+	<mrl lang="soccer"> badPass ( pink3 , purple6 ) </mrl>
+</example>
+
+<example id="247">
+	<nl lang="kr"> 보라6이 보라8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple6 , purple8 ) </mrl>
+</example>
+
+<example id="248">
+	<nl lang="kr"> 보라8이 패스한 공이 분홍3에게 가로채기 당합니다. </nl>
+	<mrl lang="soccer"> turnover ( purple8 , pink3 ) </mrl>
+</example>
+
+<example id="249">
+	<nl lang="kr"> 분홍3이 패스한 공이 보라6에게 빼앗깁니다. </nl>
+	<mrl lang="soccer"> ballstopped </mrl>
+</example>
+
+<example id="250">
+	<nl lang="kr"> 보라6이 보라7에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple6 , purple7 ) </mrl>
+</example>
+
+<example id="251">
+	<nl lang="kr"> 보라7이 보라10에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple7 , purple10 ) </mrl>
+</example>
+
+<example id="252">
+	<nl lang="kr"> 보라10이 중앙의 보라6에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple10 , purple6 ) </mrl>
+</example>
+
+<example id="253">
+	<nl lang="kr"> 보라6이 보라9에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple6 , purple9 ) </mrl>
+</example>
+
+<example id="254">
+	<nl lang="kr"> 보라9가 보라10에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple9 , purple10 ) </mrl>
+</example>
+
+<example id="255">
+	<nl lang="kr"> 보라10이 보라9에게 다시 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple10 , purple9 ) </mrl>
+</example>
+
+<example id="256">
+	<nl lang="kr"> 보라9의 슛입니다!! </nl>
+	<mrl lang="soccer"> kick ( purple9 ) </mrl>
+</example>
+
+<example id="257">
+	<nl lang="kr"> 골입니다!!!! </nl>
+	<mrl lang="soccer"> playmode ( goal_l ) </mrl>
+</example>
+
+<example id="258">
+	<nl lang="kr"> 분홍팀의 공격으로 경기가 재개됩니다. </nl>
+	<mrl lang="soccer"> playmode ( kick_off_r ) </mrl>
+</example>
+
+<example id="259">
+	<nl lang="kr"> 분홍9가 분홍5에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink9 , pink5 ) </mrl>
+</example>
+
+<example id="260">
+	<nl lang="kr"> 분홍5가 분홍6에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink5 , pink6 ) </mrl>
+</example>
+
+<example id="261">
+	<nl lang="kr"> 분홍6이 분홍5에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink6 , pink5 ) </mrl>
+</example>
+
+<example id="262">
+	<nl lang="kr"> 분홍5가 분홍8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink5 , pink8 ) </mrl>
+</example>
+
+<example id="263">
+	<nl lang="kr"> 분홍8이 분홍11에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink8 , pink11 ) </mrl>
+</example>
+
+<example id="265">
+	<nl lang="kr"> 분홍11이 뒤따라오던 분홍8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink11 , pink8 ) </mrl>
+</example>
+
+<example id="266">
+	<nl lang="kr"> 분홍8이 분홍6에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink8 , pink6 ) </mrl>
+</example>
+
+<example id="267">
+	<nl lang="kr"> 분홍6이 분홍7에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink6 , pink7 ) </mrl>
+</example>
+
+<example id="268">
+	<nl lang="kr"> 분홍7이 분홍10에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink7 , pink10 ) </mrl>
+</example>
+
+<example id="269">
+	<nl lang="kr"> 분홍10이 수비하던 보라2에게 공을 빼앗깁니다. </nl>
+	<mrl lang="soccer"> turnover ( pink10 , purple2 ) </mrl>
+</example>
+
+<example id="270">
+	<nl lang="kr"> 보라2가 보라10에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple2 , purple10 ) </mrl>
+</example>
+
+<example id="271">
+	<nl lang="kr"> 보라10이 드리블하다가 보라9에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple10 , purple9 ) </mrl>
+</example>
+
+<example id="272">
+	<nl lang="kr"> 보라9가 보라10에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple9 , purple10 ) </mrl>
+</example>
+
+<example id="273">
+	<nl lang="kr"> 보라10이 보라7에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple10 , purple7 ) </mrl>
+</example>
+
+<example id="274">
+	<nl lang="kr"> 보라7이 보라8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple7 , purple8 ) </mrl>
+</example>
+
+<example id="275">
+	<nl lang="kr"> 보라8이 보라6에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple8 , purple6 ) </mrl>
+</example>
+
+<example id="276">
+	<nl lang="kr"> 보라6이 보라8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple6 , purple8 ) </mrl>
+</example>
+
+<example id="277">
+	<nl lang="kr"> 보라8이 드리블하다가 분홍 골키퍼에게 빼앗깁니다. </nl>
+	<mrl lang="soccer"> turnover ( purple8 , pink1 ) </mrl>
+</example>
+
+<example id="278">
+	<nl lang="kr"> 분홍 골키퍼가 패스한 공이 보라10에게 빼앗깁니다. </nl>
+	<mrl lang="soccer"> badPass ( pink1 , purple10 ) </mrl>
+</example>
+
+<example id="279">
+	<nl lang="kr"> 보라10이 보라7에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple10 , purple7 ) </mrl>
+</example>
+
+<example id="280">
+	<nl lang="kr"> 보라7의 패스가 분홍3에게 막혀서 빼앗깁니다. </nl>
+	<mrl lang="soccer"> badPass ( purple7 , pink3 ) </mrl>
+</example>
+
+<example id="281">
+	<nl lang="kr"> 분홍3의 프리킥입니다. </nl>
+	<mrl lang="soccer"> playmode ( free_kick_r ) </mrl>
+</example>
+
+<example id="282">
+	<nl lang="kr"> 분홍3이 분홍6에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink3 , pink6 ) </mrl>
+</example>
+
+<example id="283">
+	<nl lang="kr"> 분홍6이 분홍7에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink6 , pink7 ) </mrl>
+</example>
+
+<example id="284">
+	<nl lang="kr"> 분홍7이 분홍10에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink7 , pink10 ) </mrl>
+</example>
+
+<example id="285">
+	<nl lang="kr"> 분홍10이 분홍9에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink10 , pink9 ) </mrl>
+</example>
+
+<example id="286">
+	<nl lang="kr"> 분홍9가 분홍10에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink9 , pink10 ) </mrl>
+</example>
+
+<example id="288">
+	<nl lang="kr"> 분홍10이 분홍9에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink10 , pink9 ) </mrl>
+</example>
+
+<example id="289">
+	<nl lang="kr"> 분홍9가 보라 골키퍼에게 공을 빼앗깁니다. </nl>
+	<mrl lang="soccer"> turnover ( pink9 , purple1 ) </mrl>
+</example>
+
+<example id="290">
+	<nl lang="kr"> 보라 골키퍼가 보라4에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple1 , purple4 ) </mrl>
+</example>
+
+<example id="291">
+	<nl lang="kr"> 보라4가 보라6에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple4 , purple6 ) </mrl>
+</example>
+
+<example id="292">
+	<nl lang="kr"> 보라6이 보라8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple6 , purple8 ) </mrl>
+</example>
+
+<example id="293">
+	<nl lang="kr"> 보라8이 보라6에게 다시 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple8 , purple6 ) </mrl>
+</example>
+
+<example id="294">
+	<nl lang="kr"> 보라8의 패스가 수비하던 분홍4에게 걸리고 맙니다. </nl>
+	<mrl lang="soccer"> pass ( purple6 , purple11 ) </mrl>
+</example>
+
+<example id="295">
+	<nl lang="kr"> 분홍4의 수비로 코너킥이 선언됩니다. </nl>
+	<mrl lang="soccer"> playmode ( corner_kick_l ) </mrl>
+</example>
+
+<example id="296">
+	<nl lang="kr"> 보라11이 보라6에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple11 , purple6 ) </mrl>
+</example>
+
+<example id="297">
+	<nl lang="kr"> 보라6이 골라인 아웃 시킵니다. </nl>
+	<mrl lang="soccer"> playmode ( goal_kick_r ) </mrl>
+</example>
+
+<example id="298">
+	<nl lang="kr"> 분홍팀의 골킥입니다. </nl>
+	<mrl lang="soccer"> playmode ( goal_kick_r ) </mrl>
+</example>
+
+<example id="299">
+	<nl lang="kr"> 분홍 골키퍼가 분홍5에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink1 , pink5 ) </mrl>
+</example>
+
+<example id="300">
+	<nl lang="kr"> 분홍5가 분홍8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink5 , pink8 ) </mrl>
+</example>
+
+<example id="301">
+	<nl lang="kr"> 분홍8이 분홍11에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink8 , pink11 ) </mrl>
+</example>
+
+<example id="302">
+	<nl lang="kr"> 분홍11이 분홍6에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink11 , pink6 ) </mrl>
+</example>
+
+<example id="303">
+	<nl lang="kr"> 분홍6이 분홍9에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink6 , pink9 ) </mrl>
+</example>
+
+<example id="304">
+	<nl lang="kr"> 분홍9가 분홍7에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink9 , pink7 ) </mrl>
+</example>
+
+<example id="305">
+	<nl lang="kr"> 분홍7이 분홍10에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink7 , pink10 ) </mrl>
+</example>
+
+<example id="306">
+	<nl lang="kr"> 분홍10이 분홍9에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink10 , pink9 ) </mrl>
+</example>
+
+<example id="307">
+	<nl lang="kr"> 분홍9가 분홍8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink9 , pink8 ) </mrl>
+</example>
+
+<example id="308">
+	<nl lang="kr"> 분홍8이 분홍11에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink8 , pink11 ) </mrl>
+</example>
+
+<example id="309">
+	<nl lang="kr"> 분홍11이 드리블하다가 패스한 공이 보라7에게 빼앗깁니다. </nl>
+	<mrl lang="soccer"> badPass ( pink11 , purple7 ) </mrl>
+</example>
+
+<example id="310">
+	<nl lang="kr"> 보라7이 보라8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple7 , purple8 ) </mrl>
+</example>
+
+<example id="311">
+	<nl lang="kr"> 보라8이 보라6에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple8 , purple6 ) </mrl>
+</example>
+
+<example id="312">
+	<nl lang="kr"> 보라6이 보라7에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple6 , purple7 ) </mrl>
+</example>
+
+<example id="313">
+	<nl lang="kr"> 보라7이 패스한 공이 보라11에게 연결됩니다. </nl>
+	<mrl lang="soccer"> pass ( purple7 , purple11 ) </mrl>
+</example>
+
+<example id="314">
+	<nl lang="kr"> 보라11의 실수로 공이 사이드 라인 아웃됩니다. </nl>
+	<mrl lang="soccer"> playmode ( kick_in_l ) </mrl>
+</example>
+
+<example id="315">
+	<nl lang="kr"> 보라6의 패스가 보라11에게 연결됩니다. </nl>
+	<mrl lang="soccer"> pass ( purple6 , purple11 ) </mrl>
+</example>
+
+<example id="316">
+	<nl lang="kr"> 보라11의 패스가 분홍8에게 가로채기 당합니다. </nl>
+	<mrl lang="soccer"> badPass ( purple11 , pink8 ) </mrl>
+</example>
+
+<example id="317">
+	<nl lang="kr"> 분홍8이 분홍11에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink8 , pink11 ) </mrl>
+</example>
+
+<example id="318">
+	<nl lang="kr"> 분홍11이 수비하던 보라3에게 공을 빼앗깁니다. </nl>
+	<mrl lang="soccer"> turnover ( pink11 , purple3 ) </mrl>
+</example>
+
+<example id="319">
+	<nl lang="kr"> 보라3이 보라4에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple3 , purple4 ) </mrl>
+</example>
+
+<example id="320">
+	<nl lang="kr"> 보라4가 보라6에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple4 , purple6 ) </mrl>
+</example>
+
+<example id="321">
+	<nl lang="kr"> 보라6이 보라9에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple6 , purple9 ) </mrl>
+</example>
+
+<example id="323">
+	<nl lang="kr"> 보라6이 다시 보라9에게 짧게 패스합니다. </nl>
+	<mrl lang="soccer"> ballstopped </mrl>
+</example>
+
+<example id="325">
+	<nl lang="kr"> 보라9가 뒤따라오던 보라8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple9 , purple8 ) </mrl>
+</example>
+
+<example id="326">
+	<nl lang="kr"> 보라8이 보라7에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple8 , purple7 ) </mrl>
+</example>
+
+<example id="327">
+	<nl lang="kr"> 보라7이 보라6에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple7 , purple6 ) </mrl>
+</example>
+
+<example id="328">
+	<nl lang="kr"> 보라6이 보라11에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple6 , purple11 ) </mrl>
+</example>
+
+<example id="329">
+	<nl lang="kr"> 보라11의 패스가 분홍6에게 가로채기 당합니다. </nl>
+	<mrl lang="soccer"> badPass ( purple11 , pink6 ) </mrl>
+</example>
+
+<example id="330">
+	<nl lang="kr"> 분홍6이 분홍8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink6 , pink8 ) </mrl>
+</example>
+
+<example id="331">
+	<nl lang="kr"> 분홍8의 패스가 중간에서 보라5에게 가로채기 당합니다. </nl>
+	<mrl lang="soccer"> badPass ( pink8 , purple5 ) </mrl>
+</example>
+
+<example id="332">
+	<nl lang="kr"> 보라5가 보라4에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple5 , purple4 ) </mrl>
+</example>
+
+<example id="333">
+	<nl lang="kr"> 보라4가 보라7에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple4 , purple7 ) </mrl>
+</example>
+
+<example id="334">
+	<nl lang="kr"> 보라7이 보라9에게 패스합니다. </nl>
+	<mrl lang="soccer"> ballstopped </mrl>
+</example>
+
+<example id="336">
+	<nl lang="kr"> 보라7이 다시 보라9에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple7 , purple9 ) </mrl>
+</example>
+
+<example id="337">
+	<nl lang="kr"> 보라9가 길게 사이드로 패스한 공이 보라8에게 연결됩니다. </nl>
+	<mrl lang="soccer"> pass ( purple9 , purple8 ) </mrl>
+</example>
+
+<example id="338">
+	<nl lang="kr"> 보라8이 보라11에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple8 , purple11 ) </mrl>
+</example>
+
+<example id="340">
+	<nl lang="kr"> 보라11이 공을 다시 빼앗아 패스한 공이 보라4에게 연결됩니다. </nl>
+	<mrl lang="soccer"> pass ( purple11 , purple4 ) </mrl>
+</example>
+
+<example id="341">
+	<nl lang="kr"> 보라4가 보라6에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple4 , purple6 ) </mrl>
+</example>
+
+<example id="342">
+	<nl lang="kr"> 보라6이 보라8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple6 , purple8 ) </mrl>
+</example>
+
+<example id="343">
+	<nl lang="kr"> 보라8이 패스한 공이 분홍4에게 막힙니다. </nl>
+	<mrl lang="soccer"> turnover ( purple8 , pink4 ) </mrl>
+</example>
+
+<example id="344">
+	<nl lang="kr"> 분홍4가 가지고 있던 공을 보라11에게 빼앗깁니다. </nl>
+	<mrl lang="soccer"> turnover ( pink4 , purple11 ) </mrl>
+</example>
+
+<example id="345">
+	<nl lang="kr"> 보라11이 보라8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple11 , purple8 ) </mrl>
+</example>
+
+<example id="346">
+	<nl lang="kr"> 보라8이 보라6에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple8 , purple6 ) </mrl>
+</example>
+
+<example id="348">
+	<nl lang="kr"> 보라8이 패스한 공이 분홍 골키퍼에게 막힙니다. </nl>
+	<mrl lang="soccer"> block ( pink1 ) </mrl>
+</example>
+
+<example id="349">
+	<nl lang="kr"> 분홍 골키퍼가 패스한 공이 사이드 라인 아웃됩니다. </nl>
+	<mrl lang="soccer"> playmode ( kick_in_l ) </mrl>
+</example>
+
+<example id="350">
+	<nl lang="kr"> 보라10이 보라7에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple10 , purple7 ) </mrl>
+</example>
+
+<example id="353">
+	<nl lang="kr"> 분홍5가 패스한 공이 보라7에게 빼앗깁니다. </nl>
+	<mrl lang="soccer"> badPass ( pink5 , purple7 ) </mrl>
+</example>
+
+<example id="355">
+	<nl lang="kr"> 보라7이 보라8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple7 , purple8 ) </mrl>
+</example>
+
+<example id="356">
+	<nl lang="kr"> 보라8의 슛입니다!! </nl>
+	<mrl lang="soccer"> kick ( purple8 ) </mrl>
+</example>
+
+<example id="357">
+	<nl lang="kr"> 골입니다!!! </nl>
+	<mrl lang="soccer"> playmode ( goal_l ) </mrl>
+</example>
+
+<example id="358">
+	<nl lang="kr"> 분홍팀의 공격으로 경기가 재개됩니다. </nl>
+	<mrl lang="soccer"> playmode ( kick_off_r ) </mrl>
+</example>
+
+<example id="359">
+	<nl lang="kr"> 분홍9가 분홍6에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink9 , pink6 ) </mrl>
+</example>
+
+<example id="360">
+	<nl lang="kr"> 분홍6이 패스한 공이 보라6에게 가로채기 당합니다. </nl>
+	<mrl lang="soccer"> badPass ( pink6 , purple6 ) </mrl>
+</example>
+
+<example id="361">
+	<nl lang="kr"> 보라6이 패스한 공이 사이드 라인 아웃됩니다. </nl>
+	<mrl lang="soccer"> playmode ( kick_in_l ) </mrl>
+</example>
+
+<example id="363">
+	<nl lang="kr"> 보라6이 보라11에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple6 , purple11 ) </mrl>
+</example>
+
+<example id="364">
+	<nl lang="kr"> 보라11이 보라6에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple11 , purple6 ) </mrl>
+</example>
+
+<example id="365">
+	<nl lang="kr"> 보라6이 보라8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple6 , purple8 ) </mrl>
+</example>
+
+<example id="366">
+	<nl lang="kr"> 보라8이 공을 끌고 들어갑니다. </nl>
+	<mrl lang="soccer"> kick ( purple8 ) </mrl>
+</example>
+
+<example id="367">
+	<nl lang="kr"> 보라8이 절묘하게 중앙의 보라9에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple8 , purple9 ) </mrl>
+</example>
+
+<example id="368">
+	<nl lang="kr"> 보라9의 슛입니다!! </nl>
+	<mrl lang="soccer"> kick ( purple9 ) </mrl>
+</example>
+
+<example id="369">
+	<nl lang="kr"> 골입니다!!! </nl>
+	<mrl lang="soccer"> playmode ( goal_l ) </mrl>
+</example>
+
+<example id="370">
+	<nl lang="kr"> 분홍팀의 공격으로 경기가 재개됩니다. </nl>
+	<mrl lang="soccer"> playmode ( kick_off_r ) </mrl>
+</example>
+
+<example id="371">
+	<nl lang="kr"> 분홍9가 분홍6에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink9 , pink6 ) </mrl>
+</example>
+
+<example id="372">
+	<nl lang="kr"> 분홍6이 분홍9에게 다시 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink6 , pink9 ) </mrl>
+</example>
+
+<example id="373">
+	<nl lang="kr"> 분홍9가 분홍11에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink9 , pink11 ) </mrl>
+</example>
+
+<example id="374">
+	<nl lang="kr"> 분홍11이 다시 분홍9에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink11 , pink9 ) </mrl>
+</example>
+
+<example id="375">
+	<nl lang="kr"> 분홍9가 분홍10에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink9 , pink10 ) </mrl>
+</example>
+
+<example id="376">
+	<nl lang="kr"> 분홍10이 분홍9에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink10 , pink9 ) </mrl>
+</example>
+
+<example id="377">
+	<nl lang="kr"> 분홍9가 분홍10에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink9 , pink10 ) </mrl>
+</example>
+
+<example id="378">
+	<nl lang="kr"> 분홍10이 분홍9에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink10 , pink9 ) </mrl>
+</example>
+
+<example id="379">
+	<nl lang="kr"> 분홍9가 분홍8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink9 , pink8 ) </mrl>
+</example>
+
+<example id="380">
+	<nl lang="kr"> 분홍8이 분홍9에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink8 , pink9 ) </mrl>
+</example>
+
+<example id="381">
+	<nl lang="kr"> 분홍9가 옆의 분홍10에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink9 , pink10 ) </mrl>
+</example>
+
+<example id="382">
+	<nl lang="kr"> 분홍10이 수비에 막혀 공을 밖으로 차내다가 골킥이 선언됩니다. </nl>
+	<mrl lang="soccer"> playmode ( goal_kick_l ) </mrl>
+</example>
+
+<example id="383">
+	<nl lang="kr"> 보라 골키퍼가 보라2에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple1 , purple2 ) </mrl>
+</example>
+
+<example id="384">
+	<nl lang="kr"> 보라2가 보라8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple2 , purple8 ) </mrl>
+</example>
+
+<example id="385">
+	<nl lang="kr"> 보라8이 보라6에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple8 , purple6 ) </mrl>
+</example>
+
+<example id="387">
+	<nl lang="kr"> 보라6의 패스가 수비하던 분홍5에게 가로채기 당합니다. </nl>
+	<mrl lang="soccer"> turnover ( purple6 , pink5 ) </mrl>
+</example>
+
+<example id="388">
+	<nl lang="kr"> 분홍5가 분홍8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink5 , pink8 ) </mrl>
+</example>
+
+<example id="389">
+	<nl lang="kr"> 분홍8이 분홍6에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink8 , pink6 ) </mrl>
+</example>
+
+<example id="390">
+	<nl lang="kr"> 분홍6이 분홍9에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink6 , pink9 ) </mrl>
+</example>
+
+<example id="391">
+	<nl lang="kr"> 분홍9가 분홍10에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink9 , pink10 ) </mrl>
+</example>
+
+<example id="393">
+	<nl lang="kr"> 공이 사이드 라인 아웃됩니다. </nl>
+	<mrl lang="soccer"> playmode ( kick_in_l ) </mrl>
+</example>
+
+<example id="395">
+	<nl lang="kr"> 보라2가 패스한 공이 분홍7에게 가로채기 당합니다. </nl>
+	<mrl lang="soccer"> badPass ( purple2 , pink7 ) </mrl>
+</example>
+
+<example id="396">
+	<nl lang="kr"> 분홍7이 분홍6에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink7 , pink6 ) </mrl>
+</example>
+
+<example id="397">
+	<nl lang="kr"> 분홍6이 패스한 공이 보라4에게 가로채기 당합니다. </nl>
+	<mrl lang="soccer"> badPass ( pink6 , purple4 ) </mrl>
+</example>
+
+<example id="398">
+	<nl lang="kr"> 보라4가 수비하던 분홍8에게 공을 빼앗깁니다. </nl>
+	<mrl lang="soccer"> turnover ( purple4 , pink8 ) </mrl>
+</example>
+
+<example id="399">
+	<nl lang="kr"> 분홍8이 공을 빼앗아 분홍11에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink8 , pink11 ) </mrl>
+</example>
+
+<example id="400">
+	<nl lang="kr"> 분홍11의 슛입니다!! </nl>
+	<mrl lang="soccer"> kick ( pink11 ) </mrl>
+</example>
+
+<example id="401">
+	<nl lang="kr"> 분홍11의 슛을 보라 골키퍼가 막아냅니다. </nl>
+	<mrl lang="soccer"> block ( purple1 ) </mrl>
+</example>
+
+<example id="402">
+	<nl lang="kr"> 보라 골키퍼가 보라3에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple1 , purple3 ) </mrl>
+</example>
+
+<example id="403">
+	<nl lang="kr"> 보라3이 보라8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple3 , purple8 ) </mrl>
+</example>
+
+<example id="404">
+	<nl lang="kr"> 보라8이 보라7에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple8 , purple7 ) </mrl>
+</example>
+
+<example id="405">
+	<nl lang="kr"> 보라7이 보라9에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( purple7 , purple9 ) </mrl>
+</example>
+
+<example id="407">
+	<nl lang="kr"> 보라9의 슛입니다! </nl>
+	<mrl lang="soccer"> kick ( purple9 ) </mrl>
+</example>
+
+<example id="408">
+	<nl lang="kr"> 보라9의 슛이 분홍 골키퍼에게 막힙니다. </nl>
+	<mrl lang="soccer"> block ( pink1 ) </mrl>
+</example>
+
+<example id="409">
+	<nl lang="kr"> 분홍 골키퍼가 분홍4에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink1 , pink4 ) </mrl>
+</example>
+
+<example id="410">
+	<nl lang="kr"> 분홍4가 분홍8에게 패스합니다. </nl>
+	<mrl lang="soccer"> pass ( pink4 , pink8 ) </mrl>
+</example>
+
+</examples>

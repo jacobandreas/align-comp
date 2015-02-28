@@ -1,0 +1,1033 @@
+JAVA PROFILE 1.0.1, created Wed Oct 29 10:43:37 2014
+
+Copyright (c) 2003, 2005, Oracle and/or its affiliates. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+
+  - Neither the name of Oracle nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS
+IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+Header for -agentlib:hprof (or -Xrunhprof) ASCII Output (JDK 5.0 JVMTI based)
+
+WARNING!  This file format is under development, and is subject to
+change without notice.
+
+This file contains the following types of records:
+
+THREAD START
+THREAD END      mark the lifetime of Java threads
+
+TRACE           represents a Java stack trace.  Each trace consists
+                of a series of stack frames.  Other records refer to
+                TRACEs to identify (1) where object allocations have
+                taken place, (2) the frames in which GC roots were
+                found, and (3) frequently executed methods.
+
+HEAP DUMP       is a complete snapshot of all live objects in the Java
+                heap.  Following distinctions are made:
+
+                ROOT    root set as determined by GC
+                CLS     classes 
+                OBJ     instances
+                ARR     arrays
+
+SITES           is a sorted list of allocation sites.  This identifies
+                the most heavily allocated object types, and the TRACE
+                at which those allocations occurred.
+
+CPU SAMPLES     is a statistical profile of program execution.  The VM
+                periodically samples all running threads, and assigns
+                a quantum to active TRACEs in those threads.  Entries
+                in this record are TRACEs ranked by the percentage of
+                total quanta they consumed; top-ranked TRACEs are
+                typically hot spots in the program.
+
+CPU TIME        is a profile of program execution obtained by measuring
+                the time spent in individual methods (excluding the time
+                spent in callees), as well as by counting the number of
+                times each method is called. Entries in this record are
+                TRACEs ranked by the percentage of total CPU time. The
+                "count" field indicates the number of times each TRACE 
+                is invoked.
+
+MONITOR TIME    is a profile of monitor contention obtained by measuring
+                the time spent by a thread waiting to enter a monitor.
+                Entries in this record are TRACEs ranked by the percentage
+                of total monitor contention time and a brief description
+                of the monitor.  The "count" field indicates the number of 
+                times the monitor was contended at that TRACE.
+
+MONITOR DUMP    is a complete snapshot of all the monitors and threads in 
+                the System.
+
+HEAP DUMP, SITES, CPU SAMPLES|TIME and MONITOR DUMP|TIME records are generated 
+at program exit.  They can also be obtained during program execution by typing 
+Ctrl-\ (on Solaris) or by typing Ctrl-Break (on Win32).
+
+--------
+
+THREAD START (obj=50000173, id = 200001, name="main", group="main")
+THREAD START (obj=500009ad, id = 200004, name="process reaper", group="system")
+THREAD START (obj=500009f5, id = 200006, name="Thread-0", group="main")
+THREAD START (obj=500009f6, id = 200005, name="Thread-1", group="main")
+THREAD END (id = 200006)
+THREAD END (id = 200005)
+THREAD END (id = 200001)
+TRACE 300053:
+	java.lang.ClassLoader.defineClass1(ClassLoader.java:Unknown line)
+	java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	java.net.URLClassLoader.defineClass(URLClassLoader.java:449)
+	java.net.URLClassLoader.access$100(URLClassLoader.java:71)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+TRACE 300571:
+	java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:Unknown line)
+	java.net.InetAddress$1.lookupAllHostAddr(InetAddress.java:901)
+	java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1293)
+	java.net.InetAddress.getLocalHost(InetAddress.java:1469)
+	org.apache.logging.log4j.core.helpers.NetUtils.getLocalHostname(NetUtils.java:47)
+	org.apache.logging.log4j.core.LoggerContext.setConfiguration(LoggerContext.java:336)
+	org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:378)
+	org.apache.logging.log4j.core.LoggerContext.start(LoggerContext.java:149)
+	org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:85)
+	org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:34)
+	org.apache.logging.log4j.LogManager.getContext(LogManager.java:200)
+	org.slf4j.helpers.Log4jLoggerFactory$PrivateManager.getContext(Log4jLoggerFactory.java:104)
+TRACE 300070:
+	java.util.zip.ZipFile.getEntry(ZipFile.java:Unknown line)
+	java.util.zip.ZipFile.getEntry(ZipFile.java:306)
+	java.util.jar.JarFile.getEntry(JarFile.java:226)
+	java.util.jar.JarFile.getJarEntry(JarFile.java:209)
+	sun.misc.URLClassPath$JarLoader.getResource(URLClassPath.java:840)
+	sun.misc.URLClassPath.getResource(URLClassPath.java:199)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:358)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+TRACE 300072:
+	java.util.zip.Inflater.inflateBytes(Inflater.java:Unknown line)
+	java.util.zip.Inflater.inflate(Inflater.java:259)
+	java.util.zip.InflaterInputStream.read(InflaterInputStream.java:152)
+	sun.misc.Resource.getBytes(Resource.java:124)
+	java.net.URLClassLoader.defineClass(URLClassLoader.java:444)
+	java.net.URLClassLoader.access$100(URLClassLoader.java:71)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+TRACE 300131:
+	java.util.jar.Attributes$Name.isAlpha(Attributes.java:487)
+	java.util.jar.Attributes$Name.isValid(Attributes.java:483)
+	java.util.jar.Attributes$Name.isValid(Attributes.java:475)
+	java.util.jar.Attributes$Name.<init>(Attributes.java:463)
+	java.util.jar.Attributes.putValue(Attributes.java:168)
+	java.util.jar.Attributes.read(Attributes.java:421)
+	java.util.jar.Manifest.read(Manifest.java:199)
+	java.util.jar.Manifest.<init>(Manifest.java:69)
+	java.util.jar.JarFile.getManifestFromReference(JarFile.java:180)
+	java.util.jar.JarFile.getManifest(JarFile.java:166)
+	sun.misc.URLClassPath$JarLoader$2.getManifest(URLClassPath.java:779)
+	java.net.URLClassLoader.defineClass(URLClassLoader.java:416)
+TRACE 300037:
+	java.util.zip.ZipFile.open(ZipFile.java:Unknown line)
+	java.util.zip.ZipFile.<init>(ZipFile.java:215)
+	java.util.zip.ZipFile.<init>(ZipFile.java:145)
+	java.util.jar.JarFile.<init>(JarFile.java:153)
+	java.util.jar.JarFile.<init>(JarFile.java:90)
+	sun.misc.URLClassPath$JarLoader.getJarFile(URLClassPath.java:728)
+	sun.misc.URLClassPath$JarLoader.access$600(URLClassPath.java:591)
+	sun.misc.URLClassPath$JarLoader$1.run(URLClassPath.java:673)
+	sun.misc.URLClassPath$JarLoader$1.run(URLClassPath.java:666)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	sun.misc.URLClassPath$JarLoader.ensureOpen(URLClassPath.java:665)
+	sun.misc.URLClassPath$JarLoader.<init>(URLClassPath.java:638)
+TRACE 300554:
+	java.io.UnixFileSystem.getBooleanAttributes0(UnixFileSystem.java:Unknown line)
+	java.io.UnixFileSystem.getBooleanAttributes(UnixFileSystem.java:242)
+	java.io.File.exists(File.java:813)
+	sun.misc.URLClassPath$FileLoader.getResource(URLClassPath.java:1080)
+	sun.misc.URLClassPath.getResource(URLClassPath.java:199)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:358)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+TRACE 300086:
+	java.util.zip.ZipFile.getEntry(ZipFile.java:Unknown line)
+	java.util.zip.ZipFile.getEntry(ZipFile.java:306)
+	java.util.jar.JarFile.getEntry(JarFile.java:226)
+	java.util.jar.JarFile.getJarEntry(JarFile.java:209)
+	sun.misc.URLClassPath$JarLoader.getResource(URLClassPath.java:840)
+	sun.misc.URLClassPath.getResource(URLClassPath.java:199)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:358)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:412)
+TRACE 300592:
+	scala.LowPriorityImplicits.wrapRefArray(Predef.scala:489)
+	paths2.experiment.Paths2Experiment$.<init>(Paths2Experiment.scala:20)
+	paths2.experiment.Paths2Experiment$.<clinit>(Paths2Experiment.scala:Unknown line)
+	paths2.experiment.Paths2Experiment.main(Paths2Experiment.scala:Unknown line)
+TRACE 300593:
+	scala.collection.immutable.Seq$.newBuilder(Seq.scala:46)
+	scala.collection.Seq$.newBuilder(Seq.scala:37)
+	scala.collection.generic.GenericCompanion.apply(GenericCompanion.scala:48)
+	paths2.experiment.Paths2Experiment$.<init>(Paths2Experiment.scala:20)
+	paths2.experiment.Paths2Experiment$.<clinit>(Paths2Experiment.scala:Unknown line)
+	paths2.experiment.Paths2Experiment.main(Paths2Experiment.scala:Unknown line)
+TRACE 300278:
+	java.util.TreeMap.compare(TreeMap.java:1188)
+	java.util.TreeMap.put(TreeMap.java:531)
+	javax.management.ImmutableDescriptor.makeMap(ImmutableDescriptor.java:167)
+	javax.management.ImmutableDescriptor.<init>(ImmutableDescriptor.java:74)
+	com.sun.jmx.mbeanserver.MXBeanIntrospector.typeDescriptor(MXBeanIntrospector.java:299)
+	com.sun.jmx.mbeanserver.MXBeanIntrospector.getMBeanAttributeInfo(MXBeanIntrospector.java:162)
+	com.sun.jmx.mbeanserver.MXBeanIntrospector.getMBeanAttributeInfo(MXBeanIntrospector.java:54)
+	com.sun.jmx.mbeanserver.MBeanIntrospector$MBeanInfoMaker.visitAttribute(MBeanIntrospector.java:323)
+	com.sun.jmx.mbeanserver.MBeanAnalyzer.visit(MBeanAnalyzer.java:67)
+	com.sun.jmx.mbeanserver.MBeanIntrospector.makeInterfaceMBeanInfo(MBeanIntrospector.java:218)
+	com.sun.jmx.mbeanserver.MBeanIntrospector.getPerInterface(MBeanIntrospector.java:193)
+	com.sun.jmx.mbeanserver.MBeanSupport.<init>(MBeanSupport.java:138)
+TRACE 300596:
+	scala.collection.immutable.MapLike$class.keySet(MapLike.scala:107)
+	scala.collection.immutable.AbstractMap.keySet(Map.scala:194)
+	breeze.config.Configuration$$anon$4.<init>(Configuration.scala:330)
+	breeze.config.Configuration$.fromMap(Configuration.scala:327)
+	breeze.config.CommandLineParser$.parseArguments(CommandLineParser.scala:133)
+	breeze.config.CommandLineParser$.readIn(CommandLineParser.scala:35)
+	igor.experiment.Experiment$class.main(Experiment.scala:17)
+	paths2.experiment.Paths2Experiment$.main(Paths2Experiment.scala:18)
+	paths2.experiment.Paths2Experiment.main(Paths2Experiment.scala:Unknown line)
+TRACE 300332:
+	java.lang.Class.toString(Class.java:151)
+	java.lang.String.valueOf(String.java:2854)
+	java.util.Arrays.toString(Arrays.java:3565)
+	com.sun.jmx.mbeanserver.MBeanAnalyzer$MethodOrder.compare(MBeanAnalyzer.java:211)
+	com.sun.jmx.mbeanserver.MBeanAnalyzer$MethodOrder.compare(MBeanAnalyzer.java:202)
+	java.util.TimSort.binarySort(TimSort.java:265)
+	java.util.TimSort.sort(TimSort.java:208)
+	java.util.TimSort.sort(TimSort.java:173)
+	java.util.Arrays.sort(Arrays.java:659)
+	com.sun.jmx.mbeanserver.MBeanAnalyzer.eliminateCovariantMethods(MBeanAnalyzer.java:245)
+	com.sun.jmx.mbeanserver.MBeanAnalyzer.initMaps(MBeanAnalyzer.java:124)
+	com.sun.jmx.mbeanserver.MBeanAnalyzer.<init>(MBeanAnalyzer.java:113)
+TRACE 300598:
+	scala.collection.convert.WrapAsScala$class.asScalaSet(WrapAsScala.scala:123)
+	scala.collection.convert.WrapAsScala$.asScalaSet(WrapAsScala.scala:201)
+	scala.collection.convert.DecorateAsScala$$anonfun$asScalaSetConverter$1.apply(DecorateAsScala.scala:127)
+	scala.collection.convert.DecorateAsScala$$anonfun$asScalaSetConverter$1.apply(DecorateAsScala.scala:127)
+	scala.collection.convert.Decorators$AsScala.asScala(Decorators.scala:25)
+	breeze.config.Configuration$$anon$3.allPropertyNames(Configuration.scala:321)
+	breeze.config.Configuration$$anon$2.<init>(Configuration.scala:150)
+	breeze.config.Configuration$class.backoff(Configuration.scala:147)
+	breeze.config.Configuration$$anon$4.backoff(Configuration.scala:327)
+	breeze.config.CommandLineParser$.readIn(CommandLineParser.scala:37)
+	igor.experiment.Experiment$class.main(Experiment.scala:17)
+	paths2.experiment.Paths2Experiment$.main(Paths2Experiment.scala:18)
+TRACE 300599:
+	scala.collection.immutable.Set$Set4.$plus(Set.scala:171)
+	scala.collection.immutable.Set$Set4.$plus(Set.scala:165)
+	scala.collection.mutable.SetBuilder.$plus$eq(SetBuilder.scala:22)
+	scala.collection.mutable.SetBuilder.$plus$eq(SetBuilder.scala:20)
+	scala.collection.generic.Growable$$anonfun$$plus$plus$eq$1.apply(Growable.scala:59)
+	scala.collection.generic.Growable$$anonfun$$plus$plus$eq$1.apply(Growable.scala:59)
+	scala.collection.Iterator$class.foreach(Iterator.scala:743)
+	scala.collection.AbstractIterator.foreach(Iterator.scala:1177)
+	scala.collection.IterableLike$class.foreach(IterableLike.scala:72)
+	scala.collection.AbstractIterable.foreach(Iterable.scala:54)
+	scala.collection.generic.Growable$class.$plus$plus$eq(Growable.scala:59)
+	scala.collection.mutable.SetBuilder.$plus$plus$eq(SetBuilder.scala:20)
+TRACE 300090:
+	java.lang.Throwable.fillInStackTrace(Throwable.java:Unknown line)
+	java.lang.Throwable.fillInStackTrace(Throwable.java:783)
+	java.lang.Throwable.<init>(Throwable.java:310)
+	java.lang.Exception.<init>(Exception.java:102)
+	java.security.PrivilegedActionException.<init>(PrivilegedActionException.java:66)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:412)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	scala.package$.<init>(package.scala:113)
+TRACE 300111:
+	java.lang.System.arraycopy(System.java:Unknown line)
+	java.util.jar.Manifest$FastInputStream.readLine(Manifest.java:389)
+	java.util.jar.Manifest$FastInputStream.readLine(Manifest.java:409)
+	java.util.jar.Attributes.read(Attributes.java:376)
+	java.util.jar.Manifest.read(Manifest.java:199)
+	java.util.jar.Manifest.<init>(Manifest.java:69)
+	java.util.jar.JarFile.getManifestFromReference(JarFile.java:180)
+	java.util.jar.JarFile.getManifest(JarFile.java:166)
+	sun.misc.URLClassPath$JarLoader$2.getManifest(URLClassPath.java:779)
+	java.net.URLClassLoader.defineClass(URLClassLoader.java:416)
+	java.net.URLClassLoader.access$100(URLClassLoader.java:71)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+TRACE 300158:
+	java.util.logging.Logger.<clinit>(Logger.java:175)
+	com.sun.jmx.remote.util.ClassLogger.<init>(ClassLogger.java:55)
+	javax.management.NotificationBroadcasterSupport.<clinit>(NotificationBroadcasterSupport.java:352)
+	javax.management.MBeanServerDelegate.<init>(MBeanServerDelegate.java:72)
+	com.sun.jmx.mbeanserver.MBeanServerDelegateImpl.<init>(MBeanServerDelegateImpl.java:100)
+	com.sun.jmx.mbeanserver.JmxMBeanServer.newMBeanServerDelegate(JmxMBeanServer.java:1374)
+	javax.management.MBeanServerBuilder.newMBeanServerDelegate(MBeanServerBuilder.java:66)
+	javax.management.MBeanServerFactory.newMBeanServer(MBeanServerFactory.java:320)
+	javax.management.MBeanServerFactory.createMBeanServer(MBeanServerFactory.java:231)
+	javax.management.MBeanServerFactory.createMBeanServer(MBeanServerFactory.java:192)
+	java.lang.management.ManagementFactory.getPlatformMBeanServer(ManagementFactory.java:466)
+	org.apache.logging.log4j.core.jmx.Server.registerMBeans(Server.java:107)
+TRACE 300091:
+	java.net.URLClassLoader.defineClass(URLClassLoader.java:448)
+	java.net.URLClassLoader.access$100(URLClassLoader.java:71)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	scala.reflect.ClassManifestFactory$.<init>(ClassManifestDeprecatedApis.scala:152)
+	scala.reflect.ClassManifestFactory$.<clinit>(ClassManifestDeprecatedApis.scala:Unknown line)
+	scala.reflect.package$.<init>(package.scala:36)
+TRACE 300606:
+	sun.misc.Unsafe.compareAndSwapInt(Unsafe.java:Unknown line)
+	java.util.concurrent.locks.AbstractQueuedSynchronizer.compareAndSetState(AbstractQueuedSynchronizer.java:566)
+	java.util.concurrent.locks.ReentrantLock$Sync.nonfairTryAcquire(ReentrantLock.java:137)
+	java.util.concurrent.locks.ReentrantLock.tryLock(ReentrantLock.java:370)
+	java.util.concurrent.ConcurrentHashMap$Segment.put(ConcurrentHashMap.java:432)
+	java.util.concurrent.ConcurrentHashMap.putIfAbsent(ConcurrentHashMap.java:1150)
+	java.lang.ClassLoader.getClassLoadingLock(ClassLoader.java:464)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:405)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	scala.PartialFunction$.<init>(PartialFunction.scala:210)
+	scala.PartialFunction$.<clinit>(PartialFunction.scala:Unknown line)
+TRACE 300607:
+	java.util.regex.Matcher.<init>(Matcher.java:224)
+	java.util.regex.Pattern.matcher(Pattern.java:1088)
+	java.lang.String.replace(String.java:2180)
+	com.thoughtworks.paranamer.DefaultParanamer.getParameterTypeName(DefaultParanamer.java:161)
+	com.thoughtworks.paranamer.DefaultParanamer.getParameterTypeNamesCSV(DefaultParanamer.java:111)
+	com.thoughtworks.paranamer.DefaultParanamer.lookupParameterNames(DefaultParanamer.java:83)
+	com.thoughtworks.paranamer.AdaptiveParanamer.lookupParameterNames(AdaptiveParanamer.java:75)
+	com.thoughtworks.paranamer.AdaptiveParanamer.lookupParameterNames(AdaptiveParanamer.java:69)
+	breeze.config.Configuration$class.reflectiveReadIn(Configuration.scala:242)
+	breeze.config.Configuration$class.readInTouched(Configuration.scala:131)
+	breeze.config.Configuration$$anon$2.readInTouched(Configuration.scala:147)
+	breeze.config.Configuration$class.readInTouched(Configuration.scala:141)
+TRACE 300074:
+	java.util.Arrays.copyOfRange(Arrays.java:2694)
+	java.lang.String.<init>(String.java:203)
+	java.lang.String.substring(String.java:1913)
+	sun.misc.JarIndex.get(JarIndex.java:175)
+	sun.misc.URLClassPath$JarLoader.getResource(URLClassPath.java:870)
+	sun.misc.URLClassPath$JarLoader.getResource(URLClassPath.java:848)
+	sun.misc.URLClassPath.getResource(URLClassPath.java:199)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:358)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+TRACE 300545:
+	org.apache.xerces.parsers.ObjectFactory.isDebugEnabled(<Unknown Source>:Unknown line)
+	org.apache.xerces.parsers.ObjectFactory.<clinit>(<Unknown Source>:Unknown line)
+	org.apache.xerces.parsers.DOMParser.<init>(<Unknown Source>:Unknown line)
+	org.apache.xerces.parsers.DOMParser.<init>(<Unknown Source>:Unknown line)
+	org.apache.xerces.jaxp.DocumentBuilderImpl.<init>(<Unknown Source>:Unknown line)
+	org.apache.xerces.jaxp.DocumentBuilderImpl.<init>(<Unknown Source>:Unknown line)
+	org.apache.xerces.jaxp.DocumentBuilderFactoryImpl.setFeature(<Unknown Source>:Unknown line)
+	org.apache.logging.log4j.core.config.XMLConfiguration.enableXInclude(XMLConfiguration.java:119)
+	org.apache.logging.log4j.core.config.XMLConfiguration.newDocumentBuilder(XMLConfiguration.java:97)
+	org.apache.logging.log4j.core.config.XMLConfiguration.<init>(XMLConfiguration.java:146)
+	org.apache.logging.log4j.core.config.XMLConfigurationFactory.getConfiguration(XMLConfigurationFactory.java:40)
+	org.apache.logging.log4j.core.config.ConfigurationFactory$Factory.getConfiguration(ConfigurationFactory.java:446)
+TRACE 300546:
+	org.apache.xerces.impl.XMLEntityManager$CharacterBufferPool.init(<Unknown Source>:Unknown line)
+	org.apache.xerces.impl.XMLEntityManager$CharacterBufferPool.<init>(<Unknown Source>:Unknown line)
+	org.apache.xerces.impl.XMLEntityManager$CharacterBufferPool.<init>(<Unknown Source>:Unknown line)
+	org.apache.xerces.impl.XMLEntityManager.<init>(<Unknown Source>:Unknown line)
+	org.apache.xerces.impl.XMLEntityManager.<init>(<Unknown Source>:Unknown line)
+	org.apache.xerces.parsers.XML11Configuration.<init>(<Unknown Source>:Unknown line)
+	org.apache.xerces.parsers.XIncludeAwareParserConfiguration.<init>(<Unknown Source>:Unknown line)
+	org.apache.xerces.parsers.XIncludeAwareParserConfiguration.<init>(<Unknown Source>:Unknown line)
+	sun.reflect.NativeConstructorAccessorImpl.newInstance0(NativeConstructorAccessorImpl.java:Unknown line)
+	sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+TRACE 300075:
+	java.lang.String.endsWith(String.java:1429)
+	sun.net.www.ParseUtil.canonizeString(ParseUtil.java:255)
+	sun.net.www.protocol.jar.Handler.parseURL(Handler.java:159)
+	java.net.URL.<init>(URL.java:614)
+	java.net.URL.<init>(URL.java:482)
+	sun.misc.URLClassPath$JarLoader.checkResource(URLClassPath.java:757)
+	sun.misc.URLClassPath$JarLoader.getResource(URLClassPath.java:842)
+	sun.misc.URLClassPath.getResource(URLClassPath.java:199)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:358)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+TRACE 300465:
+	java.lang.Class.forName0(Class.java:Unknown line)
+	java.lang.Class.forName(Class.java:190)
+	org.apache.logging.log4j.core.config.plugins.PluginManager.decode(PluginManager.java:241)
+	org.apache.logging.log4j.core.config.plugins.PluginManager.collectPlugins(PluginManager.java:152)
+	org.apache.logging.log4j.core.config.plugins.PluginManager.collectPlugins(PluginManager.java:130)
+	org.apache.logging.log4j.core.pattern.PatternParser.<init>(PatternParser.java:116)
+	org.apache.logging.log4j.core.pattern.PatternParser.<init>(PatternParser.java:102)
+	org.apache.logging.log4j.core.layout.PatternLayout.createPatternParser(PatternLayout.java:183)
+	org.apache.logging.log4j.core.layout.PatternLayout.<init>(PatternLayout.java:115)
+	org.apache.logging.log4j.core.layout.PatternLayout.createLayout(PatternLayout.java:219)
+	org.apache.logging.log4j.core.config.DefaultConfiguration.<init>(DefaultConfiguration.java:51)
+	org.apache.logging.log4j.core.LoggerContext.<init>(LoggerContext.java:63)
+TRACE 300549:
+	org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.<init>(<Unknown Source>:Unknown line)
+	org.apache.xerces.impl.XMLDocumentScannerImpl.<init>(<Unknown Source>:Unknown line)
+	org.apache.xerces.impl.XMLNSDocumentScannerImpl.<init>(<Unknown Source>:Unknown line)
+	org.apache.xerces.parsers.XML11Configuration.<init>(<Unknown Source>:Unknown line)
+	org.apache.xerces.parsers.XIncludeAwareParserConfiguration.<init>(<Unknown Source>:Unknown line)
+	org.apache.xerces.parsers.XIncludeAwareParserConfiguration.<init>(<Unknown Source>:Unknown line)
+	sun.reflect.NativeConstructorAccessorImpl.newInstance0(NativeConstructorAccessorImpl.java:Unknown line)
+	sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	java.lang.Class.newInstance(Class.java:374)
+	org.apache.xerces.parsers.ObjectFactory.newInstance(<Unknown Source>:Unknown line)
+TRACE 300116:
+	java.util.zip.ZipFile.read(ZipFile.java:Unknown line)
+	java.util.zip.ZipFile.access$1400(ZipFile.java:56)
+	java.util.zip.ZipFile$ZipFileInputStream.read(ZipFile.java:679)
+	java.util.zip.ZipFile$ZipFileInflaterInputStream.fill(ZipFile.java:415)
+	java.util.zip.InflaterInputStream.read(InflaterInputStream.java:158)
+	sun.misc.Resource.getBytes(Resource.java:124)
+	java.net.URLClassLoader.defineClass(URLClassLoader.java:444)
+	java.net.URLClassLoader.access$100(URLClassLoader.java:71)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+TRACE 300551:
+	java.util.ArrayList.add(ArrayList.java:440)
+	org.apache.xerces.util.ParserConfigurationSettings.addRecognizedFeatures(<Unknown Source>:Unknown line)
+	org.apache.xerces.parsers.XML11Configuration.<init>(<Unknown Source>:Unknown line)
+	org.apache.xerces.parsers.XIncludeAwareParserConfiguration.<init>(<Unknown Source>:Unknown line)
+	org.apache.xerces.parsers.XIncludeAwareParserConfiguration.<init>(<Unknown Source>:Unknown line)
+	sun.reflect.NativeConstructorAccessorImpl.newInstance0(NativeConstructorAccessorImpl.java:Unknown line)
+	sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	java.lang.Class.newInstance(Class.java:374)
+	org.apache.xerces.parsers.ObjectFactory.newInstance(<Unknown Source>:Unknown line)
+	org.apache.xerces.parsers.ObjectFactory.createObject(<Unknown Source>:Unknown line)
+TRACE 300552:
+	org.apache.xerces.parsers.XIncludeAwareParserConfiguration.configurePipeline(<Unknown Source>:Unknown line)
+	org.apache.xerces.parsers.XML11Configuration.parse(<Unknown Source>:Unknown line)
+	org.apache.xerces.parsers.XML11Configuration.parse(<Unknown Source>:Unknown line)
+	org.apache.xerces.parsers.XMLParser.parse(<Unknown Source>:Unknown line)
+	org.apache.xerces.parsers.DOMParser.parse(<Unknown Source>:Unknown line)
+	org.apache.xerces.jaxp.DocumentBuilderImpl.parse(<Unknown Source>:Unknown line)
+	org.apache.logging.log4j.core.config.XMLConfiguration.<init>(XMLConfiguration.java:146)
+	org.apache.logging.log4j.core.config.XMLConfigurationFactory.getConfiguration(XMLConfigurationFactory.java:40)
+	org.apache.logging.log4j.core.config.ConfigurationFactory$Factory.getConfiguration(ConfigurationFactory.java:446)
+	org.apache.logging.log4j.core.config.ConfigurationFactory$Factory.getConfiguration(ConfigurationFactory.java:420)
+	org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:377)
+	org.apache.logging.log4j.core.LoggerContext.start(LoggerContext.java:149)
+TRACE 300076:
+	java.util.Arrays.copyOfRange(Arrays.java:2694)
+	java.lang.String.<init>(String.java:203)
+	sun.net.www.ParseUtil.encodePath(ParseUtil.java:146)
+	sun.misc.URLClassPath$JarLoader.checkResource(URLClassPath.java:757)
+	sun.misc.URLClassPath$JarLoader.getResource(URLClassPath.java:842)
+	sun.misc.URLClassPath.getResource(URLClassPath.java:199)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:358)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+TRACE 300077:
+	java.util.Arrays.copyOf(Arrays.java:2367)
+	java.lang.AbstractStringBuilder.expandCapacity(AbstractStringBuilder.java:130)
+	java.lang.AbstractStringBuilder.ensureCapacityInternal(AbstractStringBuilder.java:114)
+	java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:415)
+	java.lang.StringBuilder.append(StringBuilder.java:132)
+	java.net.URLStreamHandler.parseURL(URLStreamHandler.java:249)
+	sun.net.www.protocol.file.Handler.parseURL(Handler.java:67)
+	java.net.URL.<init>(URL.java:614)
+	java.net.URL.<init>(URL.java:482)
+	sun.misc.URLClassPath$FileLoader.getResource(URLClassPath.java:1057)
+	sun.misc.URLClassPath.getResource(URLClassPath.java:199)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:358)
+TRACE 300506:
+	sun.misc.ProxyGenerator$ProxyMethod.generateMethod(ProxyGenerator.java:988)
+	sun.misc.ProxyGenerator$ProxyMethod.access$200(ProxyGenerator.java:848)
+	sun.misc.ProxyGenerator.generateClassFile(ProxyGenerator.java:456)
+	sun.misc.ProxyGenerator.generateProxyClass(ProxyGenerator.java:323)
+	java.lang.reflect.Proxy.getProxyClass0(Proxy.java:636)
+	java.lang.reflect.Proxy.newProxyInstance(Proxy.java:722)
+	sun.reflect.annotation.AnnotationParser.annotationForMap(AnnotationParser.java:258)
+	sun.reflect.annotation.AnnotationParser.parseAnnotation(AnnotationParser.java:248)
+	sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:88)
+	sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:70)
+	java.lang.Class.initAnnotationsIfNecessary(Class.java:3178)
+	java.lang.Class.getAnnotation(Class.java:3137)
+TRACE 300078:
+	scala.sys.SystemProperties$.propertyHelp$lzycompute(SystemProperties.scala:63)
+	scala.sys.SystemProperties$.propertyHelp(SystemProperties.scala:63)
+	scala.sys.SystemProperties$.addHelp(SystemProperties.scala:65)
+	scala.sys.SystemProperties$.bool(SystemProperties.scala:68)
+	scala.sys.SystemProperties$.noTraceSupression$lzycompute(SystemProperties.scala:80)
+	scala.sys.SystemProperties$.noTraceSupression(SystemProperties.scala:80)
+	scala.util.control.NoStackTrace$.<init>(NoStackTrace.scala:31)
+	scala.util.control.NoStackTrace$.<clinit>(NoStackTrace.scala:Unknown line)
+	scala.util.control.NoStackTrace$class.fillInStackTrace(NoStackTrace.scala:22)
+	scala.util.control.BreakControl.fillInStackTrace(Breaks.scala:94)
+	java.lang.Throwable.<init>(Throwable.java:250)
+	scala.util.control.BreakControl.<init>(Breaks.scala:94)
+TRACE 300098:
+	igor.logging.Logging$class.baseLogger(Logging.scala:15)
+	paths2.experiment.Load$.baseLogger$lzycompute(Load.scala:11)
+	paths2.experiment.Load$.baseLogger(Load.scala:11)
+	igor.logging.Logging$class.$init$(Logging.scala:16)
+	paths2.experiment.Load$.<init>(Load.scala:11)
+	paths2.experiment.Load$.<clinit>(Load.scala:30)
+	paths2.experiment.Paths2Experiment$.<init>(Paths2Experiment.scala:20)
+	paths2.experiment.Paths2Experiment$.<clinit>(Paths2Experiment.scala:Unknown line)
+	paths2.experiment.Paths2Experiment.main(Paths2Experiment.scala:Unknown line)
+TRACE 300346:
+	java.lang.ClassLoader$NativeLibrary.find(ClassLoader.java:Unknown line)
+	java.lang.ClassLoader.findNative(ClassLoader.java:1987)
+	sun.nio.ch.FileChannelImpl.initIDs(FileChannelImpl.java:Unknown line)
+	sun.nio.ch.FileChannelImpl.<clinit>(FileChannelImpl.java:1172)
+	sun.management.ManagementFactoryHelper.getBufferPoolMXBeans(ManagementFactoryHelper.java:211)
+	java.lang.management.PlatformComponent$11.getMXBeans(PlatformComponent.java:215)
+	java.lang.management.PlatformComponent.getMXBeans(PlatformComponent.java:376)
+	java.lang.management.ManagementFactory.getPlatformMBeanServer(ManagementFactory.java:468)
+	org.apache.logging.log4j.core.jmx.Server.registerMBeans(Server.java:107)
+	org.apache.logging.log4j.core.impl.Log4jContextFactory.<init>(Log4jContextFactory.java:59)
+	sun.reflect.NativeConstructorAccessorImpl.newInstance0(NativeConstructorAccessorImpl.java:Unknown line)
+	sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+TRACE 300560:
+	java.lang.AbstractStringBuilder.<init>(AbstractStringBuilder.java:64)
+	java.lang.StringBuilder.<init>(StringBuilder.java:85)
+	java.io.UnixFileSystem.resolve(UnixFileSystem.java:108)
+	java.io.File.<init>(File.java:367)
+	sun.misc.URLClassPath$FileLoader.getResource(URLClassPath.java:1077)
+	sun.misc.URLClassPath.getResource(URLClassPath.java:199)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:358)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+TRACE 300561:
+	org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanStartElement(<Unknown Source>:Unknown line)
+	org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(<Unknown Source>:Unknown line)
+	org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(<Unknown Source>:Unknown line)
+	org.apache.xerces.parsers.XML11Configuration.parse(<Unknown Source>:Unknown line)
+	org.apache.xerces.parsers.XML11Configuration.parse(<Unknown Source>:Unknown line)
+	org.apache.xerces.parsers.XMLParser.parse(<Unknown Source>:Unknown line)
+	org.apache.xerces.parsers.DOMParser.parse(<Unknown Source>:Unknown line)
+	org.apache.xerces.jaxp.DocumentBuilderImpl.parse(<Unknown Source>:Unknown line)
+	org.apache.logging.log4j.core.config.XMLConfiguration.<init>(XMLConfiguration.java:146)
+	org.apache.logging.log4j.core.config.XMLConfigurationFactory.getConfiguration(XMLConfigurationFactory.java:40)
+	org.apache.logging.log4j.core.config.ConfigurationFactory$Factory.getConfiguration(ConfigurationFactory.java:446)
+	org.apache.logging.log4j.core.config.ConfigurationFactory$Factory.getConfiguration(ConfigurationFactory.java:420)
+TRACE 300376:
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	sun.util.calendar.ZoneInfoFile.<clinit>(ZoneInfoFile.java:477)
+	sun.util.calendar.ZoneInfo.getTimeZone(ZoneInfo.java:663)
+	java.util.TimeZone.getTimeZone(TimeZone.java:566)
+	java.util.TimeZone.setDefaultZone(TimeZone.java:663)
+	java.util.TimeZone.getDefaultRef(TimeZone.java:630)
+	java.util.TimeZone.getDefault(TimeZone.java:617)
+	java.text.SimpleDateFormat.initializeCalendar(SimpleDateFormat.java:682)
+	java.text.SimpleDateFormat.<init>(SimpleDateFormat.java:581)
+	java.text.SimpleDateFormat.<init>(SimpleDateFormat.java:560)
+	org.apache.logging.log4j.status.StatusData.getFormattedStatus(StatusData.java:101)
+	org.apache.logging.log4j.core.jmx.StatusLoggerAdmin.log(StatusLoggerAdmin.java:105)
+TRACE 300216:
+	javax.management.Notification.<init>(Notification.java:188)
+	javax.management.MBeanServerNotification.<init>(MBeanServerNotification.java:139)
+	com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.sendNotification(DefaultMBeanServerInterceptor.java:1489)
+	com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1911)
+	com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966)
+	com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	com.sun.jmx.mbeanserver.JmxMBeanServer$2.run(JmxMBeanServer.java:1225)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	com.sun.jmx.mbeanserver.JmxMBeanServer.initialize(JmxMBeanServer.java:1223)
+	com.sun.jmx.mbeanserver.JmxMBeanServer.<init>(JmxMBeanServer.java:255)
+	com.sun.jmx.mbeanserver.JmxMBeanServer.newMBeanServer(JmxMBeanServer.java:1437)
+TRACE 300319:
+	java.util.WeakHashMap.newTable(WeakHashMap.java:250)
+	java.util.WeakHashMap.<init>(WeakHashMap.java:275)
+	java.util.WeakHashMap.<init>(WeakHashMap.java:298)
+	com.sun.jmx.mbeanserver.MBeanIntrospector.getClassMBeanInfo(MBeanIntrospector.java:420)
+	com.sun.jmx.mbeanserver.MBeanIntrospector.getMBeanInfo(MBeanIntrospector.java:391)
+	com.sun.jmx.mbeanserver.MBeanSupport.<init>(MBeanSupport.java:139)
+	com.sun.jmx.mbeanserver.MXBeanSupport.<init>(MXBeanSupport.java:66)
+	javax.management.StandardMBean.construct(StandardMBean.java:175)
+	javax.management.StandardMBean.<init>(StandardMBean.java:269)
+	javax.management.StandardEmitterMBean.<init>(StandardEmitterMBean.java:146)
+	java.lang.management.ManagementFactory$2.run(ManagementFactory.java:814)
+	java.lang.management.ManagementFactory$2.run(ManagementFactory.java:806)
+TRACE 300475:
+	java.util.concurrent.ConcurrentHashMap.hash(ConcurrentHashMap.java:341)
+	java.util.concurrent.ConcurrentHashMap.put(ConcurrentHashMap.java:1125)
+	org.apache.logging.log4j.core.config.plugins.PluginManager.decode(PluginManager.java:242)
+	org.apache.logging.log4j.core.config.plugins.PluginManager.collectPlugins(PluginManager.java:152)
+	org.apache.logging.log4j.core.config.plugins.PluginManager.collectPlugins(PluginManager.java:130)
+	org.apache.logging.log4j.core.pattern.PatternParser.<init>(PatternParser.java:116)
+	org.apache.logging.log4j.core.pattern.PatternParser.<init>(PatternParser.java:102)
+	org.apache.logging.log4j.core.layout.PatternLayout.createPatternParser(PatternLayout.java:183)
+	org.apache.logging.log4j.core.layout.PatternLayout.<init>(PatternLayout.java:115)
+	org.apache.logging.log4j.core.layout.PatternLayout.createLayout(PatternLayout.java:219)
+	org.apache.logging.log4j.core.config.DefaultConfiguration.<init>(DefaultConfiguration.java:51)
+	org.apache.logging.log4j.core.LoggerContext.<init>(LoggerContext.java:63)
+TRACE 300079:
+	java.lang.System.nanoTime(System.java:Unknown line)
+	sun.misc.PerfCounter.addElapsedTimeFrom(PerfCounter.java:119)
+	java.net.URLClassLoader.defineClass(URLClassLoader.java:448)
+	java.net.URLClassLoader.access$100(URLClassLoader.java:71)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	scala.sys.SystemProperties$.propertyHelp$lzycompute(SystemProperties.scala:63)
+TRACE 300036:
+	java.io.UnixFileSystem.getBooleanAttributes0(UnixFileSystem.java:Unknown line)
+	java.io.UnixFileSystem.getBooleanAttributes(UnixFileSystem.java:242)
+	java.io.File.exists(File.java:813)
+	sun.misc.FileURLMapper.exists(FileURLMapper.java:78)
+	sun.misc.URLClassPath$JarLoader.getJarFile(URLClassPath.java:725)
+	sun.misc.URLClassPath$JarLoader.access$600(URLClassPath.java:591)
+	sun.misc.URLClassPath$JarLoader$1.run(URLClassPath.java:673)
+	sun.misc.URLClassPath$JarLoader$1.run(URLClassPath.java:666)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	sun.misc.URLClassPath$JarLoader.ensureOpen(URLClassPath.java:665)
+	sun.misc.URLClassPath$JarLoader.<init>(URLClassPath.java:638)
+	sun.misc.URLClassPath$3.run(URLClassPath.java:366)
+TRACE 300632:
+	java.lang.UNIXProcess.forkAndExec(UNIXProcess.java:Unknown line)
+	java.lang.UNIXProcess.<init>(UNIXProcess.java:135)
+	java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	java.lang.ProcessBuilder.start(ProcessBuilder.java:1022)
+	java.lang.Runtime.exec(Runtime.java:617)
+	java.lang.Runtime.exec(Runtime.java:485)
+	igor.experiment.Environment.ensureWorkDir(Environment.scala:41)
+	igor.experiment.Environment.<init>(Environment.scala:19)
+	igor.experiment.Execution.<init>(Execution.scala:27)
+	igor.experiment.Experiment$class.main(Experiment.scala:18)
+	paths2.experiment.Paths2Experiment$.main(Paths2Experiment.scala:18)
+	paths2.experiment.Paths2Experiment.main(Paths2Experiment.scala:Unknown line)
+TRACE 300478:
+	java.lang.ClassLoader.findLoadedClass0(ClassLoader.java:Unknown line)
+	java.lang.ClassLoader.findLoadedClass(ClassLoader.java:1093)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:407)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	java.lang.Class.forName0(Class.java:Unknown line)
+	java.lang.Class.forName(Class.java:190)
+	org.apache.logging.log4j.core.config.plugins.PluginManager.decode(PluginManager.java:241)
+	org.apache.logging.log4j.core.config.plugins.PluginManager.collectPlugins(PluginManager.java:152)
+	org.apache.logging.log4j.core.config.plugins.PluginManager.collectPlugins(PluginManager.java:130)
+	org.apache.logging.log4j.core.pattern.PatternParser.<init>(PatternParser.java:116)
+	org.apache.logging.log4j.core.pattern.PatternParser.<init>(PatternParser.java:102)
+TRACE 300081:
+	java.util.zip.ZipFile.getEntry(ZipFile.java:Unknown line)
+	java.util.zip.ZipFile.getInputStream(ZipFile.java:351)
+	java.util.jar.JarFile.getInputStream(JarFile.java:409)
+	sun.misc.URLClassPath$JarLoader$2.getInputStream(URLClassPath.java:775)
+	sun.misc.Resource.cachedInputStream(Resource.java:77)
+	sun.misc.Resource.getByteBuffer(Resource.java:160)
+	java.net.URLClassLoader.defineClass(URLClassLoader.java:436)
+	java.net.URLClassLoader.access$100(URLClassLoader.java:71)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+TRACE 300082:
+	java.util.HashMap.hash(HashMap.java:372)
+	java.util.HashMap.getEntry(HashMap.java:466)
+	java.util.HashMap.get(HashMap.java:421)
+	sun.misc.JarIndex.get(JarIndex.java:171)
+	sun.misc.URLClassPath$JarLoader.getResource(URLClassPath.java:870)
+	sun.misc.URLClassPath$JarLoader.getResource(URLClassPath.java:848)
+	sun.misc.URLClassPath.getResource(URLClassPath.java:199)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:358)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+TRACE 300444:
+	sun.misc.Resource.getBytes(Resource.java:117)
+	java.net.URLClassLoader.defineClass(URLClassLoader.java:444)
+	java.net.URLClassLoader.access$100(URLClassLoader.java:71)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	org.apache.logging.log4j.core.config.BaseConfiguration.<init>(BaseConfiguration.java:110)
+	org.apache.logging.log4j.core.config.DefaultConfiguration.<init>(DefaultConfiguration.java:48)
+TRACE 300083:
+	java.lang.ClassLoader.findLoadedClass0(ClassLoader.java:Unknown line)
+	java.lang.ClassLoader.findLoadedClass(ClassLoader.java:1093)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:407)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:412)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	scala.collection.mutable.HashMap.put(HashMap.scala:77)
+	scala.collection.mutable.HashMap.update(HashMap.scala:81)
+	scala.sys.SystemProperties$.addHelp(SystemProperties.scala:65)
+	scala.sys.SystemProperties$.bool(SystemProperties.scala:68)
+	scala.sys.SystemProperties$.noTraceSupression$lzycompute(SystemProperties.scala:80)
+	scala.sys.SystemProperties$.noTraceSupression(SystemProperties.scala:80)
+TRACE 300446:
+	java.util.zip.ZipCoder.getBytes(ZipCoder.java:80)
+	java.util.zip.ZipFile.getEntry(ZipFile.java:306)
+	java.util.jar.JarFile.getEntry(JarFile.java:226)
+	java.util.jar.JarFile.getJarEntry(JarFile.java:209)
+	sun.misc.URLClassPath$JarLoader.getResource(URLClassPath.java:840)
+	sun.misc.URLClassPath.getResource(URLClassPath.java:199)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:358)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+TRACE 300522:
+	java.util.HashMap.inflateTable(HashMap.java:320)
+	java.util.HashMap.put(HashMap.java:492)
+	sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:93)
+	sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:70)
+	java.lang.Class.initAnnotationsIfNecessary(Class.java:3178)
+	java.lang.Class.getAnnotation(Class.java:3137)
+	org.apache.logging.log4j.core.pattern.PatternParser.<init>(PatternParser.java:127)
+	org.apache.logging.log4j.core.pattern.PatternParser.<init>(PatternParser.java:102)
+	org.apache.logging.log4j.core.layout.PatternLayout.createPatternParser(PatternLayout.java:183)
+	org.apache.logging.log4j.core.layout.PatternLayout.<init>(PatternLayout.java:115)
+	org.apache.logging.log4j.core.layout.PatternLayout.createLayout(PatternLayout.java:219)
+	org.apache.logging.log4j.core.config.DefaultConfiguration.<init>(DefaultConfiguration.java:51)
+TRACE 300039:
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	sun.misc.URLClassPath.getLoader(URLClassPath.java:355)
+	sun.misc.URLClassPath.getLoader(URLClassPath.java:332)
+	sun.misc.URLClassPath.getResource(URLClassPath.java:198)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:358)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	sun.launcher.LauncherHelper.checkAndLoadMain(LauncherHelper.java:482)
+TRACE 300642:
+	java.lang.ClassLoader.findBootstrapClass(ClassLoader.java:Unknown line)
+	java.lang.ClassLoader.findBootstrapClassOrNull(ClassLoader.java:1070)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:414)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:412)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	breeze.stats.distributions.RandBasis.<init>(Rand.scala:266)
+	breeze.stats.distributions.Rand$.<init>(Rand.scala:319)
+	breeze.stats.distributions.Rand$.<clinit>(Rand.scala:Unknown line)
+	igor.experiment.Environment.<init>(Environment.scala:21)
+	igor.experiment.Execution.<init>(Execution.scala:27)
+	igor.experiment.Experiment$class.main(Experiment.scala:18)
+TRACE 300577:
+	java.security.Security.<clinit>(Security.java:67)
+	sun.net.InetAddressCachePolicy$1.run(InetAddressCachePolicy.java:94)
+	sun.net.InetAddressCachePolicy$1.run(InetAddressCachePolicy.java:92)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	sun.net.InetAddressCachePolicy.<clinit>(InetAddressCachePolicy.java:90)
+	java.net.InetAddress$Cache.getPolicy(InetAddress.java:751)
+	java.net.InetAddress$Cache.put(InetAddress.java:763)
+	java.net.InetAddress.cacheInitIfNeeded(InetAddress.java:842)
+	java.net.InetAddress.cacheAddresses(InetAddress.java:856)
+	java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1332)
+	java.net.InetAddress.getLocalHost(InetAddress.java:1469)
+	org.apache.logging.log4j.core.helpers.NetUtils.getLocalHostname(NetUtils.java:47)
+TRACE 300448:
+	java.net.URL.<init>(URL.java:169)
+	java.net.URL.<init>(URL.java:482)
+	sun.misc.URLClassPath$JarLoader.checkResource(URLClassPath.java:757)
+	sun.misc.URLClassPath$JarLoader.getResource(URLClassPath.java:842)
+	sun.misc.URLClassPath.getResource(URLClassPath.java:199)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:358)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+TRACE 300645:
+	java.util.zip.ZipFile.getEntryTime(ZipFile.java:Unknown line)
+	java.util.zip.ZipFile.getZipEntry(ZipFile.java:534)
+	java.util.zip.ZipFile.getEntry(ZipFile.java:308)
+	java.util.jar.JarFile.getEntry(JarFile.java:226)
+	java.util.jar.JarFile.getJarEntry(JarFile.java:209)
+	sun.misc.URLClassPath$JarLoader.getResource(URLClassPath.java:840)
+	sun.misc.URLClassPath.getResource(URLClassPath.java:199)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:358)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+TRACE 300525:
+	java.util.Arrays.copyOf(Arrays.java:2367)
+	java.lang.String.concat(String.java:1975)
+	java.net.URLClassLoader.isSealed(URLClassLoader.java:523)
+	java.net.URLClassLoader.getAndVerifyPackage(URLClassLoader.java:394)
+	java.net.URLClassLoader.defineClass(URLClassLoader.java:417)
+	java.net.URLClassLoader.access$100(URLClassLoader.java:71)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+TRACE 300526:
+	java.lang.Class.forName0(Class.java:Unknown line)
+	java.lang.Class.forName(Class.java:190)
+	org.apache.logging.log4j.core.config.JSONConfigurationFactory.<init>(JSONConfigurationFactory.java:48)
+	sun.reflect.NativeConstructorAccessorImpl.newInstance0(NativeConstructorAccessorImpl.java:Unknown line)
+	sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	java.lang.Class.newInstance(Class.java:374)
+	org.apache.logging.log4j.core.config.ConfigurationFactory.addFactory(ConfigurationFactory.java:166)
+	org.apache.logging.log4j.core.config.ConfigurationFactory.getInstance(ConfigurationFactory.java:142)
+	org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:377)
+	org.apache.logging.log4j.core.LoggerContext.start(LoggerContext.java:149)
+TRACE 300527:
+	java.lang.Thread.currentThread(Thread.java:Unknown line)
+	java.lang.ThreadLocal.get(ThreadLocal.java:143)
+	java.lang.StringCoding.deref(StringCoding.java:63)
+	java.lang.StringCoding.decode(StringCoding.java:179)
+	java.lang.String.<init>(String.java:416)
+	java.util.jar.Attributes.read(Attributes.java:418)
+	java.util.jar.Manifest.read(Manifest.java:199)
+	java.util.jar.Manifest.<init>(Manifest.java:69)
+	java.util.jar.JarFile.getManifestFromReference(JarFile.java:180)
+	java.util.jar.JarFile.getManifest(JarFile.java:166)
+	sun.misc.URLClassPath$JarLoader$2.getManifest(URLClassPath.java:779)
+	java.net.URLClassLoader.defineClass(URLClassLoader.java:416)
+TRACE 300649:
+	java.util.IdentityHashMap.access$000(IdentityHashMap.java:134)
+	java.util.IdentityHashMap$IdentityHashMapIterator.<init>(IdentityHashMap.java:711)
+	java.util.IdentityHashMap$IdentityHashMapIterator.<init>(IdentityHashMap.java:710)
+	java.util.IdentityHashMap$KeyIterator.<init>(IdentityHashMap.java:820)
+	java.util.IdentityHashMap$KeyIterator.<init>(IdentityHashMap.java:820)
+	java.util.IdentityHashMap$KeySet.iterator(IdentityHashMap.java:968)
+	java.lang.ApplicationShutdownHooks.runHooks(ApplicationShutdownHooks.java:104)
+	java.lang.ApplicationShutdownHooks$1.run(ApplicationShutdownHooks.java:46)
+	java.lang.Shutdown.runHooks(Shutdown.java:123)
+	java.lang.Shutdown.sequence(Shutdown.java:167)
+	java.lang.Shutdown.exit(Shutdown.java:212)
+	java.lang.Runtime.exit(Runtime.java:109)
+TRACE 300529:
+	com.fasterxml.jackson.databind.ObjectMapper.<clinit>(ObjectMapper.java:204)
+	java.lang.Class.forName0(Class.java:Unknown line)
+	java.lang.Class.forName(Class.java:190)
+	org.apache.logging.log4j.core.config.JSONConfigurationFactory.<init>(JSONConfigurationFactory.java:48)
+	sun.reflect.NativeConstructorAccessorImpl.newInstance0(NativeConstructorAccessorImpl.java:Unknown line)
+	sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	java.lang.Class.newInstance(Class.java:374)
+	org.apache.logging.log4j.core.config.ConfigurationFactory.addFactory(ConfigurationFactory.java:166)
+	org.apache.logging.log4j.core.config.ConfigurationFactory.getInstance(ConfigurationFactory.java:142)
+	org.apache.logging.log4j.core.LoggerContext.reconfigure(LoggerContext.java:377)
+TRACE 300584:
+	java.util.zip.Inflater.ended(Inflater.java:394)
+	java.util.zip.ZipFile.releaseInflater(ZipFile.java:457)
+	java.util.zip.ZipFile.access$100(ZipFile.java:56)
+	java.util.zip.ZipFile$ZipFileInflaterInputStream.close(ZipFile.java:404)
+	sun.misc.Resource.getBytes(Resource.java:143)
+	java.net.URLClassLoader.defineClass(URLClassLoader.java:444)
+	java.net.URLClassLoader.access$100(URLClassLoader.java:71)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+TRACE 300416:
+	java.lang.ClassLoader.findBootstrapClass(ClassLoader.java:Unknown line)
+	java.lang.ClassLoader.findBootstrapClassOrNull(ClassLoader.java:1070)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:414)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:412)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	java.util.ResourceBundle$RBClassLoader.loadClass(ResourceBundle.java:450)
+	java.util.ResourceBundle$Control.newBundle(ResourceBundle.java:2566)
+	java.util.ResourceBundle.loadBundle(ResourceBundle.java:1436)
+	java.util.ResourceBundle.findBundle(ResourceBundle.java:1400)
+	java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1296)
+	java.util.ResourceBundle.getBundle(ResourceBundle.java:841)
+TRACE 300532:
+	java.lang.StringCoding$StringEncoder.encode(StringCoding.java:300)
+	java.lang.StringCoding.encode(StringCoding.java:344)
+	java.lang.String.getBytes(String.java:916)
+	java.io.UnixFileSystem.getBooleanAttributes0(UnixFileSystem.java:Unknown line)
+	java.io.UnixFileSystem.getBooleanAttributes(UnixFileSystem.java:242)
+	java.io.File.exists(File.java:813)
+	sun.misc.URLClassPath$FileLoader.getResource(URLClassPath.java:1080)
+	sun.misc.URLClassPath$FileLoader.findResource(URLClassPath.java:1047)
+	sun.misc.URLClassPath.findResource(URLClassPath.java:176)
+	java.net.URLClassLoader$2.run(URLClassLoader.java:551)
+	java.net.URLClassLoader$2.run(URLClassLoader.java:549)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+TRACE 300589:
+	java.lang.Class.isInstance(Class.java:Unknown line)
+	sun.reflect.annotation.AnnotationParser.parseMemberValue(AnnotationParser.java:311)
+	sun.reflect.annotation.AnnotationParser.parseAnnotation(AnnotationParser.java:241)
+	sun.reflect.annotation.AnnotationParser.parseParameterAnnotations2(AnnotationParser.java:152)
+	sun.reflect.annotation.AnnotationParser.parseParameterAnnotations(AnnotationParser.java:129)
+	java.lang.reflect.Method.getParameterAnnotations(Method.java:772)
+	org.apache.logging.log4j.core.config.BaseConfiguration.createPluginObject(BaseConfiguration.java:659)
+	org.apache.logging.log4j.core.config.BaseConfiguration.createConfiguration(BaseConfiguration.java:595)
+	org.apache.logging.log4j.core.config.BaseConfiguration.createConfiguration(BaseConfiguration.java:587)
+	org.apache.logging.log4j.core.config.BaseConfiguration.doConfigure(BaseConfiguration.java:244)
+	org.apache.logging.log4j.core.config.BaseConfiguration.start(BaseConfiguration.java:142)
+	org.apache.logging.log4j.core.LoggerContext.setConfiguration(LoggerContext.java:339)
+TRACE 300590:
+	java.net.URLStreamHandler.parseURL(URLStreamHandler.java:265)
+	sun.net.www.protocol.file.Handler.parseURL(Handler.java:67)
+	java.net.URL.<init>(URL.java:614)
+	java.net.URL.<init>(URL.java:482)
+	sun.misc.URLClassPath$FileLoader.getResource(URLClassPath.java:1057)
+	sun.misc.URLClassPath.getResource(URLClassPath.java:199)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:358)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+TRACE 300065:
+	java.util.zip.Inflater.inflateBytes(Inflater.java:Unknown line)
+	java.util.zip.Inflater.inflate(Inflater.java:259)
+	java.util.zip.InflaterInputStream.read(InflaterInputStream.java:152)
+	sun.misc.IOUtils.readFully(IOUtils.java:65)
+	java.util.jar.JarFile.getBytes(JarFile.java:387)
+	java.util.jar.JarFile.hasClassPathAttribute(JarFile.java:488)
+	java.util.jar.JavaUtilJarAccessImpl.jarFileHasClassPathAttribute(JavaUtilJarAccessImpl.java:37)
+	sun.misc.URLClassPath$JarLoader.getClassPath(URLClassPath.java:984)
+	sun.misc.URLClassPath.getLoader(URLClassPath.java:335)
+	sun.misc.URLClassPath.getResource(URLClassPath.java:198)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:358)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+CPU SAMPLES BEGIN (total = 94) Wed Oct 29 10:43:38 2014
+rank   self  accum   count trace method
+   1 17.02% 17.02%      16 300053 java.lang.ClassLoader.defineClass1
+   2  4.26% 21.28%       4 300571 java.net.Inet6AddressImpl.lookupAllHostAddr
+   3  4.26% 25.53%       4 300070 java.util.zip.ZipFile.getEntry
+   4  2.13% 27.66%       2 300072 java.util.zip.Inflater.inflateBytes
+   5  2.13% 29.79%       2 300131 java.util.jar.Attributes$Name.isAlpha
+   6  2.13% 31.91%       2 300037 java.util.zip.ZipFile.open
+   7  2.13% 34.04%       2 300554 java.io.UnixFileSystem.getBooleanAttributes0
+   8  2.13% 36.17%       2 300086 java.util.zip.ZipFile.getEntry
+   9  1.06% 37.23%       1 300592 scala.LowPriorityImplicits.wrapRefArray
+  10  1.06% 38.30%       1 300593 scala.collection.immutable.Seq$.newBuilder
+  11  1.06% 39.36%       1 300278 java.util.TreeMap.compare
+  12  1.06% 40.43%       1 300596 scala.collection.immutable.MapLike$class.keySet
+  13  1.06% 41.49%       1 300332 java.lang.Class.toString
+  14  1.06% 42.55%       1 300598 scala.collection.convert.WrapAsScala$class.asScalaSet
+  15  1.06% 43.62%       1 300599 scala.collection.immutable.Set$Set4.$plus
+  16  1.06% 44.68%       1 300090 java.lang.Throwable.fillInStackTrace
+  17  1.06% 45.74%       1 300111 java.lang.System.arraycopy
+  18  1.06% 46.81%       1 300158 java.util.logging.Logger.<clinit>
+  19  1.06% 47.87%       1 300091 java.net.URLClassLoader.defineClass
+  20  1.06% 48.94%       1 300606 sun.misc.Unsafe.compareAndSwapInt
+  21  1.06% 50.00%       1 300607 java.util.regex.Matcher.<init>
+  22  1.06% 51.06%       1 300074 java.util.Arrays.copyOfRange
+  23  1.06% 52.13%       1 300545 org.apache.xerces.parsers.ObjectFactory.isDebugEnabled
+  24  1.06% 53.19%       1 300546 org.apache.xerces.impl.XMLEntityManager$CharacterBufferPool.init
+  25  1.06% 54.26%       1 300075 java.lang.String.endsWith
+  26  1.06% 55.32%       1 300465 java.lang.Class.forName0
+  27  1.06% 56.38%       1 300549 org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.<init>
+  28  1.06% 57.45%       1 300116 java.util.zip.ZipFile.read
+  29  1.06% 58.51%       1 300551 java.util.ArrayList.add
+  30  1.06% 59.57%       1 300552 org.apache.xerces.parsers.XIncludeAwareParserConfiguration.configurePipeline
+  31  1.06% 60.64%       1 300076 java.util.Arrays.copyOfRange
+  32  1.06% 61.70%       1 300077 java.util.Arrays.copyOf
+  33  1.06% 62.77%       1 300506 sun.misc.ProxyGenerator$ProxyMethod.generateMethod
+  34  1.06% 63.83%       1 300078 scala.sys.SystemProperties$.propertyHelp$lzycompute
+  35  1.06% 64.89%       1 300098 igor.logging.Logging$class.baseLogger
+  36  1.06% 65.96%       1 300346 java.lang.ClassLoader$NativeLibrary.find
+  37  1.06% 67.02%       1 300560 java.lang.AbstractStringBuilder.<init>
+  38  1.06% 68.09%       1 300561 org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanStartElement
+  39  1.06% 69.15%       1 300376 java.security.AccessController.doPrivileged
+  40  1.06% 70.21%       1 300216 javax.management.Notification.<init>
+  41  1.06% 71.28%       1 300319 java.util.WeakHashMap.newTable
+  42  1.06% 72.34%       1 300475 java.util.concurrent.ConcurrentHashMap.hash
+  43  1.06% 73.40%       1 300079 java.lang.System.nanoTime
+  44  1.06% 74.47%       1 300036 java.io.UnixFileSystem.getBooleanAttributes0
+  45  1.06% 75.53%       1 300632 java.lang.UNIXProcess.forkAndExec
+  46  1.06% 76.60%       1 300478 java.lang.ClassLoader.findLoadedClass0
+  47  1.06% 77.66%       1 300081 java.util.zip.ZipFile.getEntry
+  48  1.06% 78.72%       1 300082 java.util.HashMap.hash
+  49  1.06% 79.79%       1 300444 sun.misc.Resource.getBytes
+  50  1.06% 80.85%       1 300083 java.lang.ClassLoader.findLoadedClass0
+  51  1.06% 81.91%       1 300446 java.util.zip.ZipCoder.getBytes
+  52  1.06% 82.98%       1 300522 java.util.HashMap.inflateTable
+  53  1.06% 84.04%       1 300039 java.security.AccessController.doPrivileged
+  54  1.06% 85.11%       1 300642 java.lang.ClassLoader.findBootstrapClass
+  55  1.06% 86.17%       1 300577 java.security.Security.<clinit>
+  56  1.06% 87.23%       1 300448 java.net.URL.<init>
+  57  1.06% 88.30%       1 300645 java.util.zip.ZipFile.getEntryTime
+  58  1.06% 89.36%       1 300525 java.util.Arrays.copyOf
+  59  1.06% 90.43%       1 300526 java.lang.Class.forName0
+  60  1.06% 91.49%       1 300527 java.lang.Thread.currentThread
+  61  1.06% 92.55%       1 300649 java.util.IdentityHashMap.access$000
+  62  1.06% 93.62%       1 300529 com.fasterxml.jackson.databind.ObjectMapper.<clinit>
+  63  1.06% 94.68%       1 300584 java.util.zip.Inflater.ended
+  64  1.06% 95.74%       1 300416 java.lang.ClassLoader.findBootstrapClass
+  65  1.06% 96.81%       1 300532 java.lang.StringCoding$StringEncoder.encode
+  66  1.06% 97.87%       1 300589 java.lang.Class.isInstance
+  67  1.06% 98.94%       1 300590 java.net.URLStreamHandler.parseURL
+  68  1.06% 100.00%       1 300065 java.util.zip.Inflater.inflateBytes
+CPU SAMPLES END

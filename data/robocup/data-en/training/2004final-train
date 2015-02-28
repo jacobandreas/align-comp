@@ -1,0 +1,6172 @@
+<trainingData>
+<examples>
+
+<example id="0">
+<nl> purple6 has the ball </nl>
+<semid> 4 </semid>
+</example>
+
+<example id="1">
+<nl> purple6 passes the ball to purple2 </nl>
+<semid> 5 6 </semid>
+</example>
+
+<example id="2">
+<nl> purple2 passes to purple3 </nl>
+<semid> 7 8 </semid>
+</example>
+
+<example id="3">
+<nl> purple3 passes to purple6 </nl>
+<semid> 8 9 10 </semid>
+</example>
+
+<example id="4">
+<nl> purple6 dribbles toward the midfield </nl>
+<semid> 12 </semid>
+</example>
+
+<example id="5">
+<nl> purple6 passes to purple10 in traffic </nl>
+<semid> 15 16 17 </semid>
+</example>
+
+<example id="6">
+<nl> purple10 loses the ball to pink2 </nl>
+<semid> 19 20 21 </semid>
+</example>
+
+<example id="7">
+<nl> pink11 has the ball now </nl>
+<semid> 25 </semid>
+</example>
+
+<example id="9">
+<nl> Offside has been called </nl>
+<semid> 28 29 30 37 38 </semid>
+</example>
+
+<example id="10">
+<nl> Freekick from the purple team </nl>
+<semid> 28 29 30 31 32 37 38 </semid>
+</example>
+
+<example id="11">
+<nl> purple3 kicks off to purple7 </nl>
+<semid> 71 72 73 74 75 </semid>
+</example>
+
+<example id="12">
+<nl> purple7 passes to purple10 </nl>
+<semid> 77 </semid>
+</example>
+
+<example id="13">
+<nl> purple10 passes to purple6 </nl>
+<semid> 81 </semid>
+</example>
+
+<example id="14">
+<nl> purple6 passes to purple9 near the sideline </nl>
+<semid> 86 </semid>
+</example>
+
+<example id="15">
+<nl> purple9 passes back to purple6 </nl>
+<semid> 93 94 95 </semid>
+</example>
+
+<example id="16">
+<nl> purple6 again passes to purple9 </nl>
+<semid> 98 99 </semid>
+</example>
+
+<example id="17">
+<nl> Purple team will kick in from the side </nl>
+<semid> 101 102 103 </semid>
+</example>
+
+<example id="18">
+<nl> purple9 passes to purple6 </nl>
+<semid> 136 137 138 139 140 </semid>
+</example>
+
+<example id="19">
+<nl> purple6 passes to purple7 </nl>
+<semid> 141 142 </semid>
+</example>
+
+<example id="20">
+<nl> purple7 passes to purple6 </nl>
+<semid> 149 </semid>
+</example>
+
+<example id="21">
+<nl> purple6 makes a dangerous pass to purple7 </nl>
+<semid> 151 </semid>
+</example>
+
+<example id="22">
+<nl> purple7 loses the ball to pink3 </nl>
+<semid> 153 154 </semid>
+</example>
+
+<example id="23">
+<nl> pink3 made a bad pass that was picked off by purple11 </nl>
+<semid> 160 161 </semid>
+</example>
+
+<example id="24">
+<nl> purple11 made a bad pass that was picked up by pink7 </nl>
+<semid> 162 163 164 </semid>
+</example>
+
+<example id="25">
+<nl> pink7 passes to pink10 near the sideline </nl>
+<semid> 167 </semid>
+</example>
+
+<example id="26">
+<nl> pink10 passes to pink9 </nl>
+<semid> 170 </semid>
+</example>
+
+<example id="27">
+<nl> purple1 blocks the ball </nl>
+<semid> 171 172 173 </semid>
+</example>
+
+<example id="28">
+<nl> free kick by the purple team </nl>
+<semid> 171 172 173 174 175 </semid>
+</example>
+
+<example id="29">
+<nl> purple1 kicks off to purple2 </nl>
+<semid> 278 279 280 281 </semid>
+</example>
+
+<example id="30">
+<nl> purple2 passes to purple3 </nl>
+<semid> 284 </semid>
+</example>
+
+<example id="31">
+<nl> purple3 made a bad pass that was picked up by pink7 </nl>
+<semid> 286 287 </semid>
+</example>
+
+<example id="33">
+<nl> pink7 shoots for the goal </nl>
+<semid> 289 290 </semid>
+</example>
+
+<example id="34">
+<nl> pink7 passes to pink9 </nl>
+<semid> 289 290 </semid>
+</example>
+
+<example id="35">
+<nl> pink9 shoots for the goal </nl>
+<semid> 289 290 291 298 299 </semid>
+</example>
+
+<example id="36">
+<nl> pink team scores </nl>
+<semid> 290 291 292 293 298 299 </semid>
+</example>
+
+<example id="37">
+<nl> purple10 passes to purple6 </nl>
+<semid> 302 303 </semid>
+</example>
+
+<example id="38">
+<nl> purple6 has the ball </nl>
+<semid> 303 </semid>
+</example>
+
+<example id="39">
+<nl> purple6 passes to purple2 </nl>
+<semid> 304 305 </semid>
+</example>
+
+<example id="40">
+<nl> purple2 passes back to purple6 </nl>
+<semid> 305 306 307 </semid>
+</example>
+
+<example id="41">
+<nl> purple6 passes to purple7 </nl>
+<semid> 308 309 </semid>
+</example>
+
+<example id="42">
+<nl> purple7 made a bad pass and was picked off by pink10 </nl>
+<semid> 311 312 </semid>
+</example>
+
+<example id="43">
+<nl> pink10 passes to pink9 </nl>
+<semid> 314 </semid>
+</example>
+
+<example id="44">
+<nl> pink6 lost the ball to purple3 </nl>
+<semid> 323 324 </semid>
+</example>
+
+<example id="45">
+<nl> purple3 passes to purple1 </nl>
+<semid> 326 </semid>
+</example>
+
+<example id="46">
+<nl> free kick from the purple team </nl>
+<semid> 326 327 328 </semid>
+</example>
+
+<example id="47">
+<nl> purple1 kicks off to purple5 </nl>
+<semid> 430 431 432 433 </semid>
+</example>
+
+<example id="48">
+<nl> pink team will kick in </nl>
+<semid> 437 438 439 </semid>
+</example>
+
+<example id="50">
+<nl> pink10 loses the ball to purple5 </nl>
+<semid> 505 506 </semid>
+</example>
+
+<example id="51">
+<nl> purple5 loses the ball to pink10 </nl>
+<semid> 505 506 507 508 509 </semid>
+</example>
+
+<example id="52">
+<nl> pink9 shoots </nl>
+<semid> 508 509 510 511 512 517 518 </semid>
+</example>
+
+<example id="53">
+<nl> pink team scores again </nl>
+<semid> 511 512 513 514 517 518 </semid>
+</example>
+
+<example id="54">
+<nl> purple10 passes to purple8 </nl>
+<semid> 521 </semid>
+</example>
+
+<example id="55">
+<nl> purple8 passes to purple11 </nl>
+<semid> 522 523 </semid>
+</example>
+
+<example id="56">
+<nl> purple11 passes to purple5 </nl>
+<semid> 528 </semid>
+</example>
+
+<example id="57">
+<nl> purple5 passes to purple8 </nl>
+<semid> 528 529 530 </semid>
+</example>
+
+<example id="58">
+<nl> purple8 passes to purple4 </nl>
+<semid> 531 532 </semid>
+</example>
+
+<example id="59">
+<nl> purple4 passes to purple7 </nl>
+<semid> 534 </semid>
+</example>
+
+<example id="60">
+<nl> purple7 passes to purple10 </nl>
+<semid> 534 535 536 </semid>
+</example>
+
+<example id="61">
+<nl> purple10 passes backward to purple3 </nl>
+<semid> 538 </semid>
+</example>
+
+<example id="62">
+<nl> purple6 loses the ball to pink3 </nl>
+<semid> 543 544 </semid>
+</example>
+
+<example id="63">
+<nl> purple6 steals tha ball right back from pink3 </nl>
+<semid> 545 546 </semid>
+</example>
+
+<example id="64">
+<nl> purple6 passes to purple9 </nl>
+<semid> 548 </semid>
+</example>
+
+<example id="65">
+<nl> purple9 loses the ball to pink5 </nl>
+<semid> 549 550 551 </semid>
+</example>
+
+<example id="66">
+<nl> pink5 passes to pink8 </nl>
+<semid> 550 551 552 553 </semid>
+</example>
+
+<example id="67">
+<nl> pink8 passes to pink11 </nl>
+<semid> 558 </semid>
+</example>
+
+<example id="68">
+<nl> pink11 loses the ball to purple2 </nl>
+<semid> 563 564 565 </semid>
+</example>
+
+<example id="70">
+<nl> purple6 passes laterally to purple9 </nl>
+<semid> 567 568 </semid>
+</example>
+
+<example id="71">
+<nl> purple team will kick in </nl>
+<semid> 571 572 573 594 </semid>
+</example>
+
+<example id="72">
+<nl> purple6 kicks off to purple7 </nl>
+<semid> 609 610 </semid>
+</example>
+
+<example id="73">
+<nl> purple7 passes to purple9 near the sideline </nl>
+<semid> 611 612 </semid>
+</example>
+
+<example id="74">
+<nl> purple9 passes back to purple7 </nl>
+<semid> 616 </semid>
+</example>
+
+<example id="75">
+<nl> purple7 dribbles toward the goal </nl>
+<semid> 619 </semid>
+</example>
+
+<example id="76">
+<nl> purple7 passes to purple9 </nl>
+<semid> 620 621 </semid>
+</example>
+
+<example id="77">
+<nl> purple9 passes to purple6 under pressure </nl>
+<semid> 627 628 629 </semid>
+</example>
+
+<example id="78">
+<nl> purple6 loses the ball to pink5 </nl>
+<semid> 632 633 634 </semid>
+</example>
+
+<example id="79">
+<nl> pink5 passes to pink3 </nl>
+<semid> 635 636 </semid>
+</example>
+
+<example id="80">
+<nl> purple9 steals the ball from pink3 </nl>
+<semid> 637 638 639 </semid>
+</example>
+
+<example id="81">
+<nl> purple9 loses the ball right back to pink3 </nl>
+<semid> 637 638 639 640 641 642 </semid>
+</example>
+
+<example id="82">
+<nl> pink3 loses the ball to purple7 </nl>
+<semid> 644 645 </semid>
+</example>
+
+<example id="83">
+<nl> purple7 made a bad pass that was picked off by pink9 </nl>
+<semid> 651 652 </semid>
+</example>
+
+<example id="85">
+<nl> pink9 loses the bal to purple3 </nl>
+<semid> 655 656 </semid>
+</example>
+
+<example id="86">
+<nl> purple3 passes out to purple7 </nl>
+<semid> 657 658 </semid>
+</example>
+
+<example id="87">
+<nl> purple7 made a quick pass to purple6 </nl>
+<semid> 659 660 </semid>
+</example>
+
+<example id="88">
+<nl> purple6 made a bad pass that was picked off by pink6 </nl>
+<semid> 662 663 </semid>
+</example>
+
+<example id="89">
+<nl> purple10 loses the ball to pink7 </nl>
+<semid> 673 674 </semid>
+</example>
+
+<example id="90">
+<nl> purple7 loses the ball to pink5 </nl>
+<semid> 679 680 681 </semid>
+</example>
+
+<example id="91">
+<nl> pink11 dribbles toward the goal </nl>
+<semid> 698 </semid>
+</example>
+
+<example id="92">
+<nl> pink11 loses the ball to purple2 </nl>
+<semid> 699 700 </semid>
+</example>
+
+<example id="93">
+<nl> purple2 loses the ball to pink9 </nl>
+<semid> 699 700 701 702 703 </semid>
+</example>
+
+<example id="94">
+<nl> purple7 passes the ball out to purple6 </nl>
+<semid> 708 </semid>
+</example>
+
+<example id="95">
+<nl> purple6 passes to purple2 </nl>
+<semid> 708 709 710 711 </semid>
+</example>
+
+<example id="96">
+<nl> purple2 makes a short pass to purple3 </nl>
+<semid> 711 712 713 714 </semid>
+</example>
+
+<example id="97">
+<nl> purple3 loses the ball to pink9 </nl>
+<semid> 713 714 715 716 717 </semid>
+</example>
+
+<example id="98">
+<nl> pink9 loses the ball to purple5 </nl>
+<semid> 721 722 723 </semid>
+</example>
+
+<example id="99">
+<nl> purple5 loses the ball back to pink7 </nl>
+<semid> 725 726 </semid>
+</example>
+
+<example id="100">
+<nl> pink7 passes to pink9 </nl>
+<semid> 730 731 </semid>
+</example>
+
+<example id="101">
+<nl> pink9 loses the ball to purple3 </nl>
+<semid> 731 732 733 </semid>
+</example>
+
+<example id="102">
+<nl> pink team gets a corner kick </nl>
+<semid> 735 736 </semid>
+</example>
+
+<example id="103">
+<nl> pink8 makes a bad pass that was picked off by purple6 </nl>
+<semid> 833 834 835 </semid>
+</example>
+
+<example id="104">
+<nl> purple6 made a bad pass that was picked off by pink8 </nl>
+<semid> 837 838 839 </semid>
+</example>
+
+<example id="106">
+<nl> pink8 passes to pink6 </nl>
+<semid> 840 841 </semid>
+</example>
+
+<example id="107">
+<nl> purple3 made a defensive stop </nl>
+<semid> 842 843 844 845 846 847 848 849 850 </semid>
+</example>
+
+<example id="108">
+<nl> purple3 passes to purple7 </nl>
+<semid> 856 857 858 859 </semid>
+</example>
+
+<example id="109">
+<nl> purple7 made a bad pass and was picked off by pink5 </nl>
+<semid> 861 862 </semid>
+</example>
+
+<example id="110">
+<nl> pink5 passes to pink11 </nl>
+<semid> 863 864 </semid>
+</example>
+
+<example id="111">
+<nl> pink11 passes to pink8 </nl>
+<semid> 870 871 872 </semid>
+</example>
+
+<example id="112">
+<nl> purple3 made a defensive stop </nl>
+<semid> 874 875 876 </semid>
+</example>
+
+<example id="113">
+<nl> purple3 passes out of the penalty area to purple7 </nl>
+<semid> 878 879 </semid>
+</example>
+
+<example id="114">
+<nl> purple7 passes to purple8 </nl>
+<semid> 880 881 </semid>
+</example>
+
+<example id="116">
+<nl> purple8 passes to purple9 </nl>
+<semid> 886 </semid>
+</example>
+
+<example id="118">
+<nl> purple6 has the ball </nl>
+<semid> 890 </semid>
+</example>
+
+<example id="119">
+<nl> purple6 passes to purple7 </nl>
+<semid> 892 893 </semid>
+</example>
+
+<example id="120">
+<nl> purple7 passes back to purple6 </nl>
+<semid> 894 895 </semid>
+</example>
+
+<example id="121">
+<nl> purple6 made a bad pass and was picked off by pink9 </nl>
+<semid> 897 898 </semid>
+</example>
+
+<example id="122">
+<nl> purple team will kick in </nl>
+<semid> 903 904 929 930 </semid>
+</example>
+
+<example id="123">
+<nl> purple8 kicks off to purple11 </nl>
+<semid> 936 937 938 939 </semid>
+</example>
+
+<example id="124">
+<nl> purple11 passes to purple10 </nl>
+<semid> 941 </semid>
+</example>
+
+<example id="125">
+<nl> purple10 passes back to purple11 </nl>
+<semid> 942 943 </semid>
+</example>
+
+<example id="126">
+<nl> purple11 passes to purple7 </nl>
+<semid> 943 944 945 </semid>
+</example>
+
+<example id="127">
+<nl> purple7 passes to purple6 </nl>
+<semid> 948 </semid>
+</example>
+
+<example id="128">
+<nl> purple6 passes to purple10 </nl>
+<semid> 949 950 951 </semid>
+</example>
+
+<example id="129">
+<nl> purple10 passes back to purple6 </nl>
+<semid> 955 956 </semid>
+</example>
+
+<example id="130">
+<nl> purple6 passes backward to purple3 </nl>
+<semid> 958 959 </semid>
+</example>
+
+<example id="131">
+<nl> purple3 made a bad pass that was picked off by pink9 </nl>
+<semid> 959 960 961 962 </semid>
+</example>
+
+<example id="133">
+<nl> pink9 passes to pink11 </nl>
+<semid> 965 </semid>
+</example>
+
+<example id="134">
+<nl> pink team scores </nl>
+<semid> 967 968 973 974 </semid>
+</example>
+
+<example id="135">
+<nl> purple team will kick off </nl>
+<semid> 967 968 969 970 973 974 </semid>
+</example>
+
+<example id="136">
+<nl> purple10 passes to purple6 </nl>
+<semid> 977 </semid>
+</example>
+
+<example id="137">
+<nl> purple6 passes to purple9 </nl>
+<semid> 979 </semid>
+</example>
+
+<example id="138">
+<nl> purple9 passes to purple6 </nl>
+<semid> 980 981 </semid>
+</example>
+
+<example id="139">
+<nl> purple6 passes to purple7 </nl>
+<semid> 983 984 </semid>
+</example>
+
+<example id="140">
+<nl> purple7 passes to purple4 </nl>
+<semid> 986 987 988 </semid>
+</example>
+
+<example id="141">
+<nl> purple4 passes to purple3 </nl>
+<semid> 988 989 990 </semid>
+</example>
+
+<example id="142">
+<nl> purple3 passes the ball back to purple4 </nl>
+<semid> 991 992 </semid>
+</example>
+
+<example id="143">
+<nl> offside on purple </nl>
+<semid> 994 995 998 999 </semid>
+</example>
+
+<example id="144">
+<nl> pink6 passes to pink7 </nl>
+<semid> 1037 1038 1039 </semid>
+</example>
+
+<example id="146">
+<nl> pink7 makes a beautiful pass to pink9 </nl>
+<semid> 1042 </semid>
+</example>
+
+<example id="147">
+<nl> pink 9 shoots </nl>
+<semid> 1042 1043 1048 1049 </semid>
+</example>
+
+<example id="148">
+<nl> pink team scores again </nl>
+<semid> 1042 1043 1044 1045 1048 1049 </semid>
+</example>
+
+<example id="149">
+<nl> purple10 kicks off to purple8 </nl>
+<semid> 1052 </semid>
+</example>
+
+<example id="150">
+<nl> purple8 passes to purple11 </nl>
+<semid> 1054 </semid>
+</example>
+
+<example id="151">
+<nl> purple11 passes to purple2 </nl>
+<semid> 1056 1057 </semid>
+</example>
+
+<example id="152">
+<nl> purple2 passes to purple3 </nl>
+<semid> 1059 1060 </semid>
+</example>
+
+<example id="153">
+<nl> purple3 passes to purple4 </nl>
+<semid> 1061 1062 </semid>
+</example>
+
+<example id="154">
+<nl> purple4 passes to purple5 </nl>
+<semid> 1063 1064 </semid>
+</example>
+
+<example id="155">
+<nl> purple5 makes a short pass to purple8 </nl>
+<semid> 1065 1066 </semid>
+</example>
+
+<example id="156">
+<nl> purple8 passes the ball to purple11 </nl>
+<semid> 1067 1068 </semid>
+</example>
+
+<example id="157">
+<nl> purple8 passes to purple10 </nl>
+<semid> 1071 1072 </semid>
+</example>
+
+<example id="158">
+<nl> purple10 makes a bad pass and was picked off by pink9 </nl>
+<semid> 1073 1074 1075 </semid>
+</example>
+
+<example id="159">
+<nl> pink9 passes to pink11 </nl>
+<semid> 1077 </semid>
+</example>
+
+<example id="161">
+<nl> pink11 makes a bad pass and was picked off by purple3 </nl>
+<semid> 1081 1082 1083 1084 1085 </semid>
+</example>
+
+<example id="162">
+<nl> purple3 passes out to purple6 </nl>
+<semid> 1087 </semid>
+</example>
+
+<example id="163">
+<nl> purple6 passes to purple7 </nl>
+<semid> 1089 1090 </semid>
+</example>
+
+<example id="165">
+<nl> pink3 has the ball </nl>
+<semid> 1092 </semid>
+</example>
+
+<example id="166">
+<nl> pink3 dribbles toward the goal </nl>
+<semid> 1096 </semid>
+</example>
+
+<example id="167">
+<nl> purple3 passes out to purple7 </nl>
+<semid> 1100 1101 </semid>
+</example>
+
+<example id="168">
+<nl> purple7 passes back to purple3 </nl>
+<semid> 1102 1103 </semid>
+</example>
+
+<example id="169">
+<nl> purple3 made a bad pass and was picked off by pink5 </nl>
+<semid> 1105 1106 </semid>
+</example>
+
+<example id="170">
+<nl> pink5 turned the ball over to purple7 </nl>
+<semid> 1110 1111 </semid>
+</example>
+
+<example id="171">
+<nl> purple7 passes to purple10 </nl>
+<semid> 1113 </semid>
+</example>
+
+<example id="172">
+<nl> purple10 passes to purple11 </nl>
+<semid> 1114 1115 </semid>
+</example>
+
+<example id="173">
+<nl> purple11 makes a bad pass and was picked off by pink7 </nl>
+<semid> 1115 1116 1117 1118 </semid>
+</example>
+
+<example id="174">
+<nl> pink7 passes to pink10 </nl>
+<semid> 1120 </semid>
+</example>
+
+<example id="175">
+<nl> pink10 makes a bad pass that was picked off by purple7 </nl>
+<semid> 1123 1124 </semid>
+</example>
+
+<example id="176">
+<nl> purple7 passes to purple8 </nl>
+<semid> 1125 1126 1127 </semid>
+</example>
+
+<example id="177">
+<nl> purple8 passes back to purple7 </nl>
+<semid> 1133 1134 </semid>
+</example>
+
+<example id="178">
+<nl> purple7 made a bad pass that was intercepted by pink9 </nl>
+<semid> 1136 1137 1138 </semid>
+</example>
+
+<example id="179">
+<nl> pink9 passes to pink10 </nl>
+<semid> 1144 </semid>
+</example>
+
+<example id="180">
+<nl> pink10 loses the ball to purple5 </nl>
+<semid> 1145 1146 1147 </semid>
+</example>
+
+<example id="181">
+<nl> purple5 passes to purple4 </nl>
+<semid> 1145 1146 1147 1148 1149 </semid>
+</example>
+
+<example id="182">
+<nl> purple4 passes to purple7 </nl>
+<semid> 1150 1151 </semid>
+</example>
+
+<example id="183">
+<nl> purple7 passes to purple10 </nl>
+<semid> 1158 1159 </semid>
+</example>
+
+<example id="185">
+<nl> purple10 shoots </nl>
+<semid> 1162 1167 1168 </semid>
+</example>
+
+<example id="186">
+<nl> purple team scores </nl>
+<semid> 1163 1164 1167 1168 </semid>
+</example>
+
+<example id="187">
+<nl> pink9 kicks off to pink11 </nl>
+<semid> 1172 </semid>
+</example>
+
+<example id="190">
+<nl> purple2 passes the ball to purple7 </nl>
+<semid> 1175 </semid>
+</example>
+
+<example id="191">
+<nl> purple7 passes to purple4 </nl>
+<semid> 1176 1177 </semid>
+</example>
+
+<example id="192">
+<nl> purple4 passes to purple3 </nl>
+<semid> 1178 1179 1180 </semid>
+</example>
+
+<example id="193">
+<nl> purple3 makes a bad pass that was picked off by pink7 </nl>
+<semid> 1181 1182 1183 </semid>
+</example>
+
+<example id="194">
+<nl> pink7 makes a short pass to pink10 </nl>
+<semid> 1184 1185 </semid>
+</example>
+
+<example id="195">
+<nl> pink9 dribbles toward the goal </nl>
+<semid> 1188 </semid>
+</example>
+
+<example id="196">
+<nl> purple4 steals the ball from pink9 </nl>
+<semid> 1189 1190 </semid>
+</example>
+
+<example id="197">
+<nl> start of second half </nl>
+<semid> 1194 1195 1196 1197 1198 1199 1200 1201 </semid>
+</example>
+
+<example id="198">
+<nl> pink9 passes to pink8 </nl>
+<semid> 1204 </semid>
+</example>
+
+<example id="199">
+<nl> pink8 loses the ball to purple3 </nl>
+<semid> 1208 1209 1210 1211 1212 </semid>
+</example>
+
+<example id="200">
+<nl> purple3 passes to purple7 </nl>
+<semid> 1212 1213 1214 </semid>
+</example>
+
+<example id="201">
+<nl> purple7 passes to purple10 </nl>
+<semid> 1214 1215 1216 </semid>
+</example>
+
+<example id="202">
+<nl> purple8 passes to purple11 </nl>
+<semid> 1219 1220 1221 </semid>
+</example>
+
+<example id="203">
+<nl> purple11 passes back to purple8 </nl>
+<semid> 1222 1223 </semid>
+</example>
+
+<example id="204">
+<nl> purple8 passes to purple11 </nl>
+<semid> 1225 1226 1227 1228 </semid>
+</example>
+
+<example id="205">
+<nl> purple11 passes back to purple8 again </nl>
+<semid> 1230 1231 1232 1233 1234 </semid>
+</example>
+
+<example id="206">
+<nl> purple8 misses a pass to purple10 </nl>
+<semid> 1233 1234 </semid>
+</example>
+
+<example id="207">
+<nl> purple8's bad pass was picked up by pink5 </nl>
+<semid> 1233 1234 </semid>
+</example>
+
+<example id="208">
+<nl> pink5 passes to pink3 </nl>
+<semid> 1236 1237 1238 1239 </semid>
+</example>
+
+<example id="209">
+<nl> pinke3 turns the ball over to purple7 </nl>
+<semid> 1238 1239 1240 1241 1242 </semid>
+</example>
+
+<example id="210">
+<nl> purple7 loses the ball to pink9 </nl>
+<semid> 1241 1242 </semid>
+</example>
+
+<example id="211">
+<nl> pink9 lost the ball to purpl4 </nl>
+<semid> 1244 1245 1246 1247 </semid>
+</example>
+
+<example id="212">
+<nl> purple4 passes to purple3 </nl>
+<semid> 1247 </semid>
+</example>
+
+<example id="213">
+<nl> purple3 passes to purple2 </nl>
+<semid> 1249 1250 1273 1274 </semid>
+</example>
+
+<example id="214">
+<nl> purple2 loses the ball out of bound </nl>
+<semid> 1251 1252 1253 1254 1273 1274 </semid>
+</example>
+
+<example id="215">
+<nl> pink8 will kick in the ball </nl>
+<semid> 1254 1255 1256 1257 1258 1259 1273 1274 </semid>
+</example>
+
+<example id="216">
+<nl> pink8 passes to pink6 </nl>
+<semid> 1317 </semid>
+</example>
+
+<example id="217">
+<nl> pink6 makes a bad pass and was intercepted by purple9 </nl>
+<semid> 1320 1321 1322 1323 1324 </semid>
+</example>
+
+<example id="218">
+<nl> purple9 passes to purple10 </nl>
+<semid> 1324 1325 </semid>
+</example>
+
+<example id="219">
+<nl> purple10 passes to purple9 </nl>
+<semid> 1327 1328 </semid>
+</example>
+
+<example id="220">
+<nl> purple9 passes out of traffic to purple6 </nl>
+<semid> 1332 1333 1334 1335 </semid>
+</example>
+
+<example id="221">
+<nl> purple6 passes to purple7 near the middle of the field </nl>
+<semid> 1338 1339 1340 </semid>
+</example>
+
+<example id="222">
+<nl> purple7 passes to purple4 </nl>
+<semid> 1340 </semid>
+</example>
+
+<example id="223">
+<nl> purple4 passes to purple8 that was almost intercepted </nl>
+<semid> 1342 </semid>
+</example>
+
+<example id="224">
+<nl> purple8 passes to pruple11 near the sideline </nl>
+<semid> 1345 </semid>
+</example>
+
+<example id="225">
+<nl> purple11 had the ball stolen by pink4 </nl>
+<semid> 1346 1347 1348 1349 1350 </semid>
+</example>
+
+<example id="226">
+<nl> the ball is loose </nl>
+<semid> 1352 1353 </semid>
+</example>
+
+<example id="227">
+<nl> purple8 picks up the ball </nl>
+<semid> 1352 1353 1354 1355 </semid>
+</example>
+
+<example id="228">
+<nl> purple8 passes to purple11 </nl>
+<semid> 1355 </semid>
+</example>
+
+<example id="229">
+<nl> purple11 passes back to purple8 </nl>
+<semid> 1356 1357 1358 </semid>
+</example>
+
+<example id="230">
+<nl> purple8 passes backward but was intercepted by pink9 </nl>
+<semid> 1360 1361 </semid>
+</example>
+
+<example id="232">
+<nl> pink9 gets inside the penalty area </nl>
+<semid> 1364 1365 1366 </semid>
+</example>
+
+<example id="233">
+<nl> pink9 passes to pink11 but was intercepted by purple3 </nl>
+<semid> 1365 1366 1367 1368 1369 </semid>
+</example>
+
+<example id="234">
+<nl> purple3 loses the ball to pink11 </nl>
+<semid> 1368 1369 </semid>
+</example>
+
+<example id="235">
+<nl> pink11 shoots </nl>
+<semid> 1368 1369 1370 1371 1372 1373 1374 </semid>
+</example>
+
+<example id="236">
+<nl> pink11 scored </nl>
+<semid> 1371 1372 1373 1374 1375 1376 1377 </semid>
+</example>
+
+<example id="237">
+<nl> purple10 kicks off </nl>
+<semid> 1408 1409 1410 1411 1412 1413 1414 </semid>
+</example>
+
+<example id="238">
+<nl> purple10 passes to purple7 </nl>
+<semid> 1412 1413 1414 </semid>
+</example>
+
+<example id="239">
+<nl> purple7 dribbles across midfield </nl>
+<semid> 1417 </semid>
+</example>
+
+<example id="240">
+<nl> purple7 passes backward to purple4 </nl>
+<semid> 1419 </semid>
+</example>
+
+<example id="241">
+<nl> purple4 passes to purple3 </nl>
+<semid> 1419 1420 1421 </semid>
+</example>
+
+<example id="242">
+<nl> purple3 passes to purple2 </nl>
+<semid> 1422 1423 </semid>
+</example>
+
+<example id="243">
+<nl> purple2 made a bad pass and was picked up by pink8 </nl>
+<semid> 1426 1427 1428 </semid>
+</example>
+
+<example id="244">
+<nl> pink8 almost loses the ball </nl>
+<semid> 1429 </semid>
+</example>
+
+<example id="245">
+<nl> pink8 dribbles toward the penalty area </nl>
+<semid> 1433 </semid>
+</example>
+
+<example id="246">
+<nl> pink8 passes to pink11 </nl>
+<semid> 1433 </semid>
+</example>
+
+<example id="247">
+<nl> pink11 gets closer to the goal </nl>
+<semid> 1434 1435 1436 </semid>
+</example>
+
+<example id="248">
+<nl> pink11 made a bad pass to purple6 </nl>
+<semid> 1435 1436 </semid>
+</example>
+
+<example id="249">
+<nl> purple6 passes out to purple10 </nl>
+<semid> 1438 1439 1440 </semid>
+</example>
+
+<example id="250">
+<nl> purple10 dribble across midfield </nl>
+<semid> 1440 </semid>
+</example>
+
+<example id="251">
+<nl> purple10 turns the ball over to pink4 </nl>
+<semid> 1444 1445 </semid>
+</example>
+
+<example id="252">
+<nl> pink4 loses the ball to purple9 </nl>
+<semid> 1447 1448 1449 1450 1451 </semid>
+</example>
+
+<example id="253">
+<nl> purple9 loses the ball to pink6 </nl>
+<semid> 1450 1451 1452 1453 1454 </semid>
+</example>
+
+<example id="254">
+<nl> pink6 passes to pink9 </nl>
+<semid> 1454 1455 1456 </semid>
+</example>
+
+<example id="255">
+<nl> pink9 passes to pink11 </nl>
+<semid> 1456 </semid>
+</example>
+
+<example id="256">
+<nl> pink11 passes to pink8 </nl>
+<semid> 1458 </semid>
+</example>
+
+<example id="257">
+<nl> pink8 makes a pass to pink10 </nl>
+<semid> 1460 </semid>
+</example>
+
+<example id="258">
+<nl> pink10 had the ball stolen </nl>
+<semid> 1463 1464 1465 </semid>
+</example>
+
+<example id="259">
+<nl> purple4 passes to purple7 </nl>
+<semid> 1467 1468 </semid>
+</example>
+
+<example id="260">
+<nl> purple7 passes to purple8 </nl>
+<semid> 1477 </semid>
+</example>
+
+<example id="261">
+<nl> purple8 made a bad pass and was intercepted by pink6 </nl>
+<semid> 1481 1482 1483 1496 1497 </semid>
+</example>
+
+<example id="262">
+<nl> pink team is offside </nl>
+<semid> 1486 1487 1488 1489 1490 1491 1492 1496 1497 </semid>
+</example>
+
+<example id="263">
+<nl> purple team gets a free kick </nl>
+<semid> 1490 1491 1492 1493 1494 1495 1496 1497 </semid>
+</example>
+
+<example id="264">
+<nl> purple3 passes to purple2 </nl>
+<semid> 1507 1508 1509 1510 </semid>
+</example>
+
+<example id="265">
+<nl> purple2 passes back to purple3 </nl>
+<semid> 1511 1512 </semid>
+</example>
+
+<example id="266">
+<nl> purple3 passes to purple7 </nl>
+<semid> 1513 1514 </semid>
+</example>
+
+<example id="267">
+<nl> purple7 passes to purple10 </nl>
+<semid> 1516 </semid>
+</example>
+
+<example id="268">
+<nl> purple5 passes to purple11 </nl>
+<semid> 1520 </semid>
+</example>
+
+<example id="269">
+<nl> purple11 made a bad pass that was picked up by pink9 </nl>
+<semid> 1522 1523 1524 </semid>
+</example>
+
+<example id="270">
+<nl> pink9 shoots </nl>
+<semid> 1526 1527 1528 1529 1530 1531 1532 </semid>
+</example>
+
+<example id="271">
+<nl> purple1 blocks the ball </nl>
+<semid> 1526 1527 1528 1529 1530 </semid>
+</example>
+
+<example id="272">
+<nl> purple1 passes to purple2 </nl>
+<semid> 1634 1635 1636 1637 </semid>
+</example>
+
+<example id="273">
+<nl> purple2 makes a bad pass that was intercepted by pink11 </nl>
+<semid> 1642 1643 1644 1645 </semid>
+</example>
+
+<example id="274">
+<nl> pink11 turns the ball over to purple4 </nl>
+<semid> 1648 1649 </semid>
+</example>
+
+<example id="275">
+<nl> purple4 passes to purple7 who is standing still </nl>
+<semid> 1651 1652 1653 </semid>
+</example>
+
+<example id="276">
+<nl> purple7 passes to purple10 </nl>
+<semid> 1653 </semid>
+</example>
+
+<example id="277">
+<nl> purple10 passes to purple8 </nl>
+<semid> 1655 1656 1657 1658 1659 </semid>
+</example>
+
+<example id="278">
+<nl> purple8 made a bad pass that was picked up by pink8 </nl>
+<semid> 1656 1657 1658 1659 </semid>
+</example>
+
+<example id="279">
+<nl> pink8 makes a short pass to pink6 </nl>
+<semid> 1658 1659 1660 1661 </semid>
+</example>
+
+<example id="280">
+<nl> pink6 makes a short pass to pink9 </nl>
+<semid> 1665 1666 1667 1669 1670 </semid>
+</example>
+
+<example id="281">
+<nl> puprle1 blocks the ball </nl>
+<semid> 1668 1669 1670 1671 1672 1673 </semid>
+</example>
+
+<example id="282">
+<nl> purple1 kicks off to purple5 </nl>
+<semid> 1778 </semid>
+</example>
+
+<example id="283">
+<nl> purple5 had the ball stolen </nl>
+<semid> 1781 1782 1783 1784 1785 </semid>
+</example>
+
+<example id="284">
+<nl> pink7 turns the ball over to purple11 </nl>
+<semid> 1784 1785 </semid>
+</example>
+
+<example id="285">
+<nl> purple11 passes to purple8 </nl>
+<semid> 1790 </semid>
+</example>
+
+<example id="286">
+<nl> purple8 passes to purple7 </nl>
+<semid> 1791 1792 </semid>
+</example>
+
+<example id="287">
+<nl> purple7 makes a short pass to purple10 </nl>
+<semid> 1795 1796 1797 1798 </semid>
+</example>
+
+<example id="288">
+<nl> purple10 immediately passes to purple11 </nl>
+<semid> 1798 </semid>
+</example>
+
+<example id="289">
+<nl> puprple turns the ball over to pink4 </nl>
+<semid> 1799 1800 1801 1802 1803 </semid>
+</example>
+
+<example id="290">
+<nl> pink4 passes to pink10 </nl>
+<semid> 1803 1804 1805 </semid>
+</example>
+
+<example id="291">
+<nl> pink10 loses the ball to purple5 </nl>
+<semid> 1808 1809 1810 1811 1812 </semid>
+</example>
+
+<example id="292">
+<nl> purple5 makes a bad pass that was picked off by pink11 </nl>
+<semid> 1811 1812 1813 </semid>
+</example>
+
+<example id="293">
+<nl> pink11 tries to pass but was intercepted by purple5 </nl>
+<semid> 1815 </semid>
+</example>
+
+<example id="295">
+<nl> purple7 passes to purple4 </nl>
+<semid> 1816 1817 1818 </semid>
+</example>
+
+<example id="296">
+<nl> purple4 passes to purple8 </nl>
+<semid> 1820 </semid>
+</example>
+
+<example id="297">
+<nl> purple8 loses the ball to pink4 </nl>
+<semid> 1823 1824 </semid>
+</example>
+
+<example id="298">
+<nl> pink4 makes a long pass to pink9 </nl>
+<semid> 1827 </semid>
+</example>
+
+<example id="299">
+<nl> pink9 turns the ball over to purple7 </nl>
+<semid> 1834 1835 1836 1837 </semid>
+</example>
+
+<example id="300">
+<nl> purple4 passes to purple3 </nl>
+<semid> 1839 </semid>
+</example>
+
+<example id="301">
+<nl> purple3 passes to purple10 </nl>
+<semid> 1842 </semid>
+</example>
+
+<example id="302">
+<nl> purple10 passes to purple8 </nl>
+<semid> 1845 1846 1847 </semid>
+</example>
+
+<example id="303">
+<nl> purple8 passes to purple7 </nl>
+<semid> 1846 1847 </semid>
+</example>
+
+<example id="304">
+<nl> purple7 passes to purple8 </nl>
+<semid> 1852 1853 1854 </semid>
+</example>
+
+<example id="305">
+<nl> purple8 passes to purple4 </nl>
+<semid> 1857 1858 </semid>
+</example>
+
+<example id="306">
+<nl> purple4 loses the ball to pink9 </nl>
+<semid> 1862 1863 </semid>
+</example>
+
+<example id="307">
+<nl> pink9 passes to pink7 </nl>
+<semid> 1864 1865 1866 </semid>
+</example>
+
+<example id="309">
+<nl> pink7 passes to pink9 </nl>
+<semid> 1869 1870 1871 </semid>
+</example>
+
+<example id="310">
+<nl> pink9 shoots </nl>
+<semid> 1872 1877 1878 </semid>
+</example>
+
+<example id="311">
+<nl> pink9 socred another goal for pink team </nl>
+<semid> 1873 1874 1875 1876 1877 1878 1879 1880 1881 </semid>
+</example>
+
+<example id="312">
+<nl> purple8 passes to purple3 </nl>
+<semid> 1884 </semid>
+</example>
+
+<example id="313">
+<nl> purple3 passes to purple2 </nl>
+<semid> 1885 1886 </semid>
+</example>
+
+<example id="314">
+<nl> purple2 makes a short pass to purple6 </nl>
+<semid> 1887 1888 1889 1890 1891 1892 </semid>
+</example>
+
+<example id="315">
+<nl> purple6 makes a bad pass that was picked off by pink9 </nl>
+<semid> 1893 </semid>
+</example>
+
+<example id="317">
+<nl> pink9 passes to pink10 </nl>
+<semid> 1895 1896 1901 1902 </semid>
+</example>
+
+<example id="318">
+<nl> pink10 scores a goal for the pink team </nl>
+<semid> 1897 1898 1899 1900 1901 1902 </semid>
+</example>
+
+<example id="319">
+<nl> purple6 turns the ball over to pink11 </nl>
+<semid> 1905 1906 1907 1908 1909 </semid>
+</example>
+
+<example id="320">
+<nl> pink11 made a bad pass that was picked up by purple8 </nl>
+<semid> 1911 1912 1913 1915 </semid>
+</example>
+
+<example id="321">
+<nl> purple8 passes to purple11 </nl>
+<semid> 1914 1915 1916 </semid>
+</example>
+
+<example id="322">
+<nl> purple11 is trapped </nl>
+<semid> 1919 1920 1921 </semid>
+</example>
+
+<example id="323">
+<nl> purple11 passes out to purple10 </nl>
+<semid> 1921 </semid>
+</example>
+
+<example id="324">
+<nl> purple10 passes to purple8 </nl>
+<semid> 1922 1923 1924 </semid>
+</example>
+
+<example id="325">
+<nl> purple8 passes to purple11 </nl>
+<semid> 1925 1926 1927 </semid>
+</example>
+
+<example id="326">
+<nl> purple11 passes back to purple8 </nl>
+<semid> 1929 1930 </semid>
+</example>
+
+<example id="327">
+<nl> purple8 passes yet again to purple11 </nl>
+<semid> 1931 1932 1933 </semid>
+</example>
+
+<example id="328">
+<nl> purple11 passes to purple7 </nl>
+<semid> 1936 </semid>
+</example>
+
+<example id="329">
+<nl> purple7 makes a short pass to purple8 </nl>
+<semid> 1937 1938 </semid>
+</example>
+
+<example id="330">
+<nl> pink7 passes to pink10 </nl>
+<semid> 2081 2082 </semid>
+</example>
+
+<example id="331">
+<nl> pink10 turns the ball over to purple5 </nl>
+<semid> 2083 2084 2085 2086 2087 </semid>
+</example>
+
+<example id="332">
+<nl> purple5 made a bad pass that was picked off by pink9 </nl>
+<semid> 2086 2087 2088 2089 2090 </semid>
+</example>
+
+<example id="333">
+<nl> purple3 made a defensive stop </nl>
+<semid> 2093 2094 2095 2105 </semid>
+</example>
+
+<example id="334">
+<nl> purple team gets a goal kick </nl>
+<semid> 2096 2097 2105 </semid>
+</example>
+
+<example id="335">
+<nl> purple1 kicks off to purple2 </nl>
+<semid> 2128 2129 2130 </semid>
+</example>
+
+<example id="336">
+<nl> purple2 passes to purple6 </nl>
+<semid> 2133 </semid>
+</example>
+
+<example id="337">
+<nl> purple6 passes to purple2 </nl>
+<semid> 2136 </semid>
+</example>
+
+<example id="338">
+<nl> purple2 passes to purple9 </nl>
+<semid> 2138 2139 2140 </semid>
+</example>
+
+<example id="339">
+<nl> purple9 loses the ball to pink5 </nl>
+<semid> 2138 2139 2140 </semid>
+</example>
+
+<example id="340">
+<nl> pink5 passes to pink8 </nl>
+<semid> 2141 2142 2143 2144 </semid>
+</example>
+
+<example id="343">
+<nl> purple7 passes to purple8 </nl>
+<semid> 2151 </semid>
+</example>
+
+<example id="344">
+<nl> purple8 passes to purple10 </nl>
+<semid> 2155 </semid>
+</example>
+
+<example id="345">
+<nl> purple10 passes to purple11 </nl>
+<semid> 2157 </semid>
+</example>
+
+<example id="346">
+<nl> purple11 loses the ball to pink4 </nl>
+<semid> 2160 2161 2162 2163 2164 </semid>
+</example>
+
+<example id="347">
+<nl> pink4 passes to pink7 </nl>
+<semid> 2164 </semid>
+</example>
+
+<example id="348">
+<nl> pink7 made a bad pass that was intercepted by purple7 </nl>
+<semid> 2166 2167 2168 2169 </semid>
+</example>
+
+<example id="349">
+<nl> purple7 passes to purple6 </nl>
+<semid> 2169 </semid>
+</example>
+
+<example id="350">
+<nl> purple6 passes to purple9 </nl>
+<semid> 2173 2174 </semid>
+</example>
+
+<example id="351">
+<nl> purple9 passes the ball but was intercepted by pink11 </nl>
+<semid> 2181 2182 2183 </semid>
+</example>
+
+<example id="353">
+<nl> pink11 passes to pink10 </nl>
+<semid> 2189 </semid>
+</example>
+
+<example id="354">
+<nl> pink10 shoots </nl>
+<semid> 2189 2190 2191 2192 2198 2199 </semid>
+</example>
+
+<example id="355">
+<nl> pink team scored </nl>
+<semid> 2191 2192 2193 2194 2195 2196 2197 2198 2199 </semid>
+</example>
+
+<example id="356">
+<nl> purple6 passes to purple9 </nl>
+<semid> 2204 </semid>
+</example>
+
+<example id="357">
+<nl> purple9 passes to purple2 </nl>
+<semid> 2206 </semid>
+</example>
+
+<example id="358">
+<nl> purple2 passes to purple3 </nl>
+<semid> 2207 2208 </semid>
+</example>
+
+<example id="359">
+<nl> purple3 passes to purple7 </nl>
+<semid> 2210 </semid>
+</example>
+
+<example id="360">
+<nl> purple7 passes to purple10 </nl>
+<semid> 2212 2213 </semid>
+</example>
+
+<example id="361">
+<nl> purple10 passes to purple11 </nl>
+<semid> 2215 </semid>
+</example>
+
+<example id="362">
+<nl> purple11 passes to purple8 </nl>
+<semid> 2218 </semid>
+</example>
+
+<example id="363">
+<nl> purple8 passes to purple7 </nl>
+<semid> 2219 2220 2221 2222 </semid>
+</example>
+
+<example id="364">
+<nl> purple7 passes to purple6 </nl>
+<semid> 2222 </semid>
+</example>
+
+</examples>
+
+
+<sems>
+
+<sem id="0"> playmode ( kick_off_l ) </sem>
+
+<sem id="1"> ballstopped </sem>
+
+<sem id="2"> playmode ( play_on ) </sem>
+
+<sem id="3"> kick ( purple10 ) </sem>
+
+<sem id="4"> pass ( purple10 , purple6 ) </sem>
+
+<sem id="5"> kick ( purple6 ) </sem>
+
+<sem id="6"> pass ( purple6 , purple2 ) </sem>
+
+<sem id="7"> kick ( purple2 ) </sem>
+
+<sem id="8"> pass ( purple2 , purple3 ) </sem>
+
+<sem id="9"> kick ( purple3 ) </sem>
+
+<sem id="10"> pass ( purple3 , purple6 ) </sem>
+
+<sem id="11"> ballstopped </sem>
+
+<sem id="12"> ballstopped </sem>
+
+<sem id="13"> ballstopped </sem>
+
+<sem id="14"> ballstopped </sem>
+
+<sem id="15"> kick ( purple6 ) </sem>
+
+<sem id="16"> kick ( purple6 ) </sem>
+
+<sem id="17"> pass ( purple6 , purple10 ) </sem>
+
+<sem id="18"> kick ( purple10 ) </sem>
+
+<sem id="19"> kick ( purple10 ) </sem>
+
+<sem id="20"> badPass ( purple10 , pink2 ) </sem>
+
+<sem id="21"> turnover ( purple10 , pink2 ) </sem>
+
+<sem id="22"> ballstopped </sem>
+
+<sem id="23"> ballstopped </sem>
+
+<sem id="24"> kick ( pink2 ) </sem>
+
+<sem id="25"> pass ( pink2 , pink11 ) </sem>
+
+<sem id="26"> kick ( pink11 ) </sem>
+
+<sem id="27"> kick ( pink11 ) </sem>
+
+<sem id="28"> kick ( pink9 ) </sem>
+
+<sem id="29"> playmode ( offside_r ) </sem>
+
+<sem id="30"> ballstopped </sem>
+
+<sem id="31"> playmode ( free_kick_l ) </sem>
+
+<sem id="32"> ballstopped </sem>
+
+<sem id="33"> ballstopped </sem>
+
+<sem id="34"> ballstopped </sem>
+
+<sem id="35"> ballstopped </sem>
+
+<sem id="36"> ballstopped </sem>
+
+<sem id="37"> defense ( purple3 , purple3 ) </sem>
+
+<sem id="38"> turnover ( pink9 , purple3 ) </sem>
+
+<sem id="39"> ballstopped </sem>
+
+<sem id="40"> ballstopped </sem>
+
+<sem id="41"> ballstopped </sem>
+
+<sem id="42"> ballstopped </sem>
+
+<sem id="43"> ballstopped </sem>
+
+<sem id="44"> ballstopped </sem>
+
+<sem id="45"> ballstopped </sem>
+
+<sem id="46"> ballstopped </sem>
+
+<sem id="47"> ballstopped </sem>
+
+<sem id="48"> ballstopped </sem>
+
+<sem id="49"> ballstopped </sem>
+
+<sem id="50"> ballstopped </sem>
+
+<sem id="51"> ballstopped </sem>
+
+<sem id="52"> ballstopped </sem>
+
+<sem id="53"> ballstopped </sem>
+
+<sem id="54"> ballstopped </sem>
+
+<sem id="55"> ballstopped </sem>
+
+<sem id="56"> ballstopped </sem>
+
+<sem id="57"> ballstopped </sem>
+
+<sem id="58"> ballstopped </sem>
+
+<sem id="59"> ballstopped </sem>
+
+<sem id="60"> ballstopped </sem>
+
+<sem id="61"> ballstopped </sem>
+
+<sem id="62"> ballstopped </sem>
+
+<sem id="63"> ballstopped </sem>
+
+<sem id="64"> ballstopped </sem>
+
+<sem id="65"> ballstopped </sem>
+
+<sem id="66"> ballstopped </sem>
+
+<sem id="67"> ballstopped </sem>
+
+<sem id="68"> ballstopped </sem>
+
+<sem id="69"> ballstopped </sem>
+
+<sem id="70"> ballstopped </sem>
+
+<sem id="71"> ballstopped </sem>
+
+<sem id="72"> ballstopped </sem>
+
+<sem id="73"> playmode ( play_on ) </sem>
+
+<sem id="74"> kick ( purple3 ) </sem>
+
+<sem id="75"> pass ( purple3 , purple7 ) </sem>
+
+<sem id="76"> kick ( purple7 ) </sem>
+
+<sem id="77"> pass ( purple7 , purple10 ) </sem>
+
+<sem id="78"> kick ( purple10 ) </sem>
+
+<sem id="79"> kick ( purple10 ) </sem>
+
+<sem id="80"> kick ( purple10 ) </sem>
+
+<sem id="81"> pass ( purple10 , purple6 ) </sem>
+
+<sem id="82"> kick ( purple6 ) </sem>
+
+<sem id="83"> kick ( purple6 ) </sem>
+
+<sem id="84"> ballstopped </sem>
+
+<sem id="85"> kick ( purple6 ) </sem>
+
+<sem id="86"> pass ( purple6 , purple9 ) </sem>
+
+<sem id="87"> kick ( purple9 ) </sem>
+
+<sem id="88"> ballstopped </sem>
+
+<sem id="89"> ballstopped </sem>
+
+<sem id="90"> ballstopped </sem>
+
+<sem id="91"> ballstopped </sem>
+
+<sem id="92"> kick ( purple9 ) </sem>
+
+<sem id="93"> ballstopped </sem>
+
+<sem id="94"> kick ( purple9 ) </sem>
+
+<sem id="95"> pass ( purple9 , purple6 ) </sem>
+
+<sem id="96"> kick ( purple6 ) </sem>
+
+<sem id="97"> kick ( purple6 ) </sem>
+
+<sem id="98"> kick ( purple6 ) </sem>
+
+<sem id="99"> pass ( purple6 , purple9 ) </sem>
+
+<sem id="100"> kick ( purple9 ) </sem>
+
+<sem id="101"> kick ( purple9 ) </sem>
+
+<sem id="102"> playmode ( kick_in_l ) </sem>
+
+<sem id="103"> ballstopped </sem>
+
+<sem id="104"> ballstopped </sem>
+
+<sem id="105"> ballstopped </sem>
+
+<sem id="106"> ballstopped </sem>
+
+<sem id="107"> ballstopped </sem>
+
+<sem id="108"> ballstopped </sem>
+
+<sem id="109"> ballstopped </sem>
+
+<sem id="110"> ballstopped </sem>
+
+<sem id="111"> ballstopped </sem>
+
+<sem id="112"> ballstopped </sem>
+
+<sem id="113"> ballstopped </sem>
+
+<sem id="114"> ballstopped </sem>
+
+<sem id="115"> ballstopped </sem>
+
+<sem id="116"> ballstopped </sem>
+
+<sem id="117"> ballstopped </sem>
+
+<sem id="118"> ballstopped </sem>
+
+<sem id="119"> ballstopped </sem>
+
+<sem id="120"> ballstopped </sem>
+
+<sem id="121"> ballstopped </sem>
+
+<sem id="122"> ballstopped </sem>
+
+<sem id="123"> ballstopped </sem>
+
+<sem id="124"> ballstopped </sem>
+
+<sem id="125"> ballstopped </sem>
+
+<sem id="126"> ballstopped </sem>
+
+<sem id="127"> ballstopped </sem>
+
+<sem id="128"> ballstopped </sem>
+
+<sem id="129"> ballstopped </sem>
+
+<sem id="130"> ballstopped </sem>
+
+<sem id="131"> ballstopped </sem>
+
+<sem id="132"> ballstopped </sem>
+
+<sem id="133"> ballstopped </sem>
+
+<sem id="134"> ballstopped </sem>
+
+<sem id="135"> ballstopped </sem>
+
+<sem id="136"> ballstopped </sem>
+
+<sem id="137"> ballstopped </sem>
+
+<sem id="138"> playmode ( play_on ) </sem>
+
+<sem id="139"> kick ( purple9 ) </sem>
+
+<sem id="140"> pass ( purple9 , purple6 ) </sem>
+
+<sem id="141"> kick ( purple6 ) </sem>
+
+<sem id="142"> pass ( purple6 , purple7 ) </sem>
+
+<sem id="143"> ballstopped </sem>
+
+<sem id="144"> ballstopped </sem>
+
+<sem id="145"> ballstopped </sem>
+
+<sem id="146"> ballstopped </sem>
+
+<sem id="147"> kick ( purple7 ) </sem>
+
+<sem id="148"> kick ( purple7 ) </sem>
+
+<sem id="149"> pass ( purple7 , purple6 ) </sem>
+
+<sem id="150"> kick ( purple6 ) </sem>
+
+<sem id="151"> pass ( purple6 , purple7 ) </sem>
+
+<sem id="152"> kick ( purple7 ) </sem>
+
+<sem id="153"> defense ( pink3 , pink3 ) </sem>
+
+<sem id="154"> turnover ( purple7 , pink3 ) </sem>
+
+<sem id="155"> ballstopped </sem>
+
+<sem id="156"> ballstopped </sem>
+
+<sem id="157"> ballstopped </sem>
+
+<sem id="158"> ballstopped </sem>
+
+<sem id="159"> kick ( pink3 ) </sem>
+
+<sem id="160"> badPass ( pink3 , purple11 ) </sem>
+
+<sem id="161"> turnover ( pink3 , purple11 ) </sem>
+
+<sem id="162"> kick ( purple11 ) </sem>
+
+<sem id="163"> badPass ( purple11 , pink7 ) </sem>
+
+<sem id="164"> turnover ( purple11 , pink7 ) </sem>
+
+<sem id="165"> ballstopped </sem>
+
+<sem id="166"> kick ( pink7 ) </sem>
+
+<sem id="167"> pass ( pink7 , pink10 ) </sem>
+
+<sem id="168"> kick ( pink10 ) </sem>
+
+<sem id="169"> kick ( pink10 ) </sem>
+
+<sem id="170"> pass ( pink10 , pink9 ) </sem>
+
+<sem id="171"> kick ( pink9 ) </sem>
+
+<sem id="172"> block ( purple1 ) </sem>
+
+<sem id="173"> turnover ( pink9 , purple1 ) </sem>
+
+<sem id="174"> playmode ( free_kick_l ) </sem>
+
+<sem id="175"> ballstopped </sem>
+
+<sem id="176"> ballstopped </sem>
+
+<sem id="177"> ballstopped </sem>
+
+<sem id="178"> ballstopped </sem>
+
+<sem id="179"> ballstopped </sem>
+
+<sem id="180"> ballstopped </sem>
+
+<sem id="181"> ballstopped </sem>
+
+<sem id="182"> ballstopped </sem>
+
+<sem id="183"> ballstopped </sem>
+
+<sem id="184"> ballstopped </sem>
+
+<sem id="185"> ballstopped </sem>
+
+<sem id="186"> ballstopped </sem>
+
+<sem id="187"> ballstopped </sem>
+
+<sem id="188"> ballstopped </sem>
+
+<sem id="189"> ballstopped </sem>
+
+<sem id="190"> ballstopped </sem>
+
+<sem id="191"> ballstopped </sem>
+
+<sem id="192"> ballstopped </sem>
+
+<sem id="193"> ballstopped </sem>
+
+<sem id="194"> ballstopped </sem>
+
+<sem id="195"> ballstopped </sem>
+
+<sem id="196"> ballstopped </sem>
+
+<sem id="197"> ballstopped </sem>
+
+<sem id="198"> ballstopped </sem>
+
+<sem id="199"> ballstopped </sem>
+
+<sem id="200"> ballstopped </sem>
+
+<sem id="201"> ballstopped </sem>
+
+<sem id="202"> ballstopped </sem>
+
+<sem id="203"> ballstopped </sem>
+
+<sem id="204"> ballstopped </sem>
+
+<sem id="205"> ballstopped </sem>
+
+<sem id="206"> ballstopped </sem>
+
+<sem id="207"> ballstopped </sem>
+
+<sem id="208"> ballstopped </sem>
+
+<sem id="209"> ballstopped </sem>
+
+<sem id="210"> ballstopped </sem>
+
+<sem id="211"> ballstopped </sem>
+
+<sem id="212"> ballstopped </sem>
+
+<sem id="213"> ballstopped </sem>
+
+<sem id="214"> ballstopped </sem>
+
+<sem id="215"> ballstopped </sem>
+
+<sem id="216"> ballstopped </sem>
+
+<sem id="217"> ballstopped </sem>
+
+<sem id="218"> ballstopped </sem>
+
+<sem id="219"> ballstopped </sem>
+
+<sem id="220"> ballstopped </sem>
+
+<sem id="221"> ballstopped </sem>
+
+<sem id="222"> ballstopped </sem>
+
+<sem id="223"> ballstopped </sem>
+
+<sem id="224"> ballstopped </sem>
+
+<sem id="225"> ballstopped </sem>
+
+<sem id="226"> ballstopped </sem>
+
+<sem id="227"> ballstopped </sem>
+
+<sem id="228"> ballstopped </sem>
+
+<sem id="229"> ballstopped </sem>
+
+<sem id="230"> ballstopped </sem>
+
+<sem id="231"> ballstopped </sem>
+
+<sem id="232"> ballstopped </sem>
+
+<sem id="233"> ballstopped </sem>
+
+<sem id="234"> ballstopped </sem>
+
+<sem id="235"> ballstopped </sem>
+
+<sem id="236"> ballstopped </sem>
+
+<sem id="237"> ballstopped </sem>
+
+<sem id="238"> ballstopped </sem>
+
+<sem id="239"> ballstopped </sem>
+
+<sem id="240"> ballstopped </sem>
+
+<sem id="241"> ballstopped </sem>
+
+<sem id="242"> ballstopped </sem>
+
+<sem id="243"> ballstopped </sem>
+
+<sem id="244"> ballstopped </sem>
+
+<sem id="245"> ballstopped </sem>
+
+<sem id="246"> ballstopped </sem>
+
+<sem id="247"> ballstopped </sem>
+
+<sem id="248"> ballstopped </sem>
+
+<sem id="249"> ballstopped </sem>
+
+<sem id="250"> ballstopped </sem>
+
+<sem id="251"> ballstopped </sem>
+
+<sem id="252"> ballstopped </sem>
+
+<sem id="253"> ballstopped </sem>
+
+<sem id="254"> ballstopped </sem>
+
+<sem id="255"> ballstopped </sem>
+
+<sem id="256"> ballstopped </sem>
+
+<sem id="257"> ballstopped </sem>
+
+<sem id="258"> ballstopped </sem>
+
+<sem id="259"> ballstopped </sem>
+
+<sem id="260"> ballstopped </sem>
+
+<sem id="261"> ballstopped </sem>
+
+<sem id="262"> ballstopped </sem>
+
+<sem id="263"> ballstopped </sem>
+
+<sem id="264"> ballstopped </sem>
+
+<sem id="265"> ballstopped </sem>
+
+<sem id="266"> ballstopped </sem>
+
+<sem id="267"> ballstopped </sem>
+
+<sem id="268"> ballstopped </sem>
+
+<sem id="269"> ballstopped </sem>
+
+<sem id="270"> ballstopped </sem>
+
+<sem id="271"> ballstopped </sem>
+
+<sem id="272"> ballstopped </sem>
+
+<sem id="273"> ballstopped </sem>
+
+<sem id="274"> ballstopped </sem>
+
+<sem id="275"> ballstopped </sem>
+
+<sem id="276"> ballstopped </sem>
+
+<sem id="277"> ballstopped </sem>
+
+<sem id="278"> ballstopped </sem>
+
+<sem id="279"> playmode ( play_on ) </sem>
+
+<sem id="280"> kick ( purple1 ) </sem>
+
+<sem id="281"> pass ( purple1 , purple2 ) </sem>
+
+<sem id="282"> kick ( purple2 ) </sem>
+
+<sem id="283"> kick ( purple2 ) </sem>
+
+<sem id="284"> pass ( purple2 , purple3 ) </sem>
+
+<sem id="285"> kick ( purple3 ) </sem>
+
+<sem id="286"> badPass ( purple3 , pink7 ) </sem>
+
+<sem id="287"> turnover ( purple3 , pink7 ) </sem>
+
+<sem id="288"> kick ( pink7 ) </sem>
+
+<sem id="289"> kick ( pink7 ) </sem>
+
+<sem id="290"> pass ( pink7 , pink9 ) </sem>
+
+<sem id="291"> kick ( pink9 ) </sem>
+
+<sem id="292"> playmode ( goal_r ) </sem>
+
+<sem id="293"> ballstopped </sem>
+
+<sem id="294"> playmode ( kick_off_l ) </sem>
+
+<sem id="295"> ballstopped </sem>
+
+<sem id="296"> ballstopped </sem>
+
+<sem id="297"> ballstopped </sem>
+
+<sem id="298"> badPass ( pink9 , purple10 ) </sem>
+
+<sem id="299"> turnover ( pink9 , purple10 ) </sem>
+
+<sem id="300"> playmode ( play_on ) </sem>
+
+<sem id="301"> kick ( purple10 ) </sem>
+
+<sem id="302"> kick ( purple10 ) </sem>
+
+<sem id="303"> pass ( purple10 , purple6 ) </sem>
+
+<sem id="304"> kick ( purple6 ) </sem>
+
+<sem id="305"> pass ( purple6 , purple2 ) </sem>
+
+<sem id="306"> kick ( purple2 ) </sem>
+
+<sem id="307"> pass ( purple2 , purple6 ) </sem>
+
+<sem id="308"> kick ( purple6 ) </sem>
+
+<sem id="309"> pass ( purple6 , purple7 ) </sem>
+
+<sem id="310"> kick ( purple7 ) </sem>
+
+<sem id="311"> badPass ( purple7 , pink10 ) </sem>
+
+<sem id="312"> turnover ( purple7 , pink10 ) </sem>
+
+<sem id="313"> kick ( pink10 ) </sem>
+
+<sem id="314"> pass ( pink10 , pink9 ) </sem>
+
+<sem id="315"> steal ( pink9 ) </sem>
+
+<sem id="316"> turnover ( pink9 , purple3 ) </sem>
+
+<sem id="317"> kick ( purple3 ) </sem>
+
+<sem id="318"> ballstopped </sem>
+
+<sem id="319"> badPass ( purple3 , pink6 ) </sem>
+
+<sem id="320"> turnover ( purple3 , pink6 ) </sem>
+
+<sem id="321"> ballstopped </sem>
+
+<sem id="322"> kick ( pink6 ) </sem>
+
+<sem id="323"> steal ( pink6 ) </sem>
+
+<sem id="324"> turnover ( pink6 , purple3 ) </sem>
+
+<sem id="325"> kick ( purple3 ) </sem>
+
+<sem id="326"> pass ( purple3 , purple1 ) </sem>
+
+<sem id="327"> playmode ( free_kick_l ) </sem>
+
+<sem id="328"> ballstopped </sem>
+
+<sem id="329"> ballstopped </sem>
+
+<sem id="330"> ballstopped </sem>
+
+<sem id="331"> ballstopped </sem>
+
+<sem id="332"> ballstopped </sem>
+
+<sem id="333"> ballstopped </sem>
+
+<sem id="334"> ballstopped </sem>
+
+<sem id="335"> ballstopped </sem>
+
+<sem id="336"> ballstopped </sem>
+
+<sem id="337"> ballstopped </sem>
+
+<sem id="338"> ballstopped </sem>
+
+<sem id="339"> ballstopped </sem>
+
+<sem id="340"> ballstopped </sem>
+
+<sem id="341"> ballstopped </sem>
+
+<sem id="342"> ballstopped </sem>
+
+<sem id="343"> ballstopped </sem>
+
+<sem id="344"> ballstopped </sem>
+
+<sem id="345"> ballstopped </sem>
+
+<sem id="346"> ballstopped </sem>
+
+<sem id="347"> ballstopped </sem>
+
+<sem id="348"> ballstopped </sem>
+
+<sem id="349"> ballstopped </sem>
+
+<sem id="350"> ballstopped </sem>
+
+<sem id="351"> ballstopped </sem>
+
+<sem id="352"> ballstopped </sem>
+
+<sem id="353"> ballstopped </sem>
+
+<sem id="354"> ballstopped </sem>
+
+<sem id="355"> ballstopped </sem>
+
+<sem id="356"> ballstopped </sem>
+
+<sem id="357"> ballstopped </sem>
+
+<sem id="358"> ballstopped </sem>
+
+<sem id="359"> ballstopped </sem>
+
+<sem id="360"> ballstopped </sem>
+
+<sem id="361"> ballstopped </sem>
+
+<sem id="362"> ballstopped </sem>
+
+<sem id="363"> ballstopped </sem>
+
+<sem id="364"> ballstopped </sem>
+
+<sem id="365"> ballstopped </sem>
+
+<sem id="366"> ballstopped </sem>
+
+<sem id="367"> ballstopped </sem>
+
+<sem id="368"> ballstopped </sem>
+
+<sem id="369"> ballstopped </sem>
+
+<sem id="370"> ballstopped </sem>
+
+<sem id="371"> ballstopped </sem>
+
+<sem id="372"> ballstopped </sem>
+
+<sem id="373"> ballstopped </sem>
+
+<sem id="374"> ballstopped </sem>
+
+<sem id="375"> ballstopped </sem>
+
+<sem id="376"> ballstopped </sem>
+
+<sem id="377"> ballstopped </sem>
+
+<sem id="378"> ballstopped </sem>
+
+<sem id="379"> ballstopped </sem>
+
+<sem id="380"> ballstopped </sem>
+
+<sem id="381"> ballstopped </sem>
+
+<sem id="382"> ballstopped </sem>
+
+<sem id="383"> ballstopped </sem>
+
+<sem id="384"> ballstopped </sem>
+
+<sem id="385"> ballstopped </sem>
+
+<sem id="386"> ballstopped </sem>
+
+<sem id="387"> ballstopped </sem>
+
+<sem id="388"> ballstopped </sem>
+
+<sem id="389"> ballstopped </sem>
+
+<sem id="390"> ballstopped </sem>
+
+<sem id="391"> ballstopped </sem>
+
+<sem id="392"> ballstopped </sem>
+
+<sem id="393"> ballstopped </sem>
+
+<sem id="394"> ballstopped </sem>
+
+<sem id="395"> ballstopped </sem>
+
+<sem id="396"> ballstopped </sem>
+
+<sem id="397"> ballstopped </sem>
+
+<sem id="398"> ballstopped </sem>
+
+<sem id="399"> ballstopped </sem>
+
+<sem id="400"> ballstopped </sem>
+
+<sem id="401"> ballstopped </sem>
+
+<sem id="402"> ballstopped </sem>
+
+<sem id="403"> ballstopped </sem>
+
+<sem id="404"> ballstopped </sem>
+
+<sem id="405"> ballstopped </sem>
+
+<sem id="406"> ballstopped </sem>
+
+<sem id="407"> ballstopped </sem>
+
+<sem id="408"> ballstopped </sem>
+
+<sem id="409"> ballstopped </sem>
+
+<sem id="410"> ballstopped </sem>
+
+<sem id="411"> ballstopped </sem>
+
+<sem id="412"> ballstopped </sem>
+
+<sem id="413"> ballstopped </sem>
+
+<sem id="414"> ballstopped </sem>
+
+<sem id="415"> ballstopped </sem>
+
+<sem id="416"> ballstopped </sem>
+
+<sem id="417"> ballstopped </sem>
+
+<sem id="418"> ballstopped </sem>
+
+<sem id="419"> ballstopped </sem>
+
+<sem id="420"> ballstopped </sem>
+
+<sem id="421"> ballstopped </sem>
+
+<sem id="422"> ballstopped </sem>
+
+<sem id="423"> ballstopped </sem>
+
+<sem id="424"> ballstopped </sem>
+
+<sem id="425"> ballstopped </sem>
+
+<sem id="426"> ballstopped </sem>
+
+<sem id="427"> ballstopped </sem>
+
+<sem id="428"> ballstopped </sem>
+
+<sem id="429"> ballstopped </sem>
+
+<sem id="430"> ballstopped </sem>
+
+<sem id="431"> playmode ( play_on ) </sem>
+
+<sem id="432"> kick ( purple1 ) </sem>
+
+<sem id="433"> pass ( purple1 , purple5 ) </sem>
+
+<sem id="434"> kick ( purple5 ) </sem>
+
+<sem id="435"> kick ( purple5 ) </sem>
+
+<sem id="436"> kick ( purple5 ) </sem>
+
+<sem id="437"> playmode ( kick_in_r ) </sem>
+
+<sem id="438"> ballstopped </sem>
+
+<sem id="439"> ballstopped </sem>
+
+<sem id="440"> ballstopped </sem>
+
+<sem id="441"> ballstopped </sem>
+
+<sem id="442"> ballstopped </sem>
+
+<sem id="443"> ballstopped </sem>
+
+<sem id="444"> ballstopped </sem>
+
+<sem id="445"> ballstopped </sem>
+
+<sem id="446"> ballstopped </sem>
+
+<sem id="447"> ballstopped </sem>
+
+<sem id="448"> ballstopped </sem>
+
+<sem id="449"> ballstopped </sem>
+
+<sem id="450"> ballstopped </sem>
+
+<sem id="451"> ballstopped </sem>
+
+<sem id="452"> ballstopped </sem>
+
+<sem id="453"> ballstopped </sem>
+
+<sem id="454"> ballstopped </sem>
+
+<sem id="455"> ballstopped </sem>
+
+<sem id="456"> ballstopped </sem>
+
+<sem id="457"> ballstopped </sem>
+
+<sem id="458"> ballstopped </sem>
+
+<sem id="459"> ballstopped </sem>
+
+<sem id="460"> ballstopped </sem>
+
+<sem id="461"> ballstopped </sem>
+
+<sem id="462"> ballstopped </sem>
+
+<sem id="463"> ballstopped </sem>
+
+<sem id="464"> ballstopped </sem>
+
+<sem id="465"> ballstopped </sem>
+
+<sem id="466"> ballstopped </sem>
+
+<sem id="467"> ballstopped </sem>
+
+<sem id="468"> ballstopped </sem>
+
+<sem id="469"> ballstopped </sem>
+
+<sem id="470"> ballstopped </sem>
+
+<sem id="471"> ballstopped </sem>
+
+<sem id="472"> ballstopped </sem>
+
+<sem id="473"> ballstopped </sem>
+
+<sem id="474"> ballstopped </sem>
+
+<sem id="475"> ballstopped </sem>
+
+<sem id="476"> ballstopped </sem>
+
+<sem id="477"> ballstopped </sem>
+
+<sem id="478"> ballstopped </sem>
+
+<sem id="479"> ballstopped </sem>
+
+<sem id="480"> ballstopped </sem>
+
+<sem id="481"> ballstopped </sem>
+
+<sem id="482"> ballstopped </sem>
+
+<sem id="483"> ballstopped </sem>
+
+<sem id="484"> ballstopped </sem>
+
+<sem id="485"> ballstopped </sem>
+
+<sem id="486"> ballstopped </sem>
+
+<sem id="487"> ballstopped </sem>
+
+<sem id="488"> ballstopped </sem>
+
+<sem id="489"> ballstopped </sem>
+
+<sem id="490"> ballstopped </sem>
+
+<sem id="491"> ballstopped </sem>
+
+<sem id="492"> ballstopped </sem>
+
+<sem id="493"> ballstopped </sem>
+
+<sem id="494"> ballstopped </sem>
+
+<sem id="495"> ballstopped </sem>
+
+<sem id="496"> ballstopped </sem>
+
+<sem id="497"> playmode ( play_on ) </sem>
+
+<sem id="498"> kick ( pink7 ) </sem>
+
+<sem id="499"> pass ( pink7 , pink10 ) </sem>
+
+<sem id="500"> ballstopped </sem>
+
+<sem id="501"> ballstopped </sem>
+
+<sem id="502"> kick ( pink10 ) </sem>
+
+<sem id="503"> ballstopped </sem>
+
+<sem id="504"> ballstopped </sem>
+
+<sem id="505"> steal ( pink10 ) </sem>
+
+<sem id="506"> turnover ( pink10 , purple5 ) </sem>
+
+<sem id="507"> kick ( purple5 ) </sem>
+
+<sem id="508"> badPass ( purple5 , pink10 ) </sem>
+
+<sem id="509"> turnover ( purple5 , pink10 ) </sem>
+
+<sem id="510"> kick ( pink10 ) </sem>
+
+<sem id="511"> pass ( pink10 , pink9 ) </sem>
+
+<sem id="512"> kick ( pink9 ) </sem>
+
+<sem id="513"> playmode ( goal_r ) </sem>
+
+<sem id="514"> ballstopped </sem>
+
+<sem id="515"> playmode ( kick_off_l ) </sem>
+
+<sem id="516"> ballstopped </sem>
+
+<sem id="517"> badPass ( pink9 , purple10 ) </sem>
+
+<sem id="518"> turnover ( pink9 , purple10 ) </sem>
+
+<sem id="519"> playmode ( play_on ) </sem>
+
+<sem id="520"> kick ( purple10 ) </sem>
+
+<sem id="521"> pass ( purple10 , purple8 ) </sem>
+
+<sem id="522"> kick ( purple8 ) </sem>
+
+<sem id="523"> pass ( purple8 , purple11 ) </sem>
+
+<sem id="524"> kick ( purple11 ) </sem>
+
+<sem id="525"> kick ( purple11 ) </sem>
+
+<sem id="526"> ballstopped </sem>
+
+<sem id="527"> kick ( purple11 ) </sem>
+
+<sem id="528"> pass ( purple11 , purple5 ) </sem>
+
+<sem id="529"> kick ( purple5 ) </sem>
+
+<sem id="530"> pass ( purple5 , purple8 ) </sem>
+
+<sem id="531"> kick ( purple8 ) </sem>
+
+<sem id="532"> pass ( purple8 , purple4 ) </sem>
+
+<sem id="533"> kick ( purple4 ) </sem>
+
+<sem id="534"> pass ( purple4 , purple7 ) </sem>
+
+<sem id="535"> kick ( purple7 ) </sem>
+
+<sem id="536"> pass ( purple7 , purple10 ) </sem>
+
+<sem id="537"> kick ( purple10 ) </sem>
+
+<sem id="538"> pass ( purple10 , purple3 ) </sem>
+
+<sem id="539"> kick ( purple3 ) </sem>
+
+<sem id="540"> pass ( purple3 , purple6 ) </sem>
+
+<sem id="541"> ballstopped </sem>
+
+<sem id="542"> kick ( purple6 ) </sem>
+
+<sem id="543"> badPass ( purple6 , pink3 ) </sem>
+
+<sem id="544"> turnover ( purple6 , pink3 ) </sem>
+
+<sem id="545"> steal ( pink3 ) </sem>
+
+<sem id="546"> turnover ( pink3 , purple6 ) </sem>
+
+<sem id="547"> kick ( purple6 ) </sem>
+
+<sem id="548"> pass ( purple6 , purple9 ) </sem>
+
+<sem id="549"> kick ( purple9 ) </sem>
+
+<sem id="550"> badPass ( purple9 , pink5 ) </sem>
+
+<sem id="551"> turnover ( purple9 , pink5 ) </sem>
+
+<sem id="552"> kick ( pink5 ) </sem>
+
+<sem id="553"> pass ( pink5 , pink8 ) </sem>
+
+<sem id="554"> ballstopped </sem>
+
+<sem id="555"> ballstopped </sem>
+
+<sem id="556"> ballstopped </sem>
+
+<sem id="557"> kick ( pink8 ) </sem>
+
+<sem id="558"> pass ( pink8 , pink11 ) </sem>
+
+<sem id="559"> ballstopped </sem>
+
+<sem id="560"> ballstopped </sem>
+
+<sem id="561"> ballstopped </sem>
+
+<sem id="562"> ballstopped </sem>
+
+<sem id="563"> kick ( pink11 ) </sem>
+
+<sem id="564"> badPass ( pink11 , purple2 ) </sem>
+
+<sem id="565"> turnover ( pink11 , purple2 ) </sem>
+
+<sem id="566"> kick ( purple6 ) </sem>
+
+<sem id="567"> kick ( purple6 ) </sem>
+
+<sem id="568"> pass ( purple6 , purple9 ) </sem>
+
+<sem id="569"> kick ( purple9 ) </sem>
+
+<sem id="570"> kick ( purple9 ) </sem>
+
+<sem id="571"> playmode ( kick_in_l ) </sem>
+
+<sem id="572"> ballstopped </sem>
+
+<sem id="573"> ballstopped </sem>
+
+<sem id="574"> ballstopped </sem>
+
+<sem id="575"> ballstopped </sem>
+
+<sem id="576"> ballstopped </sem>
+
+<sem id="577"> ballstopped </sem>
+
+<sem id="578"> ballstopped </sem>
+
+<sem id="579"> ballstopped </sem>
+
+<sem id="580"> ballstopped </sem>
+
+<sem id="581"> ballstopped </sem>
+
+<sem id="582"> ballstopped </sem>
+
+<sem id="583"> ballstopped </sem>
+
+<sem id="584"> ballstopped </sem>
+
+<sem id="585"> ballstopped </sem>
+
+<sem id="586"> ballstopped </sem>
+
+<sem id="587"> ballstopped </sem>
+
+<sem id="588"> ballstopped </sem>
+
+<sem id="589"> ballstopped </sem>
+
+<sem id="590"> ballstopped </sem>
+
+<sem id="591"> ballstopped </sem>
+
+<sem id="592"> ballstopped </sem>
+
+<sem id="593"> ballstopped </sem>
+
+<sem id="594"> pass ( purple9 , purple6 ) </sem>
+
+<sem id="595"> ballstopped </sem>
+
+<sem id="596"> ballstopped </sem>
+
+<sem id="597"> ballstopped </sem>
+
+<sem id="598"> ballstopped </sem>
+
+<sem id="599"> ballstopped </sem>
+
+<sem id="600"> ballstopped </sem>
+
+<sem id="601"> ballstopped </sem>
+
+<sem id="602"> ballstopped </sem>
+
+<sem id="603"> ballstopped </sem>
+
+<sem id="604"> ballstopped </sem>
+
+<sem id="605"> ballstopped </sem>
+
+<sem id="606"> ballstopped </sem>
+
+<sem id="607"> ballstopped </sem>
+
+<sem id="608"> playmode ( play_on ) </sem>
+
+<sem id="609"> kick ( purple6 ) </sem>
+
+<sem id="610"> pass ( purple6 , purple7 ) </sem>
+
+<sem id="611"> kick ( purple7 ) </sem>
+
+<sem id="612"> pass ( purple7 , purple9 ) </sem>
+
+<sem id="613"> kick ( purple9 ) </sem>
+
+<sem id="614"> ballstopped </sem>
+
+<sem id="615"> kick ( purple9 ) </sem>
+
+<sem id="616"> pass ( purple9 , purple7 ) </sem>
+
+<sem id="617"> kick ( purple7 ) </sem>
+
+<sem id="618"> kick ( purple7 ) </sem>
+
+<sem id="619"> kick ( purple7 ) </sem>
+
+<sem id="620"> kick ( purple7 ) </sem>
+
+<sem id="621"> pass ( purple7 , purple9 ) </sem>
+
+<sem id="622"> ballstopped </sem>
+
+<sem id="623"> ballstopped </sem>
+
+<sem id="624"> ballstopped </sem>
+
+<sem id="625"> ballstopped </sem>
+
+<sem id="626"> ballstopped </sem>
+
+<sem id="627"> ballstopped </sem>
+
+<sem id="628"> kick ( purple9 ) </sem>
+
+<sem id="629"> pass ( purple9 , purple6 ) </sem>
+
+<sem id="630"> kick ( purple6 ) </sem>
+
+<sem id="631"> ballstopped </sem>
+
+<sem id="632"> kick ( purple6 ) </sem>
+
+<sem id="633"> badPass ( purple6 , pink5 ) </sem>
+
+<sem id="634"> turnover ( purple6 , pink5 ) </sem>
+
+<sem id="635"> kick ( pink5 ) </sem>
+
+<sem id="636"> pass ( pink5 , pink3 ) </sem>
+
+<sem id="637"> ballstopped </sem>
+
+<sem id="638"> steal ( pink3 ) </sem>
+
+<sem id="639"> turnover ( pink3 , purple9 ) </sem>
+
+<sem id="640"> kick ( purple9 ) </sem>
+
+<sem id="641"> badPass ( purple9 , pink3 ) </sem>
+
+<sem id="642"> turnover ( purple9 , pink3 ) </sem>
+
+<sem id="643"> kick ( pink3 ) </sem>
+
+<sem id="644"> badPass ( pink3 , purple7 ) </sem>
+
+<sem id="645"> turnover ( pink3 , purple7 ) </sem>
+
+<sem id="646"> ballstopped </sem>
+
+<sem id="647"> ballstopped </sem>
+
+<sem id="648"> ballstopped </sem>
+
+<sem id="649"> ballstopped </sem>
+
+<sem id="650"> kick ( purple7 ) </sem>
+
+<sem id="651"> badPass ( purple7 , pink9 ) </sem>
+
+<sem id="652"> turnover ( purple7 , pink9 ) </sem>
+
+<sem id="653"> kick ( pink9 ) </sem>
+
+<sem id="654"> kick ( pink9 ) </sem>
+
+<sem id="655"> steal ( pink9 ) </sem>
+
+<sem id="656"> turnover ( pink9 , purple3 ) </sem>
+
+<sem id="657"> kick ( purple3 ) </sem>
+
+<sem id="658"> pass ( purple3 , purple7 ) </sem>
+
+<sem id="659"> kick ( purple7 ) </sem>
+
+<sem id="660"> pass ( purple7 , purple6 ) </sem>
+
+<sem id="661"> kick ( purple6 ) </sem>
+
+<sem id="662"> badPass ( purple6 , pink6 ) </sem>
+
+<sem id="663"> turnover ( purple6 , pink6 ) </sem>
+
+<sem id="664"> steal ( pink6 ) </sem>
+
+<sem id="665"> turnover ( pink6 , purple7 ) </sem>
+
+<sem id="666"> kick ( purple7 ) </sem>
+
+<sem id="667"> pass ( purple7 , purple8 ) </sem>
+
+<sem id="668"> kick ( purple8 ) </sem>
+
+<sem id="669"> pass ( purple8 , purple10 ) </sem>
+
+<sem id="670"> kick ( purple10 ) </sem>
+
+<sem id="671"> kick ( purple10 ) </sem>
+
+<sem id="672"> kick ( purple10 ) </sem>
+
+<sem id="673"> badPass ( purple10 , pink7 ) </sem>
+
+<sem id="674"> turnover ( purple10 , pink7 ) </sem>
+
+<sem id="675"> kick ( pink7 ) </sem>
+
+<sem id="676"> badPass ( pink7 , purple7 ) </sem>
+
+<sem id="677"> turnover ( pink7 , purple7 ) </sem>
+
+<sem id="678"> kick ( purple7 ) </sem>
+
+<sem id="679"> ballstopped </sem>
+
+<sem id="680"> badPass ( purple7 , pink5 ) </sem>
+
+<sem id="681"> turnover ( purple7 , pink5 ) </sem>
+
+<sem id="682"> ballstopped </sem>
+
+<sem id="683"> ballstopped </sem>
+
+<sem id="684"> kick ( pink5 ) </sem>
+
+<sem id="685"> ballstopped </sem>
+
+<sem id="686"> kick ( pink11 ) </sem>
+
+<sem id="687"> ballstopped </sem>
+
+<sem id="688"> ballstopped </sem>
+
+<sem id="689"> ballstopped </sem>
+
+<sem id="690"> ballstopped </sem>
+
+<sem id="691"> kick ( pink11 ) </sem>
+
+<sem id="692"> ballstopped </sem>
+
+<sem id="693"> ballstopped </sem>
+
+<sem id="694"> ballstopped </sem>
+
+<sem id="695"> ballstopped </sem>
+
+<sem id="696"> ballstopped </sem>
+
+<sem id="697"> ballstopped </sem>
+
+<sem id="698"> ballstopped </sem>
+
+<sem id="699"> steal ( pink11 ) </sem>
+
+<sem id="700"> turnover ( pink11 , purple2 ) </sem>
+
+<sem id="701"> kick ( purple2 ) </sem>
+
+<sem id="702"> badPass ( purple2 , pink9 ) </sem>
+
+<sem id="703"> turnover ( purple2 , pink9 ) </sem>
+
+<sem id="704"> kick ( pink9 ) </sem>
+
+<sem id="705"> badPass ( pink9 , purple7 ) </sem>
+
+<sem id="706"> turnover ( pink9 , purple7 ) </sem>
+
+<sem id="707"> kick ( purple7 ) </sem>
+
+<sem id="708"> pass ( purple7 , purple6 ) </sem>
+
+<sem id="709"> ballstopped </sem>
+
+<sem id="710"> kick ( purple6 ) </sem>
+
+<sem id="711"> pass ( purple6 , purple2 ) </sem>
+
+<sem id="712"> ballstopped </sem>
+
+<sem id="713"> kick ( purple2 ) </sem>
+
+<sem id="714"> pass ( purple2 , purple3 ) </sem>
+
+<sem id="715"> kick ( purple3 ) </sem>
+
+<sem id="716"> badPass ( purple3 , pink9 ) </sem>
+
+<sem id="717"> turnover ( purple3 , pink9 ) </sem>
+
+<sem id="718"> ballstopped </sem>
+
+<sem id="719"> ballstopped </sem>
+
+<sem id="720"> ballstopped </sem>
+
+<sem id="721"> kick ( pink9 ) </sem>
+
+<sem id="722"> defense ( purple5 , purple5 ) </sem>
+
+<sem id="723"> turnover ( pink9 , purple5 ) </sem>
+
+<sem id="724"> kick ( purple5 ) </sem>
+
+<sem id="725"> badPass ( purple5 , pink7 ) </sem>
+
+<sem id="726"> turnover ( purple5 , pink7 ) </sem>
+
+<sem id="727"> ballstopped </sem>
+
+<sem id="728"> ballstopped </sem>
+
+<sem id="729"> kick ( pink7 ) </sem>
+
+<sem id="730"> kick ( pink7 ) </sem>
+
+<sem id="731"> pass ( pink7 , pink9 ) </sem>
+
+<sem id="732"> steal ( pink9 ) </sem>
+
+<sem id="733"> turnover ( pink9 , purple3 ) </sem>
+
+<sem id="734"> kick ( purple3 ) </sem>
+
+<sem id="735"> playmode ( corner_kick_r ) </sem>
+
+<sem id="736"> ballstopped </sem>
+
+<sem id="737"> ballstopped </sem>
+
+<sem id="738"> ballstopped </sem>
+
+<sem id="739"> ballstopped </sem>
+
+<sem id="740"> ballstopped </sem>
+
+<sem id="741"> ballstopped </sem>
+
+<sem id="742"> ballstopped </sem>
+
+<sem id="743"> ballstopped </sem>
+
+<sem id="744"> ballstopped </sem>
+
+<sem id="745"> ballstopped </sem>
+
+<sem id="746"> ballstopped </sem>
+
+<sem id="747"> ballstopped </sem>
+
+<sem id="748"> ballstopped </sem>
+
+<sem id="749"> ballstopped </sem>
+
+<sem id="750"> ballstopped </sem>
+
+<sem id="751"> ballstopped </sem>
+
+<sem id="752"> ballstopped </sem>
+
+<sem id="753"> ballstopped </sem>
+
+<sem id="754"> ballstopped </sem>
+
+<sem id="755"> ballstopped </sem>
+
+<sem id="756"> ballstopped </sem>
+
+<sem id="757"> ballstopped </sem>
+
+<sem id="758"> ballstopped </sem>
+
+<sem id="759"> ballstopped </sem>
+
+<sem id="760"> ballstopped </sem>
+
+<sem id="761"> ballstopped </sem>
+
+<sem id="762"> ballstopped </sem>
+
+<sem id="763"> ballstopped </sem>
+
+<sem id="764"> ballstopped </sem>
+
+<sem id="765"> ballstopped </sem>
+
+<sem id="766"> ballstopped </sem>
+
+<sem id="767"> ballstopped </sem>
+
+<sem id="768"> ballstopped </sem>
+
+<sem id="769"> ballstopped </sem>
+
+<sem id="770"> ballstopped </sem>
+
+<sem id="771"> ballstopped </sem>
+
+<sem id="772"> ballstopped </sem>
+
+<sem id="773"> ballstopped </sem>
+
+<sem id="774"> ballstopped </sem>
+
+<sem id="775"> ballstopped </sem>
+
+<sem id="776"> ballstopped </sem>
+
+<sem id="777"> ballstopped </sem>
+
+<sem id="778"> ballstopped </sem>
+
+<sem id="779"> ballstopped </sem>
+
+<sem id="780"> ballstopped </sem>
+
+<sem id="781"> ballstopped </sem>
+
+<sem id="782"> ballstopped </sem>
+
+<sem id="783"> ballstopped </sem>
+
+<sem id="784"> ballstopped </sem>
+
+<sem id="785"> ballstopped </sem>
+
+<sem id="786"> ballstopped </sem>
+
+<sem id="787"> ballstopped </sem>
+
+<sem id="788"> ballstopped </sem>
+
+<sem id="789"> ballstopped </sem>
+
+<sem id="790"> ballstopped </sem>
+
+<sem id="791"> ballstopped </sem>
+
+<sem id="792"> ballstopped </sem>
+
+<sem id="793"> ballstopped </sem>
+
+<sem id="794"> ballstopped </sem>
+
+<sem id="795"> ballstopped </sem>
+
+<sem id="796"> ballstopped </sem>
+
+<sem id="797"> ballstopped </sem>
+
+<sem id="798"> ballstopped </sem>
+
+<sem id="799"> ballstopped </sem>
+
+<sem id="800"> ballstopped </sem>
+
+<sem id="801"> ballstopped </sem>
+
+<sem id="802"> ballstopped </sem>
+
+<sem id="803"> ballstopped </sem>
+
+<sem id="804"> ballstopped </sem>
+
+<sem id="805"> ballstopped </sem>
+
+<sem id="806"> ballstopped </sem>
+
+<sem id="807"> ballstopped </sem>
+
+<sem id="808"> ballstopped </sem>
+
+<sem id="809"> ballstopped </sem>
+
+<sem id="810"> ballstopped </sem>
+
+<sem id="811"> ballstopped </sem>
+
+<sem id="812"> ballstopped </sem>
+
+<sem id="813"> ballstopped </sem>
+
+<sem id="814"> ballstopped </sem>
+
+<sem id="815"> ballstopped </sem>
+
+<sem id="816"> ballstopped </sem>
+
+<sem id="817"> ballstopped </sem>
+
+<sem id="818"> ballstopped </sem>
+
+<sem id="819"> ballstopped </sem>
+
+<sem id="820"> ballstopped </sem>
+
+<sem id="821"> ballstopped </sem>
+
+<sem id="822"> ballstopped </sem>
+
+<sem id="823"> ballstopped </sem>
+
+<sem id="824"> ballstopped </sem>
+
+<sem id="825"> ballstopped </sem>
+
+<sem id="826"> ballstopped </sem>
+
+<sem id="827"> ballstopped </sem>
+
+<sem id="828"> ballstopped </sem>
+
+<sem id="829"> ballstopped </sem>
+
+<sem id="830"> ballstopped </sem>
+
+<sem id="831"> ballstopped </sem>
+
+<sem id="832"> playmode ( play_on ) </sem>
+
+<sem id="833"> kick ( pink8 ) </sem>
+
+<sem id="834"> badPass ( pink8 , purple6 ) </sem>
+
+<sem id="835"> turnover ( pink8 , purple6 ) </sem>
+
+<sem id="836"> kick ( purple6 ) </sem>
+
+<sem id="837"> kick ( purple6 ) </sem>
+
+<sem id="838"> badPass ( purple6 , pink8 ) </sem>
+
+<sem id="839"> turnover ( purple6 , pink8 ) </sem>
+
+<sem id="840"> kick ( pink8 ) </sem>
+
+<sem id="841"> pass ( pink8 , pink6 ) </sem>
+
+<sem id="842"> kick ( pink6 ) </sem>
+
+<sem id="843"> playmode ( offside_r ) </sem>
+
+<sem id="844"> ballstopped </sem>
+
+<sem id="845"> playmode ( free_kick_l ) </sem>
+
+<sem id="846"> ballstopped </sem>
+
+<sem id="847"> ballstopped </sem>
+
+<sem id="848"> ballstopped </sem>
+
+<sem id="849"> defense ( purple3 , purple3 ) </sem>
+
+<sem id="850"> turnover ( pink6 , purple3 ) </sem>
+
+<sem id="851"> ballstopped </sem>
+
+<sem id="852"> ballstopped </sem>
+
+<sem id="853"> ballstopped </sem>
+
+<sem id="854"> ballstopped </sem>
+
+<sem id="855"> ballstopped </sem>
+
+<sem id="856"> ballstopped </sem>
+
+<sem id="857"> playmode ( play_on ) </sem>
+
+<sem id="858"> kick ( purple3 ) </sem>
+
+<sem id="859"> pass ( purple3 , purple7 ) </sem>
+
+<sem id="860"> kick ( purple7 ) </sem>
+
+<sem id="861"> badPass ( purple7 , pink5 ) </sem>
+
+<sem id="862"> turnover ( purple7 , pink5 ) </sem>
+
+<sem id="863"> kick ( pink5 ) </sem>
+
+<sem id="864"> pass ( pink5 , pink11 ) </sem>
+
+<sem id="865"> kick ( pink11 ) </sem>
+
+<sem id="866"> ballstopped </sem>
+
+<sem id="867"> ballstopped </sem>
+
+<sem id="868"> ballstopped </sem>
+
+<sem id="869"> ballstopped </sem>
+
+<sem id="870"> ballstopped </sem>
+
+<sem id="871"> kick ( pink11 ) </sem>
+
+<sem id="872"> pass ( pink11 , pink8 ) </sem>
+
+<sem id="873"> kick ( pink8 ) </sem>
+
+<sem id="874"> kick ( pink8 ) </sem>
+
+<sem id="875"> defense ( purple3 , purple3 ) </sem>
+
+<sem id="876"> turnover ( pink8 , purple3 ) </sem>
+
+<sem id="877"> kick ( purple3 ) </sem>
+
+<sem id="878"> kick ( purple3 ) </sem>
+
+<sem id="879"> pass ( purple3 , purple7 ) </sem>
+
+<sem id="880"> kick ( purple7 ) </sem>
+
+<sem id="881"> pass ( purple7 , purple8 ) </sem>
+
+<sem id="882"> kick ( purple8 ) </sem>
+
+<sem id="883"> ballstopped </sem>
+
+<sem id="884"> kick ( purple8 ) </sem>
+
+<sem id="885"> kick ( purple8 ) </sem>
+
+<sem id="886"> pass ( purple8 , purple9 ) </sem>
+
+<sem id="887"> kick ( purple9 ) </sem>
+
+<sem id="888"> kick ( purple9 ) </sem>
+
+<sem id="889"> kick ( purple9 ) </sem>
+
+<sem id="890"> pass ( purple9 , purple6 ) </sem>
+
+<sem id="891"> kick ( purple6 ) </sem>
+
+<sem id="892"> kick ( purple6 ) </sem>
+
+<sem id="893"> pass ( purple6 , purple7 ) </sem>
+
+<sem id="894"> kick ( purple7 ) </sem>
+
+<sem id="895"> pass ( purple7 , purple6 ) </sem>
+
+<sem id="896"> kick ( purple6 ) </sem>
+
+<sem id="897"> badPass ( purple6 , pink9 ) </sem>
+
+<sem id="898"> turnover ( purple6 , pink9 ) </sem>
+
+<sem id="899"> ballstopped </sem>
+
+<sem id="900"> ballstopped </sem>
+
+<sem id="901"> ballstopped </sem>
+
+<sem id="902"> kick ( pink9 ) </sem>
+
+<sem id="903"> playmode ( kick_in_l ) </sem>
+
+<sem id="904"> ballstopped </sem>
+
+<sem id="905"> ballstopped </sem>
+
+<sem id="906"> ballstopped </sem>
+
+<sem id="907"> ballstopped </sem>
+
+<sem id="908"> ballstopped </sem>
+
+<sem id="909"> ballstopped </sem>
+
+<sem id="910"> ballstopped </sem>
+
+<sem id="911"> ballstopped </sem>
+
+<sem id="912"> ballstopped </sem>
+
+<sem id="913"> ballstopped </sem>
+
+<sem id="914"> ballstopped </sem>
+
+<sem id="915"> ballstopped </sem>
+
+<sem id="916"> ballstopped </sem>
+
+<sem id="917"> ballstopped </sem>
+
+<sem id="918"> ballstopped </sem>
+
+<sem id="919"> ballstopped </sem>
+
+<sem id="920"> ballstopped </sem>
+
+<sem id="921"> ballstopped </sem>
+
+<sem id="922"> ballstopped </sem>
+
+<sem id="923"> ballstopped </sem>
+
+<sem id="924"> ballstopped </sem>
+
+<sem id="925"> ballstopped </sem>
+
+<sem id="926"> ballstopped </sem>
+
+<sem id="927"> ballstopped </sem>
+
+<sem id="928"> ballstopped </sem>
+
+<sem id="929"> badPass ( pink9 , purple8 ) </sem>
+
+<sem id="930"> turnover ( pink9 , purple8 ) </sem>
+
+<sem id="931"> ballstopped </sem>
+
+<sem id="932"> ballstopped </sem>
+
+<sem id="933"> ballstopped </sem>
+
+<sem id="934"> ballstopped </sem>
+
+<sem id="935"> ballstopped </sem>
+
+<sem id="936"> ballstopped </sem>
+
+<sem id="937"> playmode ( play_on ) </sem>
+
+<sem id="938"> kick ( purple8 ) </sem>
+
+<sem id="939"> pass ( purple8 , purple11 ) </sem>
+
+<sem id="940"> kick ( purple11 ) </sem>
+
+<sem id="941"> pass ( purple11 , purple10 ) </sem>
+
+<sem id="942"> kick ( purple10 ) </sem>
+
+<sem id="943"> pass ( purple10 , purple11 ) </sem>
+
+<sem id="944"> kick ( purple11 ) </sem>
+
+<sem id="945"> pass ( purple11 , purple7 ) </sem>
+
+<sem id="946"> ballstopped </sem>
+
+<sem id="947"> kick ( purple7 ) </sem>
+
+<sem id="948"> pass ( purple7 , purple6 ) </sem>
+
+<sem id="949"> kick ( purple6 ) </sem>
+
+<sem id="950"> pass ( purple6 , purple10 ) </sem>
+
+<sem id="951"> ballstopped </sem>
+
+<sem id="952"> ballstopped </sem>
+
+<sem id="953"> ballstopped </sem>
+
+<sem id="954"> kick ( purple10 ) </sem>
+
+<sem id="955"> kick ( purple10 ) </sem>
+
+<sem id="956"> pass ( purple10 , purple6 ) </sem>
+
+<sem id="957"> kick ( purple6 ) </sem>
+
+<sem id="958"> kick ( purple6 ) </sem>
+
+<sem id="959"> pass ( purple6 , purple3 ) </sem>
+
+<sem id="960"> kick ( purple3 ) </sem>
+
+<sem id="961"> badPass ( purple3 , pink9 ) </sem>
+
+<sem id="962"> turnover ( purple3 , pink9 ) </sem>
+
+<sem id="963"> kick ( pink9 ) </sem>
+
+<sem id="964"> kick ( pink9 ) </sem>
+
+<sem id="965"> pass ( pink9 , pink11 ) </sem>
+
+<sem id="966"> kick ( pink11 ) </sem>
+
+<sem id="967"> playmode ( goal_r ) </sem>
+
+<sem id="968"> ballstopped </sem>
+
+<sem id="969"> playmode ( kick_off_l ) </sem>
+
+<sem id="970"> ballstopped </sem>
+
+<sem id="971"> ballstopped </sem>
+
+<sem id="972"> ballstopped </sem>
+
+<sem id="973"> badPass ( pink11 , purple10 ) </sem>
+
+<sem id="974"> turnover ( pink11 , purple10 ) </sem>
+
+<sem id="975"> playmode ( play_on ) </sem>
+
+<sem id="976"> kick ( purple10 ) </sem>
+
+<sem id="977"> pass ( purple10 , purple6 ) </sem>
+
+<sem id="978"> kick ( purple6 ) </sem>
+
+<sem id="979"> pass ( purple6 , purple9 ) </sem>
+
+<sem id="980"> kick ( purple9 ) </sem>
+
+<sem id="981"> pass ( purple9 , purple6 ) </sem>
+
+<sem id="982"> kick ( purple6 ) </sem>
+
+<sem id="983"> kick ( purple6 ) </sem>
+
+<sem id="984"> pass ( purple6 , purple7 ) </sem>
+
+<sem id="985"> kick ( purple7 ) </sem>
+
+<sem id="986"> ballstopped </sem>
+
+<sem id="987"> kick ( purple7 ) </sem>
+
+<sem id="988"> pass ( purple7 , purple4 ) </sem>
+
+<sem id="989"> kick ( purple4 ) </sem>
+
+<sem id="990"> pass ( purple4 , purple3 ) </sem>
+
+<sem id="991"> kick ( purple3 ) </sem>
+
+<sem id="992"> pass ( purple3 , purple4 ) </sem>
+
+<sem id="993"> kick ( purple4 ) </sem>
+
+<sem id="994"> playmode ( offside_l ) </sem>
+
+<sem id="995"> ballstopped </sem>
+
+<sem id="996"> playmode ( free_kick_r ) </sem>
+
+<sem id="997"> ballstopped </sem>
+
+<sem id="998"> badPass ( purple4 , pink6 ) </sem>
+
+<sem id="999"> turnover ( purple4 , pink6 ) </sem>
+
+<sem id="1000"> ballstopped </sem>
+
+<sem id="1001"> ballstopped </sem>
+
+<sem id="1002"> ballstopped </sem>
+
+<sem id="1003"> ballstopped </sem>
+
+<sem id="1004"> ballstopped </sem>
+
+<sem id="1005"> ballstopped </sem>
+
+<sem id="1006"> ballstopped </sem>
+
+<sem id="1007"> ballstopped </sem>
+
+<sem id="1008"> ballstopped </sem>
+
+<sem id="1009"> ballstopped </sem>
+
+<sem id="1010"> ballstopped </sem>
+
+<sem id="1011"> ballstopped </sem>
+
+<sem id="1012"> ballstopped </sem>
+
+<sem id="1013"> ballstopped </sem>
+
+<sem id="1014"> ballstopped </sem>
+
+<sem id="1015"> ballstopped </sem>
+
+<sem id="1016"> ballstopped </sem>
+
+<sem id="1017"> ballstopped </sem>
+
+<sem id="1018"> ballstopped </sem>
+
+<sem id="1019"> ballstopped </sem>
+
+<sem id="1020"> ballstopped </sem>
+
+<sem id="1021"> ballstopped </sem>
+
+<sem id="1022"> ballstopped </sem>
+
+<sem id="1023"> ballstopped </sem>
+
+<sem id="1024"> ballstopped </sem>
+
+<sem id="1025"> ballstopped </sem>
+
+<sem id="1026"> ballstopped </sem>
+
+<sem id="1027"> ballstopped </sem>
+
+<sem id="1028"> ballstopped </sem>
+
+<sem id="1029"> ballstopped </sem>
+
+<sem id="1030"> ballstopped </sem>
+
+<sem id="1031"> ballstopped </sem>
+
+<sem id="1032"> ballstopped </sem>
+
+<sem id="1033"> ballstopped </sem>
+
+<sem id="1034"> ballstopped </sem>
+
+<sem id="1035"> ballstopped </sem>
+
+<sem id="1036"> ballstopped </sem>
+
+<sem id="1037"> playmode ( play_on ) </sem>
+
+<sem id="1038"> kick ( pink6 ) </sem>
+
+<sem id="1039"> pass ( pink6 , pink7 ) </sem>
+
+<sem id="1040"> kick ( pink7 ) </sem>
+
+<sem id="1041"> kick ( pink7 ) </sem>
+
+<sem id="1042"> pass ( pink7 , pink9 ) </sem>
+
+<sem id="1043"> kick ( pink9 ) </sem>
+
+<sem id="1044"> playmode ( goal_r ) </sem>
+
+<sem id="1045"> ballstopped </sem>
+
+<sem id="1046"> playmode ( kick_off_l ) </sem>
+
+<sem id="1047"> ballstopped </sem>
+
+<sem id="1048"> badPass ( pink9 , purple10 ) </sem>
+
+<sem id="1049"> turnover ( pink9 , purple10 ) </sem>
+
+<sem id="1050"> playmode ( play_on ) </sem>
+
+<sem id="1051"> kick ( purple10 ) </sem>
+
+<sem id="1052"> pass ( purple10 , purple8 ) </sem>
+
+<sem id="1053"> kick ( purple8 ) </sem>
+
+<sem id="1054"> pass ( purple8 , purple11 ) </sem>
+
+<sem id="1055"> kick ( purple11 ) </sem>
+
+<sem id="1056"> kick ( purple11 ) </sem>
+
+<sem id="1057"> pass ( purple11 , purple2 ) </sem>
+
+<sem id="1058"> kick ( purple2 ) </sem>
+
+<sem id="1059"> kick ( purple2 ) </sem>
+
+<sem id="1060"> pass ( purple2 , purple3 ) </sem>
+
+<sem id="1061"> kick ( purple3 ) </sem>
+
+<sem id="1062"> pass ( purple3 , purple4 ) </sem>
+
+<sem id="1063"> kick ( purple4 ) </sem>
+
+<sem id="1064"> pass ( purple4 , purple5 ) </sem>
+
+<sem id="1065"> kick ( purple5 ) </sem>
+
+<sem id="1066"> pass ( purple5 , purple8 ) </sem>
+
+<sem id="1067"> kick ( purple8 ) </sem>
+
+<sem id="1068"> pass ( purple8 , purple11 ) </sem>
+
+<sem id="1069"> ballstopped </sem>
+
+<sem id="1070"> kick ( purple11 ) </sem>
+
+<sem id="1071"> kick ( purple8 ) </sem>
+
+<sem id="1072"> pass ( purple8 , purple10 ) </sem>
+
+<sem id="1073"> kick ( purple10 ) </sem>
+
+<sem id="1074"> badPass ( purple10 , pink9 ) </sem>
+
+<sem id="1075"> turnover ( purple10 , pink9 ) </sem>
+
+<sem id="1076"> kick ( pink9 ) </sem>
+
+<sem id="1077"> pass ( pink9 , pink11 ) </sem>
+
+<sem id="1078"> ballstopped </sem>
+
+<sem id="1079"> ballstopped </sem>
+
+<sem id="1080"> kick ( pink11 ) </sem>
+
+<sem id="1081"> ballstopped </sem>
+
+<sem id="1082"> ballstopped </sem>
+
+<sem id="1083"> kick ( pink11 ) </sem>
+
+<sem id="1084"> badPass ( pink11 , purple3 ) </sem>
+
+<sem id="1085"> turnover ( pink11 , purple3 ) </sem>
+
+<sem id="1086"> kick ( purple3 ) </sem>
+
+<sem id="1087"> pass ( purple3 , purple6 ) </sem>
+
+<sem id="1088"> kick ( purple6 ) </sem>
+
+<sem id="1089"> kick ( purple6 ) </sem>
+
+<sem id="1090"> pass ( purple6 , purple7 ) </sem>
+
+<sem id="1091"> kick ( purple7 ) </sem>
+
+<sem id="1092"> ballstopped </sem>
+
+<sem id="1093"> ballstopped </sem>
+
+<sem id="1094"> ballstopped </sem>
+
+<sem id="1095"> kick ( pink3 ) </sem>
+
+<sem id="1096"> ballstopped </sem>
+
+<sem id="1097"> ballstopped </sem>
+
+<sem id="1098"> steal ( pink3 ) </sem>
+
+<sem id="1099"> turnover ( pink3 , purple3 ) </sem>
+
+<sem id="1100"> kick ( purple3 ) </sem>
+
+<sem id="1101"> pass ( purple3 , purple7 ) </sem>
+
+<sem id="1102"> kick ( purple7 ) </sem>
+
+<sem id="1103"> pass ( purple7 , purple3 ) </sem>
+
+<sem id="1104"> kick ( purple3 ) </sem>
+
+<sem id="1105"> badPass ( purple3 , pink5 ) </sem>
+
+<sem id="1106"> turnover ( purple3 , pink5 ) </sem>
+
+<sem id="1107"> ballstopped </sem>
+
+<sem id="1108"> ballstopped </sem>
+
+<sem id="1109"> kick ( pink5 ) </sem>
+
+<sem id="1110"> badPass ( pink5 , purple7 ) </sem>
+
+<sem id="1111"> turnover ( pink5 , purple7 ) </sem>
+
+<sem id="1112"> kick ( purple7 ) </sem>
+
+<sem id="1113"> pass ( purple7 , purple10 ) </sem>
+
+<sem id="1114"> kick ( purple10 ) </sem>
+
+<sem id="1115"> pass ( purple10 , purple11 ) </sem>
+
+<sem id="1116"> kick ( purple11 ) </sem>
+
+<sem id="1117"> badPass ( purple11 , pink7 ) </sem>
+
+<sem id="1118"> turnover ( purple11 , pink7 ) </sem>
+
+<sem id="1119"> kick ( pink7 ) </sem>
+
+<sem id="1120"> pass ( pink7 , pink10 ) </sem>
+
+<sem id="1121"> ballstopped </sem>
+
+<sem id="1122"> kick ( pink10 ) </sem>
+
+<sem id="1123"> badPass ( pink10 , purple7 ) </sem>
+
+<sem id="1124"> turnover ( pink10 , purple7 ) </sem>
+
+<sem id="1125"> ballstopped </sem>
+
+<sem id="1126"> kick ( purple7 ) </sem>
+
+<sem id="1127"> pass ( purple7 , purple8 ) </sem>
+
+<sem id="1128"> kick ( purple8 ) </sem>
+
+<sem id="1129"> kick ( purple8 ) </sem>
+
+<sem id="1130"> ballstopped </sem>
+
+<sem id="1131"> ballstopped </sem>
+
+<sem id="1132"> ballstopped </sem>
+
+<sem id="1133"> kick ( purple8 ) </sem>
+
+<sem id="1134"> pass ( purple8 , purple7 ) </sem>
+
+<sem id="1135"> ballstopped </sem>
+
+<sem id="1136"> kick ( purple7 ) </sem>
+
+<sem id="1137"> badPass ( purple7 , pink9 ) </sem>
+
+<sem id="1138"> turnover ( purple7 , pink9 ) </sem>
+
+<sem id="1139"> ballstopped </sem>
+
+<sem id="1140"> ballstopped </sem>
+
+<sem id="1141"> ballstopped </sem>
+
+<sem id="1142"> ballstopped </sem>
+
+<sem id="1143"> kick ( pink9 ) </sem>
+
+<sem id="1144"> pass ( pink9 , pink10 ) </sem>
+
+<sem id="1145"> kick ( pink10 ) </sem>
+
+<sem id="1146"> badPass ( pink10 , purple5 ) </sem>
+
+<sem id="1147"> turnover ( pink10 , purple5 ) </sem>
+
+<sem id="1148"> kick ( purple5 ) </sem>
+
+<sem id="1149"> pass ( purple5 , purple4 ) </sem>
+
+<sem id="1150"> kick ( purple4 ) </sem>
+
+<sem id="1151"> pass ( purple4 , purple7 ) </sem>
+
+<sem id="1152"> ballstopped </sem>
+
+<sem id="1153"> ballstopped </sem>
+
+<sem id="1154"> ballstopped </sem>
+
+<sem id="1155"> ballstopped </sem>
+
+<sem id="1156"> ballstopped </sem>
+
+<sem id="1157"> kick ( purple7 ) </sem>
+
+<sem id="1158"> kick ( purple7 ) </sem>
+
+<sem id="1159"> pass ( purple7 , purple10 ) </sem>
+
+<sem id="1160"> kick ( purple10 ) </sem>
+
+<sem id="1161"> kick ( purple10 ) </sem>
+
+<sem id="1162"> kick ( purple10 ) </sem>
+
+<sem id="1163"> playmode ( goal_l ) </sem>
+
+<sem id="1164"> ballstopped </sem>
+
+<sem id="1165"> playmode ( kick_off_r ) </sem>
+
+<sem id="1166"> ballstopped </sem>
+
+<sem id="1167"> badPass ( purple10 , pink9 ) </sem>
+
+<sem id="1168"> turnover ( purple10 , pink9 ) </sem>
+
+<sem id="1169"> ballstopped </sem>
+
+<sem id="1170"> playmode ( play_on ) </sem>
+
+<sem id="1171"> kick ( pink9 ) </sem>
+
+<sem id="1172"> pass ( pink9 , pink11 ) </sem>
+
+<sem id="1173"> kick ( pink11 ) </sem>
+
+<sem id="1174"> kick ( purple2 ) </sem>
+
+<sem id="1175"> pass ( purple2 , purple7 ) </sem>
+
+<sem id="1176"> kick ( purple7 ) </sem>
+
+<sem id="1177"> pass ( purple7 , purple4 ) </sem>
+
+<sem id="1178"> ballstopped </sem>
+
+<sem id="1179"> kick ( purple4 ) </sem>
+
+<sem id="1180"> pass ( purple4 , purple3 ) </sem>
+
+<sem id="1181"> kick ( purple3 ) </sem>
+
+<sem id="1182"> badPass ( purple3 , pink7 ) </sem>
+
+<sem id="1183"> turnover ( purple3 , pink7 ) </sem>
+
+<sem id="1184"> kick ( pink7 ) </sem>
+
+<sem id="1185"> pass ( pink7 , pink10 ) </sem>
+
+<sem id="1186"> kick ( pink10 ) </sem>
+
+<sem id="1187"> pass ( pink10 , pink9 ) </sem>
+
+<sem id="1188"> kick ( pink9 ) </sem>
+
+<sem id="1189"> steal ( pink9 ) </sem>
+
+<sem id="1190"> turnover ( pink9 , purple4 ) </sem>
+
+<sem id="1191"> kick ( purple3 ) </sem>
+
+<sem id="1192"> pass ( purple3 , purple7 ) </sem>
+
+<sem id="1193"> kick ( purple7 ) </sem>
+
+<sem id="1194"> playmode ( kick_off_r ) </sem>
+
+<sem id="1195"> ballstopped </sem>
+
+<sem id="1196"> ballstopped </sem>
+
+<sem id="1197"> ballstopped </sem>
+
+<sem id="1198"> ballstopped </sem>
+
+<sem id="1199"> ballstopped </sem>
+
+<sem id="1200"> badPass ( purple7 , pink9 ) </sem>
+
+<sem id="1201"> turnover ( purple7 , pink9 ) </sem>
+
+<sem id="1202"> playmode ( play_on ) </sem>
+
+<sem id="1203"> kick ( pink9 ) </sem>
+
+<sem id="1204"> pass ( pink9 , pink8 ) </sem>
+
+<sem id="1205"> ballstopped </sem>
+
+<sem id="1206"> ballstopped </sem>
+
+<sem id="1207"> kick ( pink8 ) </sem>
+
+<sem id="1208"> kick ( pink8 ) </sem>
+
+<sem id="1209"> badPass ( pink8 , purple3 ) </sem>
+
+<sem id="1210"> turnover ( pink8 , purple3 ) </sem>
+
+<sem id="1211"> kick ( purple3 ) </sem>
+
+<sem id="1212"> pass ( purple3 , purple7 ) </sem>
+
+<sem id="1213"> kick ( purple7 ) </sem>
+
+<sem id="1214"> pass ( purple7 , purple10 ) </sem>
+
+<sem id="1215"> kick ( purple10 ) </sem>
+
+<sem id="1216"> pass ( purple10 , purple8 ) </sem>
+
+<sem id="1217"> kick ( purple8 ) </sem>
+
+<sem id="1218"> kick ( purple8 ) </sem>
+
+<sem id="1219"> kick ( purple8 ) </sem>
+
+<sem id="1220"> pass ( purple8 , purple11 ) </sem>
+
+<sem id="1221"> kick ( purple11 ) </sem>
+
+<sem id="1222"> kick ( purple11 ) </sem>
+
+<sem id="1223"> pass ( purple11 , purple8 ) </sem>
+
+<sem id="1224"> ballstopped </sem>
+
+<sem id="1225"> kick ( purple8 ) </sem>
+
+<sem id="1226"> pass ( purple8 , purple11 ) </sem>
+
+<sem id="1227"> ballstopped </sem>
+
+<sem id="1228"> ballstopped </sem>
+
+<sem id="1229"> ballstopped </sem>
+
+<sem id="1230"> kick ( purple11 ) </sem>
+
+<sem id="1231"> pass ( purple11 , purple8 ) </sem>
+
+<sem id="1232"> kick ( purple8 ) </sem>
+
+<sem id="1233"> badPass ( purple8 , pink5 ) </sem>
+
+<sem id="1234"> turnover ( purple8 , pink5 ) </sem>
+
+<sem id="1235"> kick ( pink5 ) </sem>
+
+<sem id="1236"> pass ( pink5 , pink3 ) </sem>
+
+<sem id="1237"> kick ( pink3 ) </sem>
+
+<sem id="1238"> badPass ( pink3 , purple7 ) </sem>
+
+<sem id="1239"> turnover ( pink3 , purple7 ) </sem>
+
+<sem id="1240"> kick ( purple7 ) </sem>
+
+<sem id="1241"> badPass ( purple7 , pink9 ) </sem>
+
+<sem id="1242"> turnover ( purple7 , pink9 ) </sem>
+
+<sem id="1243"> kick ( pink9 ) </sem>
+
+<sem id="1244"> badPass ( pink9 , purple4 ) </sem>
+
+<sem id="1245"> turnover ( pink9 , purple4 ) </sem>
+
+<sem id="1246"> kick ( purple4 ) </sem>
+
+<sem id="1247"> pass ( purple4 , purple3 ) </sem>
+
+<sem id="1248"> kick ( purple3 ) </sem>
+
+<sem id="1249"> pass ( purple3 , purple2 ) </sem>
+
+<sem id="1250"> kick ( purple2 ) </sem>
+
+<sem id="1251"> playmode ( kick_in_r ) </sem>
+
+<sem id="1252"> ballstopped </sem>
+
+<sem id="1253"> ballstopped </sem>
+
+<sem id="1254"> ballstopped </sem>
+
+<sem id="1255"> ballstopped </sem>
+
+<sem id="1256"> ballstopped </sem>
+
+<sem id="1257"> ballstopped </sem>
+
+<sem id="1258"> ballstopped </sem>
+
+<sem id="1259"> ballstopped </sem>
+
+<sem id="1260"> ballstopped </sem>
+
+<sem id="1261"> ballstopped </sem>
+
+<sem id="1262"> ballstopped </sem>
+
+<sem id="1263"> ballstopped </sem>
+
+<sem id="1264"> ballstopped </sem>
+
+<sem id="1265"> ballstopped </sem>
+
+<sem id="1266"> ballstopped </sem>
+
+<sem id="1267"> ballstopped </sem>
+
+<sem id="1268"> ballstopped </sem>
+
+<sem id="1269"> ballstopped </sem>
+
+<sem id="1270"> ballstopped </sem>
+
+<sem id="1271"> ballstopped </sem>
+
+<sem id="1272"> ballstopped </sem>
+
+<sem id="1273"> badPass ( purple2 , pink8 ) </sem>
+
+<sem id="1274"> turnover ( purple2 , pink8 ) </sem>
+
+<sem id="1275"> ballstopped </sem>
+
+<sem id="1276"> ballstopped </sem>
+
+<sem id="1277"> ballstopped </sem>
+
+<sem id="1278"> ballstopped </sem>
+
+<sem id="1279"> ballstopped </sem>
+
+<sem id="1280"> ballstopped </sem>
+
+<sem id="1281"> ballstopped </sem>
+
+<sem id="1282"> ballstopped </sem>
+
+<sem id="1283"> ballstopped </sem>
+
+<sem id="1284"> ballstopped </sem>
+
+<sem id="1285"> ballstopped </sem>
+
+<sem id="1286"> ballstopped </sem>
+
+<sem id="1287"> ballstopped </sem>
+
+<sem id="1288"> ballstopped </sem>
+
+<sem id="1289"> ballstopped </sem>
+
+<sem id="1290"> ballstopped </sem>
+
+<sem id="1291"> ballstopped </sem>
+
+<sem id="1292"> ballstopped </sem>
+
+<sem id="1293"> ballstopped </sem>
+
+<sem id="1294"> ballstopped </sem>
+
+<sem id="1295"> ballstopped </sem>
+
+<sem id="1296"> ballstopped </sem>
+
+<sem id="1297"> ballstopped </sem>
+
+<sem id="1298"> ballstopped </sem>
+
+<sem id="1299"> ballstopped </sem>
+
+<sem id="1300"> ballstopped </sem>
+
+<sem id="1301"> ballstopped </sem>
+
+<sem id="1302"> ballstopped </sem>
+
+<sem id="1303"> ballstopped </sem>
+
+<sem id="1304"> ballstopped </sem>
+
+<sem id="1305"> ballstopped </sem>
+
+<sem id="1306"> ballstopped </sem>
+
+<sem id="1307"> ballstopped </sem>
+
+<sem id="1308"> ballstopped </sem>
+
+<sem id="1309"> ballstopped </sem>
+
+<sem id="1310"> ballstopped </sem>
+
+<sem id="1311"> ballstopped </sem>
+
+<sem id="1312"> ballstopped </sem>
+
+<sem id="1313"> ballstopped </sem>
+
+<sem id="1314"> ballstopped </sem>
+
+<sem id="1315"> playmode ( play_on ) </sem>
+
+<sem id="1316"> kick ( pink8 ) </sem>
+
+<sem id="1317"> pass ( pink8 , pink6 ) </sem>
+
+<sem id="1318"> ballstopped </sem>
+
+<sem id="1319"> kick ( pink6 ) </sem>
+
+<sem id="1320"> badPass ( pink6 , purple9 ) </sem>
+
+<sem id="1321"> turnover ( pink6 , purple9 ) </sem>
+
+<sem id="1322"> ballstopped </sem>
+
+<sem id="1323"> kick ( purple9 ) </sem>
+
+<sem id="1324"> pass ( purple9 , purple10 ) </sem>
+
+<sem id="1325"> kick ( purple10 ) </sem>
+
+<sem id="1326"> kick ( purple10 ) </sem>
+
+<sem id="1327"> kick ( purple10 ) </sem>
+
+<sem id="1328"> pass ( purple10 , purple9 ) </sem>
+
+<sem id="1329"> ballstopped </sem>
+
+<sem id="1330"> ballstopped </sem>
+
+<sem id="1331"> kick ( purple9 ) </sem>
+
+<sem id="1332"> pass ( purple9 , purple6 ) </sem>
+
+<sem id="1333"> ballstopped </sem>
+
+<sem id="1334"> kick ( purple6 ) </sem>
+
+<sem id="1335"> ballstopped </sem>
+
+<sem id="1336"> ballstopped </sem>
+
+<sem id="1337"> kick ( purple6 ) </sem>
+
+<sem id="1338"> pass ( purple6 , purple7 ) </sem>
+
+<sem id="1339"> kick ( purple7 ) </sem>
+
+<sem id="1340"> pass ( purple7 , purple4 ) </sem>
+
+<sem id="1341"> kick ( purple4 ) </sem>
+
+<sem id="1342"> pass ( purple4 , purple8 ) </sem>
+
+<sem id="1343"> kick ( purple8 ) </sem>
+
+<sem id="1344"> kick ( purple8 ) </sem>
+
+<sem id="1345"> pass ( purple8 , purple11 ) </sem>
+
+<sem id="1346"> kick ( purple11 ) </sem>
+
+<sem id="1347"> ballstopped </sem>
+
+<sem id="1348"> steal ( purple11 ) </sem>
+
+<sem id="1349"> ballstopped </sem>
+
+<sem id="1350"> turnover ( purple11 , pink4 ) </sem>
+
+<sem id="1351"> kick ( pink4 ) </sem>
+
+<sem id="1352"> badPass ( pink4 , purple8 ) </sem>
+
+<sem id="1353"> turnover ( pink4 , purple8 ) </sem>
+
+<sem id="1354"> kick ( purple8 ) </sem>
+
+<sem id="1355"> pass ( purple8 , purple11 ) </sem>
+
+<sem id="1356"> kick ( purple11 ) </sem>
+
+<sem id="1357"> pass ( purple11 , purple8 ) </sem>
+
+<sem id="1358"> kick ( purple8 ) </sem>
+
+<sem id="1359"> kick ( purple8 ) </sem>
+
+<sem id="1360"> badPass ( purple8 , pink9 ) </sem>
+
+<sem id="1361"> turnover ( purple8 , pink9 ) </sem>
+
+<sem id="1362"> kick ( pink9 ) </sem>
+
+<sem id="1363"> kick ( pink9 ) </sem>
+
+<sem id="1364"> kick ( pink9 ) </sem>
+
+<sem id="1365"> defense ( purple3 , purple3 ) </sem>
+
+<sem id="1366"> turnover ( pink9 , purple3 ) </sem>
+
+<sem id="1367"> kick ( purple3 ) </sem>
+
+<sem id="1368"> badPass ( purple3 , pink11 ) </sem>
+
+<sem id="1369"> turnover ( purple3 , pink11 ) </sem>
+
+<sem id="1370"> kick ( pink11 ) </sem>
+
+<sem id="1371"> playmode ( goal_r ) </sem>
+
+<sem id="1372"> ballstopped </sem>
+
+<sem id="1373"> playmode ( kick_off_l ) </sem>
+
+<sem id="1374"> ballstopped </sem>
+
+<sem id="1375"> ballstopped </sem>
+
+<sem id="1376"> ballstopped </sem>
+
+<sem id="1377"> ballstopped </sem>
+
+<sem id="1378"> ballstopped </sem>
+
+<sem id="1379"> ballstopped </sem>
+
+<sem id="1380"> ballstopped </sem>
+
+<sem id="1381"> ballstopped </sem>
+
+<sem id="1382"> ballstopped </sem>
+
+<sem id="1383"> ballstopped </sem>
+
+<sem id="1384"> ballstopped </sem>
+
+<sem id="1385"> ballstopped </sem>
+
+<sem id="1386"> ballstopped </sem>
+
+<sem id="1387"> ballstopped </sem>
+
+<sem id="1388"> ballstopped </sem>
+
+<sem id="1389"> ballstopped </sem>
+
+<sem id="1390"> ballstopped </sem>
+
+<sem id="1391"> ballstopped </sem>
+
+<sem id="1392"> ballstopped </sem>
+
+<sem id="1393"> ballstopped </sem>
+
+<sem id="1394"> ballstopped </sem>
+
+<sem id="1395"> ballstopped </sem>
+
+<sem id="1396"> ballstopped </sem>
+
+<sem id="1397"> ballstopped </sem>
+
+<sem id="1398"> ballstopped </sem>
+
+<sem id="1399"> ballstopped </sem>
+
+<sem id="1400"> ballstopped </sem>
+
+<sem id="1401"> ballstopped </sem>
+
+<sem id="1402"> ballstopped </sem>
+
+<sem id="1403"> ballstopped </sem>
+
+<sem id="1404"> ballstopped </sem>
+
+<sem id="1405"> ballstopped </sem>
+
+<sem id="1406"> ballstopped </sem>
+
+<sem id="1407"> ballstopped </sem>
+
+<sem id="1408"> ballstopped </sem>
+
+<sem id="1409"> ballstopped </sem>
+
+<sem id="1410"> ballstopped </sem>
+
+<sem id="1411"> ballstopped </sem>
+
+<sem id="1412"> playmode ( play_on ) </sem>
+
+<sem id="1413"> kick ( purple10 ) </sem>
+
+<sem id="1414"> pass ( purple10 , purple7 ) </sem>
+
+<sem id="1415"> kick ( purple7 ) </sem>
+
+<sem id="1416"> ballstopped </sem>
+
+<sem id="1417"> ballstopped </sem>
+
+<sem id="1418"> kick ( purple7 ) </sem>
+
+<sem id="1419"> pass ( purple7 , purple4 ) </sem>
+
+<sem id="1420"> kick ( purple4 ) </sem>
+
+<sem id="1421"> pass ( purple4 , purple3 ) </sem>
+
+<sem id="1422"> kick ( purple3 ) </sem>
+
+<sem id="1423"> pass ( purple3 , purple2 ) </sem>
+
+<sem id="1424"> ballstopped </sem>
+
+<sem id="1425"> kick ( purple2 ) </sem>
+
+<sem id="1426"> badPass ( purple2 , pink8 ) </sem>
+
+<sem id="1427"> turnover ( purple2 , pink8 ) </sem>
+
+<sem id="1428"> kick ( pink8 ) </sem>
+
+<sem id="1429"> kick ( pink8 ) </sem>
+
+<sem id="1430"> ballstopped </sem>
+
+<sem id="1431"> ballstopped </sem>
+
+<sem id="1432"> kick ( pink8 ) </sem>
+
+<sem id="1433"> pass ( pink8 , pink11 ) </sem>
+
+<sem id="1434"> kick ( pink11 ) </sem>
+
+<sem id="1435"> defense ( purple6 , purple6 ) </sem>
+
+<sem id="1436"> turnover ( pink11 , purple6 ) </sem>
+
+<sem id="1437"> kick ( purple6 ) </sem>
+
+<sem id="1438"> ballstopped </sem>
+
+<sem id="1439"> pass ( purple6 , purple10 ) </sem>
+
+<sem id="1440"> kick ( purple10 ) </sem>
+
+<sem id="1441"> kick ( purple10 ) </sem>
+
+<sem id="1442"> kick ( purple10 ) </sem>
+
+<sem id="1443"> kick ( purple10 ) </sem>
+
+<sem id="1444"> badPass ( purple10 , pink4 ) </sem>
+
+<sem id="1445"> turnover ( purple10 , pink4 ) </sem>
+
+<sem id="1446"> kick ( pink4 ) </sem>
+
+<sem id="1447"> badPass ( pink4 , purple9 ) </sem>
+
+<sem id="1448"> turnover ( pink4 , purple9 ) </sem>
+
+<sem id="1449"> kick ( purple9 ) </sem>
+
+<sem id="1450"> badPass ( purple9 , pink6 ) </sem>
+
+<sem id="1451"> turnover ( purple9 , pink6 ) </sem>
+
+<sem id="1452"> ballstopped </sem>
+
+<sem id="1453"> kick ( pink6 ) </sem>
+
+<sem id="1454"> pass ( pink6 , pink9 ) </sem>
+
+<sem id="1455"> kick ( pink9 ) </sem>
+
+<sem id="1456"> pass ( pink9 , pink11 ) </sem>
+
+<sem id="1457"> kick ( pink11 ) </sem>
+
+<sem id="1458"> pass ( pink11 , pink8 ) </sem>
+
+<sem id="1459"> kick ( pink8 ) </sem>
+
+<sem id="1460"> pass ( pink8 , pink10 ) </sem>
+
+<sem id="1461"> ballstopped </sem>
+
+<sem id="1462"> ballstopped </sem>
+
+<sem id="1463"> ballstopped </sem>
+
+<sem id="1464"> steal ( pink10 ) </sem>
+
+<sem id="1465"> turnover ( pink10 , purple4 ) </sem>
+
+<sem id="1466"> kick ( purple4 ) </sem>
+
+<sem id="1467"> ballstopped </sem>
+
+<sem id="1468"> pass ( purple4 , purple7 ) </sem>
+
+<sem id="1469"> kick ( purple7 ) </sem>
+
+<sem id="1470"> ballstopped </sem>
+
+<sem id="1471"> ballstopped </sem>
+
+<sem id="1472"> ballstopped </sem>
+
+<sem id="1473"> ballstopped </sem>
+
+<sem id="1474"> ballstopped </sem>
+
+<sem id="1475"> ballstopped </sem>
+
+<sem id="1476"> ballstopped </sem>
+
+<sem id="1477"> kick ( purple7 ) </sem>
+
+<sem id="1478"> kick ( purple8 ) </sem>
+
+<sem id="1479"> kick ( purple8 ) </sem>
+
+<sem id="1480"> kick ( purple8 ) </sem>
+
+<sem id="1481"> badPass ( purple8 , pink6 ) </sem>
+
+<sem id="1482"> turnover ( purple8 , pink6 ) </sem>
+
+<sem id="1483"> kick ( pink6 ) </sem>
+
+<sem id="1484"> playmode ( offside_r ) </sem>
+
+<sem id="1485"> ballstopped </sem>
+
+<sem id="1486"> playmode ( free_kick_l ) </sem>
+
+<sem id="1487"> ballstopped </sem>
+
+<sem id="1488"> ballstopped </sem>
+
+<sem id="1489"> ballstopped </sem>
+
+<sem id="1490"> ballstopped </sem>
+
+<sem id="1491"> ballstopped </sem>
+
+<sem id="1492"> ballstopped </sem>
+
+<sem id="1493"> ballstopped </sem>
+
+<sem id="1494"> ballstopped </sem>
+
+<sem id="1495"> ballstopped </sem>
+
+<sem id="1496"> badPass ( pink6 , purple3 ) </sem>
+
+<sem id="1497"> turnover ( pink6 , purple3 ) </sem>
+
+<sem id="1498"> ballstopped </sem>
+
+<sem id="1499"> ballstopped </sem>
+
+<sem id="1500"> ballstopped </sem>
+
+<sem id="1501"> ballstopped </sem>
+
+<sem id="1502"> ballstopped </sem>
+
+<sem id="1503"> ballstopped </sem>
+
+<sem id="1504"> ballstopped </sem>
+
+<sem id="1505"> ballstopped </sem>
+
+<sem id="1506"> ballstopped </sem>
+
+<sem id="1507"> playmode ( play_on ) </sem>
+
+<sem id="1508"> kick ( purple3 ) </sem>
+
+<sem id="1509"> pass ( purple3 , purple2 ) </sem>
+
+<sem id="1510"> ballstopped </sem>
+
+<sem id="1511"> kick ( purple2 ) </sem>
+
+<sem id="1512"> pass ( purple2 , purple3 ) </sem>
+
+<sem id="1513"> kick ( purple3 ) </sem>
+
+<sem id="1514"> pass ( purple3 , purple7 ) </sem>
+
+<sem id="1515"> kick ( purple7 ) </sem>
+
+<sem id="1516"> pass ( purple7 , purple10 ) </sem>
+
+<sem id="1517"> kick ( purple10 ) </sem>
+
+<sem id="1518"> pass ( purple10 , purple5 ) </sem>
+
+<sem id="1519"> kick ( purple5 ) </sem>
+
+<sem id="1520"> pass ( purple5 , purple11 ) </sem>
+
+<sem id="1521"> kick ( purple11 ) </sem>
+
+<sem id="1522"> badPass ( purple11 , pink9 ) </sem>
+
+<sem id="1523"> turnover ( purple11 , pink9 ) </sem>
+
+<sem id="1524"> ballstopped </sem>
+
+<sem id="1525"> kick ( pink9 ) </sem>
+
+<sem id="1526"> kick ( pink9 ) </sem>
+
+<sem id="1527"> playmode ( free_kick_l ) </sem>
+
+<sem id="1528"> ballstopped </sem>
+
+<sem id="1529"> block ( purple1 ) </sem>
+
+<sem id="1530"> turnover ( pink9 , purple1 ) </sem>
+
+<sem id="1531"> ballstopped </sem>
+
+<sem id="1532"> ballstopped </sem>
+
+<sem id="1533"> ballstopped </sem>
+
+<sem id="1534"> ballstopped </sem>
+
+<sem id="1535"> ballstopped </sem>
+
+<sem id="1536"> ballstopped </sem>
+
+<sem id="1537"> ballstopped </sem>
+
+<sem id="1538"> ballstopped </sem>
+
+<sem id="1539"> ballstopped </sem>
+
+<sem id="1540"> ballstopped </sem>
+
+<sem id="1541"> ballstopped </sem>
+
+<sem id="1542"> ballstopped </sem>
+
+<sem id="1543"> ballstopped </sem>
+
+<sem id="1544"> ballstopped </sem>
+
+<sem id="1545"> ballstopped </sem>
+
+<sem id="1546"> ballstopped </sem>
+
+<sem id="1547"> ballstopped </sem>
+
+<sem id="1548"> ballstopped </sem>
+
+<sem id="1549"> ballstopped </sem>
+
+<sem id="1550"> ballstopped </sem>
+
+<sem id="1551"> ballstopped </sem>
+
+<sem id="1552"> ballstopped </sem>
+
+<sem id="1553"> ballstopped </sem>
+
+<sem id="1554"> ballstopped </sem>
+
+<sem id="1555"> ballstopped </sem>
+
+<sem id="1556"> ballstopped </sem>
+
+<sem id="1557"> ballstopped </sem>
+
+<sem id="1558"> ballstopped </sem>
+
+<sem id="1559"> ballstopped </sem>
+
+<sem id="1560"> ballstopped </sem>
+
+<sem id="1561"> ballstopped </sem>
+
+<sem id="1562"> ballstopped </sem>
+
+<sem id="1563"> ballstopped </sem>
+
+<sem id="1564"> ballstopped </sem>
+
+<sem id="1565"> ballstopped </sem>
+
+<sem id="1566"> ballstopped </sem>
+
+<sem id="1567"> ballstopped </sem>
+
+<sem id="1568"> ballstopped </sem>
+
+<sem id="1569"> ballstopped </sem>
+
+<sem id="1570"> ballstopped </sem>
+
+<sem id="1571"> ballstopped </sem>
+
+<sem id="1572"> ballstopped </sem>
+
+<sem id="1573"> ballstopped </sem>
+
+<sem id="1574"> ballstopped </sem>
+
+<sem id="1575"> ballstopped </sem>
+
+<sem id="1576"> ballstopped </sem>
+
+<sem id="1577"> ballstopped </sem>
+
+<sem id="1578"> ballstopped </sem>
+
+<sem id="1579"> ballstopped </sem>
+
+<sem id="1580"> ballstopped </sem>
+
+<sem id="1581"> ballstopped </sem>
+
+<sem id="1582"> ballstopped </sem>
+
+<sem id="1583"> ballstopped </sem>
+
+<sem id="1584"> ballstopped </sem>
+
+<sem id="1585"> ballstopped </sem>
+
+<sem id="1586"> ballstopped </sem>
+
+<sem id="1587"> ballstopped </sem>
+
+<sem id="1588"> ballstopped </sem>
+
+<sem id="1589"> ballstopped </sem>
+
+<sem id="1590"> ballstopped </sem>
+
+<sem id="1591"> ballstopped </sem>
+
+<sem id="1592"> ballstopped </sem>
+
+<sem id="1593"> ballstopped </sem>
+
+<sem id="1594"> ballstopped </sem>
+
+<sem id="1595"> ballstopped </sem>
+
+<sem id="1596"> ballstopped </sem>
+
+<sem id="1597"> ballstopped </sem>
+
+<sem id="1598"> ballstopped </sem>
+
+<sem id="1599"> ballstopped </sem>
+
+<sem id="1600"> ballstopped </sem>
+
+<sem id="1601"> ballstopped </sem>
+
+<sem id="1602"> ballstopped </sem>
+
+<sem id="1603"> ballstopped </sem>
+
+<sem id="1604"> ballstopped </sem>
+
+<sem id="1605"> ballstopped </sem>
+
+<sem id="1606"> ballstopped </sem>
+
+<sem id="1607"> ballstopped </sem>
+
+<sem id="1608"> ballstopped </sem>
+
+<sem id="1609"> ballstopped </sem>
+
+<sem id="1610"> ballstopped </sem>
+
+<sem id="1611"> ballstopped </sem>
+
+<sem id="1612"> ballstopped </sem>
+
+<sem id="1613"> ballstopped </sem>
+
+<sem id="1614"> ballstopped </sem>
+
+<sem id="1615"> ballstopped </sem>
+
+<sem id="1616"> ballstopped </sem>
+
+<sem id="1617"> ballstopped </sem>
+
+<sem id="1618"> ballstopped </sem>
+
+<sem id="1619"> ballstopped </sem>
+
+<sem id="1620"> ballstopped </sem>
+
+<sem id="1621"> ballstopped </sem>
+
+<sem id="1622"> ballstopped </sem>
+
+<sem id="1623"> ballstopped </sem>
+
+<sem id="1624"> ballstopped </sem>
+
+<sem id="1625"> ballstopped </sem>
+
+<sem id="1626"> ballstopped </sem>
+
+<sem id="1627"> ballstopped </sem>
+
+<sem id="1628"> ballstopped </sem>
+
+<sem id="1629"> ballstopped </sem>
+
+<sem id="1630"> ballstopped </sem>
+
+<sem id="1631"> ballstopped </sem>
+
+<sem id="1632"> ballstopped </sem>
+
+<sem id="1633"> ballstopped </sem>
+
+<sem id="1634"> ballstopped </sem>
+
+<sem id="1635"> playmode ( play_on ) </sem>
+
+<sem id="1636"> kick ( purple1 ) </sem>
+
+<sem id="1637"> pass ( purple1 , purple2 ) </sem>
+
+<sem id="1638"> kick ( purple2 ) </sem>
+
+<sem id="1639"> kick ( purple2 ) </sem>
+
+<sem id="1640"> ballstopped </sem>
+
+<sem id="1641"> kick ( purple2 ) </sem>
+
+<sem id="1642"> badPass ( purple2 , pink11 ) </sem>
+
+<sem id="1643"> turnover ( purple2 , pink11 ) </sem>
+
+<sem id="1644"> ballstopped </sem>
+
+<sem id="1645"> ballstopped </sem>
+
+<sem id="1646"> kick ( pink11 ) </sem>
+
+<sem id="1647"> kick ( pink11 ) </sem>
+
+<sem id="1648"> badPass ( pink11 , purple4 ) </sem>
+
+<sem id="1649"> turnover ( pink11 , purple4 ) </sem>
+
+<sem id="1650"> kick ( purple4 ) </sem>
+
+<sem id="1651"> pass ( purple4 , purple7 ) </sem>
+
+<sem id="1652"> kick ( purple7 ) </sem>
+
+<sem id="1653"> pass ( purple7 , purple10 ) </sem>
+
+<sem id="1654"> kick ( purple10 ) </sem>
+
+<sem id="1655"> kick ( purple10 ) </sem>
+
+<sem id="1656"> pass ( purple10 , purple8 ) </sem>
+
+<sem id="1657"> kick ( purple8 ) </sem>
+
+<sem id="1658"> badPass ( purple8 , pink8 ) </sem>
+
+<sem id="1659"> turnover ( purple8 , pink8 ) </sem>
+
+<sem id="1660"> kick ( pink8 ) </sem>
+
+<sem id="1661"> pass ( pink8 , pink6 ) </sem>
+
+<sem id="1662"> ballstopped </sem>
+
+<sem id="1663"> ballstopped </sem>
+
+<sem id="1664"> ballstopped </sem>
+
+<sem id="1665"> kick ( pink6 ) </sem>
+
+<sem id="1666"> pass ( pink6 , pink9 ) </sem>
+
+<sem id="1667"> kick ( pink9 ) </sem>
+
+<sem id="1668"> ballstopped </sem>
+
+<sem id="1669"> block ( purple1 ) </sem>
+
+<sem id="1670"> turnover ( pink9 , purple1 ) </sem>
+
+<sem id="1671"> playmode ( free_kick_l ) </sem>
+
+<sem id="1672"> ballstopped </sem>
+
+<sem id="1673"> ballstopped </sem>
+
+<sem id="1674"> ballstopped </sem>
+
+<sem id="1675"> ballstopped </sem>
+
+<sem id="1676"> ballstopped </sem>
+
+<sem id="1677"> ballstopped </sem>
+
+<sem id="1678"> ballstopped </sem>
+
+<sem id="1679"> ballstopped </sem>
+
+<sem id="1680"> ballstopped </sem>
+
+<sem id="1681"> ballstopped </sem>
+
+<sem id="1682"> ballstopped </sem>
+
+<sem id="1683"> ballstopped </sem>
+
+<sem id="1684"> ballstopped </sem>
+
+<sem id="1685"> ballstopped </sem>
+
+<sem id="1686"> ballstopped </sem>
+
+<sem id="1687"> ballstopped </sem>
+
+<sem id="1688"> ballstopped </sem>
+
+<sem id="1689"> ballstopped </sem>
+
+<sem id="1690"> ballstopped </sem>
+
+<sem id="1691"> ballstopped </sem>
+
+<sem id="1692"> ballstopped </sem>
+
+<sem id="1693"> ballstopped </sem>
+
+<sem id="1694"> ballstopped </sem>
+
+<sem id="1695"> ballstopped </sem>
+
+<sem id="1696"> ballstopped </sem>
+
+<sem id="1697"> ballstopped </sem>
+
+<sem id="1698"> ballstopped </sem>
+
+<sem id="1699"> ballstopped </sem>
+
+<sem id="1700"> ballstopped </sem>
+
+<sem id="1701"> ballstopped </sem>
+
+<sem id="1702"> ballstopped </sem>
+
+<sem id="1703"> ballstopped </sem>
+
+<sem id="1704"> ballstopped </sem>
+
+<sem id="1705"> ballstopped </sem>
+
+<sem id="1706"> ballstopped </sem>
+
+<sem id="1707"> ballstopped </sem>
+
+<sem id="1708"> ballstopped </sem>
+
+<sem id="1709"> ballstopped </sem>
+
+<sem id="1710"> ballstopped </sem>
+
+<sem id="1711"> ballstopped </sem>
+
+<sem id="1712"> ballstopped </sem>
+
+<sem id="1713"> ballstopped </sem>
+
+<sem id="1714"> ballstopped </sem>
+
+<sem id="1715"> ballstopped </sem>
+
+<sem id="1716"> ballstopped </sem>
+
+<sem id="1717"> ballstopped </sem>
+
+<sem id="1718"> ballstopped </sem>
+
+<sem id="1719"> ballstopped </sem>
+
+<sem id="1720"> ballstopped </sem>
+
+<sem id="1721"> ballstopped </sem>
+
+<sem id="1722"> ballstopped </sem>
+
+<sem id="1723"> ballstopped </sem>
+
+<sem id="1724"> ballstopped </sem>
+
+<sem id="1725"> ballstopped </sem>
+
+<sem id="1726"> ballstopped </sem>
+
+<sem id="1727"> ballstopped </sem>
+
+<sem id="1728"> ballstopped </sem>
+
+<sem id="1729"> ballstopped </sem>
+
+<sem id="1730"> ballstopped </sem>
+
+<sem id="1731"> ballstopped </sem>
+
+<sem id="1732"> ballstopped </sem>
+
+<sem id="1733"> ballstopped </sem>
+
+<sem id="1734"> ballstopped </sem>
+
+<sem id="1735"> ballstopped </sem>
+
+<sem id="1736"> ballstopped </sem>
+
+<sem id="1737"> ballstopped </sem>
+
+<sem id="1738"> ballstopped </sem>
+
+<sem id="1739"> ballstopped </sem>
+
+<sem id="1740"> ballstopped </sem>
+
+<sem id="1741"> ballstopped </sem>
+
+<sem id="1742"> ballstopped </sem>
+
+<sem id="1743"> ballstopped </sem>
+
+<sem id="1744"> ballstopped </sem>
+
+<sem id="1745"> ballstopped </sem>
+
+<sem id="1746"> ballstopped </sem>
+
+<sem id="1747"> ballstopped </sem>
+
+<sem id="1748"> ballstopped </sem>
+
+<sem id="1749"> ballstopped </sem>
+
+<sem id="1750"> ballstopped </sem>
+
+<sem id="1751"> ballstopped </sem>
+
+<sem id="1752"> ballstopped </sem>
+
+<sem id="1753"> ballstopped </sem>
+
+<sem id="1754"> ballstopped </sem>
+
+<sem id="1755"> ballstopped </sem>
+
+<sem id="1756"> ballstopped </sem>
+
+<sem id="1757"> ballstopped </sem>
+
+<sem id="1758"> ballstopped </sem>
+
+<sem id="1759"> ballstopped </sem>
+
+<sem id="1760"> ballstopped </sem>
+
+<sem id="1761"> ballstopped </sem>
+
+<sem id="1762"> ballstopped </sem>
+
+<sem id="1763"> ballstopped </sem>
+
+<sem id="1764"> ballstopped </sem>
+
+<sem id="1765"> ballstopped </sem>
+
+<sem id="1766"> ballstopped </sem>
+
+<sem id="1767"> ballstopped </sem>
+
+<sem id="1768"> ballstopped </sem>
+
+<sem id="1769"> ballstopped </sem>
+
+<sem id="1770"> ballstopped </sem>
+
+<sem id="1771"> ballstopped </sem>
+
+<sem id="1772"> ballstopped </sem>
+
+<sem id="1773"> ballstopped </sem>
+
+<sem id="1774"> ballstopped </sem>
+
+<sem id="1775"> ballstopped </sem>
+
+<sem id="1776"> playmode ( play_on ) </sem>
+
+<sem id="1777"> kick ( purple1 ) </sem>
+
+<sem id="1778"> pass ( purple1 , purple5 ) </sem>
+
+<sem id="1779"> kick ( purple5 ) </sem>
+
+<sem id="1780"> kick ( purple5 ) </sem>
+
+<sem id="1781"> steal ( purple5 ) </sem>
+
+<sem id="1782"> turnover ( purple5 , pink7 ) </sem>
+
+<sem id="1783"> kick ( pink7 ) </sem>
+
+<sem id="1784"> badPass ( pink7 , purple11 ) </sem>
+
+<sem id="1785"> turnover ( pink7 , purple11 ) </sem>
+
+<sem id="1786"> kick ( purple11 ) </sem>
+
+<sem id="1787"> kick ( purple11 ) </sem>
+
+<sem id="1788"> kick ( purple11 ) </sem>
+
+<sem id="1789"> kick ( purple11 ) </sem>
+
+<sem id="1790"> pass ( purple11 , purple8 ) </sem>
+
+<sem id="1791"> kick ( purple8 ) </sem>
+
+<sem id="1792"> pass ( purple8 , purple7 ) </sem>
+
+<sem id="1793"> kick ( purple7 ) </sem>
+
+<sem id="1794"> ballstopped </sem>
+
+<sem id="1795"> kick ( purple7 ) </sem>
+
+<sem id="1796"> pass ( purple7 , purple10 ) </sem>
+
+<sem id="1797"> kick ( purple10 ) </sem>
+
+<sem id="1798"> pass ( purple10 , purple11 ) </sem>
+
+<sem id="1799"> steal ( purple11 ) </sem>
+
+<sem id="1800"> turnover ( purple11 , pink7 ) </sem>
+
+<sem id="1801"> ballstopped </sem>
+
+<sem id="1802"> kick ( pink4 ) </sem>
+
+<sem id="1803"> pass ( pink4 , pink10 ) </sem>
+
+<sem id="1804"> ballstopped </sem>
+
+<sem id="1805"> ballstopped </sem>
+
+<sem id="1806"> ballstopped </sem>
+
+<sem id="1807"> kick ( pink10 ) </sem>
+
+<sem id="1808"> steal ( pink10 ) </sem>
+
+<sem id="1809"> turnover ( pink10 , purple5 ) </sem>
+
+<sem id="1810"> kick ( purple5 ) </sem>
+
+<sem id="1811"> badPass ( purple5 , pink11 ) </sem>
+
+<sem id="1812"> turnover ( purple5 , pink11 ) </sem>
+
+<sem id="1813"> kick ( pink11 ) </sem>
+
+<sem id="1814"> kick ( pink11 ) </sem>
+
+<sem id="1815"> badPass ( pink11 , purple5 ) </sem>
+
+<sem id="1816"> kick ( purple7 ) </sem>
+
+<sem id="1817"> ballstopped </sem>
+
+<sem id="1818"> pass ( purple7 , purple4 ) </sem>
+
+<sem id="1819"> kick ( purple4 ) </sem>
+
+<sem id="1820"> pass ( purple4 , purple8 ) </sem>
+
+<sem id="1821"> ballstopped </sem>
+
+<sem id="1822"> kick ( purple8 ) </sem>
+
+<sem id="1823"> badPass ( purple8 , pink4 ) </sem>
+
+<sem id="1824"> turnover ( purple8 , pink4 ) </sem>
+
+<sem id="1825"> kick ( pink4 ) </sem>
+
+<sem id="1826"> ballstopped </sem>
+
+<sem id="1827"> pass ( pink4 , pink9 ) </sem>
+
+<sem id="1828"> ballstopped </sem>
+
+<sem id="1829"> ballstopped </sem>
+
+<sem id="1830"> ballstopped </sem>
+
+<sem id="1831"> ballstopped </sem>
+
+<sem id="1832"> ballstopped </sem>
+
+<sem id="1833"> kick ( pink9 ) </sem>
+
+<sem id="1834"> badPass ( pink9 , purple7 ) </sem>
+
+<sem id="1835"> turnover ( pink9 , purple7 ) </sem>
+
+<sem id="1836"> kick ( purple7 ) </sem>
+
+<sem id="1837"> pass ( purple7 , purple4 ) </sem>
+
+<sem id="1838"> kick ( purple4 ) </sem>
+
+<sem id="1839"> pass ( purple4 , purple3 ) </sem>
+
+<sem id="1840"> kick ( purple3 ) </sem>
+
+<sem id="1841"> kick ( purple3 ) </sem>
+
+<sem id="1842"> pass ( purple3 , purple10 ) </sem>
+
+<sem id="1843"> kick ( purple10 ) </sem>
+
+<sem id="1844"> pass ( purple10 , purple8 ) </sem>
+
+<sem id="1845"> kick ( purple8 ) </sem>
+
+<sem id="1846"> kick ( purple8 ) </sem>
+
+<sem id="1847"> pass ( purple8 , purple7 ) </sem>
+
+<sem id="1848"> ballstopped </sem>
+
+<sem id="1849"> kick ( purple7 ) </sem>
+
+<sem id="1850"> badPass ( purple7 , pink7 ) </sem>
+
+<sem id="1851"> turnover ( purple7 , pink7 ) </sem>
+
+<sem id="1852"> kick ( pink7 ) </sem>
+
+<sem id="1853"> badPass ( pink7 , purple8 ) </sem>
+
+<sem id="1854"> turnover ( pink7 , purple8 ) </sem>
+
+<sem id="1855"> ballstopped </sem>
+
+<sem id="1856"> ballstopped </sem>
+
+<sem id="1857"> kick ( purple8 ) </sem>
+
+<sem id="1858"> pass ( purple8 , purple4 ) </sem>
+
+<sem id="1859"> ballstopped </sem>
+
+<sem id="1860"> ballstopped </sem>
+
+<sem id="1861"> kick ( purple4 ) </sem>
+
+<sem id="1862"> badPass ( purple4 , pink9 ) </sem>
+
+<sem id="1863"> turnover ( purple4 , pink9 ) </sem>
+
+<sem id="1864"> kick ( pink9 ) </sem>
+
+<sem id="1865"> pass ( pink9 , pink7 ) </sem>
+
+<sem id="1866"> kick ( pink7 ) </sem>
+
+<sem id="1867"> kick ( pink7 ) </sem>
+
+<sem id="1868"> kick ( pink7 ) </sem>
+
+<sem id="1869"> kick ( pink7 ) </sem>
+
+<sem id="1870"> pass ( pink7 , pink9 ) </sem>
+
+<sem id="1871"> kick ( pink9 ) </sem>
+
+<sem id="1872"> kick ( pink9 ) </sem>
+
+<sem id="1873"> playmode ( goal_r ) </sem>
+
+<sem id="1874"> ballstopped </sem>
+
+<sem id="1875"> playmode ( kick_off_l ) </sem>
+
+<sem id="1876"> ballstopped </sem>
+
+<sem id="1877"> badPass ( pink9 , purple10 ) </sem>
+
+<sem id="1878"> turnover ( pink9 , purple10 ) </sem>
+
+<sem id="1879"> playmode ( play_on ) </sem>
+
+<sem id="1880"> kick ( purple10 ) </sem>
+
+<sem id="1881"> pass ( purple10 , purple8 ) </sem>
+
+<sem id="1882"> ballstopped </sem>
+
+<sem id="1883"> kick ( purple8 ) </sem>
+
+<sem id="1884"> pass ( purple8 , purple3 ) </sem>
+
+<sem id="1885"> kick ( purple3 ) </sem>
+
+<sem id="1886"> pass ( purple3 , purple2 ) </sem>
+
+<sem id="1887"> kick ( purple2 ) </sem>
+
+<sem id="1888"> pass ( purple2 , purple6 ) </sem>
+
+<sem id="1889"> ballstopped </sem>
+
+<sem id="1890"> kick ( purple6 ) </sem>
+
+<sem id="1891"> badPass ( purple6 , pink9 ) </sem>
+
+<sem id="1892"> turnover ( purple6 , pink9 ) </sem>
+
+<sem id="1893"> kick ( pink9 ) </sem>
+
+<sem id="1894"> kick ( pink9 ) </sem>
+
+<sem id="1895"> pass ( pink9 , pink10 ) </sem>
+
+<sem id="1896"> kick ( pink10 ) </sem>
+
+<sem id="1897"> playmode ( goal_r ) </sem>
+
+<sem id="1898"> ballstopped </sem>
+
+<sem id="1899"> playmode ( kick_off_l ) </sem>
+
+<sem id="1900"> ballstopped </sem>
+
+<sem id="1901"> badPass ( pink10 , purple10 ) </sem>
+
+<sem id="1902"> turnover ( pink10 , purple10 ) </sem>
+
+<sem id="1903"> playmode ( play_on ) </sem>
+
+<sem id="1904"> kick ( purple6 ) </sem>
+
+<sem id="1905"> badPass ( purple6 , pink11 ) </sem>
+
+<sem id="1906"> turnover ( purple6 , pink11 ) </sem>
+
+<sem id="1907"> ballstopped </sem>
+
+<sem id="1908"> ballstopped </sem>
+
+<sem id="1909"> ballstopped </sem>
+
+<sem id="1910"> kick ( pink11 ) </sem>
+
+<sem id="1911"> badPass ( pink11 , purple8 ) </sem>
+
+<sem id="1912"> turnover ( pink11 , purple8 ) </sem>
+
+<sem id="1913"> kick ( purple8 ) </sem>
+
+<sem id="1914"> ballstopped </sem>
+
+<sem id="1915"> pass ( purple8 , purple11 ) </sem>
+
+<sem id="1916"> ballstopped </sem>
+
+<sem id="1917"> kick ( purple11 ) </sem>
+
+<sem id="1918"> ballstopped </sem>
+
+<sem id="1919"> kick ( purple11 ) </sem>
+
+<sem id="1920"> kick ( purple11 ) </sem>
+
+<sem id="1921"> pass ( purple11 , purple10 ) </sem>
+
+<sem id="1922"> kick ( purple10 ) </sem>
+
+<sem id="1923"> pass ( purple10 , purple8 ) </sem>
+
+<sem id="1924"> kick ( purple8 ) </sem>
+
+<sem id="1925"> kick ( purple8 ) </sem>
+
+<sem id="1926"> pass ( purple8 , purple11 ) </sem>
+
+<sem id="1927"> ballstopped </sem>
+
+<sem id="1928"> ballstopped </sem>
+
+<sem id="1929"> kick ( purple11 ) </sem>
+
+<sem id="1930"> pass ( purple11 , purple8 ) </sem>
+
+<sem id="1931"> kick ( purple8 ) </sem>
+
+<sem id="1932"> pass ( purple8 , purple11 ) </sem>
+
+<sem id="1933"> kick ( purple11 ) </sem>
+
+<sem id="1934"> kick ( purple11 ) </sem>
+
+<sem id="1935"> kick ( purple11 ) </sem>
+
+<sem id="1936"> pass ( purple11 , purple7 ) </sem>
+
+<sem id="1937"> kick ( purple7 ) </sem>
+
+<sem id="1938"> pass ( purple7 , purple8 ) </sem>
+
+<sem id="1939"> kick ( purple8 ) </sem>
+
+<sem id="1940"> kick ( purple8 ) </sem>
+
+<sem id="1941"> kick ( purple8 ) </sem>
+
+<sem id="1942"> kick ( purple8 ) </sem>
+
+<sem id="1943"> playmode ( kick_in_r ) </sem>
+
+<sem id="1944"> ballstopped </sem>
+
+<sem id="1945"> ballstopped </sem>
+
+<sem id="1946"> ballstopped </sem>
+
+<sem id="1947"> ballstopped </sem>
+
+<sem id="1948"> ballstopped </sem>
+
+<sem id="1949"> ballstopped </sem>
+
+<sem id="1950"> ballstopped </sem>
+
+<sem id="1951"> ballstopped </sem>
+
+<sem id="1952"> ballstopped </sem>
+
+<sem id="1953"> ballstopped </sem>
+
+<sem id="1954"> ballstopped </sem>
+
+<sem id="1955"> ballstopped </sem>
+
+<sem id="1956"> ballstopped </sem>
+
+<sem id="1957"> ballstopped </sem>
+
+<sem id="1958"> ballstopped </sem>
+
+<sem id="1959"> ballstopped </sem>
+
+<sem id="1960"> ballstopped </sem>
+
+<sem id="1961"> ballstopped </sem>
+
+<sem id="1962"> ballstopped </sem>
+
+<sem id="1963"> ballstopped </sem>
+
+<sem id="1964"> ballstopped </sem>
+
+<sem id="1965"> ballstopped </sem>
+
+<sem id="1966"> ballstopped </sem>
+
+<sem id="1967"> ballstopped </sem>
+
+<sem id="1968"> ballstopped </sem>
+
+<sem id="1969"> ballstopped </sem>
+
+<sem id="1970"> ballstopped </sem>
+
+<sem id="1971"> ballstopped </sem>
+
+<sem id="1972"> ballstopped </sem>
+
+<sem id="1973"> ballstopped </sem>
+
+<sem id="1974"> ballstopped </sem>
+
+<sem id="1975"> ballstopped </sem>
+
+<sem id="1976"> ballstopped </sem>
+
+<sem id="1977"> ballstopped </sem>
+
+<sem id="1978"> ballstopped </sem>
+
+<sem id="1979"> ballstopped </sem>
+
+<sem id="1980"> ballstopped </sem>
+
+<sem id="1981"> ballstopped </sem>
+
+<sem id="1982"> ballstopped </sem>
+
+<sem id="1983"> ballstopped </sem>
+
+<sem id="1984"> ballstopped </sem>
+
+<sem id="1985"> ballstopped </sem>
+
+<sem id="1986"> ballstopped </sem>
+
+<sem id="1987"> ballstopped </sem>
+
+<sem id="1988"> ballstopped </sem>
+
+<sem id="1989"> ballstopped </sem>
+
+<sem id="1990"> ballstopped </sem>
+
+<sem id="1991"> ballstopped </sem>
+
+<sem id="1992"> ballstopped </sem>
+
+<sem id="1993"> ballstopped </sem>
+
+<sem id="1994"> ballstopped </sem>
+
+<sem id="1995"> ballstopped </sem>
+
+<sem id="1996"> ballstopped </sem>
+
+<sem id="1997"> ballstopped </sem>
+
+<sem id="1998"> ballstopped </sem>
+
+<sem id="1999"> ballstopped </sem>
+
+<sem id="2000"> ballstopped </sem>
+
+<sem id="2001"> ballstopped </sem>
+
+<sem id="2002"> ballstopped </sem>
+
+<sem id="2003"> ballstopped </sem>
+
+<sem id="2004"> ballstopped </sem>
+
+<sem id="2005"> ballstopped </sem>
+
+<sem id="2006"> ballstopped </sem>
+
+<sem id="2007"> ballstopped </sem>
+
+<sem id="2008"> ballstopped </sem>
+
+<sem id="2009"> ballstopped </sem>
+
+<sem id="2010"> ballstopped </sem>
+
+<sem id="2011"> ballstopped </sem>
+
+<sem id="2012"> ballstopped </sem>
+
+<sem id="2013"> ballstopped </sem>
+
+<sem id="2014"> ballstopped </sem>
+
+<sem id="2015"> ballstopped </sem>
+
+<sem id="2016"> ballstopped </sem>
+
+<sem id="2017"> ballstopped </sem>
+
+<sem id="2018"> ballstopped </sem>
+
+<sem id="2019"> ballstopped </sem>
+
+<sem id="2020"> ballstopped </sem>
+
+<sem id="2021"> ballstopped </sem>
+
+<sem id="2022"> ballstopped </sem>
+
+<sem id="2023"> ballstopped </sem>
+
+<sem id="2024"> ballstopped </sem>
+
+<sem id="2025"> badPass ( purple8 , pink7 ) </sem>
+
+<sem id="2026"> turnover ( purple8 , pink7 ) </sem>
+
+<sem id="2027"> ballstopped </sem>
+
+<sem id="2028"> ballstopped </sem>
+
+<sem id="2029"> ballstopped </sem>
+
+<sem id="2030"> ballstopped </sem>
+
+<sem id="2031"> ballstopped </sem>
+
+<sem id="2032"> ballstopped </sem>
+
+<sem id="2033"> ballstopped </sem>
+
+<sem id="2034"> ballstopped </sem>
+
+<sem id="2035"> ballstopped </sem>
+
+<sem id="2036"> ballstopped </sem>
+
+<sem id="2037"> ballstopped </sem>
+
+<sem id="2038"> ballstopped </sem>
+
+<sem id="2039"> ballstopped </sem>
+
+<sem id="2040"> ballstopped </sem>
+
+<sem id="2041"> ballstopped </sem>
+
+<sem id="2042"> ballstopped </sem>
+
+<sem id="2043"> ballstopped </sem>
+
+<sem id="2044"> ballstopped </sem>
+
+<sem id="2045"> ballstopped </sem>
+
+<sem id="2046"> ballstopped </sem>
+
+<sem id="2047"> ballstopped </sem>
+
+<sem id="2048"> ballstopped </sem>
+
+<sem id="2049"> ballstopped </sem>
+
+<sem id="2050"> ballstopped </sem>
+
+<sem id="2051"> ballstopped </sem>
+
+<sem id="2052"> ballstopped </sem>
+
+<sem id="2053"> ballstopped </sem>
+
+<sem id="2054"> ballstopped </sem>
+
+<sem id="2055"> ballstopped </sem>
+
+<sem id="2056"> ballstopped </sem>
+
+<sem id="2057"> ballstopped </sem>
+
+<sem id="2058"> ballstopped </sem>
+
+<sem id="2059"> ballstopped </sem>
+
+<sem id="2060"> ballstopped </sem>
+
+<sem id="2061"> ballstopped </sem>
+
+<sem id="2062"> ballstopped </sem>
+
+<sem id="2063"> ballstopped </sem>
+
+<sem id="2064"> ballstopped </sem>
+
+<sem id="2065"> ballstopped </sem>
+
+<sem id="2066"> ballstopped </sem>
+
+<sem id="2067"> ballstopped </sem>
+
+<sem id="2068"> ballstopped </sem>
+
+<sem id="2069"> ballstopped </sem>
+
+<sem id="2070"> ballstopped </sem>
+
+<sem id="2071"> ballstopped </sem>
+
+<sem id="2072"> ballstopped </sem>
+
+<sem id="2073"> ballstopped </sem>
+
+<sem id="2074"> ballstopped </sem>
+
+<sem id="2075"> ballstopped </sem>
+
+<sem id="2076"> ballstopped </sem>
+
+<sem id="2077"> ballstopped </sem>
+
+<sem id="2078"> playmode ( play_on ) </sem>
+
+<sem id="2079"> ballstopped </sem>
+
+<sem id="2080"> kick ( pink7 ) </sem>
+
+<sem id="2081"> pass ( pink7 , pink10 ) </sem>
+
+<sem id="2082"> kick ( pink10 ) </sem>
+
+<sem id="2083"> steal ( pink10 ) </sem>
+
+<sem id="2084"> turnover ( pink10 , purple5 ) </sem>
+
+<sem id="2085"> kick ( purple5 ) </sem>
+
+<sem id="2086"> badPass ( purple5 , pink9 ) </sem>
+
+<sem id="2087"> turnover ( purple5 , pink9 ) </sem>
+
+<sem id="2088"> ballstopped </sem>
+
+<sem id="2089"> ballstopped </sem>
+
+<sem id="2090"> ballstopped </sem>
+
+<sem id="2091"> kick ( pink9 ) </sem>
+
+<sem id="2092"> kick ( pink9 ) </sem>
+
+<sem id="2093"> defense ( purple3 , purple3 ) </sem>
+
+<sem id="2094"> turnover ( pink9 , purple3 ) </sem>
+
+<sem id="2095"> kick ( purple3 ) </sem>
+
+<sem id="2096"> playmode ( goal_kick_l ) </sem>
+
+<sem id="2097"> ballstopped </sem>
+
+<sem id="2098"> ballstopped </sem>
+
+<sem id="2099"> ballstopped </sem>
+
+<sem id="2100"> ballstopped </sem>
+
+<sem id="2101"> ballstopped </sem>
+
+<sem id="2102"> ballstopped </sem>
+
+<sem id="2103"> ballstopped </sem>
+
+<sem id="2104"> ballstopped </sem>
+
+<sem id="2105"> pass ( purple3 , purple1 ) </sem>
+
+<sem id="2106"> ballstopped </sem>
+
+<sem id="2107"> ballstopped </sem>
+
+<sem id="2108"> ballstopped </sem>
+
+<sem id="2109"> ballstopped </sem>
+
+<sem id="2110"> ballstopped </sem>
+
+<sem id="2111"> ballstopped </sem>
+
+<sem id="2112"> ballstopped </sem>
+
+<sem id="2113"> ballstopped </sem>
+
+<sem id="2114"> ballstopped </sem>
+
+<sem id="2115"> ballstopped </sem>
+
+<sem id="2116"> ballstopped </sem>
+
+<sem id="2117"> ballstopped </sem>
+
+<sem id="2118"> ballstopped </sem>
+
+<sem id="2119"> ballstopped </sem>
+
+<sem id="2120"> ballstopped </sem>
+
+<sem id="2121"> ballstopped </sem>
+
+<sem id="2122"> ballstopped </sem>
+
+<sem id="2123"> ballstopped </sem>
+
+<sem id="2124"> ballstopped </sem>
+
+<sem id="2125"> ballstopped </sem>
+
+<sem id="2126"> ballstopped </sem>
+
+<sem id="2127"> kick ( purple1 ) </sem>
+
+<sem id="2128"> playmode ( play_on ) </sem>
+
+<sem id="2129"> ballstopped </sem>
+
+<sem id="2130"> pass ( purple1 , purple2 ) </sem>
+
+<sem id="2131"> kick ( purple2 ) </sem>
+
+<sem id="2132"> kick ( purple2 ) </sem>
+
+<sem id="2133"> pass ( purple2 , purple6 ) </sem>
+
+<sem id="2134"> kick ( purple6 ) </sem>
+
+<sem id="2135"> kick ( purple6 ) </sem>
+
+<sem id="2136"> pass ( purple6 , purple2 ) </sem>
+
+<sem id="2137"> kick ( purple2 ) </sem>
+
+<sem id="2138"> pass ( purple2 , purple9 ) </sem>
+
+<sem id="2139"> steal ( purple9 ) </sem>
+
+<sem id="2140"> turnover ( purple9 , pink5 ) </sem>
+
+<sem id="2141"> kick ( pink5 ) </sem>
+
+<sem id="2142"> pass ( pink5 , pink8 ) </sem>
+
+<sem id="2143"> ballstopped </sem>
+
+<sem id="2144"> ballstopped </sem>
+
+<sem id="2145"> ballstopped </sem>
+
+<sem id="2146"> ballstopped </sem>
+
+<sem id="2147"> kick ( pink8 ) </sem>
+
+<sem id="2148"> kick ( pink8 ) </sem>
+
+<sem id="2149"> kick ( pink8 ) </sem>
+
+<sem id="2150"> kick ( purple7 ) </sem>
+
+<sem id="2151"> pass ( purple7 , purple8 ) </sem>
+
+<sem id="2152"> kick ( purple8 ) </sem>
+
+<sem id="2153"> kick ( purple8 ) </sem>
+
+<sem id="2154"> kick ( purple8 ) </sem>
+
+<sem id="2155"> pass ( purple8 , purple10 ) </sem>
+
+<sem id="2156"> kick ( purple10 ) </sem>
+
+<sem id="2157"> pass ( purple10 , purple11 ) </sem>
+
+<sem id="2158"> ballstopped </sem>
+
+<sem id="2159"> kick ( purple11 ) </sem>
+
+<sem id="2160"> badPass ( purple11 , pink4 ) </sem>
+
+<sem id="2161"> turnover ( purple11 , pink4 ) </sem>
+
+<sem id="2162"> ballstopped </sem>
+
+<sem id="2163"> kick ( pink4 ) </sem>
+
+<sem id="2164"> pass ( pink4 , pink7 ) </sem>
+
+<sem id="2165"> kick ( pink7 ) </sem>
+
+<sem id="2166"> badPass ( pink7 , purple7 ) </sem>
+
+<sem id="2167"> turnover ( pink7 , purple7 ) </sem>
+
+<sem id="2168"> kick ( purple7 ) </sem>
+
+<sem id="2169"> pass ( purple7 , purple6 ) </sem>
+
+<sem id="2170"> ballstopped </sem>
+
+<sem id="2171"> ballstopped </sem>
+
+<sem id="2172"> kick ( purple6 ) </sem>
+
+<sem id="2173"> pass ( purple6 , purple9 ) </sem>
+
+<sem id="2174"> kick ( purple9 ) </sem>
+
+<sem id="2175"> ballstopped </sem>
+
+<sem id="2176"> ballstopped </sem>
+
+<sem id="2177"> ballstopped </sem>
+
+<sem id="2178"> ballstopped </sem>
+
+<sem id="2179"> ballstopped </sem>
+
+<sem id="2180"> kick ( purple9 ) </sem>
+
+<sem id="2181"> badPass ( purple9 , pink11 ) </sem>
+
+<sem id="2182"> turnover ( purple9 , pink11 ) </sem>
+
+<sem id="2183"> ballstopped </sem>
+
+<sem id="2184"> ballstopped </sem>
+
+<sem id="2185"> ballstopped </sem>
+
+<sem id="2186"> ballstopped </sem>
+
+<sem id="2187"> kick ( pink11 ) </sem>
+
+<sem id="2188"> kick ( pink11 ) </sem>
+
+<sem id="2189"> pass ( pink11 , pink10 ) </sem>
+
+<sem id="2190"> kick ( pink10 ) </sem>
+
+<sem id="2191"> playmode ( goal_r ) </sem>
+
+<sem id="2192"> ballstopped </sem>
+
+<sem id="2193"> playmode ( kick_off_l ) </sem>
+
+<sem id="2194"> ballstopped </sem>
+
+<sem id="2195"> ballstopped </sem>
+
+<sem id="2196"> ballstopped </sem>
+
+<sem id="2197"> ballstopped </sem>
+
+<sem id="2198"> badPass ( pink10 , purple10 ) </sem>
+
+<sem id="2199"> turnover ( pink10 , purple10 ) </sem>
+
+<sem id="2200"> playmode ( play_on ) </sem>
+
+<sem id="2201"> kick ( purple10 ) </sem>
+
+<sem id="2202"> pass ( purple10 , purple6 ) </sem>
+
+<sem id="2203"> kick ( purple6 ) </sem>
+
+<sem id="2204"> pass ( purple6 , purple9 ) </sem>
+
+<sem id="2205"> kick ( purple9 ) </sem>
+
+<sem id="2206"> pass ( purple9 , purple2 ) </sem>
+
+<sem id="2207"> kick ( purple2 ) </sem>
+
+<sem id="2208"> pass ( purple2 , purple3 ) </sem>
+
+<sem id="2209"> kick ( purple3 ) </sem>
+
+<sem id="2210"> pass ( purple3 , purple7 ) </sem>
+
+<sem id="2211"> kick ( purple7 ) </sem>
+
+<sem id="2212"> kick ( purple7 ) </sem>
+
+<sem id="2213"> pass ( purple7 , purple10 ) </sem>
+
+<sem id="2214"> kick ( purple10 ) </sem>
+
+<sem id="2215"> pass ( purple10 , purple11 ) </sem>
+
+<sem id="2216"> ballstopped </sem>
+
+<sem id="2217"> kick ( purple11 ) </sem>
+
+<sem id="2218"> pass ( purple11 , purple8 ) </sem>
+
+<sem id="2219"> kick ( purple8 ) </sem>
+
+<sem id="2220"> pass ( purple8 , purple7 ) </sem>
+
+<sem id="2221"> kick ( purple7 ) </sem>
+
+<sem id="2222"> pass ( purple7 , purple6 ) </sem>
+
+</sems>
+
+</trainingData>

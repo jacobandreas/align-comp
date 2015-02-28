@@ -1,0 +1,8 @@
+File created: July 22, 2008
+Author: David Chen (dlcc@cs.utexas.edu)
+
+This subdirectory contains natural language (NL) commentary files recorded from human commentators.  Each line of the files is of the following format:
+
+<time> | <comment>
+
+Time indicates when the comment was recorded.

@@ -1,0 +1,21 @@
+File created: July 22, 2008
+Author: David Chen (dlcc@cs.utexas.edu)
+
+This directory contains the data used in the paper
+
+"Learning to Sportscast: A Test of Grounded Language Acquisition"
+David L. Chen and Raymond J. Mooney
+Proceedings of the 25th International Conference on Machine Learning (ICML) , Helsinki, Finland, July 2008.
+
+
+The subdirectories are organized as follows:
+
+games - Robocup game files 
+events - Extracted events from the game files
+nl - Commentaries recorded from human commentators
+training - Constructed ambiguous training examples from the events and commentary files
+gold - Human-annotated files which are unambiguous versions of the training files
+
+The README files in each subdirectory explains the format of each file type in detail.
+
+The mrl-grammar file contains a simple context-free grammar for parsing the events/meaning representations (MRs).  The starting symbol for the grammar is *n:S

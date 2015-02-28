@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<topography file="/mas/disks/cogmac/u/levit/Work/Data/HCRC/descriptions/1g.xml">
+  <path stops="202">
+    <stop x="517" y="824" />
+    <stop x="497" y="824" />
+    <stop x="476" y="824" />
+    <stop x="460" y="832" />
+    <stop x="445" y="854" />
+    <stop x="440" y="875" />
+    <stop x="434" y="897" />
+    <stop x="425" y="912" />
+    <stop x="407" y="921" />
+    <stop x="389" y="931" />
+    <stop x="361" y="941" />
+    <stop x="346" y="941" />
+    <stop x="330" y="941" />
+    <stop x="314" y="942" />
+    <stop x="298" y="942" />
+    <stop x="283" y="942" />
+    <stop x="267" y="943" />
+    <stop x="251" y="943" />
+    <stop x="235" y="944" />
+    <stop x="220" y="944" />
+    <stop x="204" y="944" />
+    <stop x="188" y="945" />
+    <stop x="172" y="945" />
+    <stop x="156" y="946" />
+    <stop x="136" y="944" />
+    <stop x="120" y="934" />
+    <stop x="109" y="919" />
+    <stop x="97" y="904" />
+    <stop x="93" y="885" />
+    <stop x="93" y="868" />
+    <stop x="93" y="851" />
+    <stop x="93" y="833" />
+    <stop x="93" y="816" />
+    <stop x="94" y="798" />
+    <stop x="100" y="785" />
+    <stop x="106" y="771" />
+    <stop x="112" y="757" />
+    <stop x="118" y="743" />
+    <stop x="132" y="729" />
+    <stop x="148" y="723" />
+    <stop x="165" y="716" />
+    <stop x="184" y="711" />
+    <stop x="203" y="706" />
+    <stop x="222" y="704" />
+    <stop x="241" y="701" />
+    <stop x="256" y="701" />
+    <stop x="272" y="701" />
+    <stop x="287" y="701" />
+    <stop x="303" y="701" />
+    <stop x="318" y="701" />
+    <stop x="334" y="702" />
+    <stop x="347" y="715" />
+    <stop x="353" y="733" />
+    <stop x="354" y="748" />
+    <stop x="356" y="764" />
+    <stop x="370" y="768" />
+    <stop x="387" y="768" />
+    <stop x="405" y="767" />
+    <stop x="422" y="767" />
+    <stop x="440" y="766" />
+    <stop x="458" y="765" />
+    <stop x="478" y="759" />
+    <stop x="498" y="753" />
+    <stop x="512" y="740" />
+    <stop x="526" y="726" />
+    <stop x="537" y="704" />
+    <stop x="537" y="686" />
+    <stop x="537" y="667" />
+    <stop x="537" y="649" />
+    <stop x="537" y="630" />
+    <stop x="536" y="615" />
+    <stop x="535" y="600" />
+    <stop x="534" y="585" />
+    <stop x="533" y="570" />
+    <stop x="524" y="550" />
+    <stop x="511" y="532" />
+    <stop x="501" y="521" />
+    <stop x="490" y="510" />
+    <stop x="480" y="499" />
+    <stop x="469" y="487" />
+    <stop x="452" y="477" />
+    <stop x="434" y="470" />
+    <stop x="415" y="475" />
+    <stop x="404" y="485" />
+    <stop x="393" y="495" />
+    <stop x="382" y="505" />
+    <stop x="370" y="516" />
+    <stop x="359" y="526" />
+    <stop x="348" y="536" />
+    <stop x="336" y="547" />
+    <stop x="322" y="558" />
+    <stop x="308" y="570" />
+    <stop x="284" y="574" />
+    <stop x="269" y="574" />
+    <stop x="253" y="574" />
+    <stop x="238" y="574" />
+    <stop x="222" y="574" />
+    <stop x="206" y="575" />
+    <stop x="187" y="584" />
+    <stop x="179" y="601" />
+    <stop x="178" y="617" />
+    <stop x="177" y="634" />
+    <stop x="169" y="654" />
+    <stop x="149" y="663" />
+    <stop x="127" y="666" />
+    <stop x="108" y="664" />
+    <stop x="88" y="661" />
+    <stop x="71" y="652" />
+    <stop x="63" y="633" />
+    <stop x="62" y="611" />
+    <stop x="61" y="589" />
+    <stop x="65" y="573" />
+    <stop x="69" y="557" />
+    <stop x="73" y="541" />
+    <stop x="77" y="525" />
+    <stop x="80" y="507" />
+    <stop x="83" y="488" />
+    <stop x="86" y="470" />
+    <stop x="89" y="451" />
+    <stop x="93" y="436" />
+    <stop x="98" y="421" />
+    <stop x="102" y="405" />
+    <stop x="107" y="390" />
+    <stop x="111" y="375" />
+    <stop x="116" y="359" />
+    <stop x="124" y="346" />
+    <stop x="132" y="333" />
+    <stop x="141" y="319" />
+    <stop x="149" y="306" />
+    <stop x="158" y="292" />
+    <stop x="163" y="270" />
+    <stop x="163" y="255" />
+    <stop x="163" y="240" />
+    <stop x="164" y="225" />
+    <stop x="164" y="210" />
+    <stop x="165" y="195" />
+    <stop x="165" y="180" />
+    <stop x="165" y="165" />
+    <stop x="166" y="150" />
+    <stop x="166" y="135" />
+    <stop x="167" y="120" />
+    <stop x="181" y="112" />
+    <stop x="197" y="108" />
+    <stop x="212" y="108" />
+    <stop x="228" y="108" />
+    <stop x="243" y="108" />
+    <stop x="259" y="108" />
+    <stop x="275" y="107" />
+    <stop x="290" y="107" />
+    <stop x="306" y="107" />
+    <stop x="321" y="107" />
+    <stop x="337" y="107" />
+    <stop x="353" y="106" />
+    <stop x="368" y="101" />
+    <stop x="384" y="93" />
+    <stop x="400" y="83" />
+    <stop x="411" y="73" />
+    <stop x="422" y="63" />
+    <stop x="433" y="53" />
+    <stop x="444" y="42" />
+    <stop x="459" y="45" />
+    <stop x="472" y="55" />
+    <stop x="486" y="65" />
+    <stop x="500" y="75" />
+    <stop x="514" y="85" />
+    <stop x="528" y="95" />
+    <stop x="539" y="107" />
+    <stop x="550" y="119" />
+    <stop x="551" y="132" />
+    <stop x="533" y="141" />
+    <stop x="515" y="151" />
+    <stop x="497" y="157" />
+    <stop x="479" y="159" />
+    <stop x="461" y="161" />
+    <stop x="442" y="163" />
+    <stop x="423" y="163" />
+    <stop x="404" y="163" />
+    <stop x="385" y="163" />
+    <stop x="375" y="175" />
+    <stop x="370" y="189" />
+    <stop x="365" y="204" />
+    <stop x="360" y="219" />
+    <stop x="354" y="234" />
+    <stop x="351" y="250" />
+    <stop x="348" y="266" />
+    <stop x="345" y="282" />
+    <stop x="342" y="298" />
+    <stop x="342" y="317" />
+    <stop x="341" y="336" />
+    <stop x="340" y="356" />
+    <stop x="344" y="371" />
+    <stop x="352" y="382" />
+    <stop x="364" y="389" />
+    <stop x="384" y="394" />
+    <stop x="399" y="394" />
+    <stop x="415" y="394" />
+    <stop x="430" y="394" />
+    <stop x="446" y="394" />
+    <stop x="462" y="394" />
+    <stop x="477" y="394" />
+    <stop x="493" y="394" />
+    <stop x="509" y="395" />
+  </path>
+  <landmark name="m1_start">
+    <spot x="517" y="825" canCross="false" r="20" />
+    <polygon />
+  </landmark>
+  <landmark name="m1_crest_falls">
+    <spot x="504" y="892" canCross="false" r="20" />
+    <polygon>
+      <vertix x="448" y="927" />
+      <vertix x="462" y="850" />
+      <vertix x="550" y="851" />
+      <vertix x="544" y="934" />
+    </polygon>
+  </landmark>
+  <landmark name="m1_footbridge">
+    <spot x="293" y="707" canCross="true" r="20" />
+    <polygon>
+      <vertix x="254" y="727" />
+      <vertix x="260" y="678" />
+      <vertix x="330" y="682" />
+      <vertix x="330" y="726" />
+    </polygon>
+  </landmark>
+  <landmark name="m1_poisoned_stream">
+    <spot x="390" y="724" canCross="false" r="20" />
+    <polygon>
+      <vertix x="367" y="746" />
+      <vertix x="365" y="689" />
+      <vertix x="422" y="690" />
+      <vertix x="433" y="750" />
+    </polygon>
+  </landmark>
+  <landmark name="m1_poisoned_stream_2">
+    <spot x="603" y="234" canCross="false" r="20" />
+    <polygon>
+      <vertix x="568" y="241" />
+      <vertix x="594" y="191" />
+      <vertix x="654" y="221" />
+      <vertix x="624" y="259" />
+      <vertix x="573" y="258" />
+    </polygon>
+  </landmark>
+  <landmark name="m1_old_temple">
+    <spot x="576" y="679" canCross="false" r="20" />
+    <polygon>
+      <vertix x="542" y="730" />
+      <vertix x="555" y="613" />
+      <vertix x="579" y="613" />
+      <vertix x="616" y="729" />
+    </polygon>
+  </landmark>
+  <landmark name="m1_abandoned_truck">
+    <spot x="251" y="535" canCross="false" r="20" />
+    <polygon>
+      <vertix x="189" y="555" />
+      <vertix x="225" y="501" />
+      <vertix x="286" y="501" />
+      <vertix x="311" y="552" />
+      <vertix x="247" y="562" />
+    </polygon>
+  </landmark>
+  <landmark name="m1_baboons">
+    <spot x="117" y="613" canCross="false" r="20" />
+    <polygon>
+      <vertix x="76" y="632" />
+      <vertix x="84" y="568" />
+      <vertix x="169" y="608" />
+      <vertix x="150" y="648" />
+      <vertix x="98" y="645" />
+    </polygon>
+  </landmark>
+  <landmark name="m1_white_mountain">
+    <spot x="192" y="350" canCross="false" r="20" />
+    <polygon>
+      <vertix x="121" y="380" />
+      <vertix x="182" y="263" />
+      <vertix x="282" y="378" />
+      <vertix x="201" y="388" />
+    </polygon>
+  </landmark>
+  <landmark name="m1_pyramid">
+    <spot x="446" y="102" canCross="false" r="20" />
+    <polygon>
+      <vertix x="340" y="120" />
+      <vertix x="401" y="104" />
+      <vertix x="443" y="57" />
+      <vertix x="528" y="118" />
+      <vertix x="485" y="133" />
+      <vertix x="366" y="134" />
+    </polygon>
+  </landmark>
+  <landmark name="m1_cobbled_street">
+    <spot x="414" y="225" canCross="false" r="20" />
+    <polygon>
+      <vertix x="366" y="241" />
+      <vertix x="392" y="175" />
+      <vertix x="444" y="179" />
+      <vertix x="458" y="213" />
+      <vertix x="434" y="251" />
+    </polygon>
+  </landmark>
+  <landmark name="m1_remote_village">
+    <spot x="421" y="341" canCross="false" r="20" />
+    <polygon>
+      <vertix x="362" y="315" />
+      <vertix x="453" y="292" />
+      <vertix x="482" y="339" />
+      <vertix x="446" y="377" />
+      <vertix x="369" y="369" />
+      <vertix x="351" y="339" />
+    </polygon>
+  </landmark>
+  <landmark name="m1_finish">
+    <spot x="512" y="396" canCross="false" r="20" />
+    <polygon />
+  </landmark>
+</topography>
+

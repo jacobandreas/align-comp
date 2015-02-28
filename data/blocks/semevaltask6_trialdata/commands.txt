@@ -1,0 +1,500 @@
+19	8	place green pyramid on top of red brick
+28	187	place the red pyramid sitting on top of the red brick on top of the yellow one
+34	795	Move the blue block on top of the grey block.
+48	820	Move the yellow tetrahedron on top of the red blocks in the corner nearest to the yellow tetrahedron.
+57	785	Take the white block on top of the dark blue blocks and move it onto the white block that is on top of the grey blocks.
+78	145	place the blue brick on top of the red brick
+81	898	Move the yellow tetrahedron on top of the nearest green block.
+84	45	Pick up the green tetrahedron.
+131	300	Take the light blue prism that is on top of the dark blue block and move it on top of the white block.
+185	147	Move the red prism on top of the blue cube.
+196	897	place the yellow pyramid on top of the light grey brick
+233	644	Drop the grey block.
+264	974	Place blue block on top of single red block.
+295	729	Place green block on top of blue block.
+306	729	place green brick on top of the blue one
+336	998	Place current block on top of blue block.
+358	708	pick the red block and put it above the yellow block
+400	54	pick up the white block that is on the  top of green block in the corner and place it on the white single block
+403	57	pick the red block and put it above the purple block
+409	45	Pick up green pyramid.
+415	190	Place grey pyramid on top of grey block.
+424	340	put the blue block above the yellow block
+430	989	Pick up nearest block.
+503	998	put the red block above the blue block
+570	549	place the red brick on top of the blue brick
+603	701	place blue brick on top of the green brick
+639	596	place the green pyramid down
+660	793	place the blue block on top of the green block
+728	186	place the turquoise pyramid on top of the turquoise block
+827	9	Pick the yellow block on top of the red block and place it on top of the green block.
+833	751	Take the Green Pyramid and put it on the yellow box
+864	365	place the green pyramid on top of the blue block in the far left corner
+924	963	Grab the red pyramid.
+951	424	Put the yellow pyramid on top of the grey tower.
+956	503	Grab the yellow pyramid.
+1003	326	Move the green cube one square to the left.
+1023	591	Move the turquoise pyramid on top of blue block to the top of the other blue block.
+1045	205	Move the green pyramid on top of the blue block to the top of the other blue block.
+1088	918	Move the white cube on green , red cubes to the top of the blue cubes.
+1090	153	Move the yellow tetrahedron from the top of the turquoise building block to the top of the grey building block.
+1094	259	Move pink pyramid to the top of the leftmost red block.
+1106	549	Move red cube on top of blue cube.
+1111	503	Remove the yellow pyramid from the board.
+1113	410	Pick up the gray triangle and place it on top of the red cube which is placed on a yellow cube.
+1119	916	Pick up the white cube on green and red blocks and place it on top of the blue blocks
+1153	789	Pick the which block on top of the sky blue block and place it over the red block which is near to bunch of blue blocks.
+1161	157	Pick up the yellow triangle placed on top of the green cube and place it on top of the red cube
+1169	852	Pick up red block which is on top of the grey block and put this on top of the blue block
+1173	965	Pick up the blue prism
+1206	178	Place yellow prism on top of the red cube
+1211	438	Move pink pyramid on top of grey block to the top of yellow block.
+1220	66	Pick the yellow block which is on top of a yellow block and move it above the leftmost blue block.
+1229	939	Move the red block on top of the nearest blue block.
+1232	976	Drop the red block on top of the leftmost red block.
+1242	959	Move the pyramid on top of the cube.
+1252	514	Pick the red pyramid which is on top of yellow brick and place it above the yellow block which is on its left.
+1253	155	Move yellow pyramid on top of pink cubes to the top of red cube.
+1259	707	Move the red cube on top of the other yellow cube.
+1264	602	Pick the yellow block which is on top of red block and place it above the blue block.
+1282	81	Pick the red block and place it on top of the highest leftmost green block.
+1287	340	Drop the blue cube on top of the yellow cube
+1290	78	Put the grey block down on the left of the red block
+1296	343	Pick up the blue cube placed on top of the red cube
+1330	206	pick the green pyramid above the blue block and put it on the other blue block
+1348	95	pick the red pyramid on the edge of the board and put it above the grey and blue parallelipiped
+1361	650	put the green block above the yellow parallelipiped
+1375	963	Lift the red prism.
+1389	591	Take the light blue prism from the blue cube and put it on the other blue cube.
+1416	547	Take the red prism and put it on the green cube.
+1454	239	Pick up the green block.
+1456	530	Take the green cube standing in the corner of the board and put it on the yellow one
+1478	395	pick the red block and put it on the blue block in the corner of the board
+1490	8	place the green pyramid on red brick
+1491	699	Pick the green block and place it on top of the nearest blue block.
+1510	84	Take the red cube and place it in the far right corner of the board
+1545	20	Drop the green pyramid
+1547	235	lift the blue cube which is near the far left corner
+1573	921	pick the blue block above the yellow parallelipiped and put it above the red and green parallelipiped
+1579	510	place the yellow pyramid on red block
+1588	885	Move the blue cube on top of the green cube
+1622	61	pick the purple pyramid and put it above the red block
+1625	396	pick the red block and put it above the grey block in the corner
+1632	630	pick the yellow block above the red and turquoise parallelipiped and put it above the green block closest to the center of the board
+1635	501	Take the light blue pyramid.
+1641	550	pick the red block above the blue block and put it above the white parallelipiped in the corner
+1652	481	Pick the yellow pyramid in the center and put it on the blue block in the corner
+1663	888	pick the green block above the grey and red parallelipiped and put it on the red block
+1666	187	Take the red pyramid and place it on top of the yellow block.
+1670	228	pick the grey pyramid above the green block and put it above the red and yellow parallelipiped
+1703	749	Take the red prism and place it on top of the blue cube
+1708	966	put the blue pyramid above the red block
+1716	385	pick the turquoise pyramid above the grey and green parallelipiped
+1747	850	Pick up the red cube placed on top of the gray cube and move it on top of the yellow cube
+1756	793	place the blue block above the green one
+1759	56	pick the red block above the blue block closest to the red and grey parallelipiped and put it above the blue block closest to the corner
+1764	920	Pick the red block which is on top of the white block and move it on top of the green block.
+1768	57	pick the red block and put it above the purple block
+1774	497	pick the blue pyramid
+1780	939	Move the red block and place it on top of the blue block that is on top of a green block.
+1792	227	Move the grey pyramid from on top of the red block. Place it on top of the green block.
+1819	856	pick the red block above the grey block and put it above the yellow block
+1835	901	Move the yellow pyramid. Place it on the grey block.
+1844	555	pick the red block above the yellow and blue parallelipiped
+1873	963	Pick up the red pyramid
+1877	210	Take the red pyramid and place it on the single green block.
+1889	697	Move the red block from the edge and place it on the other red block.
+1892	819	Move the yellow pyramid and place it to the single blue brick beside the grey brick.
+1898	737	Pick up the red pyramid.
+1903	830	Pick up the gray pyramid placed on the green cube and move it on the other green cube
+1906	903	Take the yellow block from top of the green block and place it to blue block.
+1931	747	Place the yellow pyramid on top of the yellow cube
+1971	292	pick the purple pyramid in the corner and put it above the red and green parallelipiped
+1981	387	Pick the blue pyramid above the grey and green parallelipiped in the corner
+2006	544	Pick up the blue cube placed on top of another blue cube and move it on top of the single green cube
+2015	965	Pick up blue prism which is on top of red block
+2051	982	Drop the pyramid exactly down.
+2070	289	Move the turquoise pyramid closest to the robot on top of the green cubes
+2105	549	pick the red block above the white parallelipiped in the corner and put it above the blue block
+2117	810	move the pyramid from the top of the yellow tower on top of the blue one.
+2128	968	put the blue block above the red block
+2142	102	move the red block on top of the red and grey stack.
+2148	414	pick the grey pyramid above the red and green parallelipiped and put it above the red and yellow parallelipiped
+2180	924	pick the yelllow block above the blue and yellow parallelipiped and put it above the  green parallelipiped
+2185	415	Take the red block that's on top of the white block and place it on top of the blue and red tower.
+2211	596	Drop the green pyramid
+2227	603	pick the red block above the turquoise block and put it above the other turquoise block
+2234	382	put the yellow pyramid above the blue block
+2238	973	pick the blue block
+2255	420	pick the yellow pyramid and put it above the grey parallelipiped
+2291	473	pick the red block in the corner and put it above the other red block
+2302	801	pick the blue pyramid above the turquoise block and put it on the green block
+2323	701	Pick up the blue cube placed on the grey cube and move it on top of the green cube
+2326	986	Drop the red cube
+2331	11	pick a blue block and place it on the yellow block.
+2344	296	pick the green block above the grey parallelipiped and put it above the green parallelipiped
+2353	187	pick the red pyramid and put it above the yellow block
+2372	559	Pick up the green block
+2385	2	Move the green pyramid to top of red block
+2387	387	pick the blue pyramid
+2392	172	take the light grey brick that is sat on the top of the dark grey brick and place it on the top of the light grey tower.
+2410	187	pick the red pyramid and put it above the yellow block in the corner
+2446	363	pick the yellow block and put it on the bluee block in the corner
+2467	326	Move the green block one square to the left
+2503	983	Take the green pyramid
+2541	939	Put red block on top of the green -blue block
+2569	731	Place the blue cube on green cube
+2585	331	pick the yellow block above the red parallelipiped and put it above the blue and red parallelipiped
+2588	963	Hold the red pyramid
+2591	967	Pick up the blue block from top of the right red block.
+2594	518	Move green pyramid on top of blue cube
+2599	231	Take the grey pyramid from on top of the yellow and green block and place it on top of the single red block that is next to the blue block.
+2614	499	Pick up red prism .
+2616	481	Move the yellow pyramid on top of the dark blue cube in the bottom left corner.
+2621	218	pick the blue block above the purple block and put it above the yellow block
+2644	899	Move the yellow pyramid. Place it on top of the blue block.
+2656	467	Move the yellow block into the far left corner.
+2660	549	Move the red cube and place it on top of the blue cube.
+2666	882	Move the grey pyramid and put it on the closest single red block.
+2670	723	Move the green block on the left. Place it on the dark blue block on the left.
+2671	996	put the red block on the blue block
+2674	939	Take the red cube and place it on top of the blue cube nearest to you.
+2691	92	pick the grey block above the green block  and put it on the grey and blue parallelipiped
+2709	368	Take the blue block off the red block. Place it on the green block.
+2719	428	Take the blue brick off the yellow brick and place it on the red brick at the edge of the board.
+2730	698	Move the red brick and place it on the yellow brick.
+2739	773	Put blue box on top of yellow one
+2757	985	pick the red block closest to a corner of the board
+2768	512	Move yellow box on top of blue box next to yellow pyramid
+2771	739	Pick up the Sky Blue pyramid.
+2799	233	pick the blue block next to the red block
+2814	501	pick the turquoise pyramid above the green and yellow parallelipiped
+2820	18	Drop the pink pyramid
+2821	2	Put the green pyramid on the red block.
+2832	101	take the red block located on top of the light grey block and place it in the far left corner.
+2841	296	pick green block which is on top of gray block and place it on top of green block.
+2863	190	place the grey pyramid on top of the grey block.
+2880	994	Place the red pyramid on most left single blue block.
+2881	293	pick the turquoise pyramid above the red and blue parallelipiped closest to a corner of the board and put it on the grey parallelipiped in the corner
+2887	61	Pick the purple pyramid and put it on the red block
+2897	304	pick the turquoise pyramid on the grey block and put it on the green block
+2902	517	Move the green pyramid and place it on top of the single yellow cube
+2906	35	take the green block that is on top of the turquoise and red tower and place it on top of the yellow , red, and green tower.
+2909	414	Pick up the grey pyramid and put it on top of the yellow and red block.
+2917	963	pick the red pyramid
+2935	883	Pick up grey block and place that on top of green block
+2937	456	Drop the red cube
+2946	823	pick the blue pyramid and put it above the red and grey parallelipiped
+2954	327	pick the turquoise pyramid closest to the center of the board and put it on the red block
+2958	829	pick the grey pyramid above the green and blue parallelipiped and put it above the green and red block
+2993	831	pick the grey pyramid above the red and yellow parallelipiped and put it on the red parallelipiped
+3002	512	pick the yellow block and put it on the blue and green parallelipiped
+3003	57	put the red block on the purple block.
+3019	36	pick the green block above the green, red and yellow parallelipiped and put it above the red and turquoise parallelipiped
+3045	983	pick the green pyramid
+3052	764	put the green block on the yellow block near the centre of the board
+3064	830	put the grey pyramid which is putted on a green box on another green box.
+3066	585	pick the turquoise pyramid above the blue block and put it above the white and turquoise parallelipiped
+3068	893	remove one blue block from the green and blue tower and place it on top of the blue and red tower.
+3076	521	pick the green block above the blue block and put it above the yellow and red parallelipiped
+3099	291	pick the purple pyramid and put it on the grey parallelipiped in the corner
+3102	91	pick the grey block on the blue and grey parallelipiped and put it above the green block
+3105	605	place the red pyramid on top of the turquoise block.
+3147	920	pick the red block above the white and blue parallelipiped and put it  above the green parallelipiped
+3153	810	pick the turquoise pyramid on the yellow parallelipiped and put it on the blue parallelipiped
+3165	341	pick the blue block above the green block
+3168	521	pick up the green block located on top of the blue block and place it on top of the red and yellow tower.
+3182	371	pick the blue block and put it above the green block in the corner
+3203	187	pick the red pyramid and put it above the yellow block in the corner
+3209	391	pick the turquoise pyramid above the white and red parallelipiped
+3214	523	pick the red block above the green block and put it above the yellow and green parallelipiped
+3219	278	pick the purple pyramid and put it above the turquoise parallelipiped
+3230	147	Pick up red prism and place that on top of blue block.
+3239	737	Pick up red pyramid .
+3243	292	pick the purple pyramid and put it above the red and green parallelipiped
+3246	23	Pick up the grey pyramid
+3256	487	Place blue block on top of the green block.
+3262	21	pick the yellow block
+3282	917	pick up the grey block located on top of the blue tower near the left edhe and place it on top of the red and green tower that is nearest to you.
+3287	274	Place pink pyramid on top of sky blue block.
+3306	503	pick up the yellow pyramid
+3313	54	Move the white block from left bottom corner and place it on the top of single white block.
+3322	713	pick up red block and place that on top of the yellow block
+3329	179	Pick up yellow prism which is on top of pink block.
+3346	369	pick the blue pyramid and put it above the turquoise block
+3357	678	pick the purple pyramid above the blue block and put it above the yellow and red parallelipiped
+3364	332	pick the yellow block above the blue block and put it above the red parallelipiped
+3369	430	Pick up the pink block which is on top of red block , and put that on top of sky blue block
+3385	745	place the blue pyramid on top of the blue block.
+3387	854	pick the red block above the grey block and put it above the green block
+3404	563	pick up the green block that is closest to you.
+3437	214	place the red pyramid on top of the single green block.
+3447	17	pick up the purple pyramid.
+3456	961	pick the blue block on the red block that is closest to an edge of the board
+3488	55	pick the red block above the blue block closest to a corner of the board and put it on the blue block that is closest to the red and grey parallelipiped
+3507	178	Drop he yellow prism to the top of red block
+3524	721	pick the left most red block and place it over the blue one which is at the center.
+3525	592	pick the turquoise pyramid above the blue and green parallelipiped and put it above the blue, white and turquoise parallelipiped
+3535	278	pick the purple pyramid and put it on the turquoise parallelipiped
+3542	582	Pick pink pyramid and place it over the yellow block
+3548	506	Move the yellow pyramid to top of the green and red block.
+3550	535	Pick up yellow prism which is on top of blue-green tower and place that on top of smallest red-green block
+3552	299	pick the turquoise pyramid above the white block and put it above the blue block
+3558	964	put the red pyramid on the red block
+3562	186	pick the turquoise pyramid in the corner and put it on the turquoise block
+3568	527	Pick gray block which is on top of red block and place it over left most red block.
+3583	113	pick the purple pyramid near the centre of the board
+3623	996	put the red brick on the blue brick
+3647	123	Pick up the red pyramid and place it on the top of the yellow block which is nearest to the yellow pyramid.
+3686	549	pick the red block above the white parallelipiped in the corner and put it on the blue block
+3692	905	pick the blue block on the margin of the board and put it above the red block on the margin of the board
+3693	234	Put the blue block down.
+3698	584	pick the sky blue pyramid and place it on top of yellow block
+3715	807	pick the blue block and put it above the grey block
+3727	365	pick the green pyramid and put it on the blue block in the corner
+3731	216	Take the red triangle and put in on the single green cube.
+3737	416	pick the red block above the red and blue parallelipiped and put it above the white block
+3740	260	pick the pink prism from red block and place it on the blue-green highest blocks
+3741	109	pick green pyramid and place it over the red block which is near to robot
+3753	831	pick the grey pyramid above the red and yellow parallelipiped and put it above the red parallelipiped
+3762	294	pick the turquoise pyramid above the grey parallelipiped and put it above the red and blue parallelipiped
+3788	288	Put the blue brick down.
+3794	52	pick the red block in the corner of the board and put it on the red and grey parallelipiped
+3806	258	pick the purple pyramid and put it above the blue and green parallelipiped
+3812	745	pick the blue pyramid and put it on the blue block
+3828	424	pick the yellow pyramid and put it on the grey parallelipiped
+3831	708	pick the red block above the yellow and green block and put it on the yellow block
+3840	41	pick the yellow pyramid
+3846	705	pick the blue block on the yellow block and put it on the red and yellow block
+3854	445	Pick red block and place it above the green one which is at the bottom left corner
+3861	252	Pick blue pyramid and place it 2 grid in front of the left most green block
+3864	795	pick blue block and place it above the gray one.
+3871	344	Place the block on the red one.
+3878	668	Place the red pyramid exactly down
+3889	144	Take the red pyramid which is on top of the blue block and then place it on top of the white block
+3896	504	Place the yellow pyramid on top of green block
+3898	867	pick the blue block and put it on the red, white and grey parallelipiped
+3919	52	Pick the red block at the bottom right corner and place it above the gray block.
+3946	71	Pick the yellow block which is at the center and place it on the left bottom corner.
+3955	558	Drop the blue block
+3956	405	Place the yellow pyramid on top of the nearest red block
+3974	8	Pick the green pyramid and place on the red cube
+3984	607	Move the yellow prism on top of the yellow block
+4016	620	Pick the red pyramid from green cube and place it on blue block
+4028	415	Move the red block, which is on top of the white block, on top of the red block, which is on top of the blue block
+4042	432	Place the blue cube on red cube left edge
+4044	973	Pick up the blue block
+4054	519	Move the yellow prism on top of the red block, which is next to the red prism
+4071	659	Pick red block from the center and move it on top of the bottom left corner
+4073	698	Move the red block, which is on top of the red block, on top of the yellow block, which is on top of the blue block
+4108	341	Pick the blue cube from green cube
+4110	498	Drop the pyramid down
+4132	313	Pick the blue block and place it on to red block.
+4135	182	Put the block you're holding on the single red block.
+4144	751	Pick green tetrahedron and place it on top of yellow block
+4204	854	Pick the red block on top of the grey block and put it on green block.
+4213	884	Move the grey block on top of the red and green block and place it on to the single red block.
+4224	57	Move the red block and place it on top of the magenta block.
+4255	501	pick up the turquoise pyramid
+4280	545	pick up the grey pyramid and place it on top of the blue brick.
+4284	445	pick up the red block and place it on top of the green block that is closest to you.
+4294	36	pick one green cube and place it on red one
+4307	661	pick up the green block next to the red block and place it on top of the other green block.
+4319	820	place the yellow pyramid on red block on top left corner
+4323	981	pick up the blue pyramid.
+4329	936	Pick red tetrahedron and place it right to the blue tetrahedron
+4356	848	Move red cube one step forward
+4365	367	Take blue cube from top of the green cube and put it on red cube
+4371	255	place the blue pyramid on top of the red block that is nearest to the left edge.
+4375	763	pick up the green block
+4405	531	Take yellow pyramid from red green block and put it on yellow green block
+4421	178	place the yellow pyramid on top of the red brick.
+4433	371	place blue block on top of the single green block.
+4436	84	Put the red cube on top right corner
+4462	264	place the purple pyramid on top of the green and blue tower.
+4472	329	Pick up the blue cube placed on top of the red cube and move it on top of the yellow cube
+4479	75	lift the right most gray block
+4490	430	Pick up the pink cube and move it on top of the turquoise cube
+4494	292	Pick up the pink pyramid and place it on red cub
+4506	481	Move the yellow pyramid on top of the blue cube
+4516	969	Pick the green cube
+4529	968	put the blue block above the red block
+4591	424	Move the yellow pyramid on the gray cubes
+4597	733	place the grey block on top of the green block.
+4615	511	Move the yellow cube on top of the single blue cube
+4618	586	pick the turquoise pyramid above the white and turquoise parallelipiped and put it on the blue, white and turquoise parallelipiped
+4621	392	Drop the turquoise pyramid
+4625	54	Pick up the white cube placed on top of the green cube and move it on top of the single white cube
+4638	177	pick the yellow pyramid above the red and blue parallelipiped
+4653	773	Move the blue cube on top of the yellow cube
+4670	886	Move the blue cube on top of the red cube
+4673	190	Move the gray pyramid on top of the gray cube
+4674	487	Move the blue brick and place on top of the green brick.
+4680	565	Pick up the green cube which is almost centre
+4681	913	pick the white block  on the blue parallelipiped in the corner and put it above the red and green parallelipiped closest to the center of the board
+4700	644	Drop the block exactly below
+4713	231	Pick up the pyramid placed on the green cube and move it on top of the red cube
+4724	761	Pick up the blue cube
+4739	369	Place blue pyramid on light blue cube
+4789	794	Place blue cube on white cube
+4791	739	pick the turquoise pyramid
+4799	608	Move the yellow pyramid on top of the blue cubes
+4805	921	pick the blue block which is on top of yellow block and place it on top of red block
+4819	387	pick the blue pyramid
+4840	446	Move the red cube on top of the gray cube
+4844	197	pick the right most green tetrahedron and place it on top of blue block
+4846	981	Pick up the blue pyramid
+4864	764	place the green block on top of the single yellow block.
+4881	483	pick the grey block and put it on the turquoise block closest to the white block
+4899	510	Drop yellow pyramid to above red cube
+4928	551	Move the white cube on top of the green cube
+4959	278	Move the pink prism on top of the cyan block.
+4977	620	Pick up the red pyramid placed on top of the green cube and move it on top of the blue cubes
+4980	977	Pick up the turquoise cube
+4992	439	Pick up the red block and place that on top of the nearest blue block
+5003	964	Drop the red pyramid
+5027	937	pick up the blue block located on top of the green block and place it on top of the other blue block.
+5034	178	Drop the yellow pyramid
+5040	237	grab hold of the blue block located next to the green block.
+5064	490	Pick up the blue cube placed on top of another blue cube and move it on the green cube closer to the  border of the board
+5068	807	Put the blue cube on top of the gray cube
+5088	302	pick up the turquoise pyramid on top of the yellow block and place it on top of the green block.
+5094	741	Pick up the blue pyramid
+5114	951	Pick up the green block and place that on top of the nearest red block
+5123	482	Move the pyramid on top of the yellow cube
+5126	510	remove the yellow pyramid located on top of the blue block and place it on top of the red block.
+5139	485	move the white block on top of the turquoise block that is closer to the left edge.
+5153	592	Move the pyramid placed on the blue cube and place it on top of the other blue cube
+5162	648	Drop the gray cube
+5180	371	Move the blue cube on top of the single green cube
+5197	36	Move one green cube on top of the red cube
+5207	429	Move the pink cube on top of the red cube
+5210	428	place the blue block on top of the red and blue block next to the edge.
+5216	602	Move the yellow cube on top of the blue cubes
+5219	793	Move the blue cube on top of the green cube
+5237	850	Pick up the red cube placed on top of the gray cube and move it on top of the yellow cube
+5252	747	Move the yellow pyramid on top of the yellow cube
+5255	425	Move the blue cube on top of the red cube
+5267	733	Move the gray cube on top of the green cube
+5270	280	Move the pink pyramid on top of the turquoise cubes
+5280	119	Pick up the pink pyramid closest to the robot
+5311	646	Drop the red cube
+5315	95	Pick up the pyramid closest the the border and move it on top of the gray cube
+5320	900	Move the pyramid on top of the green cubes
+5332	729	Pick up the green block and put that on top of the blue block
+5338	171	Move one white cube on top of the gray cube
+5360	866	Pick up the red block which is on top of the green block and place that on top of the white block
+5363	115	pick up the turquoise pyramid.
+5377	547	Pick up the red prism and place that on top of the green block
+5380	147	place the red pyramid on top of the blue block.
+5395	793	Pick up the blue block and place that on top of the green block
+5402	731	place the blue block on top of the green block.
+5414	879	pick up the red pyramid that is closet to the green blocks and place it on top of the green tower in the far left corner.
+5419	61	place the purple pyramid on top of the red block.
+5424	708	Pick up red block and place that on opposite yellow block
+5445	482	place the yellow pyramid on top of the yellow block.
+5465	699	Move the green cube on top of the blue cube
+5472	545	pick white prism and place that on top of blue block
+5478	675	pick up the sky blue prism and place on top of the nearest green block
+5486	436	Pick up the pink pyramid placed on the gray cube and move it on the yellow cube
+5494	398	pick up the sky blue prism and place that on the white block
+5511	378	place the yellow prism on the blue block
+5523	690	pick up the blue block located on top of the yellow tower and place it on top of the turquoise tower.
+5530	223	place the white block on top of the blue block that is nearest to you.
+5542	927	pick the yellow cube and place it on the red and blue tower
+5547	383	Pick up the pyramid placed on the red cube
+5558	299	pick up the sky blue prism which is on top of white block and place that on top of blue block
+5566	17	Pick up the pink pyramid
+5620	481	Move the pyramid on top of the blue cube
+5621	369	place the blue pyramid on top of the turquoise block.
+5627	928	Move the yellow cube on top of the green cubes
+5630	209	Move hte pyramid on the single blue cube
+5634	429	Move the pink cube on top of the red cube
+5640	563	Pick up the green cube closest to the robot
+5644	498	Drop the blue pyramid
+5649	708	move the red block on top of the yellow block.
+5655	828	remove the grey pyramid on top of the red and green block and place on top of the single red block.
+5658	425	place the blue block on top of the red block.
+5682	290	Pick up sky blue pyramid on green slab and place that on top of the red block
+5709	433	Pick up pink prism which is on top of yellow block and place that on top of the red block
+5741	506	Pick up yellow prism and place that on top of the red block
+5750	898	place the pyramid on top of the green tower
+5752	510	Move the pyramid on top of the red cube
+5758	11	Move one blue cube on top of the yellow cube
+5767	963	pick the red prism
+5787	706	Pick up the blue cube placed on a red cube and move it on top of the single yellow cube
+5793	939	place the red cube on top of the blue cube closest to you
+5801	205	Move the green prism that is on top of the blue block to the top of the other blue block.
+5805	506	Move the pyramid on top of the red cube
+5821	231	Pick up the pyramid placed on top of the green cube and move it on the red cube
+5829	709	Pick up the blue cube placed on top of the grey cube and move it on top of the blue cube placed on a yellow cube
+5872	993	take the leftmost tetrahedron
+5883	802	Pick up the blue pyramid placed on top of the green cube and move it on the turquoise cube
+5888	601	Move the yellow cube on top of the red cube nearest you.
+5900	775	Put the red cube on top of the green one.
+5905	510	Move the pyramid on top of the red cube
+5932	153	Pick up the pyramid placed on top of the turquoise cubes and move it on the gray cube
+5946	260	place the pink pyramid on the pile of green and blue cubes
+5951	400	Pick up the blue cube placed on top of the red cube and move it on top of the gray cube.
+5952	491	put the single green block on top of the single red block
+5959	506	Move the yellow pyramid and put it on the red cube.
+5964	678	Pick up the pink pyramid placed on top of the blue cube and move it on the yellow cube
+5973	749	Pick the red prism and put it on the top of the blue cube.
+5995	169	Pick the yellow cube and put it on top of the blue cube.
+6016	469	pick up the yellow block and place it on the top right corner.
+6019	61	Move the pink triangle on top of the red square
+6024	141	Move the red prism closest to the yellow cube on top of the yellow cube
+6032	961	Pick up the blue block nearest the edge.
+6050	180	Drop the pyramid
+6052	278	Place the magenta pyramid on the cyan tower.
+6054	153	Take the yellow triangle from the top of the light blue tower and place on top of the dark grey square
+6067	706	take the blue block on top of the red block and place it on top of the leftmost yellow block
+6068	602	Move yellow cube to the top of the blue tower
+6070	883	Move the grey cube on top of the green cube
+6081	424	Take the yellow triangle and place it on top of the dark grey block
+6082	141	Take the red pyramid that is next to the yellow cube and place it on top of the yellow cube.
+6091	302	Take the cyan pyramid on the yellow cube and place it on the green cube.
+6099	171	Place one white cube atop the grey cube.
+6105	438	Pick up the pyramid placed on top of the gray block and move it on top of the yellow block
+6108	95	Pick up the red pyramid from the right side and place it on top of the gray cube
+6132	500	Drop the red pyramid
+6135	970	Drop the green cube
+6141	555	Pick up the red cube
+6144	804	Move the turquoise pyramid on top of the red cube
+6147	698	Move the red cube on top of the yellow cube
+6150	882	Move the pyramid on top of the red cube
+6156	180	Drop the yellow pyramid
+6165	763	Pick up the green cube
+6171	562	Put the block down.
+6177	883	Put the grey cube on the green cube
+6197	973	Pick up the blue block which is on top of red block
+6200	473	Pick the red cube on left top corner and place it on other red cube
+6207	91	Pick the grey cube and place it on green cube
+6222	230	Pick the grey pyramid from blue cube and place it on light blue cube
+6225	849	pick the red cube from yellow cube and place it on grey cube that on bottom left corner
+6228	253	place the blue pyramid on red cube on right
+6237	378	Drop the yellow pyramid on blue cube
+6284	379	Pick the yellow tetrahedron which is at the floor
+6305	299	Pick up sky blue prism which is on top of white block and place that on top of blue block
+6311	771	Pick the yellow block and place it above the red block
+6327	761	Pick the blue block
+6347	255	Pick the blue tetrahedron and place it on  top of left most red block
+6383	875	Pick up yellow prism and place that on top of yellow block
+6384	705	Move the blue block on top of the yellow block and place it on top of nearest yellow and red block
+6395	884	Pick the gray block and place it over the red block
+6410	508	Pick the yellow tetrahedron and place it above the red block
+6418	769	Move the green brick and put it on top of the blue brick.
+6440	976	drop red box on top of red block
+6444	794	Move the blue block on top the green block and place it on top of the red and white block.
+6464	829	Move the grey pyramid on top of the blue and green block and place it to on top of red and green block opposite.
+6482	296	Move the green cube from grey block on green block
+6512	954	Move the red block and place it two square right of red pyramid.
+6525	410	Place the grey pyramid on yellow and red block
+6530	749	Pick up red prism and place that on top of blue block
+6548	703	Place the blue cube on red cube which is on centre
+6571	591	Place the cyan pyramid from blue cube and on blue cube opposite tower
+6578	854	Pick up the red block on grey block and place that on top of the green block
+6635	777	Pick up the white block which is on top of blue block and place that on top of the white block
+6644	968	Drop the blue block on top of the red block
+6652	6	Pick up blue block from the edge of the grid and place that on top of the blue block
+6657	897	Pick up the yellow prism and place that on top of the white cube

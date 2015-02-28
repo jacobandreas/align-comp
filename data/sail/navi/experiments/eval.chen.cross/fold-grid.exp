@@ -1,0 +1,16 @@
+include=../params.inc
+include=params.inc
+outputDir=logs-grid
+globalLog=logs-grid/global.log
+
+# Resources
+include=../resources.inc
+## Training and testing sets
+type=data.composite.trc id=train sets=evalChenFold-jelly,evalChenFold-l
+type=data.composite.ccgtrc id=test sets=evalChenFold-gridCCG
+type=data.composite.ccgsettrc id=testSet sets=evalChenFold-gridSetCCG
+type=data.composite.ccgtrc id=testLF sets=evalLFCCG
+include=../learn.inc
+
+# Jobs
+include=../jobs.inc

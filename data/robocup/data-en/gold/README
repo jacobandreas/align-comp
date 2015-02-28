@@ -1,0 +1,4 @@
+File created: July 22, 2008
+Author: David Chen (dlcc@cs.utexas.edu)
+
+This subdirectory contains the gold-standard data that we used for training an upper-bound baseline system and for testing.  The files are in xml format and each example contains the comments recorded from a human with the corresponding correct meaning representation (MR).  The example IDs correspond to the order in which the comments appeared as well as the example IDs in the training files.  Notice some examples are missing because those comments do not have a correct corresponding MR.

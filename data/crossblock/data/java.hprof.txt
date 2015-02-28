@@ -1,0 +1,654 @@
+JAVA PROFILE 1.0.1, created Wed Feb 25 16:55:12 2015
+
+Copyright (c) 2003, 2005, Oracle and/or its affiliates. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+
+  - Neither the name of Oracle nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS
+IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+Header for -agentlib:hprof (or -Xrunhprof) ASCII Output (JDK 5.0 JVMTI based)
+
+WARNING!  This file format is under development, and is subject to
+change without notice.
+
+This file contains the following types of records:
+
+THREAD START
+THREAD END      mark the lifetime of Java threads
+
+TRACE           represents a Java stack trace.  Each trace consists
+                of a series of stack frames.  Other records refer to
+                TRACEs to identify (1) where object allocations have
+                taken place, (2) the frames in which GC roots were
+                found, and (3) frequently executed methods.
+
+HEAP DUMP       is a complete snapshot of all live objects in the Java
+                heap.  Following distinctions are made:
+
+                ROOT    root set as determined by GC
+                CLS     classes 
+                OBJ     instances
+                ARR     arrays
+
+SITES           is a sorted list of allocation sites.  This identifies
+                the most heavily allocated object types, and the TRACE
+                at which those allocations occurred.
+
+CPU SAMPLES     is a statistical profile of program execution.  The VM
+                periodically samples all running threads, and assigns
+                a quantum to active TRACEs in those threads.  Entries
+                in this record are TRACEs ranked by the percentage of
+                total quanta they consumed; top-ranked TRACEs are
+                typically hot spots in the program.
+
+CPU TIME        is a profile of program execution obtained by measuring
+                the time spent in individual methods (excluding the time
+                spent in callees), as well as by counting the number of
+                times each method is called. Entries in this record are
+                TRACEs ranked by the percentage of total CPU time. The
+                "count" field indicates the number of times each TRACE 
+                is invoked.
+
+MONITOR TIME    is a profile of monitor contention obtained by measuring
+                the time spent by a thread waiting to enter a monitor.
+                Entries in this record are TRACEs ranked by the percentage
+                of total monitor contention time and a brief description
+                of the monitor.  The "count" field indicates the number of 
+                times the monitor was contended at that TRACE.
+
+MONITOR DUMP    is a complete snapshot of all the monitors and threads in 
+                the System.
+
+HEAP DUMP, SITES, CPU SAMPLES|TIME and MONITOR DUMP|TIME records are generated 
+at program exit.  They can also be obtained during program execution by typing 
+Ctrl-\ (on Solaris) or by typing Ctrl-Break (on Win32).
+
+--------
+
+THREAD START (obj=50000170, id = 200001, name="main", group="main")
+THREAD START (obj=500005ef, id = 200005, name="process reaper", group="system")
+THREAD END (id = 200001)
+TRACE 300074:
+	java.util.zip.ZipFile.getEntry(ZipFile.java:Unknown line)
+	java.util.zip.ZipFile.getEntry(ZipFile.java:306)
+	java.util.jar.JarFile.getEntry(JarFile.java:226)
+	java.util.jar.JarFile.getJarEntry(JarFile.java:209)
+	sun.misc.URLClassPath$JarLoader.getResource(URLClassPath.java:840)
+	sun.misc.URLClassPath.getResource(URLClassPath.java:199)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:358)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+TRACE 300052:
+	java.lang.ClassLoader.defineClass1(ClassLoader.java:Unknown line)
+	java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	java.net.URLClassLoader.defineClass(URLClassLoader.java:449)
+	java.net.URLClassLoader.access$100(URLClassLoader.java:71)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+TRACE 300077:
+	java.util.zip.Inflater.inflateBytes(Inflater.java:Unknown line)
+	java.util.zip.Inflater.inflate(Inflater.java:259)
+	java.util.zip.InflaterInputStream.read(InflaterInputStream.java:152)
+	sun.misc.Resource.getBytes(Resource.java:124)
+	java.net.URLClassLoader.defineClass(URLClassLoader.java:444)
+	java.net.URLClassLoader.access$100(URLClassLoader.java:71)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+TRACE 300037:
+	java.util.zip.ZipFile.open(ZipFile.java:Unknown line)
+	java.util.zip.ZipFile.<init>(ZipFile.java:215)
+	java.util.zip.ZipFile.<init>(ZipFile.java:145)
+	java.util.jar.JarFile.<init>(JarFile.java:153)
+	java.util.jar.JarFile.<init>(JarFile.java:90)
+	sun.misc.URLClassPath$JarLoader.getJarFile(URLClassPath.java:728)
+	sun.misc.URLClassPath$JarLoader.access$600(URLClassPath.java:591)
+	sun.misc.URLClassPath$JarLoader$1.run(URLClassPath.java:673)
+	sun.misc.URLClassPath$JarLoader$1.run(URLClassPath.java:666)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	sun.misc.URLClassPath$JarLoader.ensureOpen(URLClassPath.java:665)
+	sun.misc.URLClassPath$JarLoader.<init>(URLClassPath.java:638)
+TRACE 300079:
+	java.util.zip.ZipFile.read(ZipFile.java:Unknown line)
+	java.util.zip.ZipFile.access$1400(ZipFile.java:56)
+	java.util.zip.ZipFile$ZipFileInputStream.read(ZipFile.java:679)
+	java.util.zip.ZipFile$ZipFileInflaterInputStream.fill(ZipFile.java:415)
+	java.util.zip.InflaterInputStream.read(InflaterInputStream.java:158)
+	sun.misc.Resource.getBytes(Resource.java:124)
+	java.net.URLClassLoader.defineClass(URLClassLoader.java:444)
+	java.net.URLClassLoader.access$100(URLClassLoader.java:71)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+TRACE 300221:
+	breeze.config.CommandLineParser$.parseArguments(CommandLineParser.scala:133)
+	breeze.config.CommandLineParser$.readIn(CommandLineParser.scala:35)
+	framework.igor.experiment.Experiment$class.main(Experiment.scala:17)
+	games.Main$.main(Main.scala:114)
+	games.Main.main(Main.scala:Unknown line)
+TRACE 300065:
+	java.util.HashMap.addEntry(HashMap.java:888)
+	java.util.HashMap.put(HashMap.java:509)
+	sun.misc.URLClassPath.getLoader(URLClassPath.java:345)
+	sun.misc.URLClassPath.getResource(URLClassPath.java:198)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:358)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	java.lang.Class.getDeclaredMethods0(Class.java:Unknown line)
+TRACE 300224:
+	java.lang.StringBuffer.append(StringBuffer.java:237)
+	java.net.URLStreamHandler.toExternalForm(URLStreamHandler.java:492)
+	java.net.URL.toExternalForm(URL.java:921)
+	java.net.URL.toString(URL.java:907)
+	java.lang.ClassLoader.defineClassSourceLocation(ClassLoader.java:676)
+	java.lang.ClassLoader.defineClass(ClassLoader.java:797)
+	java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	java.net.URLClassLoader.defineClass(URLClassLoader.java:449)
+	java.net.URLClassLoader.access$100(URLClassLoader.java:71)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+TRACE 300078:
+	sun.misc.Unsafe.getObject(Unsafe.java:Unknown line)
+	java.util.concurrent.ConcurrentHashMap.putIfAbsent(ConcurrentHashMap.java:1147)
+	java.lang.ClassLoader.getClassLoadingLock(ClassLoader.java:464)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:405)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	java.lang.ClassLoader.defineClass1(ClassLoader.java:Unknown line)
+	java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	java.net.URLClassLoader.defineClass(URLClassLoader.java:449)
+	java.net.URLClassLoader.access$100(URLClassLoader.java:71)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+TRACE 300200:
+	sun.security.x509.NetscapeCertTypeExtension.<clinit>(NetscapeCertTypeExtension.java:99)
+	java.lang.Class.forName0(Class.java:Unknown line)
+	java.lang.Class.forName(Class.java:190)
+	sun.security.x509.OIDMap$OIDInfo.getClazz(OIDMap.java:211)
+	sun.security.x509.OIDMap.getClass(OIDMap.java:294)
+	sun.security.x509.CertificateExtensions.parseExtension(CertificateExtensions.java:97)
+	sun.security.x509.CertificateExtensions.init(CertificateExtensions.java:88)
+	sun.security.x509.CertificateExtensions.<init>(CertificateExtensions.java:78)
+	sun.security.x509.X509CertInfo.parse(X509CertInfo.java:740)
+	sun.security.x509.X509CertInfo.<init>(X509CertInfo.java:169)
+	sun.security.x509.X509CertImpl.parse(X509CertImpl.java:1781)
+	sun.security.x509.X509CertImpl.<init>(X509CertImpl.java:196)
+TRACE 300293:
+	java.lang.reflect.AccessibleObject.setAccessible0(AccessibleObject.java:138)
+	java.lang.reflect.AccessibleObject.setAccessible(AccessibleObject.java:129)
+	java.lang.Class$1.run(Class.java:353)
+	java.lang.Class$1.run(Class.java:351)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.lang.Class.newInstance(Class.java:350)
+	sun.nio.fs.DefaultFileSystemProvider$1.run(DefaultFileSystemProvider.java:52)
+	sun.nio.fs.DefaultFileSystemProvider$1.run(DefaultFileSystemProvider.java:43)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	sun.nio.fs.DefaultFileSystemProvider.createProvider(DefaultFileSystemProvider.java:42)
+	sun.nio.fs.DefaultFileSystemProvider.create(DefaultFileSystemProvider.java:72)
+	java.nio.file.FileSystems$DefaultFileSystemHolder.getDefaultProvider(FileSystems.java:108)
+TRACE 300080:
+	java.net.URLClassLoader.findClass(URLClassLoader.java:371)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:412)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	java.lang.ClassLoader.defineClass1(ClassLoader.java:Unknown line)
+	java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	java.net.URLClassLoader.defineClass(URLClassLoader.java:449)
+	java.net.URLClassLoader.access$100(URLClassLoader.java:71)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+TRACE 300013:
+	java.lang.Class.forName0(Class.java:Unknown line)
+	java.lang.Class.forName(Class.java:270)
+	sun.nio.cs.FastCharsetProvider.lookup(FastCharsetProvider.java:119)
+	sun.nio.cs.FastCharsetProvider.charsetForName(FastCharsetProvider.java:136)
+	java.nio.charset.Charset.lookup2(Charset.java:487)
+	java.nio.charset.Charset.lookup(Charset.java:475)
+	java.nio.charset.Charset.forName(Charset.java:540)
+	java.nio.charset.StandardCharsets.<clinit>(StandardCharsets.java:48)
+	java.util.zip.ZipFile.<init>(ZipFile.java:145)
+	java.util.jar.JarFile.<init>(JarFile.java:153)
+	java.util.jar.JarFile.<init>(JarFile.java:90)
+	sun.misc.URLClassPath$JarLoader.getJarFile(URLClassPath.java:728)
+TRACE 300230:
+	java.util.Arrays.copyOfRange(Arrays.java:2694)
+	java.lang.String.<init>(String.java:203)
+	java.lang.String.substring(String.java:1877)
+	sun.net.www.protocol.jar.Handler.parseURL(Handler.java:157)
+	java.net.URL.<init>(URL.java:614)
+	java.net.URL.<init>(URL.java:482)
+	sun.misc.URLClassPath$JarLoader.checkResource(URLClassPath.java:757)
+	sun.misc.URLClassPath$JarLoader.getResource(URLClassPath.java:842)
+	sun.misc.URLClassPath.getResource(URLClassPath.java:199)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:358)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+TRACE 300082:
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:412)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	scala.collection.AbstractTraversable.<init>(Traversable.scala:104)
+	scala.collection.AbstractIterable.<init>(Iterable.scala:54)
+	scala.collection.AbstractSeq.<init>(Seq.scala:41)
+	scala.collection.immutable.List.<init>(List.scala:83)
+	scala.collection.immutable.Nil$.<init>(List.scala:417)
+	scala.collection.immutable.Nil$.<clinit>(List.scala:Unknown line)
+TRACE 300232:
+	java.util.zip.ZipCoder.getBytes(ZipCoder.java:86)
+	java.util.zip.ZipFile.getEntry(ZipFile.java:306)
+	java.util.jar.JarFile.getEntry(JarFile.java:226)
+	java.util.jar.JarFile.getJarEntry(JarFile.java:209)
+	sun.misc.URLClassPath$JarLoader.getResource(URLClassPath.java:840)
+	sun.misc.URLClassPath.getResource(URLClassPath.java:199)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:358)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+TRACE 300120:
+	java.lang.Double.toString(Double.java:196)
+	java.lang.String.valueOf(String.java:3001)
+	java.security.Provider.putId(Provider.java:433)
+	java.security.Provider.<init>(Provider.java:137)
+	sun.security.jca.ProviderList$1.<init>(ProviderList.java:71)
+	sun.security.jca.ProviderList.<clinit>(ProviderList.java:70)
+	sun.security.jca.Providers.<clinit>(Providers.java:56)
+	sun.security.util.SignatureFileVerifier.<init>(SignatureFileVerifier.java:95)
+	java.util.jar.JarVerifier.processEntry(JarVerifier.java:286)
+	java.util.jar.JarVerifier.update(JarVerifier.java:218)
+	java.util.jar.JarFile.initializeVerifier(JarFile.java:345)
+	java.util.jar.JarFile.getInputStream(JarFile.java:412)
+TRACE 300371:
+	java.lang.UNIXProcess.forkAndExec(UNIXProcess.java:Unknown line)
+	java.lang.UNIXProcess.<init>(UNIXProcess.java:135)
+	java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	java.lang.ProcessBuilder.start(ProcessBuilder.java:1022)
+	java.lang.Runtime.exec(Runtime.java:617)
+	java.lang.Runtime.exec(Runtime.java:485)
+	framework.igor.experiment.Environment.ensureWorkDir(Environment.scala:40)
+	framework.igor.experiment.Environment.<init>(Environment.scala:18)
+	framework.igor.experiment.Execution.<init>(Execution.scala:16)
+	framework.igor.experiment.Experiment$class.main(Experiment.scala:18)
+	games.Main$.main(Main.scala:114)
+	games.Main.main(Main.scala:Unknown line)
+TRACE 300083:
+	java.lang.System.nanoTime(System.java:Unknown line)
+	sun.misc.PerfCounter.addElapsedTimeFrom(PerfCounter.java:119)
+	java.net.URLClassLoader.defineClass(URLClassLoader.java:448)
+	java.net.URLClassLoader.access$100(URLClassLoader.java:71)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	java.lang.ClassLoader.defineClass1(ClassLoader.java:Unknown line)
+TRACE 300036:
+	java.util.LinkedList.<init>(LinkedList.java:85)
+	sun.misc.JarIndex.addToList(JarIndex.java:156)
+	sun.misc.JarIndex.read(JarIndex.java:326)
+	sun.misc.JarIndex.<init>(JarIndex.java:92)
+	sun.misc.JarIndex.getJarIndex(JarIndex.java:137)
+	sun.misc.URLClassPath$JarLoader$1.run(URLClassPath.java:674)
+	sun.misc.URLClassPath$JarLoader$1.run(URLClassPath.java:666)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	sun.misc.URLClassPath$JarLoader.ensureOpen(URLClassPath.java:665)
+	sun.misc.URLClassPath$JarLoader.<init>(URLClassPath.java:638)
+	sun.misc.URLClassPath$3.run(URLClassPath.java:366)
+	sun.misc.URLClassPath$3.run(URLClassPath.java:356)
+TRACE 300053:
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	sun.misc.URLClassPath.getLoader(URLClassPath.java:355)
+	sun.misc.URLClassPath.getLoader(URLClassPath.java:332)
+	sun.misc.URLClassPath.getResource(URLClassPath.java:198)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:358)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	java.lang.Class.getDeclaredMethods0(Class.java:Unknown line)
+TRACE 300339:
+	java.util.regex.Pattern$5.<init>(Pattern.java:5149)
+	java.util.regex.Pattern.union(Pattern.java:5149)
+	java.util.regex.Pattern.clazz(Pattern.java:2513)
+	java.util.regex.Pattern.sequence(Pattern.java:2030)
+	java.util.regex.Pattern.expr(Pattern.java:1964)
+	java.util.regex.Pattern.group0(Pattern.java:2854)
+	java.util.regex.Pattern.sequence(Pattern.java:2018)
+	java.util.regex.Pattern.expr(Pattern.java:1964)
+	java.util.regex.Pattern.compile(Pattern.java:1665)
+	java.util.regex.Pattern.<init>(Pattern.java:1337)
+	java.util.regex.Pattern.compile(Pattern.java:1022)
+	java.util.Formatter.<clinit>(Formatter.java:2508)
+TRACE 300106:
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	sun.misc.URLClassPath$JarLoader.ensureOpen(URLClassPath.java:665)
+	sun.misc.URLClassPath$JarLoader.<init>(URLClassPath.java:638)
+	sun.misc.URLClassPath$3.run(URLClassPath.java:366)
+	sun.misc.URLClassPath$3.run(URLClassPath.java:356)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	sun.misc.URLClassPath.getLoader(URLClassPath.java:355)
+	sun.misc.URLClassPath.getLoader(URLClassPath.java:332)
+	sun.misc.URLClassPath.access$000(URLClassPath.java:62)
+	sun.misc.URLClassPath$2.next(URLClassPath.java:272)
+	sun.misc.URLClassPath$2.hasMoreElements(URLClassPath.java:283)
+	java.lang.ClassLoader$2.hasMoreElements(ClassLoader.java:1322)
+TRACE 300271:
+	java.util.zip.ZipCoder.getBytes(ZipCoder.java:77)
+	java.util.zip.ZipFile.getEntry(ZipFile.java:306)
+	java.util.jar.JarFile.getEntry(JarFile.java:226)
+	java.util.jar.JarFile.getJarEntry(JarFile.java:209)
+	sun.misc.URLClassPath$JarLoader.getResource(URLClassPath.java:840)
+	sun.misc.URLClassPath.getResource(URLClassPath.java:199)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:358)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+TRACE 300071:
+	java.io.FileInputStream.close0(FileInputStream.java:Unknown line)
+	java.io.FileInputStream.close(FileInputStream.java:360)
+	sun.misc.Resource.getBytes(Resource.java:143)
+	java.net.URLClassLoader.defineClass(URLClassLoader.java:444)
+	java.net.URLClassLoader.access$100(URLClassLoader.java:71)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+TRACE 300381:
+	java.lang.System.nanoTime(System.java:Unknown line)
+	java.net.URLClassLoader.defineClass(URLClassLoader.java:410)
+	java.net.URLClassLoader.access$100(URLClassLoader.java:71)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	breeze.stats.distributions.RandBasis.<init>(Rand.scala:245)
+	breeze.stats.distributions.Rand$.<init>(Rand.scala:319)
+TRACE 300382:
+	java.net.URLClassLoader.findClass(URLClassLoader.java:370)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:412)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	org.apache.commons.math3.random.MersenneTwister.setSeed(MersenneTwister.java:176)
+	org.apache.commons.math3.random.MersenneTwister.setSeed(MersenneTwister.java:216)
+	org.apache.commons.math3.random.MersenneTwister.<init>(MersenneTwister.java:108)
+	breeze.stats.distributions.Rand$$anonfun$$lessinit$greater$1.apply(Rand.scala:319)
+	breeze.stats.distributions.Rand$$anonfun$$lessinit$greater$1.apply(Rand.scala:319)
+	breeze.stats.distributions.ThreadLocalRandomGenerator$$anon$1.initialValue(ThreadLocalRandomGenerator.scala:12)
+	breeze.stats.distributions.ThreadLocalRandomGenerator$$anon$1.initialValue(ThreadLocalRandomGenerator.scala:11)
+TRACE 300273:
+	java.lang.String.isEmpty(String.java:635)
+	breeze.config.Configuration$class.recursiveGetProperty(Configuration.scala:263)
+	breeze.config.Configuration$$anon$2.recursiveGetProperty(Configuration.scala:147)
+	breeze.config.Configuration$class.reflectiveReadIn(Configuration.scala:222)
+	breeze.config.Configuration$class.readInTouched(Configuration.scala:131)
+	breeze.config.Configuration$$anon$2.readInTouched(Configuration.scala:147)
+	breeze.config.Configuration$class.readInTouched(Configuration.scala:141)
+	breeze.config.Configuration$$anon$2.readInTouched(Configuration.scala:147)
+	breeze.config.Configuration$$anonfun$5.apply(Configuration.scala:250)
+	breeze.config.Configuration$$anonfun$5.apply(Configuration.scala:248)
+	scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:245)
+	scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:245)
+TRACE 300384:
+	sun.misc.Unsafe.getObjectVolatile(Unsafe.java:Unknown line)
+	java.util.concurrent.ConcurrentHashMap.entryAt(ConcurrentHashMap.java:305)
+	java.util.concurrent.ConcurrentHashMap$Segment.put(ConcurrentHashMap.java:438)
+	java.util.concurrent.ConcurrentHashMap.putIfAbsent(ConcurrentHashMap.java:1150)
+	java.lang.ClassLoader.getClassLoadingLock(ClassLoader.java:464)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:405)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	framework.igor.logging.Logging$.<init>(Logging.scala:59)
+	framework.igor.logging.Logging$.<clinit>(Logging.scala:Unknown line)
+	framework.igor.logging.Logging$$anonfun$1$$anonfun$apply$1.apply(Logging.scala:16)
+	framework.igor.logging.Logging$$anonfun$1$$anonfun$apply$1.apply(Logging.scala:16)
+TRACE 300241:
+	sun.reflect.generics.parser.SignatureParser.current(SignatureParser.java:95)
+	sun.reflect.generics.parser.SignatureParser.parseSuperInterfaces(SignatureParser.java:561)
+	sun.reflect.generics.parser.SignatureParser.parseClassSignature(SignatureParser.java:214)
+	sun.reflect.generics.parser.SignatureParser.parseClassSig(SignatureParser.java:158)
+	sun.reflect.generics.repository.ClassRepository.parse(ClassRepository.java:52)
+	sun.reflect.generics.repository.ClassRepository.parse(ClassRepository.java:41)
+	sun.reflect.generics.repository.AbstractRepository.<init>(AbstractRepository.java:74)
+	sun.reflect.generics.repository.GenericDeclRepository.<init>(GenericDeclRepository.java:48)
+	sun.reflect.generics.repository.ClassRepository.<init>(ClassRepository.java:48)
+	sun.reflect.generics.repository.ClassRepository.make(ClassRepository.java:65)
+	java.lang.Class.getGenericInfo(Class.java:2360)
+	java.lang.Class.getTypeParameters(Class.java:640)
+TRACE 300089:
+	java.lang.Object.hashCode(Object.java:Unknown line)
+	java.util.WeakHashMap.hash(WeakHashMap.java:365)
+	java.util.WeakHashMap.remove(WeakHashMap.java:666)
+	java.util.zip.ZipFile$ZipFileInflaterInputStream.close(ZipFile.java:401)
+	sun.misc.Resource.getBytes(Resource.java:143)
+	java.net.URLClassLoader.defineClass(URLClassLoader.java:444)
+	java.net.URLClassLoader.access$100(URLClassLoader.java:71)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+TRACE 300072:
+	java.util.HashMap.getEntry(HashMap.java:462)
+	java.util.HashMap.get(HashMap.java:421)
+	sun.misc.JarIndex.get(JarIndex.java:171)
+	sun.misc.URLClassPath$JarLoader.getResource(URLClassPath.java:870)
+	sun.misc.URLClassPath$JarLoader.getResource(URLClassPath.java:848)
+	sun.misc.URLClassPath.getResource(URLClassPath.java:199)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:358)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:412)
+TRACE 300073:
+	java.lang.String.toCharArray(String.java:2753)
+	java.util.zip.ZipCoder.getBytes(ZipCoder.java:78)
+	java.util.zip.ZipFile.getEntry(ZipFile.java:306)
+	java.util.jar.JarFile.getEntry(JarFile.java:226)
+	java.util.jar.JarFile.getJarEntry(JarFile.java:209)
+	sun.misc.URLClassPath$JarLoader.getResource(URLClassPath.java:840)
+	sun.misc.URLClassPath.getResource(URLClassPath.java:199)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:358)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+TRACE 300390:
+	java.lang.Throwable.getOurStackTrace(Throwable.java:825)
+	java.lang.Throwable.printStackTrace(Throwable.java:656)
+	java.lang.Throwable.printStackTrace(Throwable.java:643)
+	java.lang.Throwable.printStackTrace(Throwable.java:634)
+	framework.igor.experiment.Execution$$anonfun$runStage$1.apply$mcV$sp(Execution.scala:39)
+	framework.igor.experiment.Execution$$anonfun$runStage$1.apply(Execution.scala:34)
+	framework.igor.experiment.Execution$$anonfun$runStage$1.apply(Execution.scala:34)
+	scala.util.DynamicVariable.withValue(DynamicVariable.scala:58)
+	framework.igor.logging.Logging$$anonfun$task$1.apply(Logging.scala:21)
+	framework.igor.logging.Logging$class.time(Logging.scala:29)
+	framework.igor.experiment.Execution.time(Execution.scala:12)
+	framework.igor.logging.Logging$class.task(Logging.scala:20)
+TRACE 300246:
+	scala.collection.Iterator$GroupedIterator.go(Iterator.scala:977)
+	scala.collection.Iterator$GroupedIterator.fill(Iterator.scala:987)
+	scala.collection.Iterator$GroupedIterator.hasNext(Iterator.scala:991)
+	scala.collection.Iterator$class.foreach(Iterator.scala:743)
+	scala.collection.AbstractIterator.foreach(Iterator.scala:1177)
+	scala.collection.TraversableOnce$class.reversed(TraversableOnce.scala:99)
+	scala.collection.AbstractIterator.reversed(Iterator.scala:1177)
+	scala.collection.TraversableOnce$class.foldRight(TraversableOnce.scala:147)
+	scala.collection.AbstractIterator.foldRight(Iterator.scala:1177)
+	breeze.config.ReflectionUtils$.solveTypes(ReflectionUtils.scala:74)
+	breeze.config.Configuration$class.reflectiveReadIn(Configuration.scala:236)
+	breeze.config.Configuration$class.readInTouched(Configuration.scala:131)
+TRACE 300216:
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:412)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	java.lang.ClassLoader.defineClass1(ClassLoader.java:Unknown line)
+	java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	java.net.URLClassLoader.defineClass(URLClassLoader.java:449)
+	java.net.URLClassLoader.access$100(URLClassLoader.java:71)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+TRACE 300280:
+	games.Params$.$lessinit$greater$default$3(Main.scala:77)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(NativeMethodAccessorImpl.java:Unknown line)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:606)
+	breeze.config.ReflectionUtils$$anonfun$lookupDefaultValues$1$$anonfun$apply$1$$anonfun$applyOrElse$1.apply(ReflectionUtils.scala:45)
+	scala.util.Try$.apply(Try.scala:191)
+	breeze.config.ReflectionUtils$$anonfun$lookupDefaultValues$1$$anonfun$apply$1.applyOrElse(ReflectionUtils.scala:43)
+	breeze.config.ReflectionUtils$$anonfun$lookupDefaultValues$1$$anonfun$apply$1.applyOrElse(ReflectionUtils.scala:41)
+	scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36)
+	scala.util.Failure.recoverWith(Try.scala:202)
+	breeze.config.ReflectionUtils$$anonfun$lookupDefaultValues$1.apply(ReflectionUtils.scala:41)
+TRACE 300217:
+	scala.collection.immutable.Seq$.newBuilder(Seq.scala:46)
+	scala.collection.Seq$.newBuilder(Seq.scala:37)
+	scala.collection.generic.GenericCompanion.apply(GenericCompanion.scala:48)
+	games.Main$.<init>(Main.scala:116)
+	games.Main$.<clinit>(Main.scala:Unknown line)
+	games.Main.main(Main.scala:Unknown line)
+TRACE 300152:
+	java.lang.Character.toLowerCase(Character.java:6148)
+	java.lang.String.toLowerCase(String.java:2467)
+	java.security.Provider.parseLegacyPut(Provider.java:593)
+	java.security.Provider.ensureLegacyParsed(Provider.java:554)
+	java.security.Provider.getService(Provider.java:693)
+	sun.security.jca.ProviderList.getService(ProviderList.java:331)
+	sun.security.jca.GetInstance.getInstance(GetInstance.java:157)
+	java.security.cert.CertificateFactory.getInstance(CertificateFactory.java:183)
+	sun.security.pkcs.PKCS7.parseSignedData(PKCS7.java:271)
+	sun.security.pkcs.PKCS7.parse(PKCS7.java:158)
+	sun.security.pkcs.PKCS7.parse(PKCS7.java:126)
+	sun.security.pkcs.PKCS7.<init>(PKCS7.java:108)
+TRACE 300219:
+	scala.collection.mutable.ArrayBuffer$.newBuilder(ArrayBuffer.scala:190)
+	scala.collection.generic.GenericCompanion.empty(GenericCompanion.scala:38)
+	scala.collection.generic.GenericCompanion.apply(GenericCompanion.scala:46)
+	breeze.config.CommandLineParser$.parseArguments(CommandLineParser.scala:77)
+	breeze.config.CommandLineParser$.readIn(CommandLineParser.scala:35)
+	framework.igor.experiment.Experiment$class.main(Experiment.scala:17)
+	games.Main$.main(Main.scala:114)
+	games.Main.main(Main.scala:Unknown line)
+TRACE 300075:
+	java.net.URL.<init>(URL.java:580)
+	java.net.URL.<init>(URL.java:482)
+	sun.misc.URLClassPath$FileLoader.getResource(URLClassPath.java:1058)
+	sun.misc.URLClassPath.getResource(URLClassPath.java:199)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:358)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	games.Main$.<init>(Main.scala:115)
+CPU SAMPLES BEGIN (total = 66) Wed Feb 25 16:55:13 2015
+rank   self  accum   count trace method
+   1 16.67% 16.67%      11 300074 java.util.zip.ZipFile.getEntry
+   2 15.15% 31.82%      10 300052 java.lang.ClassLoader.defineClass1
+   3  6.06% 37.88%       4 300077 java.util.zip.Inflater.inflateBytes
+   4  4.55% 42.42%       3 300037 java.util.zip.ZipFile.open
+   5  3.03% 45.45%       2 300079 java.util.zip.ZipFile.read
+   6  1.52% 46.97%       1 300221 breeze.config.CommandLineParser$.parseArguments
+   7  1.52% 48.48%       1 300065 java.util.HashMap.addEntry
+   8  1.52% 50.00%       1 300224 java.lang.StringBuffer.append
+   9  1.52% 51.52%       1 300078 sun.misc.Unsafe.getObject
+  10  1.52% 53.03%       1 300200 sun.security.x509.NetscapeCertTypeExtension.<clinit>
+  11  1.52% 54.55%       1 300293 java.lang.reflect.AccessibleObject.setAccessible0
+  12  1.52% 56.06%       1 300080 java.net.URLClassLoader.findClass
+  13  1.52% 57.58%       1 300013 java.lang.Class.forName0
+  14  1.52% 59.09%       1 300230 java.util.Arrays.copyOfRange
+  15  1.52% 60.61%       1 300082 java.security.AccessController.doPrivileged
+  16  1.52% 62.12%       1 300232 java.util.zip.ZipCoder.getBytes
+  17  1.52% 63.64%       1 300120 java.lang.Double.toString
+  18  1.52% 65.15%       1 300371 java.lang.UNIXProcess.forkAndExec
+  19  1.52% 66.67%       1 300083 java.lang.System.nanoTime
+  20  1.52% 68.18%       1 300036 java.util.LinkedList.<init>
+  21  1.52% 69.70%       1 300053 java.security.AccessController.doPrivileged
+  22  1.52% 71.21%       1 300339 java.util.regex.Pattern$5.<init>
+  23  1.52% 72.73%       1 300106 java.security.AccessController.doPrivileged
+  24  1.52% 74.24%       1 300271 java.util.zip.ZipCoder.getBytes
+  25  1.52% 75.76%       1 300071 java.io.FileInputStream.close0
+  26  1.52% 77.27%       1 300381 java.lang.System.nanoTime
+  27  1.52% 78.79%       1 300382 java.net.URLClassLoader.findClass
+  28  1.52% 80.30%       1 300273 java.lang.String.isEmpty
+  29  1.52% 81.82%       1 300384 sun.misc.Unsafe.getObjectVolatile
+  30  1.52% 83.33%       1 300241 sun.reflect.generics.parser.SignatureParser.current
+  31  1.52% 84.85%       1 300089 java.lang.Object.hashCode
+  32  1.52% 86.36%       1 300072 java.util.HashMap.getEntry
+  33  1.52% 87.88%       1 300073 java.lang.String.toCharArray
+  34  1.52% 89.39%       1 300390 java.lang.Throwable.getOurStackTrace
+  35  1.52% 90.91%       1 300246 scala.collection.Iterator$GroupedIterator.go
+  36  1.52% 92.42%       1 300216 java.security.AccessController.doPrivileged
+  37  1.52% 93.94%       1 300280 games.Params$.$lessinit$greater$default$3
+  38  1.52% 95.45%       1 300217 scala.collection.immutable.Seq$.newBuilder
+  39  1.52% 96.97%       1 300152 java.lang.Character.toLowerCase
+  40  1.52% 98.48%       1 300219 scala.collection.mutable.ArrayBuffer$.newBuilder
+  41  1.52% 100.00%       1 300075 java.net.URL.<init>
+CPU SAMPLES END

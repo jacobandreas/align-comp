@@ -1,0 +1,1605 @@
+<?xml version="1.0"?>
+
+<examples>
+
+<example id="0">
+<nl lang="en"> purple9 kicks to purple5 </nl>
+<mrl lang="soccer"> pass ( purple9 , purple5 ) </mrl>
+</example>
+
+<example id="1">
+<nl lang="en"> purple5 kicks to purple8 </nl>
+<mrl lang="soccer"> pass ( purple5 , purple8 ) </mrl>
+</example>
+
+<example id="2">
+<nl lang="en"> purple8 kicks to purple6 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple6 ) </mrl>
+</example>
+
+<example id="3">
+<nl lang="en"> purple6 kicks </nl>
+<mrl lang="soccer"> kick ( purple6 ) </mrl>
+</example>
+
+<example id="5">
+<nl lang="en"> pink8 kicks to pink9 </nl>
+<mrl lang="soccer"> pass ( pink8 , pink9 ) </mrl>
+</example>
+
+<example id="6">
+<nl lang="en"> pink9 kicks </nl>
+<mrl lang="soccer"> kick ( pink9 ) </mrl>
+</example>
+
+<example id="8">
+<nl lang="en"> purple2 kicks to purple7 </nl>
+<mrl lang="soccer"> pass ( purple2 , purple7 ) </mrl>
+</example>
+
+<example id="9">
+<nl lang="en"> purple7 kicks </nl>
+<mrl lang="soccer"> kick ( purple7 ) </mrl>
+</example>
+
+<example id="11">
+<nl lang="en"> purple9 kicks to purple10 </nl>
+<mrl lang="soccer"> pass ( purple9 , purple10 ) </mrl>
+</example>
+
+<example id="12">
+<nl lang="en"> purple10 kicks to purple7 </nl>
+<mrl lang="soccer"> pass ( purple10 , purple7 ) </mrl>
+</example>
+
+<example id="13">
+<nl lang="en"> purple7 kicks to purple8 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple8 ) </mrl>
+</example>
+
+<example id="15">
+<nl lang="en"> pink1 kicks to pink4 </nl>
+<mrl lang="soccer"> pass ( pink1 , pink4 ) </mrl>
+</example>
+
+<example id="17">
+<nl lang="en"> purple11 kicks to puprle8 </nl>
+<mrl lang="soccer"> pass ( purple11 , purple8 ) </mrl>
+</example>
+
+<example id="18">
+<nl lang="en"> purple8 shoots </nl>
+<mrl lang="soccer"> kick ( purple8 ) </mrl>
+</example>
+
+<example id="20">
+<nl lang="en"> pink1 kicks to pink7 </nl>
+<mrl lang="soccer"> pass ( pink1 , pink7 ) </mrl>
+</example>
+
+<example id="21">
+<nl lang="en"> pink7 kicks to pink10 </nl>
+<mrl lang="soccer"> pass ( pink7 , pink10 ) </mrl>
+</example>
+
+<example id="22">
+<nl lang="en"> pink10 shoots </nl>
+<mrl lang="soccer"> kick ( pink10 ) </mrl>
+</example>
+
+<example id="24">
+<nl lang="en"> purple3 kicks to purple2 </nl>
+<mrl lang="soccer"> pass ( purple3 , purple2 ) </mrl>
+</example>
+
+<example id="25">
+<nl lang="en"> purple2 kicks to purple7 </nl>
+<mrl lang="soccer"> pass ( purple2 , purple7 ) </mrl>
+</example>
+
+<example id="26">
+<nl lang="en"> purple7 kicks </nl>
+<mrl lang="soccer"> kick ( purple7 ) </mrl>
+</example>
+
+<example id="28">
+<nl lang="en"> pink6 kicks to pink11 </nl>
+<mrl lang="soccer"> pass ( pink6 , pink11 ) </mrl>
+</example>
+
+<example id="29">
+<nl lang="en"> pink11 kicks to pink8 </nl>
+<mrl lang="soccer"> pass ( pink11 , pink8 ) </mrl>
+</example>
+
+<example id="30">
+<nl lang="en"> pink8 kicks to pink9 </nl>
+<mrl lang="soccer"> pass ( pink8 , pink9 ) </mrl>
+</example>
+
+<example id="31">
+<nl lang="en"> pink9 kicks to pink10 </nl>
+<mrl lang="soccer"> pass ( pink9 , pink10 ) </mrl>
+</example>
+
+<example id="32">
+<nl lang="en"> pink10 kicks to pink9 </nl>
+<mrl lang="soccer"> pass ( pink10 , pink9 ) </mrl>
+</example>
+
+<example id="33">
+<nl lang="en"> pink9 shoots </nl>
+<mrl lang="soccer"> kick ( pink9 ) </mrl>
+</example>
+
+<example id="35">
+<nl lang="en"> purple1 kicks to purple2 </nl>
+<mrl lang="soccer"> pass ( purple1 , purple2 ) </mrl>
+</example>
+
+<example id="37">
+<nl lang="en"> pink9 shoots </nl>
+<mrl lang="soccer"> kick ( pink9 ) </mrl>
+</example>
+
+<example id="39">
+<nl lang="en"> purple9 shoots to purple5 </nl>
+<mrl lang="soccer"> pass ( purple9 , purple5 ) </mrl>
+</example>
+
+<example id="40">
+<nl lang="en"> purple5 shoots to purple4 </nl>
+<mrl lang="soccer"> pass ( purple5 , purple4 ) </mrl>
+</example>
+
+<example id="41">
+<nl lang="en"> purple4 kicks to purple6 </nl>
+<mrl lang="soccer"> pass ( purple4 , purple6 ) </mrl>
+</example>
+
+<example id="42">
+<nl lang="en"> purple6 shoots </nl>
+<mrl lang="soccer"> kick ( purple6 ) </mrl>
+</example>
+
+<example id="44">
+<nl lang="en"> pink1 kicks to pink4 </nl>
+<mrl lang="soccer"> pass ( pink1 , pink4 ) </mrl>
+</example>
+
+<example id="45">
+<nl lang="en"> pink4 kicks to pink8 </nl>
+<mrl lang="soccer"> pass ( pink4 , pink8 ) </mrl>
+</example>
+
+<example id="46">
+<nl lang="en"> pink8 kicks to pink11 </nl>
+<mrl lang="soccer"> pass ( pink8 , pink11 ) </mrl>
+</example>
+
+<example id="49">
+<nl lang="en"> purple6 kicks to purple11 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple11 ) </mrl>
+</example>
+
+<example id="50">
+<nl lang="en"> purple11 kicks to purple8 </nl>
+<mrl lang="soccer"> pass ( purple11 , purple8 ) </mrl>
+</example>
+
+<example id="51">
+<nl lang="en"> purple8 kicks to purple11 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple11 ) </mrl>
+</example>
+
+<example id="52">
+<nl lang="en"> purple11 kicks to purple6 </nl>
+<mrl lang="soccer"> pass ( purple11 , purple6 ) </mrl>
+</example>
+
+<example id="54">
+<nl lang="en"> pink8 kicks to pink9 </nl>
+<mrl lang="soccer"> pass ( pink8 , pink9 ) </mrl>
+</example>
+
+<example id="55">
+<nl lang="en"> pink9 kicks to pink11 </nl>
+<mrl lang="soccer"> pass ( pink9 , pink11 ) </mrl>
+</example>
+
+<example id="56">
+<nl lang="en"> pink11 kicks to pink9 </nl>
+<mrl lang="soccer"> pass ( pink11 , pink9 ) </mrl>
+</example>
+
+<example id="57">
+<nl lang="en"> pink9 kicks to pink7 </nl>
+<mrl lang="soccer"> pass ( pink9 , pink7 ) </mrl>
+</example>
+
+<example id="58">
+<nl lang="en"> pink7 kicks to pink10 </nl>
+<mrl lang="soccer"> pass ( pink7 , pink10 ) </mrl>
+</example>
+
+<example id="59">
+<nl lang="en"> pink10 shoots </nl>
+<mrl lang="soccer"> kick ( pink10 ) </mrl>
+</example>
+
+<example id="61">
+<nl lang="en"> purple1 kicks to purple3 </nl>
+<mrl lang="soccer"> pass ( purple1 , purple3 ) </mrl>
+</example>
+
+<example id="62">
+<nl lang="en"> purple3 kicks to purple8 </nl>
+<mrl lang="soccer"> pass ( purple3 , purple8 ) </mrl>
+</example>
+
+<example id="63">
+<nl lang="en"> purple8 kicks to purple7 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple7 ) </mrl>
+</example>
+
+<example id="64">
+<nl lang="en"> purple7 kicks to purple10 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple10 ) </mrl>
+</example>
+
+<example id="65">
+<nl lang="en"> purple10 kicks </nl>
+<mrl lang="soccer"> kick ( purple10 ) </mrl>
+</example>
+
+<example id="67">
+<nl lang="en"> pink6 kicks to pink8 </nl>
+<mrl lang="soccer"> pass ( pink6 , pink8 ) </mrl>
+</example>
+
+<example id="68">
+<nl lang="en"> pink8 kicks to pink11 </nl>
+<mrl lang="soccer"> pass ( pink8 , pink11 ) </mrl>
+</example>
+
+<example id="69">
+<nl lang="en"> pink11 kicks to pink9 </nl>
+<mrl lang="soccer"> pass ( pink11 , pink9 ) </mrl>
+</example>
+
+<example id="70">
+<nl lang="en"> pink9 kicks to pink11 </nl>
+<mrl lang="soccer"> pass ( pink9 , pink11 ) </mrl>
+</example>
+
+<example id="71">
+<nl lang="en"> pink11 kicks to pink9 </nl>
+<mrl lang="soccer"> pass ( pink11 , pink9 ) </mrl>
+</example>
+
+<example id="72">
+<nl lang="en"> pink9 kicks to pink11 </nl>
+<mrl lang="soccer"> pass ( pink9 , pink11 ) </mrl>
+</example>
+
+<example id="73">
+<nl lang="en"> pink11 kicks to pink9 </nl>
+<mrl lang="soccer"> pass ( pink11 , pink9 ) </mrl>
+</example>
+
+<example id="74">
+<nl lang="en"> pink9 kicks to pink10 </nl>
+<mrl lang="soccer"> pass ( pink9 , pink10 ) </mrl>
+</example>
+
+<example id="75">
+<nl lang="en"> pink10 kicks to pink7 </nl>
+<mrl lang="soccer"> pass ( pink10 , pink7 ) </mrl>
+</example>
+
+<example id="76">
+<nl lang="en"> pink7 shoots </nl>
+<mrl lang="soccer"> kick ( pink7 ) </mrl>
+</example>
+
+<example id="78">
+<nl lang="en"> purple1 kicks to purple2 </nl>
+<mrl lang="soccer"> pass ( purple1 , purple2 ) </mrl>
+</example>
+
+<example id="79">
+<nl lang="en"> purple2 kicks to purple8 </nl>
+<mrl lang="soccer"> pass ( purple2 , purple8 ) </mrl>
+</example>
+
+<example id="80">
+<nl lang="en"> purple8 kicks to purple6 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple6 ) </mrl>
+</example>
+
+<example id="82">
+<nl lang="en"> pink5 kicks to pink8 </nl>
+<mrl lang="soccer"> pass ( pink5 , pink8 ) </mrl>
+</example>
+
+<example id="83">
+<nl lang="en"> pink8 kicks to pink6 </nl>
+<mrl lang="soccer"> pass ( pink8 , pink6 ) </mrl>
+</example>
+
+<example id="84">
+<nl lang="en"> pink6 kicks to pink11 </nl>
+<mrl lang="soccer"> pass ( pink6 , pink11 ) </mrl>
+</example>
+
+<example id="86">
+<nl lang="en"> pink8 kicks </nl>
+<mrl lang="soccer"> kick ( pink8 ) </mrl>
+</example>
+
+<example id="88">
+<nl lang="en"> pink4 kicks to pink11 </nl>
+<mrl lang="soccer"> pass ( pink4 , pink11 ) </mrl>
+</example>
+
+<example id="90">
+<nl lang="en"> purple5 kicks to purple11 </nl>
+<mrl lang="soccer"> pass ( purple5 , purple11 ) </mrl>
+</example>
+
+<example id="91">
+<nl lang="en"> purple11 kicks to purple6 </nl>
+<mrl lang="soccer"> pass ( purple11 , purple6 ) </mrl>
+</example>
+
+<example id="92">
+<nl lang="en"> purple6 kicks to purple11 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple11 ) </mrl>
+</example>
+
+<example id="93">
+<nl lang="en"> purple11 kicks to purple6 </nl>
+<mrl lang="soccer"> pass ( purple11 , purple6 ) </mrl>
+</example>
+
+<example id="94">
+<nl lang="en"> purple6 kicks to purple8 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple8 ) </mrl>
+</example>
+
+<example id="95">
+<nl lang="en"> purple11 kicks to purple6 </nl>
+<mrl lang="soccer"> pass ( purple11 , purple6 ) </mrl>
+</example>
+
+<example id="96">
+<nl lang="en"> puprle6 kicks </nl>
+<mrl lang="soccer"> kick ( pink6 ) </mrl>
+</example>
+
+<example id="98">
+<nl lang="en"> pink6 kicks to pink7 </nl>
+<mrl lang="soccer"> pass ( pink6 , pink7 ) </mrl>
+</example>
+
+<example id="99">
+<nl lang="en"> pink7 kicks to pink9 </nl>
+<mrl lang="soccer"> pass ( pink7 , pink9 ) </mrl>
+</example>
+
+<example id="100">
+<nl lang="en"> pink9 kicks to pink11 </nl>
+<mrl lang="soccer"> pass ( pink9 , pink11 ) </mrl>
+</example>
+
+<example id="101">
+<nl lang="en"> pink11 kicks to pink9 </nl>
+<mrl lang="soccer"> pass ( pink11 , pink9 ) </mrl>
+</example>
+
+<example id="103">
+<nl lang="en"> purple1 kicks to purple3 </nl>
+<mrl lang="soccer"> pass ( purple1 , purple3 ) </mrl>
+</example>
+
+<example id="104">
+<nl lang="en"> purple3 kicks to purple8 </nl>
+<mrl lang="soccer"> pass ( purple3 , purple8 ) </mrl>
+</example>
+
+<example id="105">
+<nl lang="en"> purple8 kicks to purple6 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple6 ) </mrl>
+</example>
+
+<example id="106">
+<nl lang="en"> purple6 kicks to purple11 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple11 ) </mrl>
+</example>
+
+<example id="107">
+<nl lang="en"> purple11 shoots </nl>
+<mrl lang="soccer"> kick ( purple11 ) </mrl>
+</example>
+
+<example id="109">
+<nl lang="en"> pink1 kicks to pink2 </nl>
+<mrl lang="soccer"> pass ( pink1 , pink2 ) </mrl>
+</example>
+
+<example id="110">
+<nl lang="en"> pink2 kicks to pink7 </nl>
+<mrl lang="soccer"> pass ( pink2 , pink7 ) </mrl>
+</example>
+
+<example id="111">
+<nl lang="en"> pink7 kicks to pink10 </nl>
+<mrl lang="soccer"> pass ( pink7 , pink10 ) </mrl>
+</example>
+
+<example id="113">
+<nl lang="en"> purple2 kicks </nl>
+<mrl lang="soccer"> kick ( purple2 ) </mrl>
+</example>
+
+<example id="115">
+<nl lang="en"> purple2 kicks to purple10 </nl>
+<mrl lang="soccer"> pass ( purple2 , purple10 ) </mrl>
+</example>
+
+<example id="116">
+<nl lang="en"> purple10 kicks to purple7 </nl>
+<mrl lang="soccer"> pass ( purple10 , purple7 ) </mrl>
+</example>
+
+<example id="117">
+<nl lang="en"> purple7 kicks to purple10 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple10 ) </mrl>
+</example>
+
+<example id="118">
+<nl lang="en"> purple10 kicks to purple9 </nl>
+<mrl lang="soccer"> pass ( purple10 , purple9 ) </mrl>
+</example>
+
+<example id="119">
+<nl lang="en"> purple9 kicks to purple8 </nl>
+<mrl lang="soccer"> pass ( purple9 , purple8 ) </mrl>
+</example>
+
+<example id="121">
+<nl lang="en"> pink6 kicks to pink8 </nl>
+<mrl lang="soccer"> pass ( pink6 , pink8 ) </mrl>
+</example>
+
+<example id="122">
+<nl lang="en"> pink8 kicks to pink11 </nl>
+<mrl lang="soccer"> pass ( pink8 , pink11 ) </mrl>
+</example>
+
+<example id="123">
+<nl lang="en"> pink11 kicks to pink9 </nl>
+<mrl lang="soccer"> pass ( pink11 , pink9 ) </mrl>
+</example>
+
+<example id="124">
+<nl lang="en"> pink9 kicks </nl>
+<mrl lang="soccer"> kick ( pink9 ) </mrl>
+</example>
+
+<example id="126">
+<nl lang="en"> purple9 kicks </nl>
+<mrl lang="soccer"> kick ( purple9 ) </mrl>
+</example>
+
+<example id="131">
+<nl lang="en"> purple7 kicks to purple6 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple6 ) </mrl>
+</example>
+
+<example id="132">
+<nl lang="en"> purple6 kicks </nl>
+<mrl lang="soccer"> kick ( purple6 ) </mrl>
+</example>
+
+<example id="134">
+<nl lang="en"> purple10 shoots </nl>
+<mrl lang="soccer"> kick ( purple10 ) </mrl>
+</example>
+
+<example id="136">
+<nl lang="en"> pink1 kicks to pink4 </nl>
+<mrl lang="soccer"> pass ( pink1 , pink4 ) </mrl>
+</example>
+
+<example id="137">
+<nl lang="en"> pink4 kicks </nl>
+<mrl lang="soccer"> kick ( pink4 ) </mrl>
+</example>
+
+<example id="139">
+<nl lang="en"> purple6 kicks </nl>
+<mrl lang="soccer"> kick ( purple6 ) </mrl>
+</example>
+
+<example id="141">
+<nl lang="en"> pink1 kicks to pink4 </nl>
+<mrl lang="soccer"> pass ( pink1 , pink4 ) </mrl>
+</example>
+
+<example id="142">
+<nl lang="en"> pink4 kicks to pink5 </nl>
+<mrl lang="soccer"> pass ( pink4 , pink5 ) </mrl>
+</example>
+
+<example id="144">
+<nl lang="en"> purple8 kicks to purple7 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple7 ) </mrl>
+</example>
+
+<example id="145">
+<nl lang="en"> purple7 kicks to purple8 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple8 ) </mrl>
+</example>
+
+<example id="147">
+<nl lang="en"> pink6 kicks to pink8 </nl>
+<mrl lang="soccer"> pass ( pink6 , pink8 ) </mrl>
+</example>
+
+<example id="148">
+<nl lang="en"> pink8 kicks to pink11 </nl>
+<mrl lang="soccer"> pass ( pink8 , pink11 ) </mrl>
+</example>
+
+<example id="149">
+<nl lang="en"> pink11 kicks to pink9 </nl>
+<mrl lang="soccer"> pass ( pink11 , pink9 ) </mrl>
+</example>
+
+<example id="150">
+<nl lang="en"> pink9 kicks to pink10 </nl>
+<mrl lang="soccer"> pass ( pink9 , pink10 ) </mrl>
+</example>
+
+<example id="151">
+<nl lang="en"> pink10 kicks to pink7 </nl>
+<mrl lang="soccer"> pass ( pink10 , pink7 ) </mrl>
+</example>
+
+<example id="152">
+<nl lang="en"> pink7 kicks to pink10 </nl>
+<mrl lang="soccer"> pass ( pink7 , pink10 ) </mrl>
+</example>
+
+<example id="153">
+<nl lang="en"> pink10 kicks to pink9 </nl>
+<mrl lang="soccer"> pass ( pink10 , pink9 ) </mrl>
+</example>
+
+<example id="154">
+<nl lang="en"> pink9 kicks to pink11 </nl>
+<mrl lang="soccer"> pass ( pink9 , pink11 ) </mrl>
+</example>
+
+<example id="155">
+<nl lang="en"> pink11 kicks to pink10 </nl>
+<mrl lang="soccer"> pass ( pink11 , pink10 ) </mrl>
+</example>
+
+<example id="158">
+<nl lang="en"> purple3 kicks to purple8 </nl>
+<mrl lang="soccer"> pass ( purple3 , purple8 ) </mrl>
+</example>
+
+<example id="159">
+<nl lang="en"> purple8 kicks to purple7 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple7 ) </mrl>
+</example>
+
+<example id="160">
+<nl lang="en"> purple7 kicks to purple10 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple10 ) </mrl>
+</example>
+
+<example id="161">
+<nl lang="en"> purple10 shoots </nl>
+<mrl lang="soccer"> kick ( purple10 ) </mrl>
+</example>
+
+<example id="163">
+<nl lang="en"> pink1 kicks </nl>
+<mrl lang="soccer"> kick ( pink1 ) </mrl>
+</example>
+
+<example id="165">
+<nl lang="en"> pink8 kicks to pink11 </nl>
+<mrl lang="soccer"> pass ( pink8 , pink11 ) </mrl>
+</example>
+
+<example id="166">
+<nl lang="en"> pink11 kicks to pink9 </nl>
+<mrl lang="soccer"> pass ( pink11 , pink9 ) </mrl>
+</example>
+
+<example id="169">
+<nl lang="en"> pink10 kicks to pink7 </nl>
+<mrl lang="soccer"> pass ( pink10 , pink7 ) </mrl>
+</example>
+
+<example id="170">
+<nl lang="en"> pink7 kicks to pink8 </nl>
+<mrl lang="soccer"> pass ( pink7 , pink8 ) </mrl>
+</example>
+
+<example id="171">
+<nl lang="en"> pink8 kicks to pink11 </nl>
+<mrl lang="soccer"> pass ( pink8 , pink11 ) </mrl>
+</example>
+
+<example id="172">
+<nl lang="en"> pink11 kicks to pink9 </nl>
+<mrl lang="soccer"> pass ( pink11 , pink9 ) </mrl>
+</example>
+
+<example id="173">
+<nl lang="en"> pink9 kicks to pink7 </nl>
+<mrl lang="soccer"> pass ( pink9 , pink7 ) </mrl>
+</example>
+
+<example id="174">
+<nl lang="en"> pink7 kicks </nl>
+<mrl lang="soccer"> kick ( pink7 ) </mrl>
+</example>
+
+<example id="176">
+<nl lang="en"> purple10 kicks to purple9 </nl>
+<mrl lang="soccer"> pass ( purple10 , purple9 ) </mrl>
+</example>
+
+<example id="177">
+<nl lang="en"> purple9 kicks to purple7 </nl>
+<mrl lang="soccer"> pass ( purple9 , purple7 ) </mrl>
+</example>
+
+<example id="178">
+<nl lang="en"> purple7 shoots </nl>
+<mrl lang="soccer"> kick ( purple7 ) </mrl>
+</example>
+
+<example id="180">
+<nl lang="en"> pink1 kicks to pink4 </nl>
+<mrl lang="soccer"> pass ( pink1 , pink4 ) </mrl>
+</example>
+
+<example id="181">
+<nl lang="en"> pink4 kicks to pink5 </nl>
+<mrl lang="soccer"> pass ( pink4 , pink5 ) </mrl>
+</example>
+
+<example id="182">
+<nl lang="en"> pink5 kicks </nl>
+<mrl lang="soccer"> kick ( pink5 ) </mrl>
+</example>
+
+<example id="184">
+<nl lang="en"> pink8 kicks to pink11 </nl>
+<mrl lang="soccer"> pass ( pink8 , pink11 ) </mrl>
+</example>
+
+<example id="185">
+<nl lang="en"> pink11 kicks to pink8 </nl>
+<mrl lang="soccer"> pass ( pink11 , pink8 ) </mrl>
+</example>
+
+<example id="187">
+<nl lang="en"> purple6 kicks to purple8 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple8 ) </mrl>
+</example>
+
+<example id="188">
+<nl lang="en"> purple8 kicks to purple11 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple11 ) </mrl>
+</example>
+
+<example id="189">
+<nl lang="en"> purple11 kicks to purple8 </nl>
+<mrl lang="soccer"> pass ( purple11 , purple8 ) </mrl>
+</example>
+
+<example id="191">
+<nl lang="en"> pink5 kicks to pink6 </nl>
+<mrl lang="soccer"> pass ( pink5 , pink6 ) </mrl>
+</example>
+
+<example id="192">
+<nl lang="en"> pink6 kicks to pink7 </nl>
+<mrl lang="soccer"> pass ( pink6 , pink7 ) </mrl>
+</example>
+
+<example id="193">
+<nl lang="en"> pink7 kicks to pink9 </nl>
+<mrl lang="soccer"> pass ( pink7 , pink9 ) </mrl>
+</example>
+
+<example id="194">
+<nl lang="en"> pink9 kicks to pink11 </nl>
+<mrl lang="soccer"> pass ( pink9 , pink11 ) </mrl>
+</example>
+
+<example id="195">
+<nl lang="en"> pink11 kicks to pink6 </nl>
+<mrl lang="soccer"> pass ( pink11 , pink6 ) </mrl>
+</example>
+
+<example id="196">
+<nl lang="en"> pink6 kicks to pink9 </nl>
+<mrl lang="soccer"> pass ( pink6 , pink9 ) </mrl>
+</example>
+
+<example id="197">
+<nl lang="en"> pink9 kicks to pink10 </nl>
+<mrl lang="soccer"> pass ( pink9 , pink10 ) </mrl>
+</example>
+
+<example id="198">
+<nl lang="en"> pink10 kicks to pink8 </nl>
+<mrl lang="soccer"> pass ( pink10 , pink8 ) </mrl>
+</example>
+
+<example id="200">
+<nl lang="en"> purple6 kicks to purple7 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple7 ) </mrl>
+</example>
+
+<example id="201">
+<nl lang="en"> pink9 kicks to pink6 </nl>
+<mrl lang="soccer"> pass ( pink9 , pink6 ) </mrl>
+</example>
+
+<example id="202">
+<nl lang="en"> pink6 kicks to pink2 </nl>
+<mrl lang="soccer"> pass ( pink6 , pink2 ) </mrl>
+</example>
+
+<example id="205">
+<nl lang="en"> pink2 kicks to pink7 </nl>
+<mrl lang="soccer"> pass ( pink2 , pink7 ) </mrl>
+</example>
+
+<example id="206">
+<nl lang="en"> pink7 kicks to pink10 </nl>
+<mrl lang="soccer"> pass ( pink7 , pink10 ) </mrl>
+</example>
+
+<example id="207">
+<nl lang="en"> pink10 kicks to pink7 </nl>
+<mrl lang="soccer"> pass ( pink10 , pink7 ) </mrl>
+</example>
+
+<example id="208">
+<nl lang="en"> pink7 kicks to pink6 </nl>
+<mrl lang="soccer"> pass ( pink7 , pink6 ) </mrl>
+</example>
+
+<example id="209">
+<nl lang="en"> pink6 kicks to pink8 </nl>
+<mrl lang="soccer"> pass ( pink6 , pink8 ) </mrl>
+</example>
+
+<example id="210">
+<nl lang="en"> pink8 kicks to pink11 </nl>
+<mrl lang="soccer"> pass ( pink8 , pink11 ) </mrl>
+</example>
+
+<example id="211">
+<nl lang="en"> pink11 shoots </nl>
+<mrl lang="soccer"> kick ( pink11 ) </mrl>
+</example>
+
+<example id="212">
+<nl lang="en"> pink11 scores </nl>
+<mrl lang="soccer"> playmode ( goal_r ) </mrl>
+</example>
+
+<example id="213">
+<nl lang="en"> purple9 kicks to purple5 </nl>
+<mrl lang="soccer"> pass ( purple9 , purple5 ) </mrl>
+</example>
+
+<example id="214">
+<nl lang="en"> purple5 kicks to purple8 </nl>
+<mrl lang="soccer"> pass ( purple5 , purple8 ) </mrl>
+</example>
+
+<example id="215">
+<nl lang="en"> purple8 kicks to purple6 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple6 ) </mrl>
+</example>
+
+<example id="216">
+<nl lang="en"> purple6 kicks to purple8 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple8 ) </mrl>
+</example>
+
+<example id="217">
+<nl lang="en"> purple8 shoots </nl>
+<mrl lang="soccer"> kick ( purple8 ) </mrl>
+</example>
+
+<example id="218">
+<nl lang="en"> purple8 scores </nl>
+<mrl lang="soccer"> playmode ( goal_l ) </mrl>
+</example>
+
+<example id="219">
+<nl lang="en"> pink6 kicks to pink11 </nl>
+<mrl lang="soccer"> pass ( pink6 , pink11 ) </mrl>
+</example>
+
+<example id="220">
+<nl lang="en"> pink11 kicks to pink9 </nl>
+<mrl lang="soccer"> pass ( pink11 , pink9 ) </mrl>
+</example>
+
+<example id="221">
+<nl lang="en"> pink9 kicks to pink7 </nl>
+<mrl lang="soccer"> pass ( pink9 , pink7 ) </mrl>
+</example>
+
+<example id="222">
+<nl lang="en"> pink7 kicks to pink9 </nl>
+<mrl lang="soccer"> pass ( pink7 , pink9 ) </mrl>
+</example>
+
+<example id="223">
+<nl lang="en"> pink9 kicks to pink11 </nl>
+<mrl lang="soccer"> pass ( pink9 , pink11 ) </mrl>
+</example>
+
+<example id="225">
+<nl lang="en"> pink10 shoots </nl>
+<mrl lang="soccer"> kick ( pink10 ) </mrl>
+</example>
+
+<example id="226">
+<nl lang="en"> pink10 scores </nl>
+<mrl lang="soccer"> playmode ( goal_r ) </mrl>
+</example>
+
+<example id="227">
+<nl lang="en"> purple9 kicks to purple5 </nl>
+<mrl lang="soccer"> pass ( purple9 , purple5 ) </mrl>
+</example>
+
+<example id="228">
+<nl lang="en"> purple5 kicks to purple8 </nl>
+<mrl lang="soccer"> pass ( purple5 , purple8 ) </mrl>
+</example>
+
+<example id="229">
+<nl lang="en"> purple8 kicks </nl>
+<mrl lang="soccer"> kick ( purple8 ) </mrl>
+</example>
+
+<example id="231">
+<nl lang="en"> purple9 kicks to purple2 </nl>
+<mrl lang="soccer"> pass ( purple9 , purple2 ) </mrl>
+</example>
+
+<example id="232">
+<nl lang="en"> pink2 kicks to pink7 </nl>
+<mrl lang="soccer"> pass ( pink2 , pink7 ) </mrl>
+</example>
+
+<example id="233">
+<nl lang="en"> pink7 kicks to pink10 </nl>
+<mrl lang="soccer"> pass ( pink7 , pink10 ) </mrl>
+</example>
+
+<example id="235">
+<nl lang="en"> pink10 kicks </nl>
+<mrl lang="soccer"> kick ( pink10 ) </mrl>
+</example>
+
+<example id="237">
+<nl lang="en"> purple4 kicks to purple7 </nl>
+<mrl lang="soccer"> pass ( purple4 , purple7 ) </mrl>
+</example>
+
+<example id="238">
+<nl lang="en"> purple7 kicks to purple9 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple9 ) </mrl>
+</example>
+
+<example id="239">
+<nl lang="en"> purple9 kicks to purple8 </nl>
+<mrl lang="soccer"> pass ( purple9 , purple8 ) </mrl>
+</example>
+
+<example id="240">
+<nl lang="en"> purple8 kicks to purple6 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple6 ) </mrl>
+</example>
+
+<example id="241">
+<nl lang="en"> purple6 kicks to purple8 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple8 ) </mrl>
+</example>
+
+<example id="242">
+<nl lang="en"> purple8 kicks </nl>
+<mrl lang="soccer"> kick ( purple8 ) </mrl>
+</example>
+
+<example id="244">
+<nl lang="en"> pink3 kicks to pink4 </nl>
+<mrl lang="soccer"> pass ( pink3 , pink4 ) </mrl>
+</example>
+
+<example id="246">
+<nl lang="en"> purple6 kicks to purple8 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple8 ) </mrl>
+</example>
+
+<example id="247">
+<nl lang="en"> purple8 kicks </nl>
+<mrl lang="soccer"> kick ( purple8 ) </mrl>
+</example>
+
+<example id="250">
+<nl lang="en"> purple6 kicks to purple7 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple7 ) </mrl>
+</example>
+
+<example id="251">
+<nl lang="en"> purple7 kicks to purple10 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple10 ) </mrl>
+</example>
+
+<example id="252">
+<nl lang="en"> purple10 kicks to purple7 </nl>
+<mrl lang="soccer"> pass ( purple10 , purple7 ) </mrl>
+</example>
+
+<example id="254">
+<nl lang="en"> purple6 kicks to purple9 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple9 ) </mrl>
+</example>
+
+<example id="255">
+<nl lang="en"> purple9 kicks to purple10 </nl>
+<mrl lang="soccer"> pass ( purple9 , purple10 ) </mrl>
+</example>
+
+<example id="256">
+<nl lang="en"> purple10 kicks to purple9 </nl>
+<mrl lang="soccer"> pass ( purple10 , purple9 ) </mrl>
+</example>
+
+<example id="257">
+<nl lang="en"> purple9 shoots </nl>
+<mrl lang="soccer"> kick ( purple9 ) </mrl>
+</example>
+
+<example id="258">
+<nl lang="en"> purple9 scores </nl>
+<mrl lang="soccer"> playmode ( goal_l ) </mrl>
+</example>
+
+<example id="259">
+<nl lang="en"> pink9 kicks to pink5 </nl>
+<mrl lang="soccer"> pass ( pink9 , pink5 ) </mrl>
+</example>
+
+<example id="260">
+<nl lang="en"> pink5 kicks to pink6 </nl>
+<mrl lang="soccer"> pass ( pink5 , pink6 ) </mrl>
+</example>
+
+<example id="261">
+<nl lang="en"> pink6 kicks to pink5 </nl>
+<mrl lang="soccer"> pass ( pink6 , pink5 ) </mrl>
+</example>
+
+<example id="262">
+<nl lang="en"> pink5 kicks to pink8 </nl>
+<mrl lang="soccer"> pass ( pink5 , pink8 ) </mrl>
+</example>
+
+<example id="263">
+<nl lang="en"> pink8 kicks to pink11 </nl>
+<mrl lang="soccer"> pass ( pink8 , pink11 ) </mrl>
+</example>
+
+<example id="264">
+<nl lang="en"> pink11 kicks to pink8 </nl>
+<mrl lang="soccer"> pass ( pink11 , pink8 ) </mrl>
+</example>
+
+<example id="265">
+<nl lang="en"> pink8 kicks to pink6 </nl>
+<mrl lang="soccer"> pass ( pink8 , pink6 ) </mrl>
+</example>
+
+<example id="266">
+<nl lang="en"> pink6 kicks to pink7 </nl>
+<mrl lang="soccer"> pass ( pink6 , pink7 ) </mrl>
+</example>
+
+<example id="267">
+<nl lang="en"> pink7 kicks to pink10 </nl>
+<mrl lang="soccer"> pass ( pink7 , pink10 ) </mrl>
+</example>
+
+<example id="268">
+<nl lang="en"> pink10 kicks to pink7 </nl>
+<mrl lang="soccer"> pass ( pink10 , pink7 ) </mrl>
+</example>
+
+<example id="270">
+<nl lang="en"> purple10 kicks to purple9 </nl>
+<mrl lang="soccer"> pass ( purple10 , purple9 ) </mrl>
+</example>
+
+<example id="271">
+<nl lang="en"> purple9 kicks to purple10 </nl>
+<mrl lang="soccer"> pass ( purple9 , purple10 ) </mrl>
+</example>
+
+<example id="272">
+<nl lang="en"> purple10 kicks to purple7 </nl>
+<mrl lang="soccer"> pass ( purple10 , purple7 ) </mrl>
+</example>
+
+<example id="273">
+<nl lang="en"> purple7 kicks to purple8 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple8 ) </mrl>
+</example>
+
+<example id="274">
+<nl lang="en"> purple8 kicks to purple6 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple6 ) </mrl>
+</example>
+
+<example id="275">
+<nl lang="en"> purple6 shoots </nl>
+<mrl lang="soccer"> kick ( purple6 ) </mrl>
+</example>
+
+<example id="278">
+<nl lang="en"> pink1 kicks to pink2 </nl>
+<mrl lang="soccer"> pass ( pink1 , pink2 ) </mrl>
+</example>
+
+<example id="280">
+<nl lang="en"> purple10 kicks to purple7 </nl>
+<mrl lang="soccer"> pass ( purple10 , purple7 ) </mrl>
+</example>
+
+<example id="281">
+<nl lang="en"> pink3 kicks to pink6 </nl>
+<mrl lang="soccer"> pass ( pink3 , pink6 ) </mrl>
+</example>
+
+<example id="282">
+<nl lang="en"> pink6 kicks to pink7 </nl>
+<mrl lang="soccer"> pass ( pink6 , pink7 ) </mrl>
+</example>
+
+<example id="283">
+<nl lang="en"> pink7 kicks to pink10 </nl>
+<mrl lang="soccer"> pass ( pink7 , pink10 ) </mrl>
+</example>
+
+<example id="284">
+<nl lang="en"> pink10 kicks to pink9 </nl>
+<mrl lang="soccer"> pass ( pink10 , pink9 ) </mrl>
+</example>
+
+<example id="285">
+<nl lang="en"> pink9 kicks to pink10 </nl>
+<mrl lang="soccer"> pass ( pink9 , pink10 ) </mrl>
+</example>
+
+<example id="286">
+<nl lang="en"> pink10 kicks to pink9 </nl>
+<mrl lang="soccer"> pass ( pink10 , pink9 ) </mrl>
+</example>
+
+<example id="288">
+<nl lang="en"> purple1 kicks to purple4 </nl>
+<mrl lang="soccer"> pass ( purple1 , purple4 ) </mrl>
+</example>
+
+<example id="289">
+<nl lang="en"> purple4 kicks to purple6 </nl>
+<mrl lang="soccer"> pass ( purple4 , purple6 ) </mrl>
+</example>
+
+<example id="290">
+<nl lang="en"> purple6 kicks to purple8 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple8 ) </mrl>
+</example>
+
+<example id="291">
+<nl lang="en"> purple8 kicks to purple6 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple6 ) </mrl>
+</example>
+
+<example id="292">
+<nl lang="en"> purple6 kicks to purple11 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple11 ) </mrl>
+</example>
+
+<example id="293">
+<nl lang="en"> purple11 kicks </nl>
+<mrl lang="soccer"> kick ( purple11 ) </mrl>
+</example>
+
+<example id="295">
+<nl lang="en"> purple11 kicks to purple6 </nl>
+<mrl lang="soccer"> pass ( purple11 , purple6 ) </mrl>
+</example>
+
+<example id="296">
+<nl lang="en"> purple6 kicks </nl>
+<mrl lang="soccer"> kick ( purple6 ) </mrl>
+</example>
+
+<example id="298">
+<nl lang="en"> pink1 kicks to pink5 </nl>
+<mrl lang="soccer"> pass ( pink1 , pink5 ) </mrl>
+</example>
+
+<example id="299">
+<nl lang="en"> pink5 kicks to pink8 </nl>
+<mrl lang="soccer"> pass ( pink5 , pink8 ) </mrl>
+</example>
+
+<example id="300">
+<nl lang="en"> pink8 kicks to pink11 </nl>
+<mrl lang="soccer"> pass ( pink8 , pink11 ) </mrl>
+</example>
+
+<example id="301">
+<nl lang="en"> pink11 kicks to pink6 </nl>
+<mrl lang="soccer"> pass ( pink11 , pink6 ) </mrl>
+</example>
+
+<example id="302">
+<nl lang="en"> pink6 kicks to pink9 </nl>
+<mrl lang="soccer"> pass ( pink6 , pink9 ) </mrl>
+</example>
+
+<example id="303">
+<nl lang="en"> pink9 kicks to pink7 </nl>
+<mrl lang="soccer"> pass ( pink9 , pink7 ) </mrl>
+</example>
+
+<example id="304">
+<nl lang="en"> pink7 kicks to pink10 </nl>
+<mrl lang="soccer"> pass ( pink7 , pink10 ) </mrl>
+</example>
+
+<example id="305">
+<nl lang="en"> pink10 kicks to pink9 </nl>
+<mrl lang="soccer"> pass ( pink10 , pink9 ) </mrl>
+</example>
+
+<example id="306">
+<nl lang="en"> pink9 kicks to pink8 </nl>
+<mrl lang="soccer"> pass ( pink9 , pink8 ) </mrl>
+</example>
+
+<example id="307">
+<nl lang="en"> pink8 kicks to pink11 </nl>
+<mrl lang="soccer"> pass ( pink8 , pink11 ) </mrl>
+</example>
+
+<example id="308">
+<nl lang="en"> pink11 kicks to pink9 </nl>
+<mrl lang="soccer"> pass ( pink11 , pink9 ) </mrl>
+</example>
+
+<example id="310">
+<nl lang="en"> purple7 kicks to purple8 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple8 ) </mrl>
+</example>
+
+<example id="311">
+<nl lang="en"> purple8 kicks to purple6 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple6 ) </mrl>
+</example>
+
+<example id="312">
+<nl lang="en"> puprle6 kicks to purple7 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple7 ) </mrl>
+</example>
+
+<example id="313">
+<nl lang="en"> purple7 kicks to purple11 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple11 ) </mrl>
+</example>
+
+<example id="315">
+<nl lang="en"> purple6 kicks to purple11 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple11 ) </mrl>
+</example>
+
+<example id="316">
+<nl lang="en"> purple11 kicks </nl>
+<mrl lang="soccer"> kick ( purple11 ) </mrl>
+</example>
+
+<example id="318">
+<nl lang="en"> purple6 kicks to purple11 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple11 ) </mrl>
+</example>
+
+<example id="319">
+<nl lang="en"> purple11 kicks to pink8 </nl>
+<mrl lang="soccer"> badPass ( purple11 , pink8 ) </mrl>
+</example>
+
+<example id="320">
+<nl lang="en"> pink8 kicks to pink11 </nl>
+<mrl lang="soccer"> pass ( pink8 , pink11 ) </mrl>
+</example>
+
+<example id="322">
+<nl lang="en"> purple3 kicks to purple4 </nl>
+<mrl lang="soccer"> pass ( purple3 , purple4 ) </mrl>
+</example>
+
+<example id="323">
+<nl lang="en"> purple4 kicks to purple6 </nl>
+<mrl lang="soccer"> pass ( purple4 , purple6 ) </mrl>
+</example>
+
+<example id="324">
+<nl lang="en"> purple6 kicks to purple9 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple9 ) </mrl>
+</example>
+
+<example id="325">
+<nl lang="en"> purple9 kicks to purple6 </nl>
+<mrl lang="soccer"> pass ( purple9 , purple6 ) </mrl>
+</example>
+
+<example id="326">
+<nl lang="en"> purple6 kicks to purple9 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple9 ) </mrl>
+</example>
+
+<example id="327">
+<nl lang="en"> purple9 kicks to purple8 </nl>
+<mrl lang="soccer"> pass ( purple9 , purple8 ) </mrl>
+</example>
+
+<example id="328">
+<nl lang="en"> purple8 kicks to purple7 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple7 ) </mrl>
+</example>
+
+<example id="329">
+<nl lang="en"> purple7 kicks to purple8 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple8 ) </mrl>
+</example>
+
+<example id="330">
+<nl lang="en"> purple8 kicks to purple6 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple6 ) </mrl>
+</example>
+
+<example id="331">
+<nl lang="en"> purple6 kicks to purple11 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple11 ) </mrl>
+</example>
+
+<example id="332">
+<nl lang="en"> purple11 kicks to purple6 </nl>
+<mrl lang="soccer"> pass ( purple11 , purple6 ) </mrl>
+</example>
+
+<example id="334">
+<nl lang="en"> pink6 kicks to pink8 </nl>
+<mrl lang="soccer"> pass ( pink6 , pink8 ) </mrl>
+</example>
+
+<example id="335">
+<nl lang="en"> pink8 kicks to pink11 </nl>
+<mrl lang="soccer"> pass ( pink8 , pink11 ) </mrl>
+</example>
+
+<example id="337">
+<nl lang="en"> purple5 kicks to purple4 </nl>
+<mrl lang="soccer"> pass ( purple5 , purple4 ) </mrl>
+</example>
+
+<example id="338">
+<nl lang="en"> purple4 kicks to purple7 </nl>
+<mrl lang="soccer"> pass ( purple4 , purple7 ) </mrl>
+</example>
+
+<example id="339">
+<nl lang="en"> purple7 kicks </nl>
+<mrl lang="soccer"> kick ( purple7 ) </mrl>
+</example>
+
+<example id="341">
+<nl lang="en"> pink4 kicks </nl>
+<mrl lang="soccer"> kick ( pink4 ) </mrl>
+</example>
+
+<example id="343">
+<nl lang="en"> purple8 kicks to purple11 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple11 ) </mrl>
+</example>
+
+<example id="344">
+<nl lang="en"> purple11 kicks to purple4 </nl>
+<mrl lang="soccer"> pass ( purple11 , purple4 ) </mrl>
+</example>
+
+<example id="345">
+<nl lang="en"> purple4 kicks to purple6 </nl>
+<mrl lang="soccer"> pass ( purple4 , purple6 ) </mrl>
+</example>
+
+<example id="346">
+<nl lang="en"> purple6 kicks to purple8 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple8 ) </mrl>
+</example>
+
+<example id="347">
+<nl lang="en"> purple8 kicks to purple11 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple11 ) </mrl>
+</example>
+
+<example id="348">
+<nl lang="en"> purple11 kicks to purple8 </nl>
+<mrl lang="soccer"> pass ( purple11 , purple8 ) </mrl>
+</example>
+
+<example id="349">
+<nl lang="en"> purple8 kicks to purple6 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple6 ) </mrl>
+</example>
+
+<example id="351">
+<nl lang="en"> purple8 kicks to purple9 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple9 ) </mrl>
+</example>
+
+<example id="353">
+<nl lang="en"> pink1 kicks to pink2 </nl>
+<mrl lang="soccer"> pass ( pink1 , pink2 ) </mrl>
+</example>
+
+<example id="355">
+<nl lang="en"> purple10 kicks to purple7 </nl>
+<mrl lang="soccer"> pass ( purple10 , purple7 ) </mrl>
+</example>
+
+<example id="356">
+<nl lang="en"> purple7 kicks to purple8 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple8 ) </mrl>
+</example>
+
+<example id="358">
+<nl lang="en"> pink5 kicks to pink7 </nl>
+<mrl lang="soccer"> pass ( pink5 , pink7 ) </mrl>
+</example>
+
+<example id="360">
+<nl lang="en"> purple7 kicks to purple8 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple8 ) </mrl>
+</example>
+
+<example id="361">
+<nl lang="en"> purple8 shoots </nl>
+<mrl lang="soccer"> kick ( purple8 ) </mrl>
+</example>
+
+<example id="362">
+<nl lang="en"> purple8 scores </nl>
+<mrl lang="soccer"> playmode ( goal_l ) </mrl>
+</example>
+
+<example id="363">
+<nl lang="en"> pink9 kicks to pink6 </nl>
+<mrl lang="soccer"> pass ( pink9 , pink6 ) </mrl>
+</example>
+
+<example id="364">
+<nl lang="en"> pink6 kicks to pink8 </nl>
+<mrl lang="soccer"> pass ( pink6 , pink8 ) </mrl>
+</example>
+
+<example id="366">
+<nl lang="en"> purple3 kicks </nl>
+<mrl lang="soccer"> kick ( purple3 ) </mrl>
+</example>
+
+<example id="368">
+<nl lang="en"> purple6 kicks to purple11 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple11 ) </mrl>
+</example>
+
+<example id="369">
+<nl lang="en"> purple11 kicks to purple6 </nl>
+<mrl lang="soccer"> pass ( purple11 , purple6 ) </mrl>
+</example>
+
+<example id="370">
+<nl lang="en"> purple6 kicks to purple8 </nl>
+<mrl lang="soccer"> pass ( purple6 , purple8 ) </mrl>
+</example>
+
+<example id="371">
+<nl lang="en"> purple8 kicks to purple9 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple9 ) </mrl>
+</example>
+
+<example id="372">
+<nl lang="en"> purple9 shoots </nl>
+<mrl lang="soccer"> kick ( purple9 ) </mrl>
+</example>
+
+<example id="373">
+<nl lang="en"> purple9 scores </nl>
+<mrl lang="soccer"> playmode ( goal_l ) </mrl>
+</example>
+
+<example id="374">
+<nl lang="en"> pink9 kicks to pink6 </nl>
+<mrl lang="soccer"> pass ( pink9 , pink6 ) </mrl>
+</example>
+
+<example id="375">
+<nl lang="en"> pink6 kicks to pink11 </nl>
+<mrl lang="soccer"> pass ( pink6 , pink11 ) </mrl>
+</example>
+
+<example id="376">
+<nl lang="en"> pink11 kicks to pink9 </nl>
+<mrl lang="soccer"> pass ( pink11 , pink9 ) </mrl>
+</example>
+
+<example id="377">
+<nl lang="en"> pink9 kicks to pink10 </nl>
+<mrl lang="soccer"> pass ( pink9 , pink10 ) </mrl>
+</example>
+
+<example id="378">
+<nl lang="en"> pink10 kicks to pink9 </nl>
+<mrl lang="soccer"> pass ( pink10 , pink9 ) </mrl>
+</example>
+
+<example id="379">
+<nl lang="en"> pink9 kicks to pink10 </nl>
+<mrl lang="soccer"> pass ( pink9 , pink10 ) </mrl>
+</example>
+
+<example id="380">
+<nl lang="en"> pink9 kicks to pink8 </nl>
+<mrl lang="soccer"> pass ( pink9 , pink8 ) </mrl>
+</example>
+
+<example id="381">
+<nl lang="en"> pink8 kicks to pink9 </nl>
+<mrl lang="soccer"> pass ( pink8 , pink9 ) </mrl>
+</example>
+
+<example id="382">
+<nl lang="en"> pink9 kicks to pink10 </nl>
+<mrl lang="soccer"> pass ( pink9 , pink10 ) </mrl>
+</example>
+
+<example id="383">
+<nl lang="en"> pink10 kicks </nl>
+<mrl lang="soccer"> kick ( pink10 ) </mrl>
+</example>
+
+<example id="385">
+<nl lang="en"> purple1 kicks to purple2 </nl>
+<mrl lang="soccer"> pass ( purple1 , purple2 ) </mrl>
+</example>
+
+<example id="386">
+<nl lang="en"> purple2 kicks to purple8 </nl>
+<mrl lang="soccer"> pass ( purple2 , purple8 ) </mrl>
+</example>
+
+<example id="387">
+<nl lang="en"> purple8 kicks to purple6 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple6 ) </mrl>
+</example>
+
+<example id="389">
+<nl lang="en"> pink5 kicks to pink8 </nl>
+<mrl lang="soccer"> pass ( pink5 , pink8 ) </mrl>
+</example>
+
+<example id="390">
+<nl lang="en"> pink8 kicks to pink6 </nl>
+<mrl lang="soccer"> pass ( pink8 , pink6 ) </mrl>
+</example>
+
+<example id="391">
+<nl lang="en"> pink6 kicks to pink9 </nl>
+<mrl lang="soccer"> pass ( pink6 , pink9 ) </mrl>
+</example>
+
+<example id="392">
+<nl lang="en"> pink9 kicks to pink10 </nl>
+<mrl lang="soccer"> pass ( pink9 , pink10 ) </mrl>
+</example>
+
+<example id="393">
+<nl lang="en"> pink10 kicks </nl>
+<mrl lang="soccer"> kick ( pink10 ) </mrl>
+</example>
+
+<example id="395">
+<nl lang="en"> purple2 kicks to purple10 </nl>
+<mrl lang="soccer"> pass ( purple2 , purple10 ) </mrl>
+</example>
+
+<example id="397">
+<nl lang="en"> pink7 kicks to pink6 </nl>
+<mrl lang="soccer"> pass ( pink7 , pink6 ) </mrl>
+</example>
+
+<example id="398">
+<nl lang="en"> pink6 kicks to pink8 </nl>
+<mrl lang="soccer"> pass ( pink6 , pink8 ) </mrl>
+</example>
+
+<example id="399">
+<nl lang="en"> pink8 kicks to pink11 </nl>
+<mrl lang="soccer"> pass ( pink8 , pink11 ) </mrl>
+</example>
+
+<example id="400">
+<nl lang="en"> pink11 shoots </nl>
+<mrl lang="soccer"> kick ( pink11 ) </mrl>
+</example>
+
+<example id="402">
+<nl lang="en"> purple1 kicks to purple3 </nl>
+<mrl lang="soccer"> pass ( purple1 , purple3 ) </mrl>
+</example>
+
+<example id="403">
+<nl lang="en"> purple3 kicks to purple8 </nl>
+<mrl lang="soccer"> pass ( purple3 , purple8 ) </mrl>
+</example>
+
+<example id="404">
+<nl lang="en"> purple8 kicks to purple7 </nl>
+<mrl lang="soccer"> pass ( purple8 , purple7 ) </mrl>
+</example>
+
+<example id="405">
+<nl lang="en"> purple7 kicks to purple9 </nl>
+<mrl lang="soccer"> pass ( purple7 , purple9 ) </mrl>
+</example>
+
+<example id="407">
+<nl lang="en"> pink1 kicks to pink4 </nl>
+<mrl lang="soccer"> pass ( pink1 , pink4 ) </mrl>
+</example>
+
+<example id="408">
+<nl lang="en"> pink4 kicks to pink8 </nl>
+<mrl lang="soccer"> pass ( pink4 , pink8 ) </mrl>
+</example>
+
+<example id="409">
+<nl lang="en"> pink8 kicks to pink11 </nl>
+<mrl lang="soccer"> pass ( pink8 , pink11 ) </mrl>
+</example>
+
+</examples>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<topography file="/mas/disks/cogmac/u/levit/Work/Data/HCRC/descriptions/3g.xml">
+  <path stops="108">
+    <stop x="125" y="55" />
+    <stop x="132" y="80" />
+    <stop x="142" y="95" />
+    <stop x="152" y="111" />
+    <stop x="159" y="128" />
+    <stop x="155" y="150" />
+    <stop x="146" y="167" />
+    <stop x="129" y="186" />
+    <stop x="125" y="201" />
+    <stop x="121" y="216" />
+    <stop x="124" y="239" />
+    <stop x="142" y="259" />
+    <stop x="170" y="263" />
+    <stop x="196" y="257" />
+    <stop x="214" y="247" />
+    <stop x="233" y="236" />
+    <stop x="247" y="219" />
+    <stop x="261" y="202" />
+    <stop x="268" y="187" />
+    <stop x="275" y="172" />
+    <stop x="282" y="157" />
+    <stop x="290" y="141" />
+    <stop x="306" y="133" />
+    <stop x="321" y="134" />
+    <stop x="336" y="136" />
+    <stop x="351" y="138" />
+    <stop x="366" y="139" />
+    <stop x="381" y="141" />
+    <stop x="396" y="143" />
+    <stop x="411" y="145" />
+    <stop x="431" y="155" />
+    <stop x="443" y="172" />
+    <stop x="451" y="187" />
+    <stop x="459" y="203" />
+    <stop x="468" y="219" />
+    <stop x="476" y="235" />
+    <stop x="485" y="251" />
+    <stop x="499" y="265" />
+    <stop x="517" y="274" />
+    <stop x="535" y="283" />
+    <stop x="554" y="300" />
+    <stop x="560" y="321" />
+    <stop x="559" y="336" />
+    <stop x="557" y="352" />
+    <stop x="548" y="367" />
+    <stop x="538" y="382" />
+    <stop x="538" y="393" />
+    <stop x="561" y="396" />
+    <stop x="580" y="397" />
+    <stop x="599" y="398" />
+    <stop x="614" y="405" />
+    <stop x="630" y="412" />
+    <stop x="645" y="427" />
+    <stop x="650" y="443" />
+    <stop x="655" y="460" />
+    <stop x="650" y="483" />
+    <stop x="638" y="496" />
+    <stop x="613" y="509" />
+    <stop x="593" y="509" />
+    <stop x="573" y="508" />
+    <stop x="558" y="506" />
+    <stop x="542" y="503" />
+    <stop x="524" y="499" />
+    <stop x="506" y="494" />
+    <stop x="488" y="489" />
+    <stop x="463" y="496" />
+    <stop x="459" y="514" />
+    <stop x="460" y="529" />
+    <stop x="462" y="544" />
+    <stop x="464" y="559" />
+    <stop x="466" y="574" />
+    <stop x="468" y="590" />
+    <stop x="465" y="615" />
+    <stop x="452" y="625" />
+    <stop x="431" y="630" />
+    <stop x="416" y="630" />
+    <stop x="400" y="630" />
+    <stop x="381" y="626" />
+    <stop x="362" y="622" />
+    <stop x="347" y="629" />
+    <stop x="339" y="642" />
+    <stop x="331" y="655" />
+    <stop x="320" y="681" />
+    <stop x="302" y="699" />
+    <stop x="288" y="704" />
+    <stop x="273" y="710" />
+    <stop x="254" y="710" />
+    <stop x="234" y="709" />
+    <stop x="214" y="708" />
+    <stop x="189" y="714" />
+    <stop x="164" y="728" />
+    <stop x="152" y="740" />
+    <stop x="140" y="752" />
+    <stop x="128" y="765" />
+    <stop x="116" y="777" />
+    <stop x="104" y="789" />
+    <stop x="91" y="802" />
+    <stop x="78" y="811" />
+    <stop x="65" y="820" />
+    <stop x="53" y="842" />
+    <stop x="53" y="861" />
+    <stop x="53" y="880" />
+    <stop x="52" y="900" />
+    <stop x="60" y="923" />
+    <stop x="80" y="939" />
+    <stop x="102" y="948" />
+    <stop x="122" y="951" />
+    <stop x="142" y="954" />
+  </path>
+  <landmark name="m3_start">
+    <spot x="122" y="54" canCross="false" r="20" />
+    <polygon />
+  </landmark>
+  <landmark name="m3_cliffs">
+    <spot x="195" y="98" canCross="false" r="20" />
+    <polygon>
+      <vertix x="162" y="74" />
+      <vertix x="174" y="118" />
+      <vertix x="233" y="111" />
+      <vertix x="211" y="65" />
+    </polygon>
+  </landmark>
+  <landmark name="m3_forge">
+    <spot x="163" y="196" canCross="false" r="20" />
+    <polygon>
+      <vertix x="132" y="224" />
+      <vertix x="144" y="179" />
+      <vertix x="192" y="173" />
+      <vertix x="217" y="229" />
+      <vertix x="134" y="232" />
+    </polygon>
+  </landmark>
+  <landmark name="m3_old_pine">
+    <spot x="293" y="227" canCross="false" r="20" />
+    <polygon>
+      <vertix x="269" y="245" />
+      <vertix x="294" y="146" />
+      <vertix x="331" y="242" />
+      <vertix x="297" y="252" />
+    </polygon>
+  </landmark>
+  <landmark name="m3_pine_forest">
+    <spot x="531" y="200" canCross="false" r="20" />
+    <polygon>
+      <vertix x="482" y="195" />
+      <vertix x="506" y="133" />
+      <vertix x="562" y="133" />
+      <vertix x="588" y="209" />
+      <vertix x="557" y="243" />
+      <vertix x="498" y="242" />
+    </polygon>
+  </landmark>
+  <landmark name="m3_bakery">
+    <spot x="569" y="460" canCross="false" r="20" />
+    <polygon>
+      <vertix x="534" y="442" />
+      <vertix x="604" y="410" />
+      <vertix x="621" y="421" />
+      <vertix x="630" y="476" />
+      <vertix x="532" y="480" />
+    </polygon>
+  </landmark>
+  <landmark name="m3_canal">
+    <spot x="431" y="475" canCross="false" r="20" />
+    <polygon>
+      <vertix x="382" y="471" />
+      <vertix x="408" y="442" />
+      <vertix x="470" y="456" />
+      <vertix x="475" y="472" />
+      <vertix x="434" y="501" />
+    </polygon>
+  </landmark>
+  <landmark name="m3_crane_bay">
+    <spot x="443" y="687" canCross="false" r="20" />
+    <polygon>
+      <vertix x="223" y="965" />
+      <vertix x="398" y="881" />
+      <vertix x="336" y="791" />
+      <vertix x="357" y="631" />
+      <vertix x="455" y="634" />
+      <vertix x="486" y="581" />
+      <vertix x="584" y="614" />
+      <vertix x="686" y="761" />
+      <vertix x="753" y="781" />
+      <vertix x="534" y="902" />
+    </polygon>
+  </landmark>
+  <landmark name="m3_wheat_fields">
+    <spot x="245" y="664" canCross="false" r="20" />
+    <polygon>
+      <vertix x="161" y="677" />
+      <vertix x="220" y="620" />
+      <vertix x="305" y="644" />
+      <vertix x="308" y="677" />
+      <vertix x="269" y="687" />
+      <vertix x="179" y="685" />
+    </polygon>
+  </landmark>
+  <landmark name="m3_wheat_fields_2">
+    <spot x="235" y="375" canCross="false" r="20" />
+    <polygon>
+      <vertix x="156" y="390" />
+      <vertix x="173" y="355" />
+      <vertix x="230" y="328" />
+      <vertix x="300" y="351" />
+      <vertix x="295" y="395" />
+      <vertix x="176" y="399" />
+    </polygon>
+  </landmark>
+  <landmark name="m3_rocket_warehouse">
+    <spot x="205" y="781" canCross="false" r="20" />
+    <polygon>
+      <vertix x="165" y="751" />
+      <vertix x="247" y="749" />
+      <vertix x="248" y="796" />
+      <vertix x="162" y="803" />
+    </polygon>
+  </landmark>
+  <landmark name="m3_old_lighthouse">
+    <spot x="186" y="945" canCross="false" r="20" />
+    <polygon>
+      <vertix x="162" y="965" />
+      <vertix x="182" y="909" />
+      <vertix x="201" y="914" />
+      <vertix x="209" y="965" />
+    </polygon>
+  </landmark>
+  <landmark name="m3_finish">
+    <spot x="143" y="953" canCross="false" r="20" />
+    <polygon />
+  </landmark>
+</topography>
+

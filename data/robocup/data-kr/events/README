@@ -1,0 +1,8 @@
+File created: July 22, 2008
+Author: David Chen (dlcc@cs.utexas.edu)
+
+This subdirectory contains the extracted events or meaning representations (MRs) from the original Robocup game files.  Each line in the files are of the following format:
+
+<start time> | <end time> | <event>
+
+The start and end times indicate the duration of the event.  Many events are instantaneous events while some events have a longer duration.  For example, a pass event starts when the passer starts the pass and ends when the receiver gets the pass.  A CFG grammar for parsing the events can be found in mrl-grammar in the main directory.

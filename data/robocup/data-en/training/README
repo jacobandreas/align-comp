@@ -1,0 +1,6 @@
+File created: July 22, 2008
+Author: David Chen (dlcc@cs.utexas.edu)
+
+This subdirectory contains the ambiguous training files constructed from the events/MR files in the subdirectory events and the commentary files in the subdirectory nl.  The file is constructed by associating each natural language comment with any events that occurred within 5 timesteps of when the comment was recored.
+
+The files are in xml format.  The first half of the file contains the ambiguous training examples.  Each example includes a comment and a set of MRs the comment is associated with referenced by the semid numbers.  The example IDs correspond to the order the comments were recored as well as the example IDs in the gold-standard files.  The bottom half of the file contains the events/MRs.  Each event/MR has a sem ID which was referenced in the first part of the file.

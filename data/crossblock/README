@@ -1,0 +1,47 @@
+This archive contains a complete runable setup for the puzzle domain for the paper "Reinforcement Learning for Mapping Instructions to Actions", and is available from http://groups.csail.mit.edu/rbg/code/rl/.
+
+You can run the basic experiment by executing the simple script "run.sh" from a unix/linux command line.
+
+
+The contents of this archive are as follows:
+
+data: This directory contains the game definition file,
+      and the text instructions used in the paper.
+
+src:  This directory contains the source files for the
+      model proposed in the paper.  Note that the python
+	  source files in this directory are divided up into
+	  multiple files for clarity (different functional
+	  components of the model are in different files -
+	  e.g., action sampling, parameter update, and 
+	  feature computation are in three separate files).
+	  Due to this separation, the files cannot run
+	  as is, and need to be "compiled" via the make.sh
+	  script in the same directory.  The make.sh script
+	  simply concatenates the files back into a single
+	  python file that is runnable.
+
+exe:  This directory will contain the runnable python
+      source file once make.sh is run in the src
+	  directory (see "src:" above).
+
+run:  This is where the run output will be written
+      when the learner is run using the puzzle.cfg
+	  configuration file included in this archive.
+	  The output of a particular run will be written
+	  to the path run/unannot.<exp>, where <exp> is the 
+	  value provided in the command line parameter
+	  (exp=<exp>) to the learner.  In the script run.sh
+	  <exp> is set to "test", thus output is written
+	  to "run/unannot.test".
+
+puzzle.cfg:  This is a sample configuration file provided
+             to run the learner.  The configuration file
+			 sets the parameters of the learner to the
+			 values used in the published experiments.
+			 Note that the published experiments were
+			 averaged over 5 different random train/test
+			 splits.  This configuration file for 
+			 simplicity is set for a single train/test
+			 split.
+

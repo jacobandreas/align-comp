@@ -3,3 +3,6 @@ work/*
 project/*
 .cached_*
 .idea
+run.log
+src.tar.gz
+java.hprof.txt

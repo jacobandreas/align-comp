@@ -13,11 +13,11 @@ case class SparseParams(sparsePair: DenseVector[Double],
 
 trait SparseScorer extends Scorer with SparseLocalPairScorer with SparseLocalEventScorer {
   override type Params = SparseParams
-  override implicit val pct = classTag[SparseParams]
+  override def pct = classTag[SparseParams]
+  assert (pct != null)
 
   override def zeroLike(params: Params): Params = SparseParams(DenseVector.zeros[Double](params.sparsePair.length),
-                                                                        DenseVector.zeros[Double](params.sparseEvent.length))
-  override def ignoreLike(params: Params): Params = null
+                                                               DenseVector.zeros[Double](params.sparseEvent.length))
   override def increment(alpha: Double, update: Params, into: Params): Unit = {
     axpy(alpha, update.sparsePair, into.sparsePair)
     axpy(alpha, update.sparseEvent, into.sparseEvent)
@@ -36,10 +36,10 @@ trait SparseScorer extends Scorer with SparseLocalPairScorer with SparseLocalEve
   }
 
   override def initParams(index: FeatureIndex): Params = {
-    val pair = DenseVector.zeros[Double](index.pair.size)
-    val event = DenseVector.zeros[Double](index.event.size)
+    val pair = DenseVector.rand[Double](index.pair.size)
+    val event = DenseVector.rand[Double](index.event.size)
     SparseParams(pair, event)
   }
 }
 
-object CompleteSparseBagScorer extends SparseScorer with BagScorer
+object CompleteSparseBagScorer extends SparseScorer with BagScorer with Serializable

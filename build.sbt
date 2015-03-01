@@ -2,7 +2,7 @@ import AssemblyKeys._
 
 assemblySettings
 
-name := "games"
+name := "instructions"
 
 version := "0.1-SNAPSHOT"
 

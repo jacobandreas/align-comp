@@ -129,7 +129,7 @@ class Hcrc(hcrcRoot: File) extends Task with Serializable{
   }
 
   override def availableActions(state: State): Set[RelativePoint2D] = {
-    val nearestLandmarks = state.map.landmarks.sortBy(_.center.distanceTo(state.pos))
+    val nearestLandmarks = state.map.landmarks.sortBy(_.center.distanceTo(state.pos)) take 4
     nearestLandmarks.flatMap { landmark =>
       Seq(
         RelativePoint2D(landmark.center.x - Hcrc.LandmarkOffset - state.pos.x, landmark.center.y - state.pos.y),
@@ -184,6 +184,7 @@ class Hcrc(hcrcRoot: File) extends Task with Serializable{
 
   override def represent(s1: State, a: Action, s2: State): EventContext = {
     val event = Event(Set(StringFeature("toLandmark", s2.nearestLandmark.name),
+                          StringFeature("fromLandmark", s1.nearestLandmark.name),
                          RealFeature("length", s1.pos.distanceTo(s2.pos))))
     val world = GraphWorld(Set())
     EventContext(event, world)

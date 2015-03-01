@@ -17,8 +17,8 @@ object Featurizer {
     }
   }
 
-//  def join(textFeature: IndicatorFeature, pathFeature: IndicatorFeature): Seq[IndicatorFeature] = {
-  val join = Memoize[(IndicatorFeature,IndicatorFeature),Seq[IndicatorFeature]] { case (textFeature: IndicatorFeature, pathFeature: IndicatorFeature) =>
+  def join(textFeature: IndicatorFeature, pathFeature: IndicatorFeature): Seq[IndicatorFeature] = {
+//  val join = Memoize[(IndicatorFeature,IndicatorFeature),Seq[IndicatorFeature]] { case (textFeature: IndicatorFeature, pathFeature: IndicatorFeature) =>
     {
       (textFeature, pathFeature) match {
 

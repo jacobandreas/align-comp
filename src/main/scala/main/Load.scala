@@ -16,12 +16,12 @@ object Load extends Stage[Config] {
 
     val task = config.task(new File(config.dataDir))
     val instances = task.instances
-    val trainInstances = task.trainIds.map(instances)
+    val trainInstances = task.trainIds.map(instances) take 20
     val testInstances = task.testIds.map(instances)
 
-    val representations = trainInstances.map(Annotator.apply(task))
-    val index = FeatureIndex.buildFrom(representations)
-    val obsCache = TrainObservationCache.buildFrom(representations, index)
+    val representations = this.task("build representations") { trainInstances.map(Annotator.annotateInstance(task)) }
+    val index = this.task("build index") { FeatureIndex.buildFrom(representations) }
+    val obsCache = this.task("build observations") { ObservationCache.buildFromTrainingData(representations, index) }
 
     cache.put('scorer, scorer)
     cache.put('model, model)

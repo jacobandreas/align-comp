@@ -9,10 +9,9 @@ import scala.reflect.ClassTag
  */
 trait Scorer {
   type Params <: AnyRef
-  implicit val pct: ClassTag[Params]
+  def pct: ClassTag[Params]
 
   def zeroLike(params: Params): Params
-  def ignoreLike(params: Params): Params
   def increment(alpha: Double, update: Params, into: Params)
   def pack(params: Params): DenseVector[Double]
   def unpack(vecParams: DenseVector[Double], template: Params): Params

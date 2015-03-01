@@ -4,7 +4,7 @@ import breeze.linalg.DenseVector
 import breeze.optimize._
 import framework.erector.sequence.{ForwardBackward, LogHMMLattice}
 import framework.igor.experiment.{ResultCache, Stage}
-import model.{Model, FeatureIndex, TrainObservationCache, Scorer}
+import model._
 import spire.syntax.cfor._
 
 /**
@@ -22,14 +22,18 @@ object Train extends Stage[Config] {
     var alignments = initAlignments(obsCache)
 
     cforRange (0 until config.nTrainIters) { iter =>
+      print(alignments)
       params = maxParams(scorer)(params, alignments, obsCache, model)
+      dumpParams(params.asInstanceOf[SparseParams], index)
       alignments = maxAlignments(scorer)(params, obsCache, model)
     }
+
+    cache.put('params, params)
   }
 
   def initAlignments(obsCache: TrainObservationCache): IndexedSeq[IndexedSeq[Int]] = {
     IndexedSeq.tabulate(obsCache.nExamples) { iExample =>
-      IndexedSeq.tabulate(obsCache.nEvents(iExample)) { iEvent =>
+      IndexedSeq.tabulate(obsCache.nSentences(iExample)) { iEvent =>
         if (iEvent == obsCache.nSentences(iExample) - 1) obsCache.nEvents(iExample) - 1
         else iEvent * obsCache.nEvents(iExample) / obsCache.nSentences(iExample)
       }
@@ -41,7 +45,7 @@ object Train extends Stage[Config] {
                 currentAlignments: IndexedSeq[IndexedSeq[Int]],
                 obsCache: TrainObservationCache,
                 model: Model)
-               (implicit config: Config): scorer.Params = {
+               (implicit config: Config): scorer.Params = task("param step") {
     import scorer.{zeroLike,increment,pack,unpack}
 
     val objective = new DiffFunction[DenseVector[Double]] {
@@ -62,17 +66,19 @@ object Train extends Stage[Config] {
             (score1 + score2, grad1)
           }
         )
+        val packed = pack(tGrad)
         (-tScore, -pack(tGrad))
       }
     }
 
-    unpack(minimize(objective, currentParams), currentParams)
+//    GradientTester.test[Int,DenseVector[Double]](objective, pack(currentParams))
+    unpack(minimize(objective, pack(currentParams), L2Regularization(1)), currentParams)
   }
 
   def maxAlignments(scorer: Scorer)
                    (currentParams: scorer.Params,
                     obsCache: TrainObservationCache,
-                    model: Model): IndexedSeq[IndexedSeq[Int]] = {
+                    model: Model): IndexedSeq[IndexedSeq[Int]] = task("alignment step") {
     val lattice = new LogHMMLattice {
       override val numSequences: Int = obsCache.nExamples
       override def numStates(seq: Int): Int = obsCache.nEvents(seq)
@@ -94,5 +100,12 @@ object Train extends Stage[Config] {
 
     val assignments = ForwardBackward.max(lattice)
     IndexedSeq.tabulate(obsCache.nExamples)(assignments.assignment)
+  }
+
+  def dumpParams(params: SparseParams, index: FeatureIndex): Unit = {
+    index.pair.pairs.map { case (feat, idx) =>
+      val weight = params.sparsePair(idx)
+      (weight, s"$feat\t$weight")
+    }.toSeq.sortBy(_._1).foreach(p => logger.info(p._2))
   }
 }

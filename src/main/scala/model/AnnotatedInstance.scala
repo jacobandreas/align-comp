@@ -1,11 +1,13 @@
 package model
 
+import breeze.stats.distributions.Rand
 import epic.parser.NoParseException
 import framework.arbor.syntax.{DependencyNode, DependencyStructure, ParseCollapser}
 import framework.fodor.graph.EventContext
 import framework.fodor.{SimpleFeature, StringFeature, IndicatorFeature}
 import framework.arbor._
 import framework.arbor.BerkeleyAnnotators._
+import main.Config
 import task.Task
 import spire.syntax.cfor._
 
@@ -19,15 +21,24 @@ case class AnnotatedInstance(wordFeats: Array[Array[Set[IndicatorFeature]]],
                              altNodeFeats: Array[Array[Array[Set[IndicatorFeature]]]],
                              altEdgeFeats: Array[Array[Array[Array[Set[IndicatorFeature]]]]])
 
-object Annotator {
-  def apply(task: Task)(instance: task.Instance): AnnotatedInstance = {
+case class AnnotatedWalkthrough(wordFeats: Array[Array[Set[IndicatorFeature]]],
+                                depFeats: Array[Array[Array[Set[IndicatorFeature]]]])
 
-    val (wordFeats, depFeats) = instance.instructions map buildWordAndDepFeats unzip
-    val (nodeFeats, edgeFeats) = instance.path map (buildNodeAndEdgeFeats(task) _ tupled) unzip
+case class AnnotatedEvent(nodeFeats: Array[Set[IndicatorFeature]],
+                          edgeFeats: Array[Array[Set[IndicatorFeature]]])
+
+object Annotator {
+  def annotateInstance(task: Task)(instance: task.Instance)(implicit config: Config): AnnotatedInstance = {
+
+    val (wordFeats, depFeats) = instance.instructions map buildWordAndDepFeats unzip;
+    val (nodeFeats, edgeFeats) = instance.path map (buildNodeAndEdgeFeats(task) _ tupled) unzip;
 
     val (altNodeFeats, altEdgeFeats) = Array.tabulate(instance.path.length) { iEvent =>
       val startState = instance.path(iEvent)._1
-      val acts = task.availableActions(startState)
+      val availableActs = task.availableActions(startState)
+      val acts =
+        if (config.sampleAlternatives.isEmpty) availableActs
+        else Rand.choose(availableActs).sample(config.sampleAlternatives.get) :+ instance.path(iEvent)._2
       val nextStates = acts map { a => task.doAction(startState, a) }
       (acts zip nextStates).map { case (a, s2) => buildNodeAndEdgeFeats(task)(startState, a, s2) }.toArray.unzip
     }.unzip
@@ -38,6 +49,16 @@ object Annotator {
                       edgeFeats.toArray,
                       altNodeFeats.toArray,
                       altEdgeFeats.toArray)
+  }
+
+  def annotateWalkthrough(instructions: IndexedSeq[String]): AnnotatedWalkthrough = {
+    val (wordFeats, depFeats) = instructions map buildWordAndDepFeats unzip;
+    AnnotatedWalkthrough(wordFeats.toArray, depFeats.toArray)
+  }
+
+  def annotateEvent(task: Task)(s1: task.State, a: task.Action, s2: task.State): AnnotatedEvent = {
+    val (nodeFeats, edgeFeats) = buildNodeAndEdgeFeats(task)(s1, a, s2)
+    AnnotatedEvent(nodeFeats.toArray, edgeFeats.toArray)
   }
 
   def buildWordAndDepFeats(sent: String): (Array[Set[IndicatorFeature]], Array[Array[Set[IndicatorFeature]]]) = {

@@ -3,6 +3,8 @@ package main
 import breeze.linalg.DenseVector
 import breeze.optimize._
 import framework.erector.sequence.{ForwardBackward, LogHMMLattice}
+import framework.erector.util.learn.{TrivialClassification, ClassificationResults, LogisticRegression}
+import framework.fodor.{StringFeature, IndicatorFeature}
 import framework.igor.experiment.{ResultCache, Stage}
 import model._
 import spire.syntax.cfor._
@@ -21,13 +23,16 @@ object Train extends Stage[Config] {
     var params = scorer.initParams(index)
     var alignments = initAlignments(obsCache)
 
+    val (lengthModel, testLengthFeaturizer) = buildLengthModel(obsCache)
+
     cforRange (0 until config.nTrainIters) { iter =>
       print(alignments)
       params = maxParams(scorer)(params, alignments, obsCache, model)
-      dumpParams(params.asInstanceOf[SparseParams], index)
       alignments = maxAlignments(scorer)(params, obsCache, model)
     }
 
+    cache.put('lengthModel, lengthModel)
+    cache.put('lengthFeaturizer, testLengthFeaturizer)
     cache.put('params, params)
   }
 
@@ -71,8 +76,8 @@ object Train extends Stage[Config] {
       }
     }
 
-//    GradientTester.test[Int,DenseVector[Double]](objective, pack(currentParams))
-    unpack(minimize(objective, pack(currentParams), L2Regularization(1)), currentParams)
+//    GradientTester.test[Int,DenseVector[Double]](objective, pack(currentParams), randFraction = 0.1)
+    unpack(minimize(objective, pack(currentParams), L1Regularization(1), MaxIterations(30)), currentParams)
   }
 
   def maxAlignments(scorer: Scorer)
@@ -102,10 +107,47 @@ object Train extends Stage[Config] {
     IndexedSeq.tabulate(obsCache.nExamples)(assignments.assignment)
   }
 
-  def dumpParams(params: SparseParams, index: FeatureIndex): Unit = {
-    index.pair.pairs.map { case (feat, idx) =>
-      val weight = params.sparsePair(idx)
-      (weight, s"$feat\t$weight")
-    }.toSeq.sortBy(_._1).foreach(p => logger.info(p._2))
+  def buildLengthModel(obsCache: TrainObservationCache)(implicit config: Config): (ClassificationResults, (AnnotatedWalkthrough => DenseVector[Double])) = {
+    val WhitelistWords = IndexedSeq("and", ",", "then", "before", "after").map(StringFeature("word", _))
+    if (config.testLengthRangeStart == config.testLengthRangeEnd) {
+      return (TrivialClassification, _ => DenseVector[Double]())
+    }
+    def discretize(value: Int, binWidth: Int, nBins: Int): DenseVector[Double] = {
+      val v = DenseVector.zeros[Double](nBins)
+      val bin = value / binWidth
+      val truncBin = if (bin >= nBins) nBins - 1 else bin
+      v(truncBin) = 1
+      v
+    }
+    def whitelisted(words: Set[IndicatorFeature]): DenseVector[Double] = {
+      val v = DenseVector.zeros[Double](WhitelistWords.length)
+      WhitelistWords.zipWithIndex.foreach { case (w, i) =>
+        if (words contains w) v(i) = 1
+      }
+      v
+    }
+    val lengthModel = {
+      val usableExamples = (0 until obsCache.nExamples).filter(obsCache.nEvents(_) <= config.testLengthRangeEnd)
+      val xLenFeatures = usableExamples.map { iExample =>
+        DenseVector.vertcat(DenseVector(1d),
+                            discretize(obsCache.nWords(iExample), 5, 5),
+                            whitelisted(obsCache.words(iExample)),
+                            DenseVector(obsCache.nSentences(iExample).toDouble))
+      }
+      val yLens = usableExamples.map { iExample =>
+        obsCache.nEvents(iExample)
+      }
+      LogisticRegression(DenseVector.horzcat(xLenFeatures: _*).t, DenseVector(yLens: _*))
+    }
+    val testLengthFeaturizer = (wt: AnnotatedWalkthrough) => {
+      val nWords = wt.visitOrders.map(_.length).sum
+      val nSents = wt.visitOrders.length.toDouble
+      DenseVector.vertcat(DenseVector(1d),
+                           discretize(nWords, 5, 5),
+                           whitelisted(wt.wordFeats.flatten.reduce(_ | _)),
+                           DenseVector(nSents))
+    }
+    (lengthModel, testLengthFeaturizer)
   }
+
 }

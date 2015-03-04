@@ -24,7 +24,7 @@ class TaskTester extends FlatSpec with Matchers {
     (hcrc.trainIds.toSet ++ hcrc.testIds.toSet) should be ((0 until hcrc.instances.length).toSet)
   }
 
-  ignore should "give gold maps a perfect score" in {
+  it should "give gold maps a perfect score" in {
     val firstPath = hcrc.instances.head.path
     val score = hcrc.score(firstPath, firstPath)
     score.f1 should equal (1)

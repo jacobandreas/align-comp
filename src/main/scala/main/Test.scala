@@ -4,6 +4,7 @@ import breeze.linalg.DenseVector
 import breeze.stats.distributions.Rand
 import framework.erector.sequence.{ForwardBackward, LogHMMLattice}
 import framework.erector.util.ViterbiBeam
+import framework.erector.util.learn.{ClassificationResults, LogisticRegression}
 import framework.fodor.StringFeature
 import framework.igor.eval.EvalStats
 import framework.igor.experiment.{ResultCache, Stage}
@@ -21,14 +22,22 @@ object Test extends Stage[Config] {
     val model: Model = cache.get('model)
     val task: Task = cache.get('task)
     val index: FeatureIndex = cache.get('index)
-    val testInstances: IndexedSeq[task.Instance] = cache.get('testInstances)
+    val testInstances = cache.get('testInstances).asInstanceOf[IndexedSeq[task.Instance]]
+    val lengthModel: ClassificationResults = cache.get('lengthModel)
+    val lengthFeaturizer: (AnnotatedWalkthrough => DenseVector[Double]) = cache.get('lengthFeaturizer)
     val params: scorer.Params = cache.get('params)
 
-    val predictions = testInstances.map(predict(scorer, task)(_, params, model, index))
-    val golds = testInstances.map(_.path)
+    dumpParams(params.asInstanceOf[SparseParams], index)
+
+    val predictions = testInstances.toIterator.map { inst =>
+      val pred = this.task(inst.instructions.mkString("\n")) { predict(scorer, task)(inst, params, model, index, lengthModel, lengthFeaturizer) }
+      pred
+    }
+    val golds = testInstances.map(_.path).toIterator
     val scores = predictions zip golds map { case (pred, gold) =>
       val score = task.score(pred, gold)
       logger.info(score.toString)
+      logger.info("")
       score
     }
     val finalScore = scores.reduce(_ + _)
@@ -40,11 +49,17 @@ object Test extends Stage[Config] {
              (instance: task.Instance,
               params: scorer.Params,
               model: Model,
-              index: FeatureIndex)
+              index: FeatureIndex,
+              lengthModel: ClassificationResults,
+              lengthFeaturizer: (AnnotatedWalkthrough => DenseVector[Double]))
              (implicit config: Config): IndexedSeq[(task.State, task.Action, task.State)] = {
+    if (instance.path.isEmpty) return IndexedSeq()
     val startState = instance.path.head._1
     val annotatedWalkthrough = Annotator.annotateWalkthrough(instance.instructions)
     val (prediction, score) = (config.testLengthRangeStart to config.testLengthRangeEnd).flatMap { pathLength =>
+      logger.info(s"length $pathLength")
+      val lengthScore = lengthModel.score(lengthFeaturizer(annotatedWalkthrough), pathLength)
+//      val lengthScore = if (pathLength == instance.path.length) 0 else Double.NegativeInfinity
       Seq.fill(config.nTestAlignmentRestarts)(randAlignment(instance.instructions.length, pathLength)).map { initAlignment =>
         var alignment = initAlignment
         var path = null: IndexedSeq[(task.State, task.Action, task.State)]
@@ -53,12 +68,13 @@ object Test extends Stage[Config] {
           path = maxPath(scorer, task)(startState, pathLength, alignment, annotatedWalkthrough, params, model, index)
           val (iAlignment, iScore) = maxAlignment(scorer, task)(path, annotatedWalkthrough, params, model, index)
           alignment = iAlignment
-          score = iScore
+          score = iScore + lengthScore
         }
+        logger.info(s"$score, $path")
         (path, score)
       }
     }.maxBy(_._2)
-    logger.info(score.toString)
+    task.visualize(prediction, instance.path)
     prediction
   }
 
@@ -83,7 +99,9 @@ object Test extends Stage[Config] {
     var lastHyps = IndexedSeq[AHypothesis](StartHypothesis(startState))
     (0 until pathLength).foreach { t =>
       val beam = new ViterbiBeam[AHypothesis, Double, task.State](config.testBeamSize)(_.score, _.state)
-      val alignedSentences = alignment.zipWithIndex.filter(_._1 == t).map(_._2).toArray
+      val alignedSentences: IndexedSeq[Int] =
+        if (config.multiAlign) 0 until alignment.length
+        else alignment.zipWithIndex.filter(_._1 == t).map(_._2).toArray
       lastHyps.foreach { lastHyp =>
         task.availableActions(lastHyp.state).foreach { nextAction =>
           val nextState = task.doAction(lastHyp.state, nextAction)
@@ -130,7 +148,10 @@ object Test extends Stage[Config] {
       override def nodeLogPotential(seq: Int, iSentence: Int, iEvent: Int): Double = {
         val wordFeats = annotatedWalkthrough.wordFeats(iSentence)
         val nodeFeats = annotatedEvents(iEvent).nodeFeats
-        val obs = ObservationCache.buildPairObservation(nodeFeats, wordFeats, index, shortCircuit = false)
+        val visitOrder = annotatedWalkthrough.visitOrders(iSentence)
+        val edgeFeats = annotatedEvents(iEvent).edgeFeats
+        val depFeats = annotatedWalkthrough.depFeats(iSentence)
+        val obs = ObservationCache.buildPairObservation(nodeFeats, wordFeats, visitOrder, edgeFeats, depFeats, index, shortCircuit = false)
         val score = model.scoreAlignment(scorer)(obs, params)
         score
       }
@@ -149,6 +170,17 @@ object Test extends Stage[Config] {
                         index: FeatureIndex): (Array[PairObservation], EventObservation) = {
     val annotatedEvent = Annotator.annotateEvent(task)(s1, a, s2)
     ObservationCache.build(annotatedEvent, annotatedWalkthrough, alignedSentences, index)
+  }
+
+  def dumpParams(params: SparseParams, index: FeatureIndex): Unit = {
+    index.pair.pairs.map { case (feat, idx) =>
+      val weight = params.sparsePair(idx)
+      (weight, s"$feat\t$weight")
+    }.toSeq.sortBy(_._1).foreach(p => logger.info(p._2))
+    index.event.pairs.map { case (feat, idx) =>
+      val weight = params.sparseEvent(idx)
+      (weight, s"$feat\t$weight")
+    }.toSeq.sortBy(_._1).foreach(p => logger.info(p._2))
   }
 
 }

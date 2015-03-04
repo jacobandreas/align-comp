@@ -11,12 +11,13 @@ import task.Task
  */
 object Load extends Stage[Config] {
   override def run(implicit config: Config, cache: ResultCache): Unit = {
-    val scorer = CompleteSparseBagScorer
+    val scorer = CompleteSparseTreeScorer
+                 //CompleteSparseBagScorer
     val model = GoodModel
 
     val task = config.task(new File(config.dataDir))
     val instances = task.instances
-    val trainInstances = task.trainIds.map(instances) take 20
+    val trainInstances = task.trainIds.map(instances) filterNot(_.path.isEmpty) // filter(_.path.length >= 2) take 100
     val testInstances = task.testIds.map(instances)
 
     val representations = this.task("build representations") { trainInstances.map(Annotator.annotateInstance(task)) }

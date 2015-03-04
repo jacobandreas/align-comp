@@ -7,6 +7,7 @@ import framework.fodor.graph.EventContext
 import framework.fodor.{SimpleFeature, StringFeature, IndicatorFeature}
 import framework.arbor._
 import framework.arbor.BerkeleyAnnotators._
+import framework.igor.logging.Logging
 import main.Config
 import task.Task
 import spire.syntax.cfor._
@@ -19,27 +20,37 @@ case class AnnotatedInstance(wordFeats: Array[Array[Set[IndicatorFeature]]],
                              nodeFeats: Array[Array[Set[IndicatorFeature]]],
                              edgeFeats: Array[Array[Array[Set[IndicatorFeature]]]],
                              altNodeFeats: Array[Array[Array[Set[IndicatorFeature]]]],
-                             altEdgeFeats: Array[Array[Array[Array[Set[IndicatorFeature]]]]])
+                             altEdgeFeats: Array[Array[Array[Array[Set[IndicatorFeature]]]]],
+                             visitOrders: Array[Array[Int]])
 
 case class AnnotatedWalkthrough(wordFeats: Array[Array[Set[IndicatorFeature]]],
-                                depFeats: Array[Array[Array[Set[IndicatorFeature]]]])
+                                depFeats: Array[Array[Array[Set[IndicatorFeature]]]],
+                                visitOrders: Array[Array[Int]])
 
 case class AnnotatedEvent(nodeFeats: Array[Set[IndicatorFeature]],
                           edgeFeats: Array[Array[Set[IndicatorFeature]]])
 
-object Annotator {
+object Annotator extends Logging {
+
+  final val StopWords = Set("the", "a", "an")
+
   def annotateInstance(task: Task)(instance: task.Instance)(implicit config: Config): AnnotatedInstance = {
 
-    val (wordFeats, depFeats) = instance.instructions map buildWordAndDepFeats unzip;
+    val (wordFeats, depFeats, visitOrders) = instance.instructions map buildWordAndDepFeats unzip3;
     val (nodeFeats, edgeFeats) = instance.path map (buildNodeAndEdgeFeats(task) _ tupled) unzip;
 
     val (altNodeFeats, altEdgeFeats) = Array.tabulate(instance.path.length) { iEvent =>
       val startState = instance.path(iEvent)._1
       val availableActs = task.availableActions(startState)
       val acts =
-        if (config.sampleAlternatives.isEmpty) availableActs
-        else Rand.choose(availableActs).sample(config.sampleAlternatives.get) :+ instance.path(iEvent)._2
+        if (config.sampleAlternatives.isEmpty) availableActs.toSet.toIndexedSeq
+        else (Rand.choose(availableActs).sample(config.sampleAlternatives.get).toSet + instance.path(iEvent)._2).toIndexedSeq
       val nextStates = acts map { a => task.doAction(startState, a) }
+//      logger.info(instance.path(iEvent)._2.toString)
+//      logger.info(acts.toString)
+      assert (acts contains instance.path(iEvent)._2, "Gold action unavailable")
+      assert (acts zip nextStates contains (instance.path(iEvent)._2, instance.path(iEvent)._3), "Gold outcome unavailable")
+
       (acts zip nextStates).map { case (a, s2) => buildNodeAndEdgeFeats(task)(startState, a, s2) }.toArray.unzip
     }.unzip
 
@@ -48,12 +59,13 @@ object Annotator {
                       nodeFeats.toArray,
                       edgeFeats.toArray,
                       altNodeFeats.toArray,
-                      altEdgeFeats.toArray)
+                      altEdgeFeats.toArray,
+                      visitOrders.toArray)
   }
 
   def annotateWalkthrough(instructions: IndexedSeq[String]): AnnotatedWalkthrough = {
-    val (wordFeats, depFeats) = instructions map buildWordAndDepFeats unzip;
-    AnnotatedWalkthrough(wordFeats.toArray, depFeats.toArray)
+    val (wordFeats, depFeats, visitOrders) = instructions map buildWordAndDepFeats unzip3;
+    AnnotatedWalkthrough(wordFeats.toArray, depFeats.toArray, visitOrders.toArray)
   }
 
   def annotateEvent(task: Task)(s1: task.State, a: task.Action, s2: task.State): AnnotatedEvent = {
@@ -61,7 +73,7 @@ object Annotator {
     AnnotatedEvent(nodeFeats.toArray, edgeFeats.toArray)
   }
 
-  def buildWordAndDepFeats(sent: String): (Array[Set[IndicatorFeature]], Array[Array[Set[IndicatorFeature]]]) = {
+  def buildWordAndDepFeats(sent: String): (Array[Set[IndicatorFeature]], Array[Array[Set[IndicatorFeature]]], Array[Int]) = {
     val words = segmentWords(sent)
     val tags = tag(words)
     val deps = try {
@@ -72,18 +84,25 @@ object Annotator {
     }
 
     val wordFeats = Array.tabulate[Set[IndicatorFeature]](words.length) { iWord =>
-      Set(StringFeature("word", words(iWord)),
-           SimpleFeature(s"tag=${tags(iWord)}"))
+      Set(
+        StringFeature("word", words(iWord))
+//        SimpleFeature(s"tag=${tags(iWord)}")
+      )
     }
     val depFeats = Array.ofDim[Set[IndicatorFeature]](words.length, words.length)
     cforRange2 (0 until words.length, 0 until words.length) { (iWord1, iWord2) =>
       val edge = deps.labeledEdges.find(e => e._1.index == iWord1 && e._3.index == iWord2)
-      if (edge.isDefined) {
+      if (iWord1 == iWord2) {
+        // do nothing
+      } else if (StopWords contains words(iWord2)) {
+        // do nothing
+      } else if (edge.isDefined && iWord1 != iWord2) {
         depFeats(iWord1)(iWord2) = Set(SimpleFeature(s"rel=${edge.get._2}"))
       }
     }
+    val visitOrders = deps.bfs(deps.root).map(_.index).filterNot(_ < 0).toSeq.reverse.toArray
 
-    (wordFeats, depFeats)
+    (wordFeats, depFeats, visitOrders)
   }
 
   def buildNodeAndEdgeFeats(task: Task)(s1: task.State, a: task.Action, s2: task.State): (Array[Set[IndicatorFeature]], Array[Array[Set[IndicatorFeature]]]) = {

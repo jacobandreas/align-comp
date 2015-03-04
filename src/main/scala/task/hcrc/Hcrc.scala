@@ -129,7 +129,7 @@ class Hcrc(hcrcRoot: File) extends Task with Serializable{
   }
 
   override def availableActions(state: State): Set[RelativePoint2D] = {
-    val nearestLandmarks = state.map.landmarks.sortBy(_.center.distanceTo(state.pos)) take 4
+    val nearestLandmarks = state.map.landmarks.sortBy(_.center.distanceTo(state.pos))
     nearestLandmarks.flatMap { landmark =>
       Seq(
         RelativePoint2D(landmark.center.x - Hcrc.LandmarkOffset - state.pos.x, landmark.center.y - state.pos.y),
@@ -137,7 +137,7 @@ class Hcrc(hcrcRoot: File) extends Task with Serializable{
         RelativePoint2D(landmark.center.x - state.pos.x, landmark.center.y - Hcrc.LandmarkOffset - state.pos.y),
         RelativePoint2D(landmark.center.x - state.pos.x, landmark.center.y + Hcrc.LandmarkOffset - state.pos.y)
       )
-    }.toSet
+    }.toSet + RelativePoint2D(0, 0)
   }
 
   override def visualize(pred: IndexedSeq[(State,Action,State)], gold: IndexedSeq[(State,Action,State)]): Unit = {
@@ -161,17 +161,18 @@ class Hcrc(hcrcRoot: File) extends Task with Serializable{
   }
 
   override def score(pred: IndexedSeq[(State,Action,State)], gold: IndexedSeq[(State,Action,State)]): EvalStats = {
-    val realPred = pred.map(_._1).sliding(2).flatMap { states =>
-      val from = states(0)
-      val to = states(1)
-      val xStep = (to.pos.x - from.pos.x) / Hcrc.InterpSteps
-      val yStep = (to.pos.y - from.pos.y) / Hcrc.InterpSteps
-      (1 to 15).map { i =>
-        val pos = Point2D(from.pos.x + i * xStep, from.pos.y + i * yStep)
-        HcrcState(pos, from.map)
-      }
-                                                     }.toIndexedSeq
+//    val realPred = pred.map(_._1).sliding(2).flatMap { states =>
+//      val from = states(0)
+//      val to = states(1)
+//      val xStep = (to.pos.x - from.pos.x) / Hcrc.InterpSteps
+//      val yStep = (to.pos.y - from.pos.y) / Hcrc.InterpSteps
+//      (1 to 15).map { i =>
+//        val pos = Point2D(from.pos.x + i * xStep, from.pos.y + i * yStep)
+//        HcrcState(pos, from.map)
+//      }
+//                                                     }.toIndexedSeq
     val realGold = gold.map(_._1) :+ gold.last._3
+    val realPred = pred.map(_._1) :+ pred.last._3
     val goldTransitions = extractTransitions(realGold, gold.head._1.map.landmarks)
     val predTransitions = extractTransitions(realPred, pred.head._1.map.landmarks)
     val numCorrect = predTransitions.sliding(2).toSet.toIndexedSeq.map { pt: IndexedSeq[Landmark] =>
@@ -179,7 +180,7 @@ class Hcrc(hcrcRoot: File) extends Task with Serializable{
       val numGold = goldTransitions.sliding(2).count(_ == pt)
       min(numPred, numGold)
     }.sum
-    EvalStats(numCorrect, goldTransitions.length - numCorrect, predTransitions.length - numCorrect)
+    EvalStats(numCorrect, goldTransitions.length - 1 - numCorrect, predTransitions.length - 1 - numCorrect)
   }
 
   override def represent(s1: State, a: Action, s2: State): EventContext = {

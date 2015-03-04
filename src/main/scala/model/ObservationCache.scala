@@ -9,20 +9,30 @@ import spire.syntax.cfor._
  * @author jda
  */
 class TrainObservationCache(
+    val words: Array[Set[IndicatorFeature]], // TODO kind of a hack
     val pairObservations: Array[Array[Array[PairObservation]]],
     val altPairObservations: Array[Array[Array[Array[PairObservation]]]],
     val eventObservations: Array[Array[EventObservation]],
     val altEventObservations: Array[Array[Array[EventObservation]]]
   ) extends Serializable {
   require (pairObservations.length == eventObservations.length)
+  require {
+    (0 until pairObservations.length).forall { iExample =>
+      (0 until pairObservations(iExample).length).forall { iEvent =>
+        altPairObservations(iExample)(iEvent).length == altEventObservations(iExample)(iEvent).length
+      }
+    }
+  }
   val nExamples: Int = pairObservations.length
   def nEvents(iExample: Int): Int = eventObservations(iExample).length
   def nSentences(iExample: Int): Int = pairObservations(iExample).head.length
+  def nWords(iExample: Int): Int = pairObservations(iExample).head.map(_.visitOrder.length).sum
   def nAlternatives(iExample: Int, iEvent: Int) = altEventObservations(iExample)(iEvent).length
 }
 
 object ObservationCache extends Logging {
   def buildFromTrainingData(instances: IndexedSeq[AnnotatedInstance], index: FeatureIndex): TrainObservationCache = {
+    val wordBuilder = Array.ofDim[Set[IndicatorFeature]](instances.length)
     val pairObsBuilder = Array.ofDim[Array[Array[PairObservation]]](instances.length) // Array.newBuilder[Array[Array[PairObservation]]]
     val altPairObsBuilder = Array.ofDim[Array[Array[Array[PairObservation]]]](instances.length) // Array.newBuilder[Array[Array[Array[PairObservation]]]]
     val eventObsBuilder = Array.ofDim[Array[EventObservation]](instances.length) // Array.newBuilder[Array[EventObservation]]
@@ -32,19 +42,33 @@ object ObservationCache extends Logging {
       println(iInstance)
       val inst = instances(iInstance)
 
+      wordBuilder(iInstance) = inst.wordFeats.flatten.reduce(_ | _)
+
       val pairObs = Array.ofDim[PairObservation](inst.nodeFeats.length, inst.wordFeats.length)
       cforRange2 (0 until inst.nodeFeats.length, 0 until inst.wordFeats.length) { (iEvent, iSentence) =>
-        pairObs(iEvent)(iSentence) = buildPairObservation(inst.nodeFeats(iEvent), inst.wordFeats(iSentence), index)
+        pairObs(iEvent)(iSentence) = buildPairObservation(inst.nodeFeats(iEvent), inst.wordFeats(iSentence), inst.visitOrders(iSentence), inst.edgeFeats(iEvent), inst.depFeats(iSentence), index)
       }
       pairObsBuilder(iInstance) = pairObs
 
-      val maxAlts = inst.altNodeFeats.map(_.length).max
-      val altPairObs = Array.ofDim[PairObservation](inst.nodeFeats.length, maxAlts, inst.wordFeats.length)
+//      val maxAlts = inst.altNodeFeats.map(_.length).max
+//      val altPairObs = Array.ofDim[PairObservation](inst.nodeFeats.length, maxAlts, inst.wordFeats.length)
+//      cforRange (0 until inst.altNodeFeats.length) { iEvent =>
+//        cforRange2 (0 until inst.altNodeFeats(iEvent).length, 0 until inst.wordFeats.length) { (iAlt, iSentence) =>
+//          altPairObs(iEvent)(iAlt)(iSentence) = buildPairObservation(inst.altNodeFeats(iEvent)(iAlt), inst.wordFeats(iSentence), inst.visitOrders(iSentence), inst.altEdgeFeats(iEvent)(iAlt), inst.depFeats(iSentence), index)
+//        }
+//      }
+      val altPairObs = Array.ofDim[Array[Array[PairObservation]]](inst.altNodeFeats.length)
       cforRange (0 until inst.altNodeFeats.length) { iEvent =>
-        cforRange2 (0 until inst.altNodeFeats(iEvent).length, 0 until inst.wordFeats.length) { (iAlt, iSentence) =>
-          altPairObs(iEvent)(iAlt)(iSentence) = buildPairObservation(inst.altNodeFeats(iEvent)(iAlt), inst.wordFeats(iSentence), index)
+        altPairObs(iEvent) = Array.ofDim[Array[PairObservation]](inst.altNodeFeats(iEvent).length)
+        cforRange (0 until inst.altNodeFeats(iEvent).length) { iAlt =>
+          altPairObs(iEvent)(iAlt) = Array.ofDim[PairObservation](inst.altNodeFeats(iEvent)(iAlt).length)
+          cforRange (0 until inst.wordFeats.length) { iSentence =>
+            altPairObs(iEvent)(iAlt)(iSentence) = buildPairObservation(inst.altNodeFeats(iEvent)(iAlt), inst.wordFeats(iSentence), inst.visitOrders(iSentence), inst.altEdgeFeats(iEvent)(iAlt), inst.depFeats(iSentence), index)
+          }
         }
       }
+
+
       altPairObsBuilder(iInstance) = altPairObs
 
       val eventObs = Array.tabulate[EventObservation](inst.nodeFeats.length) { iEvent =>
@@ -59,7 +83,8 @@ object ObservationCache extends Logging {
       }
       altEventObsBuilder(iInstance) = altEventObs
     }
-    new TrainObservationCache(pairObsBuilder,
+    new TrainObservationCache(wordBuilder,
+                              pairObsBuilder,
                               altPairObsBuilder,
                               eventObsBuilder,
                               altEventObsBuilder)
@@ -68,13 +93,16 @@ object ObservationCache extends Logging {
   def build(event: AnnotatedEvent, walkthrough: AnnotatedWalkthrough, sentences: IndexedSeq[Int], index: FeatureIndex): (Array[PairObservation], EventObservation) = {
     val pairObs = Array.ofDim[PairObservation](sentences.length)
     cforRange (0 until sentences.length) { i =>
-      pairObs(i) = buildPairObservation(event.nodeFeats, walkthrough.wordFeats(i), index, shortCircuit = false)
+      pairObs(i) = buildPairObservation(event.nodeFeats, walkthrough.wordFeats(i), walkthrough.visitOrders(i), event.edgeFeats, walkthrough.depFeats(i), index, shortCircuit = false)
     }
     (pairObs, buildEventObservation(event.nodeFeats, index))
   }
 
   def buildPairObservation(nodeFeats: Array[Set[IndicatorFeature]],
                            wordFeats: Array[Set[IndicatorFeature]],
+                           visitOrder: Array[Int],
+                           edgeFeats: Array[Array[Set[IndicatorFeature]]],
+                           depFeats: Array[Array[Set[IndicatorFeature]]],
                            index: FeatureIndex,
                            shortCircuit: Boolean = true): PairObservation = {
 //    logger.info(nodeFeats.toIndexedSeq.toString)
@@ -97,7 +125,10 @@ object ObservationCache extends Logging {
         }.toArray
       }
     }
-    PairObservationImpl(out, eventObs.eventFeatures, eventObs.iEventRoot)
+    val deps = depFeats.map(_.map(_ != null))
+    val edges = edgeFeats.map(_.map(_ != null))
+    assert (0 until deps.length forall { i => !deps(i)(i) })
+    PairObservationImpl(visitOrder, out, deps, edges, eventObs.eventFeatures, eventObs.iEventRoot)
   }
 
   def buildEventObservation(nodeFeats: Array[Set[IndicatorFeature]],

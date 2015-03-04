@@ -102,9 +102,10 @@ class Sail(root: File, language: String) extends Task with Serializable {
       val startState = SailState(map.nodes(posns.head._1, posns.head._2), posns.head._3, map)
       val states = posns.tail.foldLeft(startState :: Nil) { (prevStates, posn) =>
         val last = prevStates.head
-        if (Collapse & prevStates.length >= 2 && prevStates.tail.head.orientation == last.orientation && last.orientation == posn._3) {
+        if (Collapse && prevStates.length >= 2 && prevStates.tail.head.orientation == last.orientation && last.orientation == posn._3) {
           val next = SailState(map.nodes(posn._1, posn._2), posn._3, map)
           next :: prevStates.tail
+//          next :: prevStates
         } else {
           val next = SailState(map.nodes(posn._1, posn._2), posn._3, map)
           next :: prevStates
@@ -140,9 +141,13 @@ class Sail(root: File, language: String) extends Task with Serializable {
           // some annotations are bad
           // assert { doAction(s1, action) == s2 }
           (s1, action, s2)
-        }.toIndexedSeq.filterNot {
-          case (_, a: RotateAction, _) => a.angle == 0
-          case _ => false
+        }.toIndexedSeq.map {
+          case (s1, a: RotateAction, s2) if a.angle == 0 => {
+            assert (s1.orientation == 0)
+            val ns1 = s1.copy(orientation = 90)
+            (ns1, RotateAction(ns1, 270), s2)
+          }
+          case triple => triple
         }
 
 
@@ -177,12 +182,12 @@ class Sail(root: File, language: String) extends Task with Serializable {
 
 //  override val trainIds: IndexedSeq[Int] = idsAndMaps(sentenceTranscriptFileName).map(_._2)
 //  override val testIds = IndexedSeq[Int]()
-  override val trainIds: IndexedSeq[Int] = idsAndMaps(sentenceTranscriptFileName).filter { case (name, id) => name == "grid" || name == "l" }.map(_._2)
-  override val testIds: IndexedSeq[Int] = idsAndMaps(sentenceTranscriptFileName).filter { case (name, id) => name == "jelly" }.map(_._2)
+//  override val trainIds: IndexedSeq[Int] = idsAndMaps(sentenceTranscriptFileName).filter { case (name, id) => name == "grid" || name == "l" }.map(_._2)
+//  override val testIds: IndexedSeq[Int] = idsAndMaps(sentenceTranscriptFileName).filter { case (name, id) => name == "jelly" }.map(_._2)
 //  override val trainIds: IndexedSeq[Int] = idsAndMaps(sentenceTranscriptFileName).filter { case (name, id) => name == "l" || name == "jelly" }.map(_._2)
 //  override val testIds: IndexedSeq[Int] = idsAndMaps(sentenceTranscriptFileName).filter { case (name, id) => name == "grid" }.map(_._2)
-//  override val trainIds: IndexedSeq[Int] = idsAndMaps(sentenceTranscriptFileName).filter { case (name, id) => name == "jelly" || name == "grid" }.map(_._2)
-//  override val testIds: IndexedSeq[Int] = idsAndMaps(sentenceTranscriptFileName).filter { case (name, id) => name == "l" }.map(_._2)
+  override val trainIds: IndexedSeq[Int] = idsAndMaps(sentenceTranscriptFileName).filter { case (name, id) => name == "jelly" || name == "grid" }.map(_._2)
+  override val testIds: IndexedSeq[Int] = idsAndMaps(sentenceTranscriptFileName).filter { case (name, id) => name == "l" }.map(_._2)
 
   def stepDirection(posn: (Int, Int), orientation: Int, distance: Int): (Int, Int) = {
     orientation match {

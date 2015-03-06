@@ -56,7 +56,11 @@ object Test extends Stage[Config] {
     if (instance.path.isEmpty) return IndexedSeq()
     val startState = instance.path.head._1
     val annotatedWalkthrough = Annotator.annotateWalkthrough(instance.instructions)
-    val (prediction, score) = (config.testLengthRangeStart to config.testLengthRangeEnd).flatMap { pathLength =>
+
+    val (lengthStart, lengthEnd) =
+      if (config.testKnownLength) (instance.path.length, instance.path.length)
+      else (config.testLengthRangeStart, config.testLengthRangeEnd)
+    val (prediction, score) = (lengthStart to lengthEnd).flatMap { pathLength =>
       logger.info(s"length $pathLength")
       val lengthScore = lengthModel.score(lengthFeaturizer(annotatedWalkthrough), pathLength)
 //      val lengthScore = if (pathLength == instance.path.length) 0 else Double.NegativeInfinity
@@ -66,9 +70,11 @@ object Test extends Stage[Config] {
         var score = 0d
         cforRange (0 until config.nTestIters) { iter =>
           path = maxPath(scorer, task)(startState, pathLength, alignment, annotatedWalkthrough, params, model, index)
-          val (iAlignment, iScore) = maxAlignment(scorer, task)(path, annotatedWalkthrough, params, model, index)
-          alignment = iAlignment
-          score = iScore + lengthScore
+          if (path.nonEmpty) {
+            val (iAlignment, iScore) = maxAlignment(scorer, task)(path, annotatedWalkthrough, params, model, index)
+            alignment = iAlignment
+            score = iScore + lengthScore
+          }
         }
         logger.info(s"$score, $path")
         (path, score)
@@ -103,12 +109,17 @@ object Test extends Stage[Config] {
         if (config.multiAlign) 0 until alignment.length
         else alignment.zipWithIndex.filter(_._1 == t).map(_._2).toArray
       lastHyps.foreach { lastHyp =>
-        task.availableActions(lastHyp.state).foreach { nextAction =>
-          val nextState = task.doAction(lastHyp.state, nextAction)
-          val (pairObservations, eventObservation) = buildObservations(task)(lastHyp.state, nextAction, nextState, annotatedWalkthrough, alignedSentences, index)
-          val score = model.scoreOneDecision(scorer)(pairObservations, eventObservation, params, null.asInstanceOf[scorer.Params])
-          val nextHyp = Hypothesis(nextState, nextAction, lastHyp, lastHyp.score + score)
-          beam.add(nextHyp)
+        val acts = task.availableActions(lastHyp.state).toSeq
+        if (acts.nonEmpty) {
+          task.availableActions(lastHyp.state).foreach { nextAction =>
+            val nextState = task.doAction(lastHyp.state, nextAction)
+            val (pairObservations, eventObservation) = buildObservations(task)(lastHyp.state, nextAction, nextState, annotatedWalkthrough, alignedSentences, index)
+            val score = model.scoreOneDecision(scorer)(pairObservations, eventObservation, params, null.asInstanceOf[scorer.Params])
+            val nextHyp = Hypothesis(nextState, nextAction, lastHyp, lastHyp.score + score)
+            beam.add(nextHyp)
+          }
+        } else {
+//          beam.add(lastHyp)
         }
       }
       lastHyps = beam.result()
@@ -121,8 +132,8 @@ object Test extends Stage[Config] {
       }
     }
 
-    val bestLast = lastHyps.maxBy(_.score)
-    unwind(bestLast)
+    if (lastHyps.isEmpty) IndexedSeq()
+    else unwind(lastHyps.maxBy(_.score))
   }
 
   def maxAlignment(scorer: Scorer,

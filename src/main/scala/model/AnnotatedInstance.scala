@@ -48,8 +48,10 @@ object Annotator extends Logging {
       val nextStates = acts map { a => task.doAction(startState, a) }
 //      logger.info(instance.path(iEvent)._2.toString)
 //      logger.info(acts.toString)
-      assert (acts contains instance.path(iEvent)._2, "Gold action unavailable")
-      assert (acts zip nextStates contains (instance.path(iEvent)._2, instance.path(iEvent)._3), "Gold outcome unavailable")
+      if (!acts.contains(instance.path(iEvent)._2))
+        logger.warn(s"Gold action unavailable: ${instance.path(iEvent)._2}, $acts")
+      if (!(acts zip nextStates).contains((instance.path(iEvent)._2, instance.path(iEvent)._3)))
+        logger.warn(s"Gold outcome unavailable")
 
       (acts zip nextStates).map { case (a, s2) => buildNodeAndEdgeFeats(task)(startState, a, s2) }.toArray.unzip
     }.unzip

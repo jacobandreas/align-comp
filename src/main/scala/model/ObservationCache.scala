@@ -59,9 +59,8 @@ object ObservationCache extends Logging {
 //      }
       val altPairObs = Array.ofDim[Array[Array[PairObservation]]](inst.altNodeFeats.length)
       cforRange (0 until inst.altNodeFeats.length) { iEvent =>
-        altPairObs(iEvent) = Array.ofDim[Array[PairObservation]](inst.altNodeFeats(iEvent).length)
+        altPairObs(iEvent) = Array.ofDim[PairObservation](inst.altNodeFeats(iEvent).length, inst.wordFeats.length)
         cforRange (0 until inst.altNodeFeats(iEvent).length) { iAlt =>
-          altPairObs(iEvent)(iAlt) = Array.ofDim[PairObservation](inst.altNodeFeats(iEvent)(iAlt).length)
           cforRange (0 until inst.wordFeats.length) { iSentence =>
             altPairObs(iEvent)(iAlt)(iSentence) = buildPairObservation(inst.altNodeFeats(iEvent)(iAlt), inst.wordFeats(iSentence), inst.visitOrders(iSentence), inst.altEdgeFeats(iEvent)(iAlt), inst.depFeats(iSentence), index)
           }

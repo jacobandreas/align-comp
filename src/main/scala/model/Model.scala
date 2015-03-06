@@ -32,7 +32,7 @@ trait Model {
                        grad: scorer.Params): Double
 }
 
-object GoodModel extends Model with Serializable {
+trait BaseModel extends Model {
   override def scoreOneDecision(scorer: Scorer)
                                (pairObservations: Array[PairObservation],
                                 eventObservation: EventObservation,
@@ -46,6 +46,14 @@ object GoodModel extends Model with Serializable {
     score
   }
 
+  override def scoreAlignment(scorer: Scorer)
+                             (pairObservation: PairObservation,
+                              params: scorer.Params): Double = {
+    scorer.scorePair(pairObservation, params, null.asInstanceOf[scorer.Params])
+  }
+}
+
+object GloballyNormalizedInconsistentModel extends BaseModel with Serializable {
   override def scoreDecisions(scorer: Scorer)
                              (pairObservations: Array[Array[PairObservation]],
                               altPairObservations: Array[Array[Array[PairObservation]]],
@@ -56,10 +64,7 @@ object GoodModel extends Model with Serializable {
                               grad: scorer.Params)
                              (implicit config: Config): Double = {
     import scorer.{zeroLike, increment}
-
     val maxStates = altPairObservations.map(_.length).max + 1
-//    val grads = Array.fill(pairObservations.length, maxStates)(zeroLike(params))(scorer.pct)
-
     val lattice = new LogHMMLattice {
       override def numSequences: Int = 1
       override def numStates(seq: Int): Int = maxStates
@@ -113,62 +118,53 @@ object GoodModel extends Model with Serializable {
       }
     }
     score -= marginals.seqPartition(0)
-    assert (score <= 0)
+    assert (score <= 0, "Score is improperly normalized")
     score
   }
+}
 
-//  override def scoreDecisions(scorer: Scorer)
-//                             (pairObservations: Array[Array[PairObservation]],
-//                              altPairObservations: Array[Array[Array[PairObservation]]],
-//                              eventObservations: Array[EventObservation],
-//                              altEventObservations: Array[Array[EventObservation]],
-//                              alignments: IndexedSeq[Int],
-//                              params: scorer.Params,
-//                              grad: scorer.Params)
-//                             (implicit config: Config): Double = {
-//    import scorer.{zeroLike,increment}
-//
-//    var score = 0d
-//    cforRange (0 until pairObservations.length) { iEvent =>
-//      val alignedSentences: IndexedSeq[Int] =
-//        if (config.multiAlign) 0 until alignments.length
-//        else alignments.zipWithIndex.filter(_._1 == iEvent).map(_._2).toArray
-//      val nAlternatives = altEventObservations(iEvent).length
-//
-//      var scoreHere = 0d
-//      cforRange (0 until alignedSentences.length) { i =>
-//        val iSentence = alignedSentences(i)
-//        scoreHere += scorer.scorePair(pairObservations(iEvent)(iSentence), params, grad)
-//      }
-//      scoreHere += scorer.scoreEvent(eventObservations(iEvent), params, grad)
-//      score += scoreHere
-//
-//      val altScores = Array.fill[Double](nAlternatives)(0d)
-//      val altGrads = Array.fill[scorer.Params](nAlternatives)(zeroLike(params))(scorer.pct)
-//      cforRange (0 until nAlternatives) { iAlt =>
-//        cforRange (0 until alignedSentences.length) { i =>
-//          val iSentence = alignedSentences(i)
-//          altScores(iAlt) += scorer.scorePair(altPairObservations(iEvent)(iAlt)(iSentence), params, altGrads(iAlt))
-//        }
-//        altScores(iAlt) += scorer.scoreEvent(altEventObservations(iEvent)(iAlt), params, altGrads(iAlt))
-//      }
-//
-//      val logDenom = softmax(altScores)
-//      assert (logDenom >= scoreHere, "Score is improperly normalized")
-//      score -= logDenom
-//      cforRange (0 until altScores.length) { iAlt =>
-//        increment(-exp(altScores(iAlt) - logDenom), altGrads(iAlt), grad)
-//      }
-//    }
-//
-//    assert (!score.isInfinite, "Infinite score encountered")
-//    assert (!score.isNaN, "NaN score encountered")
-//    score
-//  }
-
-  override def scoreAlignment(scorer: Scorer)
-                             (pairObservation: PairObservation,
-                              params: scorer.Params): Double = {
-    scorer.scorePair(pairObservation, params, null.asInstanceOf[scorer.Params])
+object LocallyNormalizedModel extends BaseModel with Serializable {
+  override def scoreDecisions(scorer: Scorer)
+                             (pairObservations: Array[Array[PairObservation]],
+                              altPairObservations: Array[Array[Array[PairObservation]]],
+                              eventObservations: Array[EventObservation],
+                              altEventObservations: Array[Array[EventObservation]],
+                              alignments: IndexedSeq[Int],
+                              params: scorer.Params,
+                              grad: scorer.Params)
+                             (implicit config: Config): Double = {
+    import scorer.{zeroLike,increment}
+      var score = 0d
+    cforRange (0 until pairObservations.length) { iEvent =>
+      val alignedSentences: IndexedSeq[Int] =
+        if (config.multiAlign) 0 until alignments.length
+        else alignments.zipWithIndex.filter(_._1 == iEvent).map(_._2).toArray
+      val nAlternatives = altEventObservations(iEvent).length
+        var scoreHere = 0d
+      cforRange (0 until alignedSentences.length) { i =>
+        val iSentence = alignedSentences(i)
+        scoreHere += scorer.scorePair(pairObservations(iEvent)(iSentence), params, grad)
+      }
+      scoreHere += scorer.scoreEvent(eventObservations(iEvent), params, grad)
+      score += scoreHere
+        val altScores = Array.fill[Double](nAlternatives)(0d)
+      val altGrads = Array.fill[scorer.Params](nAlternatives)(zeroLike(params))(scorer.pct)
+      cforRange (0 until nAlternatives) { iAlt =>
+        cforRange (0 until alignedSentences.length) { i =>
+          val iSentence = alignedSentences(i)
+          altScores(iAlt) += scorer.scorePair(altPairObservations(iEvent)(iAlt)(iSentence), params, altGrads(iAlt))
+        }
+        altScores(iAlt) += scorer.scoreEvent(altEventObservations(iEvent)(iAlt), params, altGrads(iAlt))
+      }
+        val logDenom = softmax(altScores)
+      assert (logDenom >= scoreHere, "Score is improperly normalized")
+      score -= logDenom
+      cforRange (0 until altScores.length) { iAlt =>
+        increment(-exp(altScores(iAlt) - logDenom), altGrads(iAlt), grad)
+      }
+    }
+    assert (!score.isInfinite, "Infinite score encountered")
+    assert (!score.isNaN, "NaN score encountered")
+    score
   }
 }

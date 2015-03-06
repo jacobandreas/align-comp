@@ -77,7 +77,10 @@ object Train extends Stage[Config] {
     }
 
 //    GradientTester.test[Int,DenseVector[Double]](objective, pack(currentParams), randFraction = 0.1)
-    unpack(minimize(objective, pack(currentParams), L1Regularization(1), MaxIterations(30)), currentParams)
+    val regularizer =
+      if (config.useL1) L1Regularization(config.regularizationStrength)
+      else L2Regularization(config.regularizationStrength)
+    unpack(minimize(objective, pack(currentParams), regularizer, MaxIterations(30)), currentParams)
   }
 
   def maxAlignments(scorer: Scorer)

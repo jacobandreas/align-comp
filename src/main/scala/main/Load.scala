@@ -11,9 +11,9 @@ import task.Task
  */
 object Load extends Stage[Config] {
   override def run(implicit config: Config, cache: ResultCache): Unit = {
-    val scorer = CompleteSparseTreeScorer
-                 //CompleteSparseBagScorer
-    val model = GoodModel
+    val scorer = //CompleteSparseTreeScorer
+                 CompleteSparseBagScorer
+    val model = GloballyNormalizedInconsistentModel
 
     val task = config.task(new File(config.dataDir))
     val instances = task.instances

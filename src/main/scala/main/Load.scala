@@ -29,6 +29,7 @@ object Load extends Stage[Config] {
     cache.put('task, task)
     cache.put('index, index)
     cache.put('trainObsCache, obsCache)
+    cache.put('trainInstances, trainInstances)
     cache.put('testInstances, testInstances)
   }
 }

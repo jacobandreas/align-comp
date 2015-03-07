@@ -86,10 +86,15 @@ object Annotator extends Logging {
     }
 
     val wordFeats = Array.tabulate[Set[IndicatorFeature]](words.length) { iWord =>
-      Set(
-        StringFeature("word", words(iWord))
-//        SimpleFeature(s"tag=${tags(iWord)}")
-      )
+      val word = words(iWord)
+      if (StopWords contains word) {
+        Set()
+      } else {
+        Set(
+          StringFeature("word", word.toLowerCase)
+          // SimpleFeature(s"tag=${tags(iWord)}")
+        )
+      }
     }
     val depFeats = Array.ofDim[Set[IndicatorFeature]](words.length, words.length)
     cforRange2 (0 until words.length, 0 until words.length) { (iWord1, iWord2) =>

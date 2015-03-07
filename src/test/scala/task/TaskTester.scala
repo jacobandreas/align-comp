@@ -14,19 +14,23 @@ import task.hcrc.Hcrc
 class TaskTester extends FlatSpec with Matchers {
 
   implicit final val DefaultConfig = Config()
-  val hcrc = Hcrc(new File(DefaultConfig.dataDir))(DefaultConfig)
+  val task = DefaultConfig.task(new File(DefaultConfig.dataDir))
 
-  "Hcrc" should "have as many instance IDs as instances" in {
-    hcrc.trainIds.length + hcrc.testIds.length should equal (hcrc.instances.length)
+  "Task" should "have as many instance IDs as instances" in {
+    task.trainIds.length + task.testIds.length should equal (task.instances.length)
   }
 
   it should "have no gaps in instance ids" in {
-    (hcrc.trainIds.toSet ++ hcrc.testIds.toSet) should be ((0 until hcrc.instances.length).toSet)
+    (task.trainIds.toSet ++ task.testIds.toSet) should be ((0 until task.instances.length).toSet)
+  }
+
+  it should "have no overlap between train and test ids" in {
+    (task.trainIds.toSet intersect task.testIds.toSet) should be (Set())
   }
 
   it should "give gold maps a perfect score" in {
-    val firstPath = hcrc.instances.head.path
-    val score = hcrc.score(firstPath, firstPath)
+    val firstPath = task.instances.head.path
+    val score = task.score(firstPath, firstPath)
     score.f1 should equal (1)
   }
 

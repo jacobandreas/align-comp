@@ -28,6 +28,7 @@ trait DefaultConfig {
   val testKnownLength: Boolean
   val testBeamSize: Int
   val multiAlign: Boolean
+  val fold: Int
 }
 
 trait HcrcConfig extends DefaultConfig {
@@ -45,6 +46,7 @@ trait HcrcConfig extends DefaultConfig {
   override val testKnownLength = false
   override val testBeamSize = 15
   override val multiAlign = false
+  override val fold = -1
 }
 
 trait SailConfig extends DefaultConfig {
@@ -62,6 +64,7 @@ trait SailConfig extends DefaultConfig {
   override val testKnownLength = false
   override val testBeamSize = 15
   override val multiAlign = true
+  override val fold = -1
 }
 
 trait CrossBlockConfig extends DefaultConfig {
@@ -77,11 +80,12 @@ trait CrossBlockConfig extends DefaultConfig {
   override val testLengthRangeStart = -1
   override val testLengthRangeEnd = -1
   override val testKnownLength = true
-  override val testBeamSize = 1
+  override val testBeamSize = 10
   override val multiAlign = false
+  override val fold = 4
 }
 
-case class Config() extends CrossBlockConfig
+case class Config() extends HcrcConfig
 
 object Main extends Experiment[Config] {
   override val paramManifest = manifest[Config]

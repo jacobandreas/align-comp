@@ -8,6 +8,7 @@ import framework.fodor.{StringFeature, IndicatorFeature}
 import framework.igor.experiment.{ResultCache, Stage}
 import model._
 import spire.syntax.cfor._
+import task.Task
 
 /**
  * @author jda
@@ -29,6 +30,19 @@ object Train extends Stage[Config] {
       print(alignments)
       params = maxParams(scorer)(params, alignments, obsCache, model)
       alignments = maxAlignments(scorer)(params, obsCache, model)
+    }
+
+
+    val task = cache.get('task).asInstanceOf[Task]
+    val instances = cache.get('trainInstances).asInstanceOf[IndexedSeq[task.Instance]]
+    (instances zip alignments) foreach { case (instance, alignment) =>
+      instance.path.zipWithIndex.foreach { case (triple, i) =>
+        val alignedSentenceIds = alignment.zipWithIndex.filter(_._1 == i).map(_._2).toArray
+        val sentences = alignedSentenceIds.map(instance.instructions)
+        println(triple._2)
+        println(sentences.mkString(" ::: "))
+      }
+      println("===")
     }
 
     cache.put('lengthModel, lengthModel)

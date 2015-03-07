@@ -156,7 +156,7 @@ class CrossBlock(root: File)(implicit config: Config) extends Task with Serializ
     collapsedActions
   }
 
-  val randIds = Rand.permutation(46).sample(10)(4)
+  val randIds = Rand.permutation(46).sample(5)(config.fold)
   override val trainIds: IndexedSeq[Int] = randIds take 36
   override val testIds: IndexedSeq[Int] = randIds drop 36 take 10
 

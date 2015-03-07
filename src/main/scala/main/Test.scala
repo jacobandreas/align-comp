@@ -58,7 +58,7 @@ object Test extends Stage[Config] {
     val annotatedWalkthrough = Annotator.annotateWalkthrough(instance.instructions)
 
     val (lengthStart, lengthEnd) =
-      if (config.testKnownLength) (instance.path.length, instance.path.length)
+      if (config.testKnownLength) (instance.path.length, instance.path.length+4)
       else (config.testLengthRangeStart, config.testLengthRangeEnd)
     val (prediction, score) = (lengthStart to lengthEnd).flatMap { pathLength =>
       logger.info(s"length $pathLength")
@@ -118,11 +118,12 @@ object Test extends Stage[Config] {
             val nextHyp = Hypothesis(nextState, nextAction, lastHyp, lastHyp.score + score)
             beam.add(nextHyp)
           }
-        } else {
-//          beam.add(lastHyp)
         }
       }
-      lastHyps = beam.result()
+      val result = beam.result()
+      if (result.nonEmpty) {
+        lastHyps = result
+      }
     }
 
     def unwind(hyp: AHypothesis): IndexedSeq[(task.State,task.Action,task.State)] = {

@@ -13,7 +13,8 @@ object Featurizer {
     feature match {
       case f: IndicatorFeature => Seq(f)
       case f: RealFeature => Seq(SimpleFeature(s"${f.name}__SIGN+=" + (f.rvalue >= 0).toString),
-                                 SimpleFeature(s"${f.name}__MAG=" + (log(f.rvalue.abs) * 2).toInt))
+                                 SimpleFeature(s"${f.name}__MAG=" + (f.rvalue.abs / 50).toInt))
+                                 //SimpleFeature(s"${f.name}__MAG=" + (log(f.rvalue.abs) * 1).toInt))
     }
   }
 

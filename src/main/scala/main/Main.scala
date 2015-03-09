@@ -35,10 +35,10 @@ trait HcrcConfig extends DefaultConfig {
   override val task = Hcrc
   override val pairFeatCountCutoff = 100
   override val eventFeatCountCutoff = 100
-  override val sampleAlternatives: Optional[Int] = 10
+  override val sampleAlternatives: Optional[Int] = 20
   override val useL1 = false
   override val regularizationStrength = 1.0
-  override val nTrainIters = 15
+  override val nTrainIters = 5
   override val nTestIters = 5
   override val nTestAlignmentRestarts = 5
   override val testLengthRangeStart = 15
@@ -80,12 +80,12 @@ trait CrossBlockConfig extends DefaultConfig {
   override val testLengthRangeStart = -1
   override val testLengthRangeEnd = -1
   override val testKnownLength = true
-  override val testBeamSize = 10
+  override val testBeamSize = 15
   override val multiAlign = false
-  override val fold = 4
+  override val fold = 9
 }
 
-case class Config() extends HcrcConfig
+case class Config() extends CrossBlockConfig
 
 object Main extends Experiment[Config] {
   override val paramManifest = manifest[Config]

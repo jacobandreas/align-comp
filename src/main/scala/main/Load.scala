@@ -17,7 +17,7 @@ object Load extends Stage[Config] {
 
     val task = config.task(new File(config.dataDir))
     val instances = task.instances
-    val trainInstances = task.trainIds.map(instances) filterNot(_.path.isEmpty) // filter(_.path.length >= 2) take 100
+    val trainInstances = task.trainIds.map(instances) filterNot(_.path.isEmpty)
     val testInstances = task.testIds.map(instances)
 
     val representations = this.task("build representations") { trainInstances.map(Annotator.annotateInstance(task)) }

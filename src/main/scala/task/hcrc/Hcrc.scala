@@ -5,7 +5,7 @@ import java.io.{File, FilenameFilter}
 import breeze.linalg.min
 import breeze.numerics.{abs, signum}
 import breeze.{plot => bplot}
-import framework.fodor.{StringFeature,RealFeature}
+import framework.fodor.{SimpleFeature, StringFeature, RealFeature}
 import framework.fodor.graph.{GraphWorld, Event, EventContext}
 import framework.igor.eval.EvalStats
 import main.Config
@@ -184,9 +184,13 @@ class Hcrc(hcrcRoot: File) extends Task with Serializable{
   }
 
   override def represent(s1: State, a: Action, s2: State): EventContext = {
+    val sameLandmark = s1.nearestLandmark.name == s2.nearestLandmark.name
+    val sameLandmarkAndSide = a.x < 1e-5 && a.y < 1e-5
     val event = Event(Set(StringFeature("toLandmark", s2.nearestLandmark.name),
                           StringFeature("fromLandmark", s1.nearestLandmark.name),
-                         RealFeature("length", s1.pos.distanceTo(s2.pos))))
+                          SimpleFeature(s"sameLandmark=$sameLandmark"),
+                          SimpleFeature(s"sameLandmarkAndSide=$sameLandmarkAndSide")))
+                          //RealFeature("length", s1.pos.distanceTo(s2.pos))))
     val world = GraphWorld(Set())
     EventContext(event, world)
   }

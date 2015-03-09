@@ -114,6 +114,7 @@ object Train extends Stage[Config] {
       override def edgeLogPotentials(iExample: Int, iEvent: Int, forward: Boolean): DenseVector[Double] = {
         val potentials = IndexedSeq.tabulate(numStates(iExample)) { iEvent2 =>
           if (forward && iEvent2 < iEvent || !forward && iEvent2 > iEvent) Double.NegativeInfinity
+          else if (forward && iEvent2 > iEvent + 1 || !forward && iEvent2 < iEvent - 1) Double.NegativeInfinity
           else 0
         }
         DenseVector(potentials: _*)

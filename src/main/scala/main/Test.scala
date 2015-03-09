@@ -9,6 +9,7 @@ import framework.fodor.StringFeature
 import framework.igor.eval.EvalStats
 import framework.igor.experiment.{ResultCache, Stage}
 import model._
+import task.hcrc.HcrcState
 import task.{TaskInstance, Task}
 import spire.syntax.cfor._
 
@@ -58,7 +59,7 @@ object Test extends Stage[Config] {
     val annotatedWalkthrough = Annotator.annotateWalkthrough(instance.instructions)
 
     val (lengthStart, lengthEnd) =
-      if (config.testKnownLength) (instance.path.length, instance.path.length+4)
+      if (config.testKnownLength) (instance.path.length, instance.path.length)
       else (config.testLengthRangeStart, config.testLengthRangeEnd)
     val (prediction, score) = (lengthStart to lengthEnd).flatMap { pathLength =>
       logger.info(s"length $pathLength")
@@ -77,6 +78,7 @@ object Test extends Stage[Config] {
           }
         }
         logger.info(s"$score, $path")
+//        System.exit(1)
         (path, score)
       }
     }.maxBy(_._2)
@@ -108,6 +110,8 @@ object Test extends Stage[Config] {
       val alignedSentences: IndexedSeq[Int] =
         if (config.multiAlign) 0 until alignment.length
         else alignment.zipWithIndex.filter(_._1 == t).map(_._2).toArray
+//      System.out.println("Sentences here:")
+//      alignedSentences.map(annotatedWalkthrough.wordFeats(_).flatMap(_.map(_.value)).mkString(" ")).foreach(println)
       lastHyps.foreach { lastHyp =>
         val acts = task.availableActions(lastHyp.state).toSeq
         if (acts.nonEmpty) {
@@ -121,10 +125,14 @@ object Test extends Stage[Config] {
         }
       }
       val result = beam.result()
+//      println("Beam:")
+//      result.sortBy(_.score).foreach(h => println(h.score, h.state.asInstanceOf[HcrcState].nearestLandmark))
+//      println("---")
       if (result.nonEmpty) {
         lastHyps = result
       }
     }
+//    println("===")
 
     def unwind(hyp: AHypothesis): IndexedSeq[(task.State,task.Action,task.State)] = {
       hyp match {
@@ -153,6 +161,7 @@ object Test extends Stage[Config] {
       override def edgeLogPotentials(seq: Int, iEvent: Int, forward: Boolean): DenseVector[Double] = {
         val vals = (0 until numStates(seq)).map { iEvent2 =>
           if (forward && iEvent2 < iEvent || !forward && iEvent2 > iEvent) Double.NegativeInfinity
+          else if (forward && iEvent2 > iEvent + 1 || !forward && iEvent2 < iEvent - 1) Double.NegativeInfinity
           else 0
         }
         DenseVector[Double](vals:_*)

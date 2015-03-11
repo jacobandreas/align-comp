@@ -9,7 +9,7 @@ import framework.fodor.StringFeature
 import framework.igor.eval.EvalStats
 import framework.igor.experiment.{ResultCache, Stage}
 import model._
-import task.hcrc.HcrcState
+import task.hcrc.{HcrcAction, HcrcState}
 import task.{TaskInstance, Task}
 import spire.syntax.cfor._
 
@@ -31,7 +31,7 @@ object Test extends Stage[Config] {
     dumpParams(params.asInstanceOf[SparseParams], index)
 
     val predictions = testInstances.toIterator.map { inst =>
-      val pred = this.task(inst.instructions.mkString("\n")) { predict(scorer, task)(inst, params, model, index, lengthModel, lengthFeaturizer) }
+      val pred = this.task(inst.instructions.head) { predict(scorer, task)(inst, params, model, index, lengthModel, lengthFeaturizer) }
       pred
     }
     val golds = testInstances.map(_.path).toIterator
@@ -58,6 +58,8 @@ object Test extends Stage[Config] {
     val startState = instance.path.head._1
     val annotatedWalkthrough = Annotator.annotateWalkthrough(instance.instructions)
 
+//    println(instance.instructions.mkString("\n"))
+
     val (lengthStart, lengthEnd) =
       if (config.testKnownLength) (instance.path.length, instance.path.length)
       else (config.testLengthRangeStart, config.testLengthRangeEnd)
@@ -67,22 +69,30 @@ object Test extends Stage[Config] {
 //      val lengthScore = if (pathLength == instance.path.length) 0 else Double.NegativeInfinity
       Seq.fill(config.nTestAlignmentRestarts)(randAlignment(instance.instructions.length, pathLength)).map { initAlignment =>
         var alignment = initAlignment
+//        println(alignment)
         var path = null: IndexedSeq[(task.State, task.Action, task.State)]
         var score = 0d
         cforRange (0 until config.nTestIters) { iter =>
+//          println(alignment)
           path = maxPath(scorer, task)(startState, pathLength, alignment, annotatedWalkthrough, params, model, index)
           if (path.nonEmpty) {
             val (iAlignment, iScore) = maxAlignment(scorer, task)(path, annotatedWalkthrough, params, model, index)
             alignment = iAlignment
             score = iScore + lengthScore
           }
+//          println(alignment)
+//          task.visualize(path, instance.path)
         }
         logger.info(s"$score, $path")
+        logger.info(task.score(path, instance.path).toString)
+//        task.visualize(path, instance.path)
+//        System.in.read()
 //        System.exit(1)
         (path, score)
       }
     }.maxBy(_._2)
-    task.visualize(prediction, instance.path)
+//    System.exit(1)
+//    task.visualize(prediction, instance.path)
     prediction
   }
 
@@ -120,13 +130,14 @@ object Test extends Stage[Config] {
             val (pairObservations, eventObservation) = buildObservations(task)(lastHyp.state, nextAction, nextState, annotatedWalkthrough, alignedSentences, index)
             val score = model.scoreOneDecision(scorer)(pairObservations, eventObservation, params, null.asInstanceOf[scorer.Params])
             val nextHyp = Hypothesis(nextState, nextAction, lastHyp, lastHyp.score + score)
+//            println("consider " + score + ": " + nextAction)
             beam.add(nextHyp)
           }
         }
       }
       val result = beam.result()
 //      println("Beam:")
-//      result.sortBy(_.score).foreach(h => println(h.score, h.state.asInstanceOf[HcrcState].nearestLandmark))
+//      result.sortBy(_.score).foreach(h => println(h.score, h.state.asInstanceOf[HcrcState].landmark))
 //      println("---")
       if (result.nonEmpty) {
         lastHyps = result
@@ -161,12 +172,15 @@ object Test extends Stage[Config] {
       override def edgeLogPotentials(seq: Int, iEvent: Int, forward: Boolean): DenseVector[Double] = {
         val vals = (0 until numStates(seq)).map { iEvent2 =>
           if (forward && iEvent2 < iEvent || !forward && iEvent2 > iEvent) Double.NegativeInfinity
-          else if (forward && iEvent2 > iEvent + 1 || !forward && iEvent2 < iEvent - 1) Double.NegativeInfinity
+//          else if (forward && iEvent2 > iEvent + 1 || !forward && iEvent2 < iEvent - 1) Double.NegativeInfinity
           else 0
         }
         DenseVector[Double](vals:_*)
       }
       override def nodeLogPotential(seq: Int, iSentence: Int, iEvent: Int): Double = {
+        if (iSentence == sequenceLength(0) - 1 && iEvent != numStates(0) - 1) return Double.NegativeInfinity
+        if (iSentence == 0 && iEvent != 0) return Double.NegativeInfinity
+
         val wordFeats = annotatedWalkthrough.wordFeats(iSentence)
         val nodeFeats = annotatedEvents(iEvent).nodeFeats
         val visitOrder = annotatedWalkthrough.visitOrders(iSentence)

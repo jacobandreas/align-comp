@@ -92,7 +92,8 @@ object ObservationCache extends Logging {
   def build(event: AnnotatedEvent, walkthrough: AnnotatedWalkthrough, sentences: IndexedSeq[Int], index: FeatureIndex): (Array[PairObservation], EventObservation) = {
     val pairObs = Array.ofDim[PairObservation](sentences.length)
     cforRange (0 until sentences.length) { i =>
-      pairObs(i) = buildPairObservation(event.nodeFeats, walkthrough.wordFeats(i), walkthrough.visitOrders(i), event.edgeFeats, walkthrough.depFeats(i), index, shortCircuit = false)
+      val iSentence = sentences(i)
+      pairObs(i) = buildPairObservation(event.nodeFeats, walkthrough.wordFeats(iSentence), walkthrough.visitOrders(iSentence), event.edgeFeats, walkthrough.depFeats(iSentence), index, shortCircuit = false)
     }
     (pairObs, buildEventObservation(event.nodeFeats, index))
   }

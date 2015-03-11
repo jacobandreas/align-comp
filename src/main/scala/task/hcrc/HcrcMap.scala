@@ -12,6 +12,7 @@ import scala.xml.XML
 
 case class HcrcMap(path: IndexedSeq[Point2D], landmarks: IndexedSeq[Landmark]) {
   val start = path.head
+  val startLandmark = landmarks.find(_.name == "start").get
   val distanceCache = Memoize[(Point2D,Point2D),Double] { case (a,b) => a.distanceTo(b) }
 }
 

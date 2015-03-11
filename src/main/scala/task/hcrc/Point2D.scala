@@ -17,4 +17,4 @@ case class Point2D(x: Double, y: Double) {
   def +(d: RelativePoint2D) = Point2D(x + d.x, y + d.y)
 }
 
-case class RelativePoint2D(x: Double, y: Double) extends TaskAction
+case class RelativePoint2D(x: Double, y: Double)

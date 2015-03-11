@@ -40,20 +40,29 @@ object Annotator extends Logging {
     val (nodeFeats, edgeFeats) = instance.path map (buildNodeAndEdgeFeats(task) _ tupled) unzip;
 
     val (altNodeFeats, altEdgeFeats) = Array.tabulate(instance.path.length) { iEvent =>
-      val startState = instance.path(iEvent)._1
-      val availableActs = task.availableActions(startState)
-      val acts =
-        if (config.sampleAlternatives.isEmpty) availableActs.toSet.toIndexedSeq
-        else (Rand.choose(availableActs).sample(config.sampleAlternatives.get).toSet + instance.path(iEvent)._2).toIndexedSeq
-      val nextStates = acts map { a => task.doAction(startState, a) }
-//      logger.info(instance.path(iEvent)._2.toString)
-//      logger.info(acts.toString)
-      if (!acts.contains(instance.path(iEvent)._2))
-        logger.warn(s"Gold action unavailable: ${instance.path(iEvent)._2}, $acts")
-      if (!(acts zip nextStates).contains((instance.path(iEvent)._2, instance.path(iEvent)._3)))
-        logger.warn(s"Gold outcome unavailable")
+//      val startState = instance.path(iEvent)._1
+//      val availableActs = task.availableActions(startState)
+//      val acts =
+//        if (config.sampleAlternatives.isEmpty) availableActs.toSet.toIndexedSeq
+//        else (Rand.choose(availableActs).sample(config.sampleAlternatives.get).toSet + instance.path(iEvent)._2).toIndexedSeq
+//      val nextStates = acts map { a => task.doAction(startState, a) }
+////      logger.info(instance.path(iEvent)._2.toString)
+////      logger.info(acts.toString)
+//      if (!acts.contains(instance.path(iEvent)._2))
+//        logger.warn(s"Gold action unavailable: ${instance.path(iEvent)._2}, $acts")
+//      if (!(acts zip nextStates).contains((instance.path(iEvent)._2, instance.path(iEvent)._3)))
+//        logger.warn(s"Gold outcome unavailable")
+//
+//      (acts zip nextStates).map { case (a, s2) => buildNodeAndEdgeFeats(task)(startState, a, s2) }.toArray.unzip
 
-      (acts zip nextStates).map { case (a, s2) => buildNodeAndEdgeFeats(task)(startState, a, s2) }.toArray.unzip
+      val fromStates = instance.path.map(_._1)
+      val availableActs = fromStates.flatMap { s => task.availableActions(s).map(s -> _) }
+      val acts =
+        if (config.sampleAlternatives.isEmpty) availableActs.toSet
+        else Rand.choose(availableActs).sample(config.sampleAlternatives.get).toSet
+
+      val triples = acts.map { case (s, a) => (s, a, task.doAction(s, a)) } + instance.path(iEvent)
+      triples.map(buildNodeAndEdgeFeats(task) _ tupled).toArray.unzip
     }.unzip
 
     AnnotatedInstance(wordFeats.toArray,

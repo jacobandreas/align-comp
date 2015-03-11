@@ -39,12 +39,12 @@ trait HcrcConfig extends DefaultConfig {
   override val useL1 = false
   override val regularizationStrength = 1.0
   override val nTrainIters = 5
-  override val nTestIters = 5
-  override val nTestAlignmentRestarts = 5
-  override val testLengthRangeStart = 15
-  override val testLengthRangeEnd = 15
+  override val nTestIters = 2
+  override val nTestAlignmentRestarts = 10
+  override val testLengthRangeStart = 10
+  override val testLengthRangeEnd = 10
   override val testKnownLength = false
-  override val testBeamSize = 15
+  override val testBeamSize = 5
   override val multiAlign = false
   override val fold = -1
 }
@@ -82,7 +82,7 @@ trait CrossBlockConfig extends DefaultConfig {
   override val testKnownLength = true
   override val testBeamSize = 15
   override val multiAlign = false
-  override val fold = 9
+  override val fold = 5
 }
 
 case class Config() extends CrossBlockConfig

@@ -29,21 +29,22 @@ object Train extends Stage[Config] {
     cforRange (0 until config.nTrainIters) { iter =>
       print(alignments)
       params = maxParams(scorer)(params, alignments, obsCache, model)
+      Test.dumpParams(params.asInstanceOf[SparseParams],index)
       alignments = maxAlignments(scorer)(params, obsCache, model)
     }
 
 
     val task = cache.get('task).asInstanceOf[Task]
     val instances = cache.get('trainInstances).asInstanceOf[IndexedSeq[task.Instance]]
-    (instances zip alignments) foreach { case (instance, alignment) =>
-      instance.path.zipWithIndex.foreach { case (triple, i) =>
-        val alignedSentenceIds = alignment.zipWithIndex.filter(_._1 == i).map(_._2).toArray
-        val sentences = alignedSentenceIds.map(instance.instructions)
-        println(triple._2)
-        println(sentences.mkString(" ::: "))
-      }
-      println("===")
-    }
+//    (instances zip alignments) foreach { case (instance, alignment) =>
+//      instance.path.zipWithIndex.foreach { case (triple, i) =>
+//        val alignedSentenceIds = alignment.zipWithIndex.filter(_._1 == i).map(_._2).toArray
+//        val sentences = alignedSentenceIds.map(instance.instructions)
+//        println(triple._2)
+//        println(sentences.mkString(" ::: "))
+//      }
+//      println("===")
+//    }
 
     cache.put('lengthModel, lengthModel)
     cache.put('lengthFeaturizer, testLengthFeaturizer)
@@ -85,7 +86,7 @@ object Train extends Stage[Config] {
             (score1 + score2, grad1)
           }
         )
-        val packed = pack(tGrad)
+//        val packed = pack(tGrad)
         (-tScore, -pack(tGrad))
       }
     }
@@ -108,13 +109,18 @@ object Train extends Stage[Config] {
 
       override def nodeLogPotential(iExample: Int, iSentence: Int, iEvent: Int): Double = {
         if (iSentence == sequenceLength(iExample) - 1 && iEvent != numStates(iExample) - 1) Double.NegativeInfinity
-        else model.scoreAlignment(scorer)(obsCache.pairObservations(iExample)(iEvent)(iSentence), currentParams)
+//        else if (iSentence == 0 && iEvent != 0) Double.NegativeInfinity
+        else {
+          val score = model.scoreAlignment(scorer)(obsCache.pairObservations(iExample)(iEvent)(iSentence), currentParams)
+          //if (iSentence <= 10 && iEvent <= 5) println(iSentence, iEvent, score)
+          score
+        }
       }
 
       override def edgeLogPotentials(iExample: Int, iEvent: Int, forward: Boolean): DenseVector[Double] = {
         val potentials = IndexedSeq.tabulate(numStates(iExample)) { iEvent2 =>
           if (forward && iEvent2 < iEvent || !forward && iEvent2 > iEvent) Double.NegativeInfinity
-          else if (forward && iEvent2 > iEvent + 1 || !forward && iEvent2 < iEvent - 1) Double.NegativeInfinity
+//          else if (forward && iEvent2 > iEvent + 1 || !forward && iEvent2 < iEvent - 1) Double.NegativeInfinity
           else 0
         }
         DenseVector(potentials: _*)

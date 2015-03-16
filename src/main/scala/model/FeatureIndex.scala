@@ -49,10 +49,10 @@ object FeatureIndex {
       }
     }
 
-    val pairFeatsToKeep = pairCounter.keys.filter(pairCounter(_) > config.pairFeatCountCutoff)
-//    val pairFeatsToKeep = pairCounter.keys.filter(_.value.contains("Match"))
-    val eventFeatsToKeep = eventCounter.keys.filter(eventCounter(_) > config.eventFeatCountCutoff)
-//    val eventFeatsToKeep = eventCounter.keys.filter(k => k.value.contains("dist") || k.value.contains("same"))
+//    val pairFeatsToKeep = pairCounter.keys.filter(pairCounter(_) > config.pairFeatCountCutoff)
+    val pairFeatsToKeep = pairCounter.keys.filter(_.value.contains("Match"))
+//    val eventFeatsToKeep = eventCounter.keys.filter(eventCounter(_) > config.eventFeatCountCutoff)
+    val eventFeatsToKeep = eventCounter.keys.filter(k => k.value.contains("dist") || k.value.contains("same"))
 
     val pairIndex = new HashIndex[IndicatorFeature]()
     val eventIndex = new HashIndex[IndicatorFeature]()

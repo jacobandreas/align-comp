@@ -27,7 +27,6 @@ object Train extends Stage[Config] {
     val (lengthModel, testLengthFeaturizer) = buildLengthModel(obsCache)
 
     cforRange (0 until config.nTrainIters) { iter =>
-      print(alignments)
       params = maxParams(scorer)(params, alignments, obsCache, model)
       Test.dumpParams(params.asInstanceOf[SparseParams],index)
       alignments = maxAlignments(scorer)(params, obsCache, model)

@@ -74,7 +74,7 @@ object Test extends Stage[Config] {
         var score = 0d
         cforRange (0 until config.nTestIters) { iter =>
 //          println(alignment)
-          path = maxPath(scorer, task)(startState, pathLength, alignment, annotatedWalkthrough, params, model, index)
+          path = maxPath(scorer, task)(startState, pathLength, alignment, annotatedWalkthrough, params, model, index)._1
           if (path.nonEmpty) {
             val (iAlignment, iScore) = maxAlignment(scorer, task)(path, annotatedWalkthrough, params, model, index)
             alignment = iAlignment
@@ -109,7 +109,7 @@ object Test extends Stage[Config] {
               params: scorer.Params,
               model: Model,
               index: FeatureIndex)
-             (implicit config: Config): IndexedSeq[(task.State, task.Action, task.State)] = {
+             (implicit config: Config): (IndexedSeq[(task.State, task.Action, task.State)], Double) = {
     sealed trait AHypothesis { val state: task.State; val score: Double }
     case class StartHypothesis(state: task.State) extends AHypothesis { override val score = 0d }
     case class Hypothesis(state: task.State, action: task.Action, parent: AHypothesis, score: Double) extends AHypothesis
@@ -152,8 +152,13 @@ object Test extends Stage[Config] {
       }
     }
 
-    if (lastHyps.isEmpty) IndexedSeq()
-    else unwind(lastHyps.maxBy(_.score))
+    if (lastHyps.isEmpty) {
+      (IndexedSeq(), Double.NegativeInfinity)
+    } else {
+      val bestLast = lastHyps.maxBy(_.score)
+      val unwound = unwind(lastHyps.maxBy(_.score))
+      (unwound, bestLast.score)
+    }
   }
 
   def maxAlignment(scorer: Scorer,
@@ -162,7 +167,8 @@ object Test extends Stage[Config] {
                    annotatedWalkthrough: AnnotatedWalkthrough,
                    params: scorer.Params,
                    model: Model,
-                   index: FeatureIndex): (IndexedSeq[Int], Double) = {
+                   index: FeatureIndex)
+                  (implicit config: Config): (IndexedSeq[Int], Double) = {
 
     val annotatedEvents = path map (Annotator.annotateEvent(task) _ tupled)
     val lattice = new LogHMMLattice {
@@ -179,7 +185,7 @@ object Test extends Stage[Config] {
       }
       override def nodeLogPotential(seq: Int, iSentence: Int, iEvent: Int): Double = {
         if (iSentence == sequenceLength(0) - 1 && iEvent != numStates(0) - 1) return Double.NegativeInfinity
-        if (iSentence == 0 && iEvent != 0) return Double.NegativeInfinity
+        if (!config.multiAlign && iSentence == 0 && iEvent != 0) return Double.NegativeInfinity
 
         val wordFeats = annotatedWalkthrough.wordFeats(iSentence)
         val nodeFeats = annotatedEvents(iEvent).nodeFeats

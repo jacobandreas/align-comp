@@ -39,7 +39,7 @@ object ObservationCache extends Logging {
     val altEventObsBuilder = Array.ofDim[Array[Array[EventObservation]]](instances.length) // Array.newBuilder[Array[Array[EventObservation]]]
 
     cforRange (0 until instances.length) { iInstance =>
-      println(iInstance)
+//      println(iInstance)
       val inst = instances(iInstance)
 
       wordBuilder(iInstance) = inst.wordFeats.flatten.reduce(_ | _)

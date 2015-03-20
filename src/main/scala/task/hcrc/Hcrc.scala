@@ -6,7 +6,7 @@ import java.util.function.Consumer
 import breeze.linalg.min
 import breeze.numerics.{abs, signum}
 import breeze.{plot => bplot}
-import framework.fodor.{SimpleFeature, StringFeature, RealFeature}
+import framework.fodor.{IndicatorFeature, SimpleFeature, StringFeature, RealFeature}
 import framework.fodor.graph.{Entity, GraphWorld, Event, EventContext}
 import framework.igor.eval.EvalStats
 import main.Config
@@ -25,6 +25,9 @@ object Hcrc extends TaskFactory {
   final val LandmarksDirName = "landmarks"
   final val CorrespondenceFileName = "correspondences.txt"
   override def apply(dataRoot: File)(implicit config: Config): Task = new Hcrc(new File(dataRoot, HcrcDirName))
+
+  val pairFeatureFilter = (feature: IndicatorFeature) => feature.value.contains("Match")
+  val eventFeatureFilter = (feature: IndicatorFeature) => feature.value.contains("dist") || feature.value.contains("same")
 }
 
 class Hcrc(hcrcRoot: File) extends Task with Serializable{
@@ -190,45 +193,17 @@ class Hcrc(hcrcRoot: File) extends Task with Serializable{
   }
 
   override def score(pred: IndexedSeq[(State,Action,State)], gold: IndexedSeq[(State,Action,State)]): EvalStats = {
-//    val realPred = pred.map(_._1).sliding(2).flatMap { states =>
-//      val from = states(0)
-//      val to = states(1)
-//      val xStep = (to.pos.x - from.pos.x) / Hcrc.InterpSteps
-//      val yStep = (to.pos.y - from.pos.y) / Hcrc.InterpSteps
-//      (1 to 15).map { i =>
-//        val pos = Point2D(from.pos.x + i * xStep, from.pos.y + i * yStep)
-//        HcrcState(pos, from.map)
-//      }
-
-//    val realGold = gold.map(_._1) :+ gold.last._3
-//    val realPred = pred.map(_._1) :+ pred.last._3
-//    val goldTransitions = extractTransitions(realGold, gold.head._1.map.landmarks)
-//    val predTransitions = extractTransitions(realPred, pred.head._1.map.landmarks)
-//    val numCorrect = predTransitions.sliding(2).toSet.toIndexedSeq.map { pt: IndexedSeq[Landmark] =>
-//      val numPred = predTransitions.sliding(2).count(_ == pt)
-//      val numGold = goldTransitions.sliding(2).count(_ == pt)
-//      min(numPred, numGold)
-//    }.sum
-//    EvalStats(numCorrect, goldTransitions.length - 1 - numCorrect, predTransitions.length - 1 - numCorrect)
-
     val goldLms = filterDuplicates((gold.map(_._1) :+ gold.last._3).map(_.landmark))
     val predLms = filterDuplicates((pred.map(_._1) :+ pred.last._3).map(_.landmark))
-
-//    println(goldLms.map(_.name))
-//    println(predLms.map(_.name))
 
     val goldTransitions = goldLms.sliding(2).toSeq
     val predTransitions = predLms.sliding(2).toSeq
 
-//    val numCorrect = predLms.sliding(2).toSet.toIndexedSeq.map { pt: IndexedSeq[Landmark] =>
     val numCorrect = predTransitions.toSet.toIndexedSeq.map { pt: IndexedSeq[Landmark] =>
-//      println(s"for $pt")
       val numPred = predTransitions.count(_ == pt)
       val numGold = goldTransitions.count(_ == pt)
-//      println(numPred, numGold)
       min(numPred, numGold)
     }.sum
-//    println(s"$numCorrect correct, ${goldTransitions.length - numCorrect} FN, ${predTransitions.length - numCorrect} FP")
     EvalStats(numCorrect, goldTransitions.length - numCorrect, predTransitions.length - numCorrect)
   }
 
@@ -245,7 +220,6 @@ class Hcrc(hcrcRoot: File) extends Task with Serializable{
                           //RealFeature("length", s1.pos.distanceTo(s2.pos))))
     val world = GraphWorld(Set())
     EventContext(event, world)
-
 //    val from = Entity(Set(StringFeature("landmark", s1.landmark.name), SimpleFeature("from")))
 //    val to = Entity(Set(StringFeature("landmark", s2.landmark.name), SimpleFeature("to")))
   }

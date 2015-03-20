@@ -55,7 +55,7 @@ object Annotator extends Logging {
 //
 //      (acts zip nextStates).map { case (a, s2) => buildNodeAndEdgeFeats(task)(startState, a, s2) }.toArray.unzip
 
-      val fromStates = instance.path.map(_._1)
+      val fromStates = if (config.globalAlternatives) instance.path.map(_._1) else Seq(instance.path(iEvent)._1)
       val availableActs = fromStates.flatMap { s => task.availableActions(s).map(s -> _) }
       val acts =
         if (config.sampleAlternatives.isEmpty) availableActs.toSet

@@ -23,7 +23,7 @@ trait DefaultConfig {
   val pairFeatFilter: Optional[IndicatorFeature => Boolean] = NotProvided
   val eventFeatFilter: Optional[IndicatorFeature => Boolean] = NotProvided
   val sampleAlternatives: Optional[Int] = NotProvided
-  val globalAlternatives: Boolean = false
+  val globalAlternatives: Boolean = true
   val useL1: Boolean = false
   val regularizationStrength: Double = 1d
   val nTrainIters: Int = 5
@@ -54,6 +54,7 @@ trait HcrcConfig extends DefaultConfig {
 trait SailConfig extends DefaultConfig {
   override val task = Sail
   override val useL1 = true
+  override val globalAlternatives = false
   override val nTrainIters = 1
   override val nTestAlignmentRestarts = 1
   override val testLengthRangeStart = 1
@@ -71,11 +72,10 @@ trait CrossBlockConfig extends DefaultConfig {
   override val testLengthRangeStart = -1
   override val testLengthRangeEnd = -1
   override val testKnownLength = true
-  override val testBeamSize = 15
-  override val fold = 0
+  override val fold = 4
 }
 
-case class Config() extends HcrcConfig
+case class Config() extends SailConfig
 
 object Main extends Experiment[Config] {
   override val paramManifest = manifest[Config]

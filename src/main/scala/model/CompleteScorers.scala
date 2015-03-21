@@ -36,7 +36,7 @@ trait SparseScorer extends Scorer with SparseLocalPairScorer with SparseLocalEve
   }
 
   override def initParams(index: FeatureIndex): Params = {
-    val pair = DenseVector.ones[Double](index.pair.size)
+    val pair = DenseVector.zeros[Double](index.pair.size)
     val event = DenseVector.zeros[Double](index.event.size)
     SparseParams(pair, event)
   }

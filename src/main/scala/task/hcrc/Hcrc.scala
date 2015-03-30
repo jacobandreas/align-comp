@@ -26,7 +26,8 @@ object Hcrc extends TaskFactory {
   final val CorrespondenceFileName = "correspondences.txt"
   override def apply(dataRoot: File)(implicit config: Config): Task = new Hcrc(new File(dataRoot, HcrcDirName))
 
-  val pairFeatureFilter = (feature: IndicatorFeature) => feature.value.contains("Match")
+  val whitelistWords = Set("north", "east", "south", "west", "above", "below", "left", "right", "top", "bottom", "side", "underneath")
+  val pairFeatureFilter = (feature: IndicatorFeature) => feature.value.contains("Match") || (feature.value.contains("Side") && whitelistWords.exists(feature.value.contains))
   val eventFeatureFilter = (feature: IndicatorFeature) => feature.value.contains("dist") || feature.value.contains("same")
 }
 
@@ -215,8 +216,9 @@ class Hcrc(hcrcRoot: File) extends Task with Serializable{
     val event = Event(Set(StringFeature("toLandmark", s2.landmark.name),
                           StringFeature("fromLandmark", s1.landmark.name),
                           SimpleFeature("dist=" + distStr),
-                          SimpleFeature(s"sameLandmark=$sameLandmark"),
-                          SimpleFeature(s"sameLandmarkAndSide=$sameLandmarkAndSide")))
+                          SimpleFeature("toSide=" + s2.side.toString),
+                          SimpleFeature(s"sameLandmark=$sameLandmark")))
+//                          SimpleFeature(s"sameLandmarkAndSide=$sameLandmarkAndSide")))
                           //RealFeature("length", s1.pos.distanceTo(s2.pos))))
     val world = GraphWorld(Set())
     EventContext(event, world)

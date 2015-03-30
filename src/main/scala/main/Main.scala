@@ -53,6 +53,7 @@ trait HcrcConfig extends DefaultConfig {
 
 trait SailConfig extends DefaultConfig {
   override val task = Sail
+  override val scorer = CompleteSparseBagScorer
   override val useL1 = true
   override val globalAlternatives = false
   override val nTrainIters = 1
@@ -68,6 +69,7 @@ trait CrossBlockConfig extends DefaultConfig {
   override val task = CrossBlock
   override val scorer = CompleteSparseBagScorer
   override val nTestIters = 1
+//  override val pairFeatFilter: Optional[IndicatorFeature => Boolean] = (f: IndicatorFeature) => false
   override val nTestAlignmentRestarts = 10
   override val testLengthRangeStart = -1
   override val testLengthRangeEnd = -1
@@ -75,7 +77,7 @@ trait CrossBlockConfig extends DefaultConfig {
   override val fold = 4
 }
 
-case class Config() extends SailConfig
+case class Config() extends CrossBlockConfig
 
 object Main extends Experiment[Config] {
   override val paramManifest = manifest[Config]

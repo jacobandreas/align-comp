@@ -53,7 +53,7 @@ trait HcrcConfig extends DefaultConfig {
 
 trait SailConfig extends DefaultConfig {
   override val task = Sail
-  override val scorer = CompleteSparseBagScorer
+  override val scorer = CompleteSparseTreeScorer
   override val useL1 = true
   override val globalAlternatives = false
   override val nTrainIters = 1
@@ -62,8 +62,16 @@ trait SailConfig extends DefaultConfig {
   override val testLengthRangeEnd = 2
   override val testKnownLength = false
   override val multiAlign = true
-  override val fold = 2
+  override val fold = 1
 }
+
+// 5803
+// 5885
+// 5617
+
+// 5835
+// 591
+// 583
 
 trait CrossBlockConfig extends DefaultConfig {
   override val task = CrossBlock
@@ -77,7 +85,7 @@ trait CrossBlockConfig extends DefaultConfig {
   override val fold = 4
 }
 
-case class Config() extends CrossBlockConfig
+case class Config() extends SailConfig
 
 object Main extends Experiment[Config] {
   override val paramManifest = manifest[Config]

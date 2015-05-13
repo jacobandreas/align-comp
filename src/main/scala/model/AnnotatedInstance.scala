@@ -141,11 +141,11 @@ object Annotator extends Logging {
       } else {
         // TODO skip edges?
         val path = model.path(node1, node2)
-        if (path.isDefined) {
-          // val labels = path.get.sliding(2).map(pair => repr.model.labeledEdges.find(e => e._1 == pair(0) && e._3 == pair(1)).get._2.features).toSeq
-          // assert { labels.forall(_.size == 1) }
-          // val joinedLabels = labels.map(_.head.asInstanceOf[IndicatorFeature].value).mkString(",")
-          // edgeFeatsNode(node1)(node2) = Array[IndicatorFeature](new SimpleFeature(s"SKIP_$joinedLabels"))
+        if (path.isDefined && path.get.length == 2) {
+           val labels = path.get.sliding(2).map(pair => repr.model.labeledEdges.find(e => e._1 == pair(0) && e._3 == pair(1)).get._2.features).toSeq
+           assert { labels.forall(_.size == 1) }
+           val joinedLabels = labels.map(_.head.asInstanceOf[IndicatorFeature].value).mkString(",")
+           edgeFeats(iNode1)(iNode2) = Set[IndicatorFeature](new SimpleFeature(s"SKIP_$joinedLabels"))
         }
       }
     }

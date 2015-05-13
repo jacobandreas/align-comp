@@ -373,9 +373,9 @@ class Sail(root: File, language: String)(implicit config: Config) extends Task w
         val hallFeats = Set[Feature](SimpleFeature("wall=" + nEdge.wall),
                                      SimpleFeature("floor=" + nEdge.floor))
         val itemFeats =
-          if (!nNode.item.isEmpty) Set[Feature](SimpleFeature("has-item"), SimpleFeature("item=" + nNode.item))
+          if (!nNode.item.isEmpty) Set[Feature](SimpleFeature("item=" + nNode.item))//Set[Feature](SimpleFeature("has-item"), SimpleFeature("item=" + nNode.item))
           else Set[Feature]()
-        val gNeighbor = Entity(hallFeats ++ itemFeats) //+ SimpleFeature("pos=" + name))
+        val gNeighbor = Entity(hallFeats ++ itemFeats + SimpleFeature("pos=" + name))
         relationBuilder += Relation(gHere, gNeighbor, Set(SimpleFeature("edge"))) // name)))
     }
 

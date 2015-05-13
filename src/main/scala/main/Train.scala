@@ -107,6 +107,7 @@ object Train extends Stage[Config] {
       override def sequenceLength(seq: Int): Int = obsCache.nSentences(seq)
 
       override def nodeLogPotential(iExample: Int, iSentence: Int, iEvent: Int): Double = {
+//        if (false) Double.NegativeInfinity
         if (iSentence == sequenceLength(iExample) - 1 && iEvent != numStates(iExample) - 1) Double.NegativeInfinity
 //        else if (iSentence == 0 && iEvent != 0) Double.NegativeInfinity
         else {

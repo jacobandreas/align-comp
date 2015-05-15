@@ -3,7 +3,7 @@ package model
 import breeze.stats.distributions.Rand
 import epic.parser.NoParseException
 import framework.arbor.syntax.{DependencyNode, DependencyStructure, ParseCollapser}
-import framework.fodor.graph.EventContext
+import framework.fodor.graph.{Thing, EventContext}
 import framework.fodor.{SimpleFeature, StringFeature, IndicatorFeature}
 import framework.arbor._
 import framework.arbor.BerkeleyAnnotators._
@@ -138,9 +138,13 @@ object Annotator extends Logging {
       } else if (model.edges.contains((node1, node2))) {
         val feats = model.labeledEdges.find(e => e._1 == node1 && e._3 == node2).get._2.features.flatMap(Featurizer.discretize)
         edgeFeats(iNode1)(iNode2) = feats
+      } else if (model.edges.contains((node2, node1))) {
+        val feats = model.labeledEdges.find(e => e._1 == node2 && e._3 == node1).get._2.features.flatMap(Featurizer.discretize)
+        edgeFeats(iNode1)(iNode2) = feats
       } else {
         // TODO skip edges?
-        val path = model.path(node1, node2)
+        var path = model.path(node1, node2)
+        if (!path.isDefined) path = model.path(node2, node1)
         if (path.isDefined && path.get.length == 2) {
            val labels = path.get.sliding(2).map(pair => repr.model.labeledEdges.find(e => e._1 == pair(0) && e._3 == pair(1)).get._2.features).toSeq
            assert { labels.forall(_.size == 1) }

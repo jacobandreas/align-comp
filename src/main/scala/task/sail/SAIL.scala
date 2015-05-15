@@ -272,6 +272,18 @@ class Sail(root: File, language: String)(implicit config: Config) extends Task w
   override type Action = SailAction
   override type State = SailState
 
+  def represent2(s1: State, a: Action, s2: State): EventContext = {
+    val eventFeats: Set[Feature] = a match {
+      case MoveAction(startState, distance) => Set(SimpleFeature("action:move"), SimpleFeature("distance:" + distance))
+      case RotateAction(startState, angle) => Set(SimpleFeature("action:rotate"), SimpleFeature("angle:" + angle))
+      case VerifyAction(startState) => Set(SimpleFeature("action:verify"))
+    }
+    val relationBuilder = Set.newBuilder[Relation]
+    val toNode = buildNode(s2.node, relationBuilder, "after", s2.map, s2.orientation)
+    val allFeats = eventFeats | relationBuilder.result().flatMap { r => r.to.features | r.from.features }
+    EventContext(Event(allFeats), GraphWorld(Set()))
+  }
+
   override def represent(s1: State, a: Action, s2: State): EventContext = {
     val eventFeats: Set[Feature] = a match {
       case MoveAction(startState, distance) => Set(SimpleFeature("action:move"), SimpleFeature("distance:" + distance))

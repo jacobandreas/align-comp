@@ -279,7 +279,8 @@ class Sail(root: File, language: String)(implicit config: Config) extends Task w
       case VerifyAction(startState) => Set(SimpleFeature("action:verify"))
     }
     val relationBuilder = Set.newBuilder[Relation]
-    val event = Event(eventFeats + SimpleFeature("EVENT_CONST"))
+//    val event = Event(eventFeats + SimpleFeature("EVENT_CONST"))
+    val event = Event(eventFeats)
 //    val fromNode = buildNode(s1.node, relationBuilder, "before", s1.map, s1.orientation)
 //    val fromNode = Entity(Set(SimpleFeature("item=" + s1.node.item)))
     val toNode = buildNode(s2.node, relationBuilder, "after", s2.map, s2.orientation)
@@ -351,17 +352,18 @@ class Sail(root: File, language: String)(implicit config: Config) extends Task w
     }
 
     val itemFeatsHere =
-      if (!node.item.isEmpty) Set[Feature](SimpleFeature("has-item"), SimpleFeature("item=" + node.item))
+      if (!node.item.isEmpty) Set[Feature](SimpleFeature("item=" + node.item)) // SimpleFeature("has-item"))
       else Set[Feature]()
     val nNeighbors = nodes.flatten.length
     val neighborFeatsHere = // Set[Feature]() // Set[Feature](SimpleFeature("neighbors=" + nNeighbors))
 //      Set(if (nNeighbors >= 3) Some(SimpleFeature("intersection")) else None).flatten
 //        Set(SimpleFeature("neighbors=" + nNeighbors)) ++
-        Set(
-          if (edges(1).isEmpty)
-            Some(SimpleFeature("facing-wall"))
-          else
-            None).flatten
+//        Set(
+//          if (edges(1).isEmpty)
+//            Some(SimpleFeature("facing-wall"))
+//          else
+//            None).flatten
+          Set()
     val gHere = Entity(itemFeatsHere ++ neighborFeatsHere) // + SimpleFeature("pos=here")) // + SimpleFeature("step=" + position))
 
     val gNeighbors = nodes zip edges zip names map {

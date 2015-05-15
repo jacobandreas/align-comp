@@ -62,16 +62,12 @@ trait SailConfig extends DefaultConfig {
   override val testLengthRangeEnd = 2
   override val testKnownLength = false
   override val multiAlign = true
-  override val fold = 1
+  override val fold = 0
 }
 
-// 5803
-// 5885
-// 5617
-
-// 5835
-// 591
-// 583
+// 5794
+// 5971
+// 5915
 
 trait CrossBlockConfig extends DefaultConfig {
   override val task = CrossBlock

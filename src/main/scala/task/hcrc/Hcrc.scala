@@ -7,7 +7,7 @@ import breeze.linalg.min
 import breeze.numerics.{abs, signum}
 import breeze.{plot => bplot}
 import framework.fodor.{IndicatorFeature, SimpleFeature, StringFeature, RealFeature}
-import framework.fodor.graph.{Entity, GraphWorld, Event, EventContext}
+import framework.fodor.graph._
 import framework.igor.eval.EvalStats
 import main.Config
 import task._
@@ -28,7 +28,7 @@ object Hcrc extends TaskFactory {
 
   val whitelistWords = Set("north", "east", "south", "west", "above", "below", "left", "right", "top", "bottom", "side", "underneath")
   val pairFeatureFilter = (feature: IndicatorFeature) => feature.value.contains("Match") || (feature.value.contains("Side") && whitelistWords.exists(feature.value.contains))
-  val eventFeatureFilter = (feature: IndicatorFeature) => feature.value.contains("dist") || feature.value.contains("same")
+  val eventFeatureFilter = (feature: IndicatorFeature) => feature.value.contains("from") || feature.value.contains("to") || feature.value.contains("dist") || feature.value.contains("same")
 }
 
 class Hcrc(hcrcRoot: File) extends Task with Serializable{
@@ -213,14 +213,27 @@ class Hcrc(hcrcRoot: File) extends Task with Serializable{
     val distStr = if (dist < 1e-8) "zero" else (dist / 50).toInt
     val sameLandmark = s1.landmark eq s2.landmark
     val sameLandmarkAndSide = (s1.landmark eq s2.landmark) && (s1.side == s2.side)
-    val event = Event(Set(StringFeature("toLandmark", s2.landmark.name),
-                          StringFeature("fromLandmark", s1.landmark.name),
-                          SimpleFeature("dist=" + distStr),
-                          SimpleFeature("toSide=" + s2.side.toString),
-                          SimpleFeature(s"sameLandmark=$sameLandmark")))
+
+    val toLandmark = Entity(Set(StringFeature("name", s2.landmark.name),
+                                SimpleFeature("side=" + s2.side.toString),
+                                SimpleFeature("to")))
+    val fromLandmark = Entity(Set(StringFeature("name", s1.landmark.name), SimpleFeature("from")))
+
+//    val event = Event(Set(StringFeature("toLandmark", s2.landmark.name),
+//                          StringFeature("fromLandmark", s1.landmark.name),
+//                          SimpleFeature("dist=" + distStr),
+//                          SimpleFeature("toSide=" + s2.side.toString),
+//                          SimpleFeature(s"sameLandmark=$sameLandmark")))
+
+
+
+    val event = Event(Set(SimpleFeature("dist=" + distStr), SimpleFeature(s"same=$sameLandmark")))
+
+    val relations = Set(Relation(event, toLandmark, Set(SimpleFeature("to"))),
+                        Relation(event, fromLandmark, Set(SimpleFeature("from"))))
 //                          SimpleFeature(s"sameLandmarkAndSide=$sameLandmarkAndSide")))
                           //RealFeature("length", s1.pos.distanceTo(s2.pos))))
-    val world = GraphWorld(Set())
+    val world = GraphWorld(relations)
     EventContext(event, world)
 //    val from = Entity(Set(StringFeature("landmark", s1.landmark.name), SimpleFeature("from")))
 //    val to = Entity(Set(StringFeature("landmark", s2.landmark.name), SimpleFeature("to")))

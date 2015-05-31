@@ -13,6 +13,9 @@ trait TreeScorer extends Scorer with LocalPairScorer {
     val nWords = obs.visitOrder.length
     val computeGrad = grad != null
 
+    assert (nEvents > 0)
+    if (nWords == 0) return 0d
+
     val subtreeChart = Array.fill(nWords, nEvents)(Double.NegativeInfinity)
     val subtreeGradChart: Array[Array[Params]] = if (!computeGrad) null else Array.fill(nWords, nEvents)(zeroLike(params))(pct)
 

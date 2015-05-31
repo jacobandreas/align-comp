@@ -243,7 +243,7 @@ class CrossBlock(root: File)(implicit config: Config) extends Task with Serializ
   override def visualize(pred: IndexedSeq[(State, Action, State)], gold: IndexedSeq[(State, Action, State)]): Unit = Unit
 
   override def score(pred: IndexedSeq[(State, Action, State)], gold: IndexedSeq[(State, Action, State)]): EvalStats = {
-//    // task completion scoring
+    // task completion scoring
 //    if (pred.isEmpty) return EvalStats(0, 1, 0)
 //    val last = pred.last._3
 //    if (last.isWin) EvalStats(1, 0, 0)

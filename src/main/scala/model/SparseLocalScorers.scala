@@ -18,9 +18,10 @@ trait SparsePairParams {
 trait SparseLocalEventScorer extends LocalEventScorer {
   override type Params <: SparseEventParams
   override def scoreOneNode(iNode: Int, obs: EventObservation, params: Params, grad: Params): Double = {
-    val fv = new FeatureVector(obs.eventFeatures(iNode))
-    if (grad != null) grad.sparseEvent += fv
-    params.sparseEvent dot fv
+    0d
+//    val fv = new FeatureVector(obs.eventFeatures(iNode))
+//    if (grad != null) grad.sparseEvent += fv
+//    params.sparseEvent dot fv
   }
 }
 
